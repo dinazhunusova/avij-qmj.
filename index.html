@@ -1,6 +1,14 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><style>.inapp{background:#efe3c4;color:#23272b;border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;font-size:16px}.inapp b{font-size:17px}.inapp .go2,.instbtn{appearance:none;border:none;border-radius:12px;min-height:52px;font:700 18px var(--f-body);background:var(--accent);color:var(--accent-ink);cursor:pointer;padding:0 16px}.instbtn{width:100%;margin:6px 0 10px}.upd{position:fixed;left:12px;right:12px;bottom:calc(150px + env(safe-area-inset-bottom,0px));max-width:696px;margin:0 auto;background:var(--ink);color:var(--paper);border-radius:12px;padding:12px 14px;font-size:16px;display:flex;gap:10px;align-items:center;justify-content:space-between;z-index:20}.upd button{appearance:none;border:none;border-radius:10px;background:var(--paper);color:var(--ink);font:700 16px var(--f-body);min-height:44px;padding:0 14px}</style>
+</head><body>
 <title>Авий Жумагул · ҚМЖ</title>
 <meta name="theme-color" content="#f3f3ef">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="ҚМЖ Физика">
 <style>
 /* Лабораториялық дәптер: миллиметрлік тор, сия-көк мәтін, кобальт белгі, ашық сары белгілеу */
 /* Спокойная палитра: мягкий фон, приглушённый сине-зелёный акцент, без ярких заливок */
@@ -93,8 +101,10 @@ textarea{min-height:120px;resize:vertical}
     <div class="who"><b id="tname"></b><span id="sname"></span></div>
   </header>
 
+  <div class="inapp" id="inapp" hidden><b>Қосымша WhatsApp ішінде ашылды</b><span id="inappTxt">Word файлы дұрыс жүктелуі үшін браузерде ашыңыз.</span><button class="go2" type="button" id="toChrome" hidden>Chrome-да ашу</button></div>
   <details class="install" id="install">
     <summary><span class="ic" aria-hidden="true">↓</span><span><b>Телефонға орнату</b><small>Android және iPhone · бір рет қана</small></span></summary>
+    <button class="instbtn" type="button" id="instBtn" hidden>📲 Телефонға орнату</button>
     <p class="hint">Басты экранға бір рет қосыңыз, кейін «Физика ҚМЖ» белгішесін басып ашасыз.</p>
     <h3 class="os">Android (Samsung т.б.)</h3>
     <ol class="steps">
@@ -3481,4 +3491,33 @@ if (typeof module !== 'undefined') module.exports = LESSON;
 })();
 </script>
 
+<script>
+(function(){
+  var ua=navigator.userAgent||'', isAnd=/Android/i.test(ua), isIOS=/iPhone|iPad|iPod/i.test(ua);
+  var inApp=/WhatsApp|FBAN|FBAV|FB_IAB|Instagram|Telegram|wv\)|Line\//i.test(ua);
+  var standalone=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone;
+  var el=function(id){return document.getElementById(id)};
+  if(inApp&&!standalone){
+    el('inapp').hidden=false;
+    if(isAnd){var b=el('toChrome');b.hidden=false;b.onclick=function(){
+      location.href='intent://'+location.host+location.pathname+location.search+'#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url='+encodeURIComponent(location.href)+';end';};}
+    else if(isIOS){el('inappTxt').innerHTML='Төменгі оң жақтағы <b>⋯</b> немесе <b>⤴</b> белгісін басып, <b>«Safari-де ашу»</b> таңдаңыз.';}
+  }
+  var dp=null;
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;var b=el('instBtn');b.hidden=false;var d=el('install');if(d&&!standalone)d.open=true;});
+  el('instBtn').addEventListener('click',function(){if(!dp)return;dp.prompt();dp.userChoice.then(function(){dp=null;el('instBtn').hidden=true;});});
+  window.addEventListener('appinstalled',function(){el('instBtn').hidden=true;var d=el('install');if(d)d.open=false;});
+  if(standalone){var d=el('install');if(d)d.hidden=true;}
+  if('serviceWorker' in navigator && location.protocol==='https:'){
+    navigator.serviceWorker.register('sw.js').then(function(r){
+      r.addEventListener('updatefound',function(){var w=r.installing;if(!w)return;w.addEventListener('statechange',function(){
+        if(w.state==='installed'&&navigator.serviceWorker.controller){
+          var u=document.createElement('div');u.className='upd';u.innerHTML='<span>Жаңа нұсқа дайын</span><button type="button">Жаңарту</button>';
+          u.querySelector('button').onclick=function(){location.reload()};document.body.appendChild(u);}
+      });});
+      r.update();
+    }).catch(function(){});
+  }
+})();
+</script>
 </body></html>
