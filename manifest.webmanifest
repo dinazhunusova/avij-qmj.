@@ -1,13 +1,13 @@
 {
  "name": "Авий Жумагул · ҚМЖ",
- "short_name": "ҚМЖ Физика",
+ "short_name": "Авий",
  "lang": "kk",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",
  "orientation": "portrait",
- "background_color": "#f3f3ef",
- "theme_color": "#3d6b74",
+ "background_color": "#eef2f7",
+ "theme_color": "#3b5b8a",
  "description": "Қысқа мерзімді жоспар (ҚМЖ) – Word форматында",
  "icons": [
   {
