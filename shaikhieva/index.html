@@ -1,0 +1,1769 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><style>.inapp{background:#efe3c4;color:#23272b;border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;font-size:16px}.inapp b{font-size:17px}.inapp .go2,.instbtn{appearance:none;border:none;border-radius:12px;min-height:52px;font:700 18px var(--f-body);background:var(--accent);color:var(--accent-ink);cursor:pointer;padding:0 16px}.instbtn{width:100%;margin:6px 0 10px}.upd{position:fixed;left:12px;right:12px;bottom:calc(150px + env(safe-area-inset-bottom,0px));max-width:696px;margin:0 auto;background:var(--ink);color:var(--paper);border-radius:12px;padding:12px 14px;font-size:16px;display:flex;gap:10px;align-items:center;justify-content:space-between;z-index:20}.upd button{appearance:none;border:none;border-radius:10px;background:var(--paper);color:var(--ink);font:700 16px var(--f-body);min-height:44px;padding:0 14px}</style>
+</head><body>
+<style>/* информатика элементтері */
+body{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22340%22%20height%3D%22320%22%20viewBox%3D%220%200%20340%20320%22%3E%3Cg%20font-family%3D%22Menlo%2CConsolas%2Cmonospace%22%20fill%3D%22%233b5b8a%22%20fill-opacity%3D%22.09%22%20font-size%3D%2215%22%3E%3Ctext%20x%3D%2212%22%20y%3D%2238%22%3Eprint%28%22%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%22%29%3C/text%3E%3Ctext%20x%3D%22200%22%20y%3D%2272%22%3E%26lt%3B/%26gt%3B%3C/text%3E%3Ctext%20x%3D%2230%22%20y%3D%22120%22%3Efor%20i%20in%20range%2810%29%3A%3C/text%3E%3Ctext%20x%3D%22190%22%20y%3D%22160%22%3E1011%200010%3C/text%3E%3Ctext%20x%3D%2214%22%20y%3D%22205%22%3E%3D%D0%A1%D0%A3%D0%9C%D0%9C%28A1%3AA5%29%3C/text%3E%3Ctext%20x%3D%22200%22%20y%3D%22245%22%3Eif%20x%20%26gt%3B%200%3A%3C/text%3E%3Ctext%20x%3D%2240%22%20y%3D%22290%22%3Edef%20f%28x%29%3A%3C/text%3E%3Ctext%20x%3D%22230%22%20y%3D%22300%22%3E%7B%20AI%20%7D%3C/text%3E%3C/g%3E%3C/svg%3E");background-size:340px 320px;background-attachment:fixed}
+.hero{position:relative;overflow:hidden}
+.hero>*{position:relative;z-index:1}
+.hero::after{content:"";position:absolute;right:-40px;top:-34px;width:200px;height:200px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%20fill%3D%22none%22%20stroke%3D%22%233b5b8a%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%3E%3Crect%20x%3D%2250%22%20y%3D%2250%22%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2214%22/%3E%3Crect%20x%3D%2272%22%20y%3D%2272%22%20width%3D%2256%22%20height%3D%2256%22%20rx%3D%226%22/%3E%3Cpath%20d%3D%22M75%2050V28M100%2050V28M125%2050V28M75%20150v22M100%20150v22M125%20150v22M50%2075H28M50%20100H28M50%20125H28M150%2075h22M150%20100h22M150%20125h22%22/%3E%3Ccircle%20cx%3D%2275%22%20cy%3D%2224%22%20r%3D%225%22%20fill%3D%22%233b5b8a%22/%3E%3Ccircle%20cx%3D%22125%22%20cy%3D%22176%22%20r%3D%225%22%20fill%3D%22%233b5b8a%22/%3E%3Ccircle%20cx%3D%22176%22%20cy%3D%22100%22%20r%3D%225%22%20fill%3D%22%233b5b8a%22/%3E%3Ccircle%20cx%3D%2224%22%20cy%3D%22125%22%20r%3D%225%22%20fill%3D%22%233b5b8a%22/%3E%3Ctext%20x%3D%22100%22%20y%3D%22109%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2224%22%20font-weight%3D%22bold%22%20fill%3D%22%233b5b8a%22%20stroke%3D%22none%22%3EAI%3C/text%3E%3C/svg%3E") no-repeat center/contain;opacity:.17;pointer-events:none;z-index:0}
+.who{border-top:0;padding-top:16px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2264%22%20height%3D%2212%22%20viewBox%3D%220%200%2064%2012%22%3E%3Cg%20fill%3D%22%233b5b8a%22%20fill-opacity%3D%22.45%22%20font-family%3D%22monospace%22%20font-size%3D%2211%22%3E%3Ctext%20x%3D%220%22%20y%3D%2210%22%3E1%3C/text%3E%3Ctext%20x%3D%2212%22%20y%3D%2210%22%3E0%3C/text%3E%3Ctext%20x%3D%2224%22%20y%3D%2210%22%3E1%3C/text%3E%3Ctext%20x%3D%2236%22%20y%3D%2210%22%3E1%3C/text%3E%3Ctext%20x%3D%2248%22%20y%3D%2210%22%3E0%3C/text%3E%3C/g%3E%3C/svg%3E") repeat-x left top/64px 12px}
+.sec::before{content:"</> ";color:var(--accent);font-family:Menlo,Consolas,monospace;letter-spacing:0}
+.step h2 .n{background:var(--accent);color:var(--accent-ink)}
+@media (prefers-color-scheme: dark){body{background-image:none}}
+</style>
+<title>Шайхиева Самал · ҚМЖ</title>
+<meta name="theme-color" content="#eef2f7">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Шайхиева">
+<style>
+/* Лабораториялық дәптер: миллиметрлік тор, сия-көк мәтін, кобальт белгі, ашық сары белгілеу */
+/* Спокойная палитра: мягкий фон, приглушённый сине-зелёный акцент, без ярких заливок */
+:root{
+  --paper:#eef2f7; --grid:transparent; --ink:#1f2a37; --muted:#56637a; --line:#d3dbe6;
+  --accent:#3b5b8a; --accent-ink:#ffffff; --mark:#e3e9f4; --ok:#2f6b4a; --warn:#9a4a1c; --card:#f9fbfd;
+  --hero1:#dfe7f2; --hero2:#dfe7f2; --hero-ink:#1f2a37; --hero-dim:#56637a; --hero-line:#c9d4e3; --hi:#3b5b8a;
+  --f-display:"Unbounded","PT Sans",system-ui,sans-serif; --f-body:"PT Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#1a1f27; --ink:#e3e8ef; --muted:#a3adbd; --line:#323b48;
+  --accent:#8fb0dc; --accent-ink:#121a26; --mark:#4a4430; --ok:#8cc7a4; --warn:#e3a27a; --card:#212835;
+  --hero1:#243044; --hero2:#243044; --hero-ink:#e3e8ef; --hero-dim:#a3adbd; --hero-line:#36445a; --hi:#8fb0dc; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#1a1f27; --ink:#e3e8ef; --muted:#a3adbd; --line:#323b48;
+  --accent:#8fb0dc; --accent-ink:#121a26; --mark:#4a4430; --ok:#8cc7a4; --warn:#e3a27a; --card:#212835;
+  --hero1:#243044; --hero2:#243044; --hero-ink:#e3e8ef; --hero-dim:#a3adbd; --hero-line:#36445a; --hi:#8fb0dc; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{min-height:100%}
+body{margin:0;background-color:var(--paper);
+color:var(--ink);font-family:var(--f-body);font-size:19px;line-height:1.45}
+.wrap{max-width:720px;margin:0 auto;padding-block:20px 120px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:18px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.step h2{margin:0;font-family:var(--f-display);font-weight:600;font-size:18px;display:flex;gap:10px;align-items:center}
+.step h2 .n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:15px;flex:none}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{appearance:none;border:1.5px solid var(--line);background:transparent;color:var(--ink);font:700 20px var(--f-body);border-radius:12px;min-height:56px;min-width:64px;padding:8px 16px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.chip:focus-visible,.topic:focus-visible,.go:focus-visible,input:focus-visible,textarea:focus-visible,.link:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
+.chip small{display:block;font-weight:400;font-size:14px}
+input[type=date]{font:700 21px var(--f-body);padding:10px 12px;border:2px solid var(--ink);border-radius:12px;background:var(--card);color:var(--ink);min-height:56px;width:100%;max-width:260px}
+.hint{color:var(--muted);font-size:16px;margin:0}
+.sec{font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:10px 0 2px}
+.list{display:flex;flex-direction:column;gap:8px}
+.topic{appearance:none;text-align:left;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:12px 14px;font:400 18px/1.35 var(--f-body);cursor:pointer;display:flex;flex-direction:column;gap:4px}
+.topic b{font-weight:700}
+.topic .codes{font-size:15px;color:var(--muted);font-variant-numeric:tabular-nums}
+.topic[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 6px 0 0 var(--accent)}
+.sel{display:flex;flex-direction:column;gap:8px}
+.sel .t{font-weight:700;font-size:20px}
+label{font-weight:700;font-size:16px}
+textarea,.ti{width:100%;font:400 17px/1.4 var(--f-body);padding:10px 12px;border:2px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);min-width:0}
+textarea{min-height:120px;resize:vertical}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.link{appearance:none;background:none;border:none;color:var(--accent);font:700 16px var(--f-body);text-decoration:underline;cursor:pointer;padding:6px 0}
+.dock{position:fixed;left:0;right:0;bottom:0;background:var(--paper);border-top:1px solid var(--line);padding-top:12px;padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.dock .in{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:6px}
+.go{appearance:none;width:100%;min-height:64px;border:none;border-radius:14px;background:var(--accent);color:var(--accent-ink);font:600 20px var(--f-display);cursor:pointer;letter-spacing:.01em}
+.btns{display:flex;gap:10px}
+.btns .go{flex:1;min-width:0}
+.share{appearance:none;min-height:64px;padding:0 20px;border-radius:14px;border:2px solid var(--accent);background:var(--card);color:var(--accent);font:800 19px var(--f-display);cursor:pointer;flex:none}
+.share:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
+.tip{margin:0;font-size:15px;text-align:center;color:var(--muted)}
+.go[disabled]{opacity:.45;cursor:not-allowed}
+.status{min-height:22px;font-size:16px;text-align:center;color:var(--muted)}
+.status.ok{color:var(--ok);font-weight:700}.status.err{color:var(--warn);font-weight:700}
+.note{font-size:15px;color:var(--muted);border-left:4px solid var(--line);padding-left:10px;margin:0}
+.hero{border-radius:18px;padding:22px 20px;color:var(--hero-ink);display:flex;flex-direction:column;gap:12px;background:var(--hero1);border:1px solid var(--hero-line)}
+.kicker{font-size:14px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--hero-dim)}
+.brand{margin:0;font-family:var(--f-display);font-weight:600;font-size:clamp(30px,9vw,46px);line-height:1.1;text-wrap:balance;letter-spacing:-.02em}
+.brand .tag{color:var(--accent-ink);background:var(--hi);padding:0 .14em;border-radius:8px}
+.lead{margin:0;font-size:18px;max-width:34ch}
+.flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.flow span{font-weight:700;font-size:16px;border:1px solid var(--hero-line);background:var(--card);border-radius:999px;padding:6px 14px}
+.flow i{font-style:normal;color:var(--hi);font-weight:800}
+.who{display:flex;flex-direction:column;gap:2px;font-size:15px;color:var(--hero-dim);border-top:1px solid var(--hero-line);padding-top:12px}
+.who b{color:var(--hero-ink);font-size:18px}
+.install{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:4px 16px}
+.install summary{list-style:none;cursor:pointer;display:flex;gap:12px;align-items:center;min-height:62px;font-size:19px}
+.install summary::-webkit-details-marker{display:none}
+.install summary small{display:block;color:var(--muted);font-size:15px}
+.install summary::after{content:"+";margin-left:auto;font:700 26px var(--f-display);color:var(--accent)}
+.install[open] summary::after{content:"–"}
+.install .ic{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--accent);color:var(--accent-ink);font:800 22px var(--f-display);flex:none}
+.install .hint{margin:0 0 6px}
+.os{margin:10px 0 0;font:700 17px var(--f-display);color:var(--accent)}
+.steps{margin:6px 0 12px;padding-left:26px;display:flex;flex-direction:column;gap:10px;font-size:18px}
+.steps li::marker{font-weight:800;color:var(--accent)}
+.warn{margin:0 0 10px;font-size:16px;background:var(--mark);color:var(--ink);border-radius:10px;padding:10px 12px}
+.install .note{margin:0 0 14px}
+@media (prefers-reduced-motion:no-preference){.chip,.topic,.go{transition:background-color .15s,border-color .15s,transform .1s}.go:active{transform:scale(.99)}}
+</style>
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">Информатика и искусственный интеллект · краткосрочный план</div>
+    <h1 class="brand"><span class="nm" id="bname">Шайхиева Самал</span> <span class="tag">ҚМЖ</span></h1>
+    <p class="lead">Краткосрочный план для <span id="glabel">7–11 классов</span>. Выберите тему – готовый КСП с заданием по функциональной грамотности скачается файлом Word.</p>
+    <div class="flow" aria-label="Порядок работы"><span>КТП</span><i>→</i><span>КСП</span><i>→</i><span>Word</span></div>
+    <div class="who"><b id="tname"></b><span id="sname"></span></div>
+  </header>
+
+  <div class="inapp" id="inapp" hidden><b>Приложение открылось внутри WhatsApp</b><span id="inappTxt">Чтобы файл Word скачался правильно, откройте в браузере.</span><button class="go2" type="button" id="toChrome" hidden>Открыть в Chrome</button></div>
+  <details class="install" id="install">
+    <summary><span class="ic" aria-hidden="true">↓</span><span><b>Установить на телефон</b><small>Android и iPhone · только один раз</small></span></summary>
+    <button class="instbtn" type="button" id="instBtn" hidden>📲 Установить на телефон</button>
+    <p class="hint">Добавьте один раз на главный экран, потом открывайте нажатием на значок.</p>
+    <h3 class="os">Android (Samsung и др.)</h3>
+    <ol class="steps">
+      <li>Откройте ссылку в браузере <b>Chrome</b>.</li>
+      <li>Нажмите меню <b>⋮</b> (три точки) в правом верхнем углу.</li>
+      <li>Выберите <b>«Установить приложение»</b> или <b>«Добавить на главный экран»</b>.</li>
+      <li>Нажмите <b>«Установить»</b> / <b>«Добавить»</b>.</li>
+    </ol>
+    <h3 class="os">iPhone / iPad</h3>
+    <ol class="steps">
+      <li>Откройте ссылку в браузере <b>Safari</b>.</li>
+      <li>Нажмите внизу кнопку <b>«Поделиться»</b> (квадрат со стрелкой вверх).</li>
+      <li>Прокрутите список вниз и выберите <b>«На экран «Домой»»</b>.</li>
+      <li>Нажмите <b>«Добавить»</b> в правом верхнем углу.</li>
+    </ol>
+    <p class="warn">Если ссылка открылась внутри WhatsApp, сначала откройте её во внешнем браузере: на Android ⋮ → <b>«Открыть в Chrome»</b>, на iPhone – <b>«Открыть в Safari»</b>.</p>
+    <p class="note"><b>Файл Word</b> сохраняется на Android в папку <b>«Загрузки»</b>, на iPhone – в приложение <b>«Файлы»</b>. Откройте его в Word, WPS Office или Pages.</p>
+  </details>
+
+  <section class="step" aria-labelledby="h1"><h2 id="h1"><span class="n">1</span>Класс</h2>
+    <div class="chips" id="grades"></div></section>
+
+  <section class="step" id="dirStep" hidden aria-labelledby="h2"><h2 id="h2"><span class="n">2</span>Направление</h2>
+    <div class="chips" id="dirs">
+      <button class="chip" data-d="Ж" type="button">ЕМН<small>естественно-математическое</small></button>
+      <button class="chip" data-d="Қ" type="button">ОГН<small>общественно-гуманитарное</small></button>
+    </div></section>
+
+  <section class="step" aria-labelledby="h3"><h2 id="h3"><span class="n" id="nq">2</span>Четверть</h2>
+    <div class="chips" id="quarters"></div></section>
+
+  <section class="step" aria-labelledby="h4"><h2 id="h4"><span class="n" id="nd">3</span>Дата</h2>
+    <input type="date" id="date" aria-label="Дата урока">
+    <p class="hint">Сегодняшняя дата ставится автоматически, её можно изменить.</p></section>
+
+  <section class="step" aria-labelledby="h5"><h2 id="h5"><span class="n" id="nt">4</span>Тема</h2>
+    <p class="hint" id="load"></p>
+    <div class="list" id="topics"></div></section>
+
+  <section class="step" id="selStep" hidden aria-labelledby="h6"><h2 id="h6"><span class="n" id="ns">5</span>Выбранный урок</h2>
+    <div class="sel">
+      <div class="t" id="selTitle"></div>
+      <div id="selObj"></div>
+      <div class="row"><button class="link" id="editBtn" type="button">Изменить тему или цели</button></div>
+      <div id="editBox" hidden class="sel">
+        <label for="eTitle">Тема урока</label>
+        <input class="ti" id="eTitle" type="text">
+        <label for="eObj">Цели обучения (по одной на строку: «код – цель»)</label>
+        <textarea id="eObj"></textarea>
+        <div class="row"><button class="link" id="resetBtn" type="button">Вернуть вариант из программы</button></div>
+        <p class="note">Изменения сохраняются на этом устройстве.</p>
+      </div>
+    </div></section>
+</div>
+
+<div class="dock"><div class="in">
+  <div class="btns"><button class="go" id="go" type="button" disabled>Скачать Word</button><button class="share" id="share" type="button" hidden>Поделиться</button></div>
+  <p class="tip" id="tip" hidden>Отправить в WhatsApp или Google Drive: в папке «Загрузки» нажмите и удерживайте файл, затем <b>«Поделиться»</b> → WhatsApp / Drive.</p>
+  <div class="status" id="status" role="status" aria-live="polite">Выберите класс и тему</div>
+</div></div>
+
+<script>var QMJ_CFG={"id":"binom-inf7","teacher":"Шайхиева Самал Жадигеровна","school":"ТОО «BINOM BARYS» школа-лицей BINOM SCHOOL «ЖАЙЫҚ»","grades":["7"],"glabel":"7 класса","brand":"Шайхиева Самал","title":"Шайхиева Самал · ҚМЖ"};window.QMJ_CFG=QMJ_CFG;
+// Minimal .docx writer: WordprocessingML + store-only ZIP. No dependencies.
+var DOCX = (function () {
+  var enc = new TextEncoder();
+  var CRC = (function () {
+    var t = new Uint32Array(256);
+    for (var n = 0; n < 256; n++) { var c = n; for (var k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; }
+    return t;
+  })();
+  function crc32(b) { var c = 0xFFFFFFFF; for (var i = 0; i < b.length; i++) c = CRC[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+  function zip(files) { // files: [{name, data:Uint8Array}]
+    var parts = [], central = [], off = 0;
+    files.forEach(function (f) {
+      var nm = enc.encode(f.name), d = f.data, crc = crc32(d);
+      var h = new DataView(new ArrayBuffer(30));
+      h.setUint32(0, 0x04034b50, true); h.setUint16(4, 20, true); h.setUint16(6, 0x0800, true); h.setUint16(8, 0, true);
+      h.setUint16(10, 0, true); h.setUint16(12, 0x21, true); h.setUint32(14, crc, true); h.setUint32(18, d.length, true);
+      h.setUint32(22, d.length, true); h.setUint16(26, nm.length, true); h.setUint16(28, 0, true);
+      parts.push(new Uint8Array(h.buffer), nm, d);
+      var c = new DataView(new ArrayBuffer(46));
+      c.setUint32(0, 0x02014b50, true); c.setUint16(4, 20, true); c.setUint16(6, 20, true); c.setUint16(8, 0x0800, true);
+      c.setUint16(10, 0, true); c.setUint16(12, 0, true); c.setUint16(14, 0x21, true); c.setUint32(16, crc, true);
+      c.setUint32(20, d.length, true); c.setUint32(24, d.length, true); c.setUint16(28, nm.length, true);
+      c.setUint32(42, off, true);
+      central.push(new Uint8Array(c.buffer), nm);
+      off += 30 + nm.length + d.length;
+    });
+    var csize = central.reduce(function (s, a) { return s + a.length; }, 0);
+    var e = new DataView(new ArrayBuffer(22));
+    e.setUint32(0, 0x06054b50, true); e.setUint16(8, files.length, true); e.setUint16(10, files.length, true);
+    e.setUint32(12, csize, true); e.setUint32(16, off, true);
+    var all = parts.concat(central, [new Uint8Array(e.buffer)]);
+    var len = all.reduce(function (s, a) { return s + a.length; }, 0), out = new Uint8Array(len), p = 0;
+    all.forEach(function (a) { out.set(a, p); p += a.length; });
+    return out;
+  }
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+
+  function Doc() { this.body = []; this.media = []; }
+  // run: string or {t, b, i, sz, color, sub, sup}
+  function runXml(r) {
+    if (typeof r === 'string') r = { t: r };
+    var pr = '';
+    if (r.mono) pr += '<w:rFonts w:ascii="Courier New" w:hAnsi="Courier New" w:cs="Courier New"/>';
+    if (r.b) pr += '<w:b/>';
+    if (r.i) pr += '<w:i/>';
+    if (r.u) pr += '<w:u w:val="single"/>';
+    if (r.color) pr += '<w:color w:val="' + r.color + '"/>';
+    if (r.sz) pr += '<w:sz w:val="' + r.sz * 2 + '"/><w:szCs w:val="' + r.sz * 2 + '"/>';
+    if (r.sub) pr += '<w:vertAlign w:val="subscript"/>';
+    if (r.sup) pr += '<w:vertAlign w:val="superscript"/>';
+    var lines = String(r.t).split('\n'), x = '';
+    lines.forEach(function (ln, i) {
+      if (i) x += '<w:br/>';
+      x += '<w:t xml:space="preserve">' + esc(ln) + '</w:t>';
+    });
+    return '<w:r>' + (pr ? '<w:rPr>' + pr + '</w:rPr>' : '') + x + '</w:r>';
+  }
+  // Supports inline markup: **bold**, _{sub}, ^{sup}
+  function parseRuns(s, base) {
+    base = base || {};
+    var out = [], re = /(\*\*[^*]+\*\*|_\{[^}]+\}|\^\{[^}]+\})/g, last = 0, m;
+    while ((m = re.exec(s))) {
+      if (m.index > last) out.push(Object.assign({}, base, { t: s.slice(last, m.index) }));
+      var tok = m[0];
+      if (tok[0] === '*') out.push(Object.assign({}, base, { t: tok.slice(2, -2), b: true }));
+      else if (tok[0] === '_') out.push(Object.assign({}, base, { t: tok.slice(2, -1), sub: true }));
+      else out.push(Object.assign({}, base, { t: tok.slice(2, -1), sup: true }));
+      last = m.index + tok.length;
+    }
+    if (last < s.length) out.push(Object.assign({}, base, { t: s.slice(last) }));
+    return out;
+  }
+  function pXml(content, o) {
+    o = o || {};
+    var runs = Array.isArray(content) ? content : (o.mono ? [{ t: String(content), mono: true, sz: 10 }] : parseRuns(String(content), { b: o.b, i: o.i, sz: o.sz, color: o.color }));
+    var pp = '';
+    if (o.style) pp += '<w:pStyle w:val="' + o.style + '"/>';
+    if (o.keep) pp += '<w:keepNext/>';
+    if (o.pageBreak) pp += '<w:pageBreakBefore/>';
+    if (o.num) pp += '';
+    pp += '<w:spacing w:before="' + (o.before || 0) + '" w:after="' + (o.after == null ? 60 : o.after) + '"/>';
+    if (o.ind) pp += '<w:ind w:left="' + o.ind + '"/>';
+    if (o.align) pp += '<w:jc w:val="' + o.align + '"/>';
+    if (o.shade) pp += '<w:shd w:val="clear" w:color="auto" w:fill="' + o.shade + '"/>';
+    return '<w:p><w:pPr>' + pp + '</w:pPr>' + runs.map(runXml).join('') + '</w:p>';
+  }
+  Doc.prototype.p = function (c, o) { this.body.push(pXml(c, o)); return this; };
+  Doc.prototype.h = function (c, lvl, o) { this.body.push(pXml(c, Object.assign({ style: 'Heading' + (lvl || 1), keep: true }, o || {}))); return this; };
+  Doc.prototype.br = function () { this.body.push('<w:p><w:r><w:br w:type="page"/></w:r></w:p>'); return this; };
+  // cell content: string | array of paragraphs (strings or {c, o}) | {img}
+  Doc.prototype.cellXml = function (cell, w, opt) {
+    opt = opt || {};
+    var paras = [];
+    var c = cell && cell.c !== undefined ? cell.c : cell;
+    var co = (cell && cell.o) || {};
+    if (Array.isArray(c)) c.forEach(function (x) { paras.push(typeof x === 'string' ? pXml(x, { b: co.b || opt.b, after: 40, align: co.align }) : (x.img ? x.img : pXml(x.c, Object.assign({ after: 40 }, x.o)))); });
+    else if (c && c.imgXml) paras.push(c.imgXml);
+    else paras.push(pXml(c == null ? '' : String(c), { b: co.b || opt.b, after: 40, align: co.align || opt.align, sz: co.sz }));
+    var tcp = '<w:tcW w:w="' + w + '" w:type="dxa"/>';
+    if (co.span) tcp += '<w:gridSpan w:val="' + co.span + '"/>';
+    var fill = co.fill || opt.fill;
+    if (fill) tcp += '<w:shd w:val="clear" w:color="auto" w:fill="' + fill + '"/>';
+    tcp += '<w:vAlign w:val="' + (co.valign || 'top') + '"/>';
+    return '<w:tc><w:tcPr>' + tcp + '</w:tcPr>' + paras.join('') + '</w:tc>';
+  };
+  // rows: array of arrays of cells. widths in twips (sum ~ 10200). o.head: first row is header
+  Doc.prototype.table = function (rows, widths, o) {
+    o = o || {};
+    var self = this, total = widths.reduce(function (a, b) { return a + b; }, 0);
+    var x = '<w:tbl><w:tblPr><w:tblW w:w="' + total + '" w:type="dxa"/><w:tblLayout w:type="fixed"/>' +
+      '<w:tblBorders><w:top w:val="single" w:sz="6" w:color="444444"/><w:left w:val="single" w:sz="6" w:color="444444"/><w:bottom w:val="single" w:sz="6" w:color="444444"/><w:right w:val="single" w:sz="6" w:color="444444"/><w:insideH w:val="single" w:sz="4" w:color="777777"/><w:insideV w:val="single" w:sz="4" w:color="777777"/></w:tblBorders>' +
+      '<w:tblCellMar><w:top w:w="50" w:type="dxa"/><w:left w:w="90" w:type="dxa"/><w:bottom w:w="50" w:type="dxa"/><w:right w:w="90" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>' +
+      widths.map(function (w) { return '<w:gridCol w:w="' + w + '"/>'; }).join('') + '</w:tblGrid>';
+    rows.forEach(function (r, ri) {
+      var isHead = o.head && ri === 0;
+      x += '<w:tr>' + (isHead ? '<w:trPr><w:tblHeader/><w:cantSplit/></w:trPr>' : '<w:trPr><w:cantSplit/></w:trPr>');
+      var ci = 0;
+      r.forEach(function (cell) {
+        var span = (cell && cell.o && cell.o.span) || 1, w = 0;
+        for (var k = 0; k < span; k++) w += widths[ci + k] || 0;
+        x += self.cellXml(cell, w, isHead ? { b: true, fill: o.headFill || 'D9E2F3', align: 'center' } : { fill: (o.firstColFill && ci === 0) ? o.firstColFill : null, b: (o.firstColBold && ci === 0) });
+        ci += span;
+      });
+      x += '</w:tr>';
+    });
+    x += '</w:tbl>';
+    this.body.push(x);
+    this.body.push(pXml('', { after: 60 }));
+    return this;
+  };
+  // png: Uint8Array, wPx/hPx natural size, widthCm
+  Doc.prototype.imageXml = function (png, wPx, hPx, widthCm) {
+    var id = this.media.length + 1, rid = 'rIdImg' + id;
+    this.media.push({ name: 'image' + id + '.png', data: png, rid: rid });
+    var cx = Math.round(widthCm * 360000), cy = Math.round(cx * hPx / wPx);
+    var xml = '<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:after="60"/></w:pPr><w:r><w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0"><wp:extent cx="' + cx + '" cy="' + cy + '"/><wp:docPr id="' + id + '" name="Рисунок ' + id + '"/>' +
+      '<a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:nvPicPr><pic:cNvPr id="' + id + '" name="image' + id + '.png"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed="' + rid + '"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill><pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="' + cx + '" cy="' + cy + '"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r></w:p>';
+    return xml;
+  };
+  Doc.prototype.image = function (png, wPx, hPx, widthCm) { this.body.push(this.imageXml(png, wPx, hPx, widthCm)); return this; };
+
+  Doc.prototype.build = function () {
+    var NS = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"';
+    var document = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document ' + NS + '><w:body>' + this.body.join('') +
+      '<w:sectPr><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="850" w:right="680" w:bottom="850" w:left="1020" w:header="400" w:footer="400" w:gutter="0"/></w:sectPr></w:body></w:document>';
+    var styles = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">' +
+      '<w:docDefaults><w:rPrDefault><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:eastAsia="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="ru-RU"/></w:rPr></w:rPrDefault><w:pPrDefault><w:pPr><w:spacing w:after="60" w:line="252" w:lineRule="auto"/></w:pPr></w:pPrDefault></w:docDefaults>' +
+      '<w:style w:type="paragraph" w:default="1" w:styleId="Normal"><w:name w:val="Normal"/></w:style>' +
+      '<w:style w:type="paragraph" w:styleId="Heading1"><w:name w:val="heading 1"/><w:basedOn w:val="Normal"/><w:next w:val="Normal"/><w:qFormat/><w:pPr><w:keepNext/><w:spacing w:before="120" w:after="120"/><w:jc w:val="center"/><w:outlineLvl w:val="0"/></w:pPr><w:rPr><w:b/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:style>' +
+      '<w:style w:type="paragraph" w:styleId="Heading2"><w:name w:val="heading 2"/><w:basedOn w:val="Normal"/><w:next w:val="Normal"/><w:qFormat/><w:pPr><w:keepNext/><w:spacing w:before="200" w:after="80"/><w:outlineLvl w:val="1"/></w:pPr><w:rPr><w:b/><w:sz w:val="26"/><w:szCs w:val="26"/><w:color w:val="1F3864"/></w:rPr></w:style>' +
+      '<w:style w:type="paragraph" w:styleId="Heading3"><w:name w:val="heading 3"/><w:basedOn w:val="Normal"/><w:next w:val="Normal"/><w:qFormat/><w:pPr><w:keepNext/><w:spacing w:before="120" w:after="60"/><w:outlineLvl w:val="2"/></w:pPr><w:rPr><w:b/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:style>' +
+      '</w:styles>';
+    var rels = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rIdStyles" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>' +
+      this.media.map(function (m) { return '<Relationship Id="' + m.rid + '" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/' + m.name + '"/>'; }).join('') + '</Relationships>';
+    var ct = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="png" ContentType="image/png"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/><Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/></Types>';
+    var root = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="docProps/core.xml"/></Relationships>';
+    var core = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><dc:title>КСП</dc:title><dc:creator>Шайхиева С.Ж.</dc:creator></cp:coreProperties>';
+    var files = [
+      { name: '[Content_Types].xml', data: enc.encode(ct) },
+      { name: '_rels/.rels', data: enc.encode(root) },
+      { name: 'docProps/core.xml', data: enc.encode(core) },
+      { name: 'word/document.xml', data: enc.encode(document) },
+      { name: 'word/styles.xml', data: enc.encode(styles) },
+      { name: 'word/_rels/document.xml.rels', data: enc.encode(rels) }
+    ];
+    this.media.forEach(function (m) { files.push({ name: 'word/media/' + m.name, data: m.data }); });
+    return zip(files);
+  };
+  return { Doc: Doc, parseRuns: parseRuns, esc: esc };
+})();
+if (typeof module !== 'undefined') module.exports = DOCX;
+
+// SVG суреттер мен графиктер (Word-қа PNG болып кіреді)
+var PICS = (function () {
+  var W = 640, H = 360;
+  function svg(inner, w, h) { w = w || W; h = h || H; return '<svg xmlns="http://www.w3.org/2000/svg" width="' + w + '" height="' + h + '" viewBox="0 0 ' + w + ' ' + h + '"><rect width="100%" height="100%" fill="#ffffff"/>' + inner + '</svg>'; }
+  function t(x, y, s, o) { o = o || {}; return '<text x="' + x + '" y="' + y + '" font-family="Arial, DejaVu Sans, sans-serif" font-size="' + (o.size || 18) + '" fill="' + (o.fill || '#1b2a41') + '" text-anchor="' + (o.anchor || 'middle') + '"' + (o.bold ? ' font-weight="bold"' : '') + '>' + String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</text>'; }
+  function arrow(x1, y1, x2, y2, c, w) {
+    c = c || '#c0392b'; w = w || 3;
+    var a = Math.atan2(y2 - y1, x2 - x1), L = 12;
+    var p1 = (x2 - L * Math.cos(a - 0.4)) + ',' + (y2 - L * Math.sin(a - 0.4)), p2 = (x2 - L * Math.cos(a + 0.4)) + ',' + (y2 - L * Math.sin(a + 0.4));
+    return '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '" stroke="' + c + '" stroke-width="' + w + '"/><polygon points="' + x2 + ',' + y2 + ' ' + p1 + ' ' + p2 + '" fill="' + c + '"/>';
+  }
+  var P = {};
+  P.car = function (L) {
+    L = L || {};
+    var s = '<rect x="0" y="250" width="640" height="110" fill="#d7dbe0"/><line x1="0" y1="305" x2="640" y2="305" stroke="#ffffff" stroke-width="5" stroke-dasharray="30 20"/>';
+    s += '<g transform="translate(90,190)"><rect x="0" y="30" width="170" height="45" rx="10" fill="#2e86de"/><path d="M30 30 L55 0 L120 0 L145 30 Z" fill="#54a0ff"/><rect x="62" y="6" width="25" height="22" fill="#dff0ff"/><rect x="92" y="6" width="25" height="22" fill="#dff0ff"/><circle cx="40" cy="78" r="18" fill="#222"/><circle cx="130" cy="78" r="18" fill="#222"/><circle cx="40" cy="78" r="7" fill="#aaa"/><circle cx="130" cy="78" r="7" fill="#aaa"/></g>';
+    s += arrow(270, 230, 360, 230, '#c0392b', 4) + t(315, 218, L.v || 'v', { bold: true });
+    s += '<line x1="90" y1="345" x2="590" y2="345" stroke="#1b2a41" stroke-width="2"/>';
+    for (var i = 0; i <= 5; i++) { s += '<line x1="' + (90 + i * 100) + '" y1="337" x2="' + (90 + i * 100) + '" y2="353" stroke="#1b2a41" stroke-width="2"/>'; }
+    s += t(560, 300, L.end || 'B', { bold: true }) + t(90, 300, L.start || 'A', { bold: true });
+    s += '<g transform="translate(520,150)"><rect x="0" y="0" width="8" height="100" fill="#666"/><rect x="-30" y="-50" width="68" height="50" rx="6" fill="#27ae60"/>' + t(4, -18, L.sign || '', { fill: '#fff', size: 16, bold: true }) + '</g>';
+    s += t(320, 40, L.title || '', { size: 22, bold: true });
+    return svg(s);
+  };
+  P.scale = function (L) {
+    L = L || {};
+    var s = '<rect x="160" y="260" width="320" height="60" rx="8" fill="#5f6f7f"/><rect x="190" y="245" width="260" height="18" rx="4" fill="#95a5a6"/>';
+    s += '<rect x="240" y="275" width="160" height="34" rx="4" fill="#dfe6e9"/>' + t(320, 300, L.m || '0,000 г', { size: 22, bold: true, fill: '#0b3d2e' });
+    s += '<rect x="270" y="175" width="100" height="70" fill="#e17055" stroke="#a84a33" stroke-width="2"/>' + t(320, 218, L.body || '', { fill: '#fff', size: 16, bold: true });
+    s += '<g transform="translate(520,110)"><rect x="0" y="0" width="60" height="200" fill="none" stroke="#1b2a41" stroke-width="3"/><rect x="3" y="' + (200 - (L.lvl || 120)) + '" width="54" height="' + ((L.lvl || 120) - 3) + '" fill="#74b9ff" opacity="0.7"/>';
+    for (var i = 1; i < 10; i++) s += '<line x1="0" y1="' + (i * 20) + '" x2="' + (i % 5 ? 12 : 22) + '" y2="' + (i * 20) + '" stroke="#1b2a41" stroke-width="2"/>';
+    s += '</g>' + t(550, 340, L.cyl || 'мензурка', { size: 15 });
+    s += t(320, 40, L.title || '', { size: 22, bold: true });
+    return svg(s);
+  };
+  P.spring = function (L) {
+    L = L || {};
+    var s = '<rect x="100" y="40" width="440" height="16" fill="#636e72"/>';
+    function spring(x, len) {
+      var d = 'M' + x + ' 56', n = 10, step = len / n;
+      for (var i = 0; i < n; i++) d += ' L' + (x + (i % 2 ? -18 : 18)) + ' ' + (56 + step * (i + 0.5));
+      d += ' L' + x + ' ' + (56 + len);
+      return '<path d="' + d + '" fill="none" stroke="#2d3436" stroke-width="3"/>';
+    }
+    s += spring(200, 110) + '<rect x="185" y="166" width="30" height="16" fill="#555"/>' + t(200, 205, L.a || 'F = 0', { size: 16 });
+    s += spring(420, 180) + '<rect x="390" y="236" width="60" height="50" fill="#e17055"/>' + t(420, 267, L.m || 'm', { fill: '#fff', bold: true });
+    s += arrow(470, 260, 470, 330, '#c0392b') + t(500, 315, L.f || 'F', { bold: true });
+    s += '<line x1="250" y1="182" x2="250" y2="236" stroke="#0984e3" stroke-width="2" stroke-dasharray="5 4"/>' + t(275, 215, 'x', { fill: '#0984e3', bold: true });
+    s += t(320, 30, L.title || '', { size: 18, bold: true });
+    return svg(s);
+  };
+  P.block = function (L) {
+    L = L || {};
+    var s = '<rect x="40" y="250" width="560" height="20" fill="#b2bec3"/><path d="M40 270 L600 270" stroke="#636e72" stroke-width="2"/>';
+    for (var i = 0; i < 28; i++) s += '<line x1="' + (45 + i * 20) + '" y1="272" x2="' + (35 + i * 20) + '" y2="290" stroke="#636e72" stroke-width="2"/>';
+    s += '<rect x="240" y="170" width="150" height="80" fill="#e17055" stroke="#a84a33" stroke-width="2"/>' + t(315, 218, L.m || 'm', { fill: '#fff', bold: true, size: 22 });
+    s += arrow(390, 210, 520, 210, '#2e86de', 4) + t(470, 196, L.f || 'F', { bold: true, fill: '#2e86de' });
+    s += arrow(240, 240, 140, 240, '#c0392b', 4) + t(180, 228, L.fr || 'F тр', { bold: true, fill: '#c0392b' });
+    s += arrow(315, 250, 315, 330, '#6c5ce7', 3) + t(345, 330, 'mg', { fill: '#6c5ce7' });
+    s += arrow(300, 170, 300, 100, '#27ae60', 3) + t(270, 110, 'N', { fill: '#27ae60', bold: true });
+    s += t(320, 40, L.title || '', { size: 20, bold: true });
+    return svg(s);
+  };
+  P.tank = function (L) {
+    L = L || {};
+    var s = '<rect x="150" y="70" width="240" height="250" fill="none" stroke="#1b2a41" stroke-width="4"/><rect x="152" y="120" width="236" height="198" fill="#74b9ff" opacity="0.75"/>';
+    s += '<line x1="410" y1="120" x2="410" y2="318" stroke="#1b2a41" stroke-width="2"/>' + arrow(410, 220, 410, 122, '#1b2a41', 2) + arrow(410, 220, 410, 316, '#1b2a41', 2) + t(450, 225, L.h || 'h', { bold: true });
+    s += '<circle cx="270" cy="250" r="6" fill="#c0392b"/>' + t(270, 280, 'A', { bold: true });
+    s += '<g transform="translate(470,90)"><rect x="0" y="0" width="120" height="70" rx="8" fill="#ffeaa7" stroke="#e1b12c"/>' + t(60, 30, L.l1 || '', { size: 15 }) + t(60, 55, L.l2 || '', { size: 15 }) + '</g>';
+    s += t(320, 45, L.title || '', { size: 20, bold: true });
+    return svg(s);
+  };
+  P.mountain = function (L) {
+    L = L || {};
+    var s = '<rect width="640" height="360" fill="#eaf6ff"/><path d="M0 330 L180 120 L280 220 L400 60 L640 330 Z" fill="#7f8fa6"/><path d="M370 100 L400 60 L432 104 L414 96 L400 110 L386 98 Z" fill="#fff"/>';
+    s += '<g transform="translate(60,250)"><circle cx="30" cy="30" r="30" fill="#fff" stroke="#1b2a41" stroke-width="3"/>' + arrow(30, 30, 46, 14, '#c0392b', 2) + '</g>' + t(90, 345, L.a || '', { size: 15, bold: true });
+    s += '<g transform="translate(370,20)"><circle cx="30" cy="30" r="24" fill="#fff" stroke="#1b2a41" stroke-width="3"/>' + arrow(30, 30, 14, 18, '#c0392b', 2) + '</g>' + t(500, 50, L.b || '', { size: 15, bold: true, anchor: 'start' });
+    s += t(320, 345, L.title || '', { size: 18, bold: true });
+    return svg(s);
+  };
+  P.archimedes = function (L) {
+    L = L || {};
+    var s = '<rect x="100" y="20" width="440" height="12" fill="#636e72"/><rect x="300" y="32" width="40" height="90" rx="6" fill="#dfe6e9" stroke="#1b2a41" stroke-width="2"/><line x1="320" y1="122" x2="320" y2="170" stroke="#1b2a41" stroke-width="2"/>';
+    s += t(320, 80, L.dyn || 'Н', { size: 15, bold: true });
+    s += '<rect x="200" y="140" width="240" height="190" fill="none" stroke="#1b2a41" stroke-width="4"/><rect x="202" y="190" width="236" height="138" fill="#74b9ff" opacity="0.7"/>';
+    s += '<rect x="285" y="170" width="70" height="70" fill="#e17055" stroke="#a84a33" stroke-width="2"/>';
+    s += arrow(360, 235, 360, 160, '#27ae60', 4) + t(400, 160, 'F_A', { fill: '#27ae60', bold: true });
+    s += arrow(280, 205, 280, 290, '#c0392b', 4) + t(250, 300, 'mg', { fill: '#c0392b', bold: true });
+    s += t(520, 260, L.liq || 'вода', { size: 16 });
+    return svg(s);
+  };
+  P.crane = function (L) {
+    L = L || {};
+    var s = '<rect x="0" y="320" width="640" height="40" fill="#b2bec3"/><rect x="120" y="60" width="18" height="260" fill="#f39c12"/><rect x="60" y="60" width="380" height="14" fill="#f39c12"/>';
+    s += '<line x1="380" y1="74" x2="380" y2="170" stroke="#2d3436" stroke-width="2"/><rect x="345" y="170" width="70" height="50" fill="#636e72"/>' + t(380, 202, L.m || 'm', { fill: '#fff', bold: true });
+    s += arrow(450, 300, 450, 180, '#2e86de', 3) + t(490, 250, L.h || 'h', { bold: true, fill: '#2e86de' });
+    s += t(320, 40, L.title || '', { size: 20, bold: true });
+    return svg(s);
+  };
+  P.coaster = function (L) {
+    L = L || {};
+    var s = '<path d="M20 80 C 160 80, 200 320, 330 320 S 520 160, 620 200" fill="none" stroke="#2d3436" stroke-width="6"/>';
+    s += '<circle cx="40" cy="70" r="16" fill="#e84393"/>' + t(40, 45, 'A', { bold: true }) + t(330, 345, 'B', { bold: true }) + t(600, 185, 'C', { bold: true });
+    s += '<line x1="40" y1="90" x2="40" y2="325" stroke="#0984e3" stroke-dasharray="6 5" stroke-width="2"/>' + t(70, 210, L.h || 'h', { fill: '#0984e3', bold: true });
+    s += '<line x1="0" y1="328" x2="640" y2="328" stroke="#636e72" stroke-width="2"/>' + t(420, 60, L.title || '', { size: 18, bold: true });
+    return svg(s);
+  };
+  P.lever = function (L) {
+    L = L || {};
+    var s = '<polygon points="320,250 290,310 350,310" fill="#636e72"/><rect x="80" y="238" width="480" height="12" fill="#a0522d"/>';
+    s += '<rect x="90" y="190" width="50" height="48" fill="#e17055"/>' + t(115, 220, L.m1 || 'm₁', { fill: '#fff', bold: true });
+    s += '<rect x="470" y="200" width="40" height="38" fill="#0984e3"/>' + t(490, 225, L.m2 || 'm₂', { fill: '#fff', bold: true });
+    s += '<line x1="115" y1="275" x2="320" y2="275" stroke="#1b2a41" stroke-width="2"/>' + t(217, 300, L.l1 || 'l₁', { bold: true });
+    s += '<line x1="320" y1="275" x2="490" y2="275" stroke="#1b2a41" stroke-width="2"/>' + t(405, 300, L.l2 || 'l₂', { bold: true });
+    s += t(320, 60, L.title || '', { size: 20, bold: true });
+    return svg(s);
+  };
+  P.solar = function (L) {
+    L = L || {};
+    var s = '<rect width="640" height="360" fill="#0b1630"/><circle cx="40" cy="180" r="70" fill="#f9ca24"/>';
+    var pl = [[130, 5, '#b2bec3', 'Меркурий'], [180, 8, '#f0932b', 'Венера'], [235, 9, '#0984e3', 'Земля'], [285, 6, '#e55039', 'Марс'], [370, 22, '#e0b07a', 'Юпитер'], [460, 18, '#f6e58d', 'Сатурн'], [535, 13, '#7ed6df', 'Уран'], [600, 12, '#4834d4', 'Нептун']];
+    pl.forEach(function (p, i) { s += '<circle cx="' + p[0] + '" cy="180" r="' + p[1] + '" fill="' + p[2] + '"/>' + t(p[0], i % 2 ? 230 + p[1] : 150 - p[1], p[3], { size: 13, fill: '#ffffff' }); });
+    s += '<ellipse cx="460" cy="180" rx="30" ry="6" fill="none" stroke="#f6e58d" stroke-width="2"/>' + t(320, 335, L.title || '', { size: 18, bold: true, fill: '#ffffff' });
+    return svg(s);
+  };
+  P.kettle = function (L) {
+    L = L || {};
+    var s = '<rect x="140" y="300" width="260" height="20" fill="#2d3436"/><path d="M170 300 L190 170 L350 170 L370 300 Z" fill="#dfe6e9" stroke="#636e72" stroke-width="3"/><path d="M190 170 Q270 120 350 170" fill="#b2bec3"/><path d="M370 250 Q430 220 420 180" fill="none" stroke="#636e72" stroke-width="10"/>';
+    s += '<path d="M250 110 q10 -20 0 -40 M280 110 q10 -20 0 -40 M310 110 q10 -20 0 -40" stroke="#b2bec3" stroke-width="4" fill="none"/>';
+    s += '<g transform="translate(480,60)"><rect x="0" y="0" width="30" height="230" rx="15" fill="#fff" stroke="#1b2a41" stroke-width="3"/><circle cx="15" cy="240" r="22" fill="#e74c3c"/><rect x="10" y="' + (230 - (L.lvl || 150)) + '" width="10" height="' + (L.lvl || 150) + '" fill="#e74c3c"/>';
+    for (var i = 1; i < 10; i++) s += '<line x1="30" y1="' + (i * 23) + '" x2="42" y2="' + (i * 23) + '" stroke="#1b2a41" stroke-width="2"/>';
+    s += '</g>' + t(545, 330, L.temp || '', { size: 16, bold: true }) + t(270, 40, L.title || '', { size: 20, bold: true });
+    return svg(s);
+  };
+  P.house = function (L) {
+    L = L || {};
+    var s = '<polygon points="120,140 320,40 520,140" fill="#c0392b"/><rect x="150" y="140" width="340" height="190" fill="#ffeaa7" stroke="#e1b12c" stroke-width="3"/>';
+    s += '<rect x="190" y="250" width="110" height="60" rx="6" fill="#dfe6e9" stroke="#636e72" stroke-width="2"/>';
+    for (var i = 0; i < 6; i++) s += '<line x1="' + (200 + i * 18) + '" y1="255" x2="' + (200 + i * 18) + '" y2="305" stroke="#636e72" stroke-width="3"/>';
+    s += t(245, 245, 'батарея', { size: 13 });
+    s += '<path d="M250 240 C 220 200, 300 180, 270 150" fill="none" stroke="#e17055" stroke-width="3" stroke-dasharray="8 6"/><path d="M270 150 C 360 140, 420 170, 430 240" fill="none" stroke="#0984e3" stroke-width="3" stroke-dasharray="8 6"/>';
+    s += '<rect x="360" y="180" width="90" height="70" fill="#a4d8f0" stroke="#636e72" stroke-width="3"/><line x1="405" y1="180" x2="405" y2="250" stroke="#636e72" stroke-width="3"/>';
+    s += '<circle cx="580" cy="60" r="30" fill="#f9ca24"/>' + arrow(550, 80, 500, 120, '#f39c12', 3);
+    s += t(320, 350, L.title || '', { size: 16, bold: true });
+    return svg(s);
+  };
+  P.engine = function (L) {
+    L = L || {};
+    var s = '<rect x="230" y="60" width="180" height="240" fill="none" stroke="#2d3436" stroke-width="6"/><rect x="236" y="170" width="168" height="50" fill="#636e72"/><line x1="320" y1="220" x2="320" y2="300" stroke="#2d3436" stroke-width="10"/><circle cx="320" cy="320" r="26" fill="none" stroke="#2d3436" stroke-width="6"/>';
+    s += '<rect x="236" y="66" width="168" height="104" fill="#fab1a0" opacity="0.8"/>' + t(320, 125, L.gas || 'газ', { bold: true });
+    s += '<rect x="250" y="40" width="20" height="26" fill="#2d3436"/><rect x="370" y="40" width="20" height="26" fill="#2d3436"/>';
+    s += '<g transform="translate(440,90)"><rect x="0" y="0" width="170" height="44" rx="8" fill="#ffeaa7"/>' + t(85, 28, L.q1 || 'Q₁ – нагреватель', { size: 14 }) + '<rect x="0" y="60" width="170" height="44" rx="8" fill="#dfe6e9"/>' + t(85, 88, L.q2 || 'Q₂ – холодильник', { size: 14 }) + '<rect x="0" y="120" width="170" height="44" rx="8" fill="#c7ecee"/>' + t(85, 148, L.a || 'A – полезная работа', { size: 14 }) + '</g>';
+    s += t(120, 40, L.title || '', { size: 18, bold: true });
+    return svg(s);
+  };
+  P.charges = function (L) {
+    L = L || {};
+    var s = '<circle cx="190" cy="180" r="42" fill="#e74c3c"/>' + t(190, 190, '+', { fill: '#fff', size: 40, bold: true }) + '<circle cx="450" cy="180" r="42" fill="' + (L.same ? '#e74c3c' : '#0984e3') + '"/>' + t(450, 192, L.same ? '+' : '−', { fill: '#fff', size: 40, bold: true });
+    if (L.same) { s += arrow(145, 180, 70, 180, '#2d3436', 3) + arrow(495, 180, 570, 180, '#2d3436', 3); } else { s += arrow(235, 180, 300, 180, '#2d3436', 3) + arrow(405, 180, 340, 180, '#2d3436', 3); }
+    s += '<line x1="190" y1="250" x2="450" y2="250" stroke="#1b2a41" stroke-width="2"/>' + t(320, 280, L.r || 'r', { bold: true });
+    s += t(190, 120, L.q1 || 'q₁', { bold: true }) + t(450, 120, L.q2 || 'q₂', { bold: true }) + t(320, 40, L.title || '', { size: 20, bold: true });
+    return svg(s);
+  };
+  P.circuit = function (L) {
+    L = L || {};
+    var s = '<rect x="120" y="80" width="400" height="200" fill="none" stroke="#1b2a41" stroke-width="3"/>';
+    s += '<rect x="110" y="150" width="20" height="60" fill="#fff"/><line x1="100" y1="165" x2="140" y2="165" stroke="#1b2a41" stroke-width="3"/><line x1="110" y1="195" x2="130" y2="195" stroke="#1b2a41" stroke-width="6"/>' + t(70, 185, L.src || 'ε', { bold: true });
+    s += '<circle cx="320" cy="80" r="22" fill="#fff" stroke="#1b2a41" stroke-width="3"/>' + t(320, 87, 'A', { bold: true });
+    s += '<rect x="300" y="262" width="80" height="36" fill="#fff" stroke="#1b2a41" stroke-width="3"/>' + t(340, 287, 'R', { bold: true });
+    s += '<circle cx="520" cy="180" r="24" fill="#fff" stroke="#1b2a41" stroke-width="3"/><line x1="503" y1="163" x2="537" y2="197" stroke="#1b2a41" stroke-width="2"/><line x1="537" y1="163" x2="503" y2="197" stroke="#1b2a41" stroke-width="2"/>';
+    s += '<line x1="300" y1="280" x2="300" y2="330" stroke="#1b2a41" stroke-width="2"/><line x1="380" y1="280" x2="380" y2="330" stroke="#1b2a41" stroke-width="2"/><line x1="300" y1="330" x2="318" y2="330" stroke="#1b2a41" stroke-width="2"/><line x1="362" y1="330" x2="380" y2="330" stroke="#1b2a41" stroke-width="2"/><circle cx="340" cy="330" r="20" fill="#fff" stroke="#1b2a41" stroke-width="3"/>' + t(340, 337, 'V', { bold: true });
+    s += t(560, 140, L.lamp || 'лампа', { size: 15, anchor: 'start' }) + t(320, 40, L.title || '', { size: 20, bold: true });
+    return svg(s);
+  };
+  P.coil = function (L) {
+    L = L || {};
+    var s = '<rect x="180" y="150" width="280" height="60" fill="#b2bec3"/>';
+    for (var i = 0; i < 12; i++) s += '<ellipse cx="' + (195 + i * 23) + '" cy="180" rx="10" ry="40" fill="none" stroke="#d35400" stroke-width="4"/>';
+    s += '<line x1="195" y1="220" x2="195" y2="300" stroke="#d35400" stroke-width="3"/><line x1="448" y1="220" x2="448" y2="300" stroke="#d35400" stroke-width="3"/><line x1="195" y1="300" x2="290" y2="300" stroke="#d35400" stroke-width="3"/><line x1="350" y1="300" x2="448" y2="300" stroke="#d35400" stroke-width="3"/><line x1="300" y1="285" x2="300" y2="315" stroke="#1b2a41" stroke-width="3"/><line x1="315" y1="292" x2="315" y2="308" stroke="#1b2a41" stroke-width="6"/>';
+    s += '<path d="M140 180 C 140 60, 500 60, 500 180" fill="none" stroke="#0984e3" stroke-width="2" stroke-dasharray="6 5"/><path d="M140 180 C 140 300, 500 300, 500 180" fill="none" stroke="#0984e3" stroke-width="2" stroke-dasharray="6 5"/>';
+    s += t(130, 185, 'S', { bold: true, size: 26, fill: '#0984e3' }) + t(515, 185, 'N', { bold: true, size: 26, fill: '#c0392b' });
+    s += '<rect x="520" y="250" width="40" height="20" fill="#7f8c8d"/>' + t(540, 295, L.clip || 'гвоздь', { size: 14 }) + t(320, 40, L.title || '', { size: 20, bold: true });
+    return svg(s);
+  };
+  P.mirror = function (L) {
+    L = L || {};
+    var s = '<rect x="80" y="280" width="480" height="14" fill="#a4d8f0" stroke="#2d3436" stroke-width="2"/>';
+    for (var i = 0; i < 24; i++) s += '<line x1="' + (84 + i * 20) + '" y1="296" x2="' + (74 + i * 20) + '" y2="312" stroke="#2d3436" stroke-width="2"/>';
+    s += '<line x1="320" y1="80" x2="320" y2="280" stroke="#636e72" stroke-width="2" stroke-dasharray="6 5"/>';
+    s += arrow(160, 100, 318, 278, '#e67e22', 4) + arrow(322, 278, 480, 100, '#e67e22', 4);
+    s += t(280, 200, 'α', { size: 24, bold: true }) + t(360, 200, 'β', { size: 24, bold: true }) + t(320, 60, L.title || '', { size: 18, bold: true });
+    return svg(s);
+  };
+  P.refraction = function (L) {
+    L = L || {};
+    var s = '<rect x="0" y="180" width="640" height="180" fill="#74b9ff" opacity="0.45"/><line x1="0" y1="180" x2="640" y2="180" stroke="#1b2a41" stroke-width="2"/><line x1="320" y1="40" x2="320" y2="340" stroke="#636e72" stroke-width="2" stroke-dasharray="6 5"/>';
+    s += arrow(170, 50, 318, 178, '#e67e22', 4) + arrow(320, 182, 400, 330, '#e67e22', 4) + '<line x1="322" y1="180" x2="470" y2="52" stroke="#e67e22" stroke-width="2" stroke-dasharray="6 4"/>';
+    s += t(285, 140, 'α', { size: 24, bold: true }) + t(342, 250, 'γ', { size: 24, bold: true }) + t(80, 165, L.m1 || 'воздух', { size: 16 }) + t(80, 210, L.m2 || 'вода', { size: 16 }) + t(500, 40, L.title || '', { size: 18, bold: true });
+    return svg(s);
+  };
+  P.lens = function (L) {
+    L = L || {};
+    var s = '<line x1="20" y1="200" x2="620" y2="200" stroke="#1b2a41" stroke-width="2"/><path d="M320 70 Q350 200 320 330 Q290 200 320 70 Z" fill="#a4d8f0" stroke="#0984e3" stroke-width="2"/>';
+    s += '<circle cx="210" cy="200" r="5" fill="#1b2a41"/><circle cx="430" cy="200" r="5" fill="#1b2a41"/>' + t(210, 225, 'F', { bold: true }) + t(430, 225, 'F', { bold: true }) + t(100, 225, '2F', { bold: true }) + t(540, 225, '2F', { bold: true });
+    s += arrow(140, 200, 140, 120, '#27ae60', 4) + '<line x1="140" y1="120" x2="320" y2="120" stroke="#e67e22" stroke-width="2"/><line x1="320" y1="120" x2="520" y2="300" stroke="#e67e22" stroke-width="2"/><line x1="140" y1="120" x2="520" y2="291" stroke="#e67e22" stroke-width="2"/>';
+    s += arrow(495, 200, 495, 275, '#c0392b', 4) + t(140, 105, 'AB', { bold: true }) + t(530, 270, "A'B'", { bold: true }) + t(320, 45, L.title || '', { size: 18, bold: true });
+    return svg(s);
+  };
+  P.pendulum = function (L) {
+    L = L || {};
+    var s = '<rect x="200" y="30" width="240" height="12" fill="#636e72"/><line x1="320" y1="42" x2="320" y2="290" stroke="#b2bec3" stroke-width="2" stroke-dasharray="5 5"/>';
+    s += '<line x1="320" y1="42" x2="400" y2="270" stroke="#2d3436" stroke-width="2"/><circle cx="400" cy="275" r="20" fill="#e17055"/><path d="M240 270 Q320 310 400 270" fill="none" stroke="#0984e3" stroke-width="2" stroke-dasharray="6 5"/>';
+    s += t(345, 120, 'l', { bold: true, size: 22 }) + t(400, 320, L.m || 'm', { bold: true }) + t(320, 345, L.title || '', { size: 17, bold: true });
+    return svg(s);
+  };
+  P.wave = function (L) {
+    L = L || {};
+    var d = 'M40 180';
+    for (var x = 40; x <= 600; x += 4) d += ' L' + x + ' ' + (180 - 70 * Math.sin((x - 40) / 560 * 4 * Math.PI));
+    var s = '<line x1="40" y1="180" x2="610" y2="180" stroke="#636e72" stroke-width="2"/><path d="' + d + '" fill="none" stroke="#0984e3" stroke-width="4"/>';
+    s += '<line x1="75" y1="95" x2="215" y2="95" stroke="#c0392b" stroke-width="2"/><line x1="75" y1="88" x2="75" y2="102" stroke="#c0392b" stroke-width="2"/><line x1="215" y1="88" x2="215" y2="102" stroke="#c0392b" stroke-width="2"/>' + t(145, 85, 'λ', { size: 24, bold: true, fill: '#c0392b' });
+    s += '<line x1="600" y1="110" x2="600" y2="180" stroke="#27ae60" stroke-width="2"/>' + t(620, 150, 'A', { bold: true, fill: '#27ae60' }) + t(320, 320, L.title || '', { size: 18, bold: true });
+    return svg(s);
+  };
+  P.atom = function (L) {
+    L = L || {};
+    var s = '<circle cx="320" cy="180" r="18" fill="#e74c3c"/><circle cx="312" cy="174" r="7" fill="#c0392b"/><circle cx="328" cy="186" r="7" fill="#7f8c8d"/>';
+    [60, 110, 150].forEach(function (r, i) { s += '<circle cx="320" cy="180" r="' + r + '" fill="none" stroke="#636e72" stroke-width="2" stroke-dasharray="5 4"/><circle cx="' + (320 + r * Math.cos(i * 2)) + '" cy="' + (180 + r * Math.sin(i * 2)) + '" r="8" fill="#0984e3"/>'; });
+    s += arrow(470, 150, 590, 110, '#9b59b6', 3) + t(560, 95, L.ph || 'hν', { bold: true, fill: '#9b59b6' }) + t(320, 350, L.title || '', { size: 17, bold: true });
+    return svg(s);
+  };
+  P.pipe = function (L) {
+    L = L || {};
+    var s = '<path d="M40 110 L260 110 L380 150 L600 150 L600 210 L380 210 L260 250 L40 250 Z" fill="#a4d8f0" stroke="#1b2a41" stroke-width="3"/>';
+    s += arrow(80, 180, 160, 180, '#0984e3', 3) + arrow(430, 180, 560, 180, '#0984e3', 3) + t(120, 165, 'v₁', { bold: true }) + t(500, 170, 'v₂', { bold: true }) + t(150, 290, 'S₁', { bold: true }) + t(490, 250, 'S₂', { bold: true });
+    s += t(320, 50, L.title || '', { size: 18, bold: true });
+    return svg(s);
+  };
+  P.piston = function (L) {
+    L = L || {};
+    var s = '<rect x="200" y="60" width="240" height="250" fill="none" stroke="#1b2a41" stroke-width="5"/><rect x="204" y="140" width="232" height="24" fill="#636e72"/><rect x="310" y="40" width="20" height="100" fill="#636e72"/><rect x="204" y="164" width="232" height="142" fill="#fab1a0" opacity="0.5"/>';
+    for (var i = 0; i < 14; i++) s += '<circle cx="' + (220 + (i * 53) % 200) + '" cy="' + (180 + (i * 37) % 110) + '" r="5" fill="#d63031"/>';
+    s += t(520, 200, L.p || 'p, V, T', { bold: true }) + t(320, 345, L.title || '', { size: 17, bold: true });
+    return svg(s);
+  };
+  P.transformer = function (L) {
+    L = L || {};
+    var s = '<rect x="200" y="80" width="240" height="200" fill="none" stroke="#636e72" stroke-width="26"/>';
+    for (var i = 0; i < 7; i++) s += '<ellipse cx="200" cy="' + (110 + i * 22) + '" rx="30" ry="9" fill="none" stroke="#d35400" stroke-width="4"/>';
+    for (var j = 0; j < 4; j++) s += '<ellipse cx="440" cy="' + (130 + j * 30) + '" rx="30" ry="10" fill="none" stroke="#0984e3" stroke-width="4"/>';
+    s += t(110, 190, L.n1 || 'N₁', { bold: true }) + t(530, 190, L.n2 || 'N₂', { bold: true }) + t(110, 220, 'U₁', { bold: true }) + t(530, 220, 'U₂', { bold: true }) + t(320, 330, L.title || '', { size: 17, bold: true });
+    return svg(s);
+  };
+  P.rocket = function (L) {
+    L = L || {};
+    var s = '<rect width="640" height="360" fill="#0b1630"/><circle cx="560" cy="300" r="120" fill="#0984e3"/>';
+    s += '<g transform="translate(240,80) rotate(35)"><path d="M0 0 L20 -60 L40 0 Z" fill="#dfe6e9"/><rect x="0" y="0" width="40" height="110" fill="#dfe6e9"/><path d="M0 70 L-18 120 L0 110 Z M40 70 L58 120 L40 110 Z" fill="#c0392b"/><path d="M8 110 L20 170 L32 110 Z" fill="#f39c12"/></g>';
+    for (var i = 0; i < 30; i++) s += '<circle cx="' + ((i * 97) % 640) + '" cy="' + ((i * 53) % 200) + '" r="1.6" fill="#fff"/>';
+    s += t(150, 340, L.title || '', { size: 17, bold: true, fill: '#ffffff' });
+    return svg(s);
+  };
+  P.galaxy = function (L) {
+    L = L || {};
+    var s = '<rect width="640" height="360" fill="#0b1630"/>';
+    for (var i = 0; i < 420; i++) { var a = i * 0.12, r = 4 + i * 0.35; s += '<circle cx="' + (320 + r * Math.cos(a)) + '" cy="' + (180 + 0.55 * r * Math.sin(a)) + '" r="1.6" fill="' + (i % 3 ? '#dfe6e9' : '#f6e58d') + '"/>'; }
+    s += '<circle cx="320" cy="180" r="14" fill="#fff6c8"/>' + t(320, 345, L.title || '', { size: 17, bold: true, fill: '#ffffff' });
+    return svg(s);
+  };
+  P.chip = function (L) {
+    L = L || {};
+    var s = '<rect x="200" y="90" width="240" height="180" rx="10" fill="#2d3436"/>';
+    for (var i = 0; i < 8; i++) { s += '<rect x="' + (215 + i * 28) + '" y="66" width="10" height="24" fill="#b2bec3"/><rect x="' + (215 + i * 28) + '" y="270" width="10" height="24" fill="#b2bec3"/>'; }
+    s += '<rect x="250" y="130" width="140" height="100" fill="#00b894" opacity="0.6"/>' + t(320, 188, L.l || 'p-n', { fill: '#fff', bold: true, size: 24 }) + t(320, 340, L.title || '', { size: 17, bold: true });
+    return svg(s);
+  };
+  P.drops = function (L) {
+    L = L || {};
+    var s = '<rect x="80" y="230" width="480" height="90" fill="#74b9ff" opacity="0.6"/><line x1="80" y1="230" x2="560" y2="230" stroke="#1b2a41" stroke-width="2"/>';
+    [150, 220, 290].forEach(function (x, i) { var h = 70 - i * 20; s += '<rect x="' + x + '" y="' + (120) + '" width="' + (14 - i * 3) + '" height="160" fill="none" stroke="#1b2a41" stroke-width="2"/><rect x="' + (x + 1) + '" y="' + (230 - h) + '" width="' + (12 - i * 3) + '" height="' + (h + 48) + '" fill="#0984e3" opacity="0.7"/>'; });
+    s += '<ellipse cx="450" cy="150" rx="30" ry="22" fill="#74b9ff" stroke="#0984e3" stroke-width="2"/>' + t(450, 110, L.d || 'капля', { size: 15 }) + t(320, 50, L.title || '', { size: 18, bold: true });
+    return svg(s);
+  };
+  P.science = function (L) {
+    L = L || {};
+    var s = '<g transform="translate(70,90)"><circle cx="70" cy="70" r="66" fill="#ffeaa7"/><path d="M50 30 L90 30 L90 60 L120 120 L20 120 L50 60 Z" fill="#74b9ff" stroke="#1b2a41" stroke-width="3"/>' + t(70, 165, 'опыт', { size: 16, bold: true }) + '</g>';
+    s += '<g transform="translate(250,90)"><circle cx="70" cy="70" r="66" fill="#c7ecee"/><circle cx="60" cy="60" r="30" fill="none" stroke="#1b2a41" stroke-width="6"/><line x1="82" y1="82" x2="115" y2="115" stroke="#1b2a41" stroke-width="8"/>' + t(70, 165, 'наблюдение', { size: 16, bold: true }) + '</g>';
+    s += '<g transform="translate(430,90)"><circle cx="70" cy="70" r="66" fill="#fab1a0"/><rect x="30" y="40" width="80" height="55" rx="5" fill="#2d3436"/><rect x="38" y="47" width="64" height="40" fill="#81ecec"/><rect x="55" y="98" width="30" height="8" fill="#2d3436"/>' + t(70, 165, 'моделирование', { size: 16, bold: true }) + '</g>';
+    s += t(320, 45, L.title || '', { size: 20, bold: true });
+    return svg(s);
+  };
+  P.ruler = function (L) {
+    L = L || {};
+    var s = '<rect x="60" y="200" width="520" height="60" fill="#ffeaa7" stroke="#1b2a41" stroke-width="2"/>';
+    for (var i = 0; i <= 100; i++) { var x = 70 + i * 5, h = i % 10 === 0 ? 26 : (i % 5 === 0 ? 18 : 10); s += '<line x1="' + x + '" y1="200" x2="' + x + '" y2="' + (200 + h) + '" stroke="#1b2a41" stroke-width="1.5"/>'; if (i % 10 === 0) s += t(x, 252, i / 10, { size: 14 }); }
+    s += t(560, 250, 'см', { size: 14 });
+    var n = L.n || 20; for (var k = 0; k < n; k++) s += '<circle cx="' + (75 + k * (L.d || 10)) + '" cy="185" r="' + ((L.d || 10) / 2) + '" fill="#e17055" stroke="#a84a33"/>';
+    s += t(320, 60, L.title || '', { size: 18, bold: true });
+    return svg(s);
+  };
+  P.ac = function (L) {
+    L = L || {};
+    var s = '<rect x="40" y="60" width="200" height="240" rx="10" fill="#dfe6e9" stroke="#636e72" stroke-width="3"/>' + t(140, 100, 'ЭС', { size: 22, bold: true });
+    s += '<circle cx="140" cy="190" r="50" fill="none" stroke="#636e72" stroke-width="4"/>' + arrow(140, 190, 175, 160, '#c0392b', 3);
+    s += '<line x1="240" y1="120" x2="600" y2="120" stroke="#2d3436" stroke-width="3"/><line x1="240" y1="250" x2="600" y2="250" stroke="#2d3436" stroke-width="3"/>';
+    for (var i = 0; i < 3; i++) s += '<rect x="' + (320 + i * 100) + '" y="110" width="8" height="160" fill="#636e72"/>';
+    s += t(420, 300, L.title || '', { size: 17, bold: true });
+    return svg(s);
+  };
+
+  // Сызықтық график. series: [{name, pts:[[x,y],...], color}]
+  function chart(c) {
+    var w = 640, h = 380, m = { l: 80, r: 30, t: 50, b: 70 };
+    var xs = [], ys = [];
+    c.series.forEach(function (s) { s.pts.forEach(function (p) { xs.push(p[0]); ys.push(p[1]); }); });
+    var x0 = c.xmin != null ? c.xmin : Math.min(0, Math.min.apply(null, xs)), x1 = c.xmax != null ? c.xmax : Math.max.apply(null, xs);
+    var y0 = c.ymin != null ? c.ymin : Math.min(0, Math.min.apply(null, ys)), y1 = c.ymax != null ? c.ymax : Math.max.apply(null, ys);
+    function nice(a, b) { var span = b - a || 1, step = Math.pow(10, Math.floor(Math.log10(span / 5))), err = span / 5 / step; if (err >= 5) step *= 5; else if (err >= 2) step *= 2; return step; }
+    var sx = nice(x0, x1), sy = nice(y0, y1);
+    if (c.bar) { sx = 1; x0 = 0; x1 = Math.max.apply(null, xs) + 1; }
+    x0 = Math.floor(x0 / sx) * sx; x1 = Math.ceil(x1 / sx) * sx; y0 = Math.floor(y0 / sy) * sy; y1 = Math.ceil(y1 / sy) * sy;
+    if (y1 === y0) y1 = y0 + sy;
+    function X(v) { return m.l + (v - x0) / (x1 - x0) * (w - m.l - m.r); }
+    function Y(v) { return h - m.b - (v - y0) / (y1 - y0) * (h - m.t - m.b); }
+    function fm(v) { var r = Math.round(v * 1000) / 1000; return String(r).replace('.', ','); }
+    var s = '';
+    for (var gx = x0; gx <= x1 + 1e-9; gx += sx) { s += '<line x1="' + X(gx) + '" y1="' + Y(y0) + '" x2="' + X(gx) + '" y2="' + Y(y1) + '" stroke="#dfe4ea" stroke-width="1"/>' + ((!c.bar || (gx > x0 && gx < x1)) ? t(X(gx), Y(y0) + 22, fm(gx), { size: 14 }) : ''); }
+    for (var gy = y0; gy <= y1 + 1e-9; gy += sy) { s += '<line x1="' + X(x0) + '" y1="' + Y(gy) + '" x2="' + X(x1) + '" y2="' + Y(gy) + '" stroke="#dfe4ea" stroke-width="1"/>' + t(X(x0) - 8, Y(gy) + 5, fm(gy), { size: 14, anchor: 'end' }); }
+    s += '<line x1="' + X(x0) + '" y1="' + Y(y0) + '" x2="' + X(x1) + '" y2="' + Y(y0) + '" stroke="#1b2a41" stroke-width="2"/><line x1="' + X(x0) + '" y1="' + Y(y0) + '" x2="' + X(x0) + '" y2="' + Y(y1) + '" stroke="#1b2a41" stroke-width="2"/>';
+    var cols = ['#0a66c2', '#d1495b', '#2a9d8f', '#e9a03b'];
+    c.series.forEach(function (sr, i) {
+      var col = sr.color || cols[i % 4];
+      if (c.bar) {
+        var bw = (X(x0 + sx) - X(x0)) * 0.5;
+        sr.pts.forEach(function (p) { s += '<rect x="' + (X(p[0]) - bw / 2) + '" y="' + Y(p[1]) + '" width="' + bw + '" height="' + (Y(y0) - Y(p[1])) + '" fill="' + col + '"/>'; });
+      } else {
+        s += '<polyline points="' + sr.pts.map(function (p) { return X(p[0]) + ',' + Y(p[1]); }).join(' ') + '" fill="none" stroke="' + col + '" stroke-width="3.5"/>';
+        if (sr.pts.length <= 14) sr.pts.forEach(function (p) { s += '<circle cx="' + X(p[0]) + '" cy="' + Y(p[1]) + '" r="4.5" fill="' + col + '"/>'; });
+      }
+      if (c.series.length > 1) s += '<rect x="' + (m.l + 10 + i * 170) + '" y="14" width="22" height="6" fill="' + col + '"/>' + t(m.l + 38 + i * 170, 22, sr.name, { size: 14, anchor: 'start' });
+    });
+    if (c.xlabels) c.xlabels.forEach(function (lb) { s += t(X(lb[0]), Y(y0) + 42, lb[1], { size: 13 }); });
+    s += t((m.l + w - m.r) / 2, h - 12, c.x || '', { size: 15, bold: true });
+    s += '<text x="22" y="' + ((m.t + h - m.b) / 2) + '" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" fill="#1b2a41" text-anchor="middle" transform="rotate(-90 22 ' + ((m.t + h - m.b) / 2) + ')">' + (c.y || '') + '</text>';
+    if (c.title && c.series.length === 1) s += t(w / 2, 28, c.title, { size: 16, bold: true });
+    return '<svg xmlns="http://www.w3.org/2000/svg" width="' + w + '" height="' + h + '" viewBox="0 0 ' + w + ' ' + h + '"><rect width="100%" height="100%" fill="#ffffff"/>' + s + '</svg>';
+  }
+  return { P: P, chart: chart };
+})();
+if (typeof module !== 'undefined') module.exports = PICS;
+
+// Рисунки для информатики (SVG → PNG в Word)
+(function () {
+  var W = 640, H = 360;
+  function svg(inner) { return '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '"><rect width="100%" height="100%" fill="#ffffff"/>' + inner + '</svg>'; }
+  function e(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function t(x, y, s, o) { o = o || {}; return '<text x="' + x + '" y="' + y + '" font-family="' + (o.mono ? 'Courier New, DejaVu Sans Mono, monospace' : 'Arial, DejaVu Sans, sans-serif') + '" font-size="' + (o.size || 18) + '" fill="' + (o.fill || '#1b2a41') + '" text-anchor="' + (o.anchor || 'middle') + '"' + (o.bold ? ' font-weight="bold"' : '') + ' xml:space="preserve">' + e(s) + '</text>'; }
+  function arrow(x1, y1, x2, y2, c) {
+    c = c || '#3d6b74'; var a = Math.atan2(y2 - y1, x2 - x1), L = 11;
+    return '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '" stroke="' + c + '" stroke-width="3"/><polygon points="' + x2 + ',' + y2 + ' ' + (x2 - L * Math.cos(a - 0.4)) + ',' + (y2 - L * Math.sin(a - 0.4)) + ' ' + (x2 - L * Math.cos(a + 0.4)) + ',' + (y2 - L * Math.sin(a + 0.4)) + '" fill="' + c + '"/>';
+  }
+  var P = PICS.P;
+
+  P.lock = function () {
+    var s = '<rect x="60" y="60" width="250" height="230" rx="16" fill="#eef3f7" stroke="#9fb3c8" stroke-width="2"/>';
+    s += t(185, 98, 'Вход в аккаунт', { size: 18, bold: true });
+    s += '<rect x="85" y="118" width="200" height="34" rx="6" fill="#fff" stroke="#9fb3c8"/>' + t(95, 141, 'aigerim@mail.kz', { size: 14, anchor: 'start' });
+    s += '<rect x="85" y="164" width="200" height="34" rx="6" fill="#fff" stroke="#9fb3c8"/>' + t(95, 188, '••••••••••••', { size: 16, anchor: 'start' });
+    s += '<rect x="85" y="210" width="200" height="10" rx="5" fill="#dfe6e9"/><rect x="85" y="210" width="170" height="10" rx="5" fill="#2f8f5b"/>' + t(185, 242, 'надёжность пароля: высокая', { size: 13 });
+    s += '<rect x="110" y="254" width="150" height="26" rx="6" fill="#3d6b74"/>' + t(185, 272, 'код из SMS: 4 8 1 2', { size: 13, fill: '#fff' });
+    s += '<path d="M440 90 l90 32 v70 c0 60 -45 95 -90 110 c-45 -15 -90 -50 -90 -110 v-70 z" fill="#d8ebe2" stroke="#2f8f5b" stroke-width="3"/>';
+    s += '<rect x="410" y="170" width="60" height="50" rx="6" fill="#2f8f5b"/><path d="M420 170 v-18 a20 20 0 0 1 40 0 v18" fill="none" stroke="#2f8f5b" stroke-width="7"/>';
+    s += t(440, 330, 'антивирус · 2FA · резервная копия', { size: 15, bold: true });
+    return svg(s);
+  };
+
+  P.bytes = function () {
+    var u = ['бит', 'байт', 'Кбайт', 'Мбайт', 'Гбайт', 'Тбайт'], k = ['×8', '×1024', '×1024', '×1024', '×1024'], s = '';
+    u.forEach(function (n, i) {
+      var x = 20 + i * 104, hh = 40 + i * 30, y = 260 - hh;
+      s += '<rect x="' + x + '" y="' + y + '" width="80" height="' + hh + '" rx="6" fill="' + ['#cfe3ea', '#b4d4de', '#98c4d2', '#7bb3c5', '#5fa2b9', '#3d6b74'][i] + '"/>' + t(x + 40, y + hh / 2 + 6, n, { size: 16, bold: true, fill: i > 3 ? '#fff' : '#1b2a41' });
+      if (i < 5) s += t(x + 92, 300, k[i], { size: 15, bold: true, fill: '#9a4a1c' });
+    });
+    s += arrow(40, 330, 600, 330, '#9a4a1c') + t(320, 352, 'из меньшей единицы в большую – делим, из большей в меньшую – умножаем', { size: 13 });
+    s += t(320, 34, '1 байт = 8 бит;  1 Кбайт = 1024 байт = 2¹⁰ байт', { size: 17, bold: true });
+    return svg(s);
+  };
+
+  P.alphabet = function (L) {
+    L = L || {}; var n = L.n || 32, s = '', cols = 8, rows = Math.ceil(Math.min(n, 32) / cols);
+    var letters = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ';
+    for (var i = 0; i < Math.min(n, 32); i++) {
+      var x = 40 + (i % cols) * 42, y = 50 + Math.floor(i / cols) * 46;
+      s += '<rect x="' + x + '" y="' + y + '" width="36" height="38" rx="5" fill="#eef3f7" stroke="#9fb3c8"/>' + t(x + 18, y + 26, letters[i] || '?', { size: 17, bold: true });
+    }
+    s += t(208, 50 + rows * 46 + 26, 'алфавит: N = ' + n + ' символов', { size: 16, bold: true });
+    s += '<rect x="420" y="70" width="190" height="200" rx="12" fill="#3d6b74"/>';
+    s += t(515, 115, 'N = 2ⁱ', { size: 30, bold: true, fill: '#fff' }) + t(515, 170, 'I = K · i', { size: 30, bold: true, fill: '#fff' });
+    s += t(515, 215, 'i – вес символа, бит', { size: 13, fill: '#fff' }) + t(515, 240, 'K – число символов', { size: 13, fill: '#fff' });
+    return svg(s);
+  };
+
+  P.pixels = function (L) {
+    L = L || {}; var g = L.grid || ['00111100', '01000010', '10100101', '10000001', '10100101', '10011001', '01000010', '00111100'], s = '';
+    var c = 34, x0 = 40, y0 = 40;
+    g.forEach(function (row, r) {
+      for (var k = 0; k < row.length; k++) s += '<rect x="' + (x0 + k * c) + '" y="' + (y0 + r * c) + '" width="' + c + '" height="' + c + '" fill="' + (row[k] === '1' ? '#1b2a41' : '#ffffff') + '" stroke="#9fb3c8"/>';
+      s += t(x0 + 8 * c + 20, y0 + r * c + 24, row, { size: 18, anchor: 'start', mono: true });
+    });
+    s += t(x0 + 4 * c, y0 + 8 * c + 30, '1 – чёрный пиксель, 0 – белый', { size: 15, bold: true });
+    s += '<rect x="500" y="70" width="120" height="200" rx="10" fill="#eef3f7" stroke="#9fb3c8"/>' + t(560, 110, 'ASCII', { size: 18, bold: true }) + t(560, 145, 'A = 65', { size: 16, mono: true }) + t(560, 175, 'B = 66', { size: 16, mono: true }) + t(560, 205, 'a = 97', { size: 16, mono: true }) + t(560, 240, 'Ә = 1240 (U)', { size: 13, mono: true });
+    return svg(s);
+  };
+
+  function cube(x, y, a, col) {
+    var d = a * 0.45;
+    return '<polygon points="' + x + ',' + y + ' ' + (x + a) + ',' + y + ' ' + (x + a) + ',' + (y + a) + ' ' + x + ',' + (y + a) + '" fill="' + col + '" stroke="#1b2a41" stroke-width="2"/>' +
+      '<polygon points="' + x + ',' + y + ' ' + (x + d) + ',' + (y - d) + ' ' + (x + a + d) + ',' + (y - d) + ' ' + (x + a) + ',' + y + '" fill="#e8f1f4" stroke="#1b2a41" stroke-width="2"/>' +
+      '<polygon points="' + (x + a) + ',' + y + ' ' + (x + a + d) + ',' + (y - d) + ' ' + (x + a + d) + ',' + (y + a - d) + ' ' + (x + a) + ',' + (y + a) + '" fill="#9cc2cf" stroke="#1b2a41" stroke-width="2"/>';
+  }
+  P.cube3d = function (L) {
+    L = L || {}; var s = '';
+    s += arrow(80, 300, 600, 300, '#c0392b') + t(612, 305, 'X', { bold: true, fill: '#c0392b', anchor: 'start' });
+    s += arrow(80, 300, 80, 40, '#2f8f5b') + t(80, 30, 'Z', { bold: true, fill: '#2f8f5b' });
+    s += arrow(80, 300, 190, 210, '#0a66c2') + t(200, 205, 'Y', { bold: true, fill: '#0a66c2', anchor: 'start' });
+    s += cube(130, 180, 90, '#bcd9e2');
+    s += '<ellipse cx="330" cy="150" rx="45" ry="14" fill="#e8f1f4" stroke="#1b2a41" stroke-width="2"/><path d="M285 150 v110 a45 14 0 0 0 90 0 v-110" fill="#bcd9e2" stroke="#1b2a41" stroke-width="2"/>';
+    s += '<circle cx="470" cy="200" r="55" fill="#bcd9e2" stroke="#1b2a41" stroke-width="2"/><ellipse cx="470" cy="200" rx="55" ry="16" fill="none" stroke="#1b2a41" stroke-dasharray="5 4"/>';
+    s += '<polygon points="560,130 600,250 520,250" fill="#bcd9e2" stroke="#1b2a41" stroke-width="2"/>';
+    s += t(175, 290, 'куб', { size: 14 }) + t(330, 290, 'цилиндр', { size: 14 }) + t(470, 280, 'сфера', { size: 14 }) + t(560, 270, 'конус', { size: 14 });
+    s += t(340, 345, L.title || 'примитивы в 3D-сцене: положение задаётся координатами (X; Y; Z)', { size: 15, bold: true });
+    return svg(s);
+  };
+
+  P.keyframes = function (L) {
+    L = L || {}; var s = '';
+    s += '<rect x="30" y="230" width="580" height="80" rx="8" fill="#eef3f7" stroke="#9fb3c8"/>';
+    for (var i = 0; i <= 12; i++) { var x = 50 + i * 45; s += '<line x1="' + x + '" y1="240" x2="' + x + '" y2="300" stroke="#c7d3dc"/>' + t(x, 296, String(i * 4), { size: 11 }); }
+    [0, 6, 12].forEach(function (i) { var x = 50 + i * 45; s += '<polygon points="' + x + ',250 ' + (x + 10) + ',262 ' + x + ',274 ' + (x - 10) + ',262" fill="#e9a03b" stroke="#9a4a1c"/>'; });
+    s += t(320, 330, 'временная шкала: ◆ – ключевые кадры', { size: 15, bold: true });
+    s += '<circle cx="50" cy="190" r="22" fill="#d1495b"/><circle cx="320" cy="60" r="22" fill="#d1495b" opacity="0.9"/><circle cx="590" cy="190" r="22" fill="#d1495b"/>';
+    s += '<path d="M50 190 Q320 -60 590 190" fill="none" stroke="#9a4a1c" stroke-width="2" stroke-dasharray="7 6"/>';
+    s += t(50, 225, 'кадр 0', { size: 13 }) + t(320, 100, 'кадр 24', { size: 13 }) + t(590, 225, 'кадр 48', { size: 13 });
+    return svg(s);
+  };
+
+  P.code = function (L) {
+    L = L || {}; var lines = (L.code || 'print("Hello")').split('\n'), s = '';
+    s += '<rect x="30" y="20" width="580" height="320" rx="12" fill="#1f2a33"/><rect x="30" y="20" width="580" height="34" rx="12" fill="#2d3a45"/>';
+    s += '<circle cx="54" cy="37" r="6" fill="#d1495b"/><circle cx="74" cy="37" r="6" fill="#e9a03b"/><circle cx="94" cy="37" r="6" fill="#2a9d8f"/>' + t(320, 42, L.file || 'main.py', { size: 14, fill: '#c7d3dc' });
+    lines.slice(0, 12).forEach(function (ln, i) { s += t(50, 82 + i * 22, String(i + 1), { size: 13, fill: '#6f8394', anchor: 'end', mono: true }) + t(62, 82 + i * 22, ln, { size: 15, fill: '#e8f1f4', anchor: 'start', mono: true }); });
+    return svg(s);
+  };
+
+  P.flow = function (L) {
+    L = L || {}; var s = '';
+    s += '<rect x="250" y="16" width="140" height="40" rx="20" fill="#cfe3ea" stroke="#1b2a41"/>' + t(320, 42, 'Начало', { size: 15 });
+    s += arrow(320, 56, 320, 86);
+    s += '<polygon points="320,88 470,148 320,208 170,148" fill="#fff4dc" stroke="#9a4a1c" stroke-width="2"/>' + t(320, 145, L.cond || 'условие', { size: 15, bold: true }) + t(320, 165, L.cond2 || '', { size: 13 });
+    s += arrow(470, 148, 540, 148) + t(505, 140, 'да', { size: 14, bold: true, fill: '#2f8f5b' });
+    s += arrow(170, 148, 100, 148) + t(135, 140, 'нет', { size: 14, bold: true, fill: '#c0392b' });
+    s += '<rect x="500" y="160" width="130" height="56" rx="6" fill="#d8ebe2" stroke="#2f8f5b"/>' + t(565, 193, L.yes || 'действие 1', { size: 14 });
+    s += '<rect x="10" y="160" width="130" height="56" rx="6" fill="#f6dada" stroke="#c0392b"/>' + t(75, 193, L.no || 'действие 2', { size: 14 });
+    s += arrow(565, 216, 565, 280) + arrow(75, 216, 75, 280) + '<line x1="75" y1="290" x2="565" y2="290" stroke="#3d6b74" stroke-width="3"/>';
+    s += '<rect x="250" y="300" width="140" height="40" rx="20" fill="#cfe3ea" stroke="#1b2a41"/>' + t(320, 326, 'Конец', { size: 15 });
+    return svg(s);
+  };
+
+  P.sheet = function (L) {
+    L = L || {}; var rows = L.rows || [['Товар', 'Цена', 'Кол-во', 'Сумма'], ['Тетрадь', '250', '4', '=B2*C2']], s = '';
+    var cw = [150, 110, 110, 160], x0 = 60, y0 = 70, rh = 34, letters = 'ABCD';
+    s += '<rect x="20" y="20" width="600" height="34" rx="6" fill="#eef3f7" stroke="#9fb3c8"/>' + t(36, 43, 'fx', { size: 15, bold: true, anchor: 'start', fill: '#3d6b74' }) + t(70, 43, L.fx || '=B2*C2', { size: 15, anchor: 'start', mono: true });
+    var x = x0; s += '<rect x="20" y="' + y0 + '" width="40" height="' + rh + '" fill="#dfe6e9" stroke="#b2bec3"/>';
+    cw.forEach(function (w, i) { s += '<rect x="' + x + '" y="' + y0 + '" width="' + w + '" height="' + rh + '" fill="#dfe6e9" stroke="#b2bec3"/>' + t(x + w / 2, y0 + 23, letters[i], { size: 14, bold: true }); x += w; });
+    rows.slice(0, 7).forEach(function (r, ri) {
+      var y = y0 + rh * (ri + 1), xx = x0;
+      s += '<rect x="20" y="' + y + '" width="40" height="' + rh + '" fill="#dfe6e9" stroke="#b2bec3"/>' + t(40, y + 23, String(ri + 1), { size: 14, bold: true });
+      cw.forEach(function (w, ci) {
+        var v = r[ci] == null ? '' : String(r[ci]), fill = ri === 0 ? '#f3f7f9' : ((L.mark && L.mark[ri] && L.mark[ri][ci]) || '#ffffff');
+        s += '<rect x="' + xx + '" y="' + y + '" width="' + w + '" height="' + rh + '" fill="' + fill + '" stroke="#b2bec3"/>' + t(isNaN(parseFloat(v.replace(',', '.'))) || ri === 0 ? xx + 8 : xx + w - 8, y + 23, v, { size: 14, anchor: isNaN(parseFloat(v.replace(',', '.'))) || ri === 0 ? 'start' : 'end', bold: ri === 0 });
+        xx += w;
+      });
+    });
+    if (L.sel) s += '<rect x="' + L.sel[0] + '" y="' + L.sel[1] + '" width="' + L.sel[2] + '" height="' + L.sel[3] + '" fill="none" stroke="#0a66c2" stroke-width="3"/>';
+    return svg(s);
+  };
+})();
+// Информатика и искусственный интеллект, 7 класс: разделы, темы, цели обучения
+// (Типовая учебная программа, Приложение 55 к приказу МП РК от 16.09.2022 № 399, ред. 2026; ТУП – приказ № 500: 1 час в неделю, 34 часа).
+var CUR = (function () {
+  var O = {
+    '7.1.1.1': 'использовать инструменты 3D-редактора для создания графических примитивов, тел вращения и преобразовывать их',
+    '7.2.1.1': 'осуществлять перевод из одних единиц измерения информации в другие',
+    '7.2.1.2': 'применять алфавитный подход при определении количества информации',
+    '7.2.1.3': 'применять алгоритмы кодирования и декодирования текстовой информации и монохромного изображения',
+    '7.2.2.1': 'форматировать элементы электронной таблицы, используя различные типы данных в ячейках',
+    '7.2.2.2': 'использовать формулы для вычислений в электронной таблице с использованием абсолютных и относительных ссылок',
+    '7.2.2.3': 'использовать условное форматирование в электронной таблице',
+    '7.2.2.4': 'создавать диаграммы на основе анализа данных в электронной таблице',
+    '7.3.1.1': 'применять условные конструкции if, if + else, if + elif + else в зависимости от поставленной задачи',
+    '7.3.1.2': 'применять составные условия, используя логические операции (and, or, not)',
+    '7.3.1.3': 'вызывать функции в коде программы (len(), round(), max(), min(), random())',
+    '7.3.1.4': 'создавать функцию в коде программы, которая возвращает результат своей работы',
+    '7.3.2.1': 'приводить примеры применения компьютерных моделей',
+    '7.3.2.2': 'задавать положение, вращение, масштаб объектов в ключевых кадрах, используя инструменты 3D редактора',
+    '7.3.3.1': 'объяснять, что знания могут быть представлены в виде правил или моделей, моделировать простые системы принятия решений на основе условий и данных',
+    '7.4.1.1': 'обеспечивать защиту учетной записи и компьютера, используя надежные пароли, двухфакторную аутентификацию, антивирусное программное обеспечение и архивацию данных',
+    '7.4.2.1': 'распознавать риски и производить проверку кода, полученного от искусственного интеллекта, перед его использованием'
+  };
+  function T(s, t, k, codes) { return { s: s, t: t, k: k, o: codes.map(function (c) { return [c, O[c] || '']; }) }; }
+  var A = 'Измерение информации', B = '3D моделирование', C = 'Программирование на языке Python', D = 'Электронные таблицы';
+  var g7 = {
+    label: '7 класс', load: '1 час в неделю, всего 34 часа', band: 1,
+    q: {
+      1: [
+        T(A, 'Личная безопасность и роль сервисных программ в ней', 'security', ['7.4.1.1']),
+        T(A, 'Единицы измерения информации', 'units', ['7.2.1.1']),
+        T(A, 'Измерение информации', 'alpha', ['7.2.1.2']),
+        T(A, 'Кодирование текстовой информации и монохромного изображения (ASCII, Unicode)', 'coding', ['7.2.1.3'])
+      ],
+      2: [
+        T(B, 'Редактор трехмерной графики', 'models3d', ['7.3.2.1']),
+        T(B, '3D модели объектов', 'prim3d', ['7.1.1.1']),
+        T(B, '3D анимация', 'anim3d', ['7.3.2.2'])
+      ],
+      3: [
+        T(C, 'Программирование алгоритмов ветвления', 'branch', ['7.3.1.1', '7.3.1.2']),
+        T(C, 'Библиотека функций', 'builtins', ['7.3.1.3']),
+        T(C, 'Определение функций', 'deffunc', ['7.3.1.4']),
+        T(C, 'Системы принятия решений', 'decision', ['7.3.3.1', '7.4.2.1'])
+      ],
+      4: [
+        T(D, 'Интерфейс программы, основные понятия электронных таблиц', 'ssintro', ['7.2.2.1']),
+        T(D, 'Типы данных', 'sstypes', ['7.2.2.1']),
+        T(D, 'Формулы', 'ssformula', ['7.2.2.2']),
+        T(D, 'Условное форматирование', 'sscond', ['7.2.2.3']),
+        T(D, 'Графическое представление табличных данных', 'sschart', ['7.2.2.4'])
+      ]
+    }
+  };
+  return { '7': g7, OBJ: O };
+})();
+if (typeof module !== 'undefined') module.exports = CUR;
+// Содержание уроков по темам: задание по функциональной грамотности, задания A/B/C, закрепление.
+var KINDS = (function () {
+  function fm(x, d) { if (d == null) d = 2; var v = Math.round(x * Math.pow(10, d)) / Math.pow(10, d); return String(v).replace('.', ','); }
+  function sci(x, d) { if (x === 0) return '0'; var e = Math.floor(Math.log10(Math.abs(x))), m = x / Math.pow(10, e); return fm(m, d == null ? 2 : d) + '·10^{' + e + '}'; }
+  function sp(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
+  function lab(arr) { return arr.map(function (x, i) { return [i + 1, x]; }); }
+  var K = {};
+
+  // ===================== 1 четверть =====================
+  K.security = {
+    pic: ['lock', {}], terms: 'пароль, двухфакторная аутентификация, антивирус, резервная копия, архивация, фишинг',
+    qty: [['Надёжный пароль', 'Kx7!mDa2#qL9', 'защищает учётную запись от подбора'], ['Двухфакторная аутентификация', 'пароль + код из SMS', 'второй уровень защиты при входе'], ['Антивирус', 'Защитник Windows, Kaspersky', 'находит и удаляет вредоносные программы'], ['Архиватор', '7-Zip, WinRAR', 'сжимает файлы, создаёт резервные копии']],
+    law: 'Количество вариантов пароля: N = K^{L}, где K – число возможных символов (алфавит), L – длина пароля. Чем длиннее пароль и богаче алфавит, тем дольше его подбор.',
+    theory: ['Надёжный пароль: не короче 12 символов, заглавные и строчные буквы, цифры и специальные знаки; без имён, дат рождения и слов из словаря.', 'Двухфакторная аутентификация (2FA): кроме пароля нужен второй фактор – код из SMS или приложения. Код никому не сообщают.', 'Антивирус проверяет файлы и ссылки, блокирует вредоносные программы; его базы нужно регулярно обновлять.', 'Сервисные программы: антивирус, архиватор, программы очистки и резервного копирования. Резервную копию хранят отдельно от компьютера (флешка, облако).'],
+    fl: function (r) {
+      var N = r.pick([120, 150, 200]), p = [r.i(40, 55), r.i(15, 25), r.i(55, 70), r.i(10, 20)];
+      var names = ['Один пароль для всех аккаунтов', 'Включена 2FA', 'Установлен антивирус', 'Делают резервные копии'];
+      var rows = names.map(function (n, i) { return [n, String(p[i]), String(Math.round(N * p[i] / 100))]; });
+      var sec = Math.pow(36, 9) / 1e10;
+      return {
+        text: 'IT-клуб школы провёл опрос среди ' + N + ' учеников 7–9 классов о том, как они защищают свои аккаунты. Тимур уверен, что его пароль «timur2013» надёжный. Специалист по кибербезопасности объяснил: компьютер злоумышленника перебирает около 10 млрд (10^{10}) паролей в секунду, а пароль из строчных латинских букв и цифр составлен из алфавита в 36 символов.',
+        table: { head: ['Мера защиты', 'Доля учеников, %', 'Количество учеников'], rows: rows },
+        chart: { bar: true, title: 'Как ученики защищают аккаунты', x: '1 – один пароль, 2 – 2FA, 3 – антивирус, 4 – резервные копии', y: 'доля учеников, %', series: [{ name: '%', pts: p.map(function (v, i) { return [i + 1, v]; }) }] },
+        qs: [
+          { q: 'Сколько учеников НЕ используют двухфакторную аутентификацию? Используй таблицу.', a: N + ' − ' + rows[1][2] + ' = ' + (N - Number(rows[1][2])) + ' учеников.', p: 1 },
+          { q: 'Оцени пароль Тимура: сколько вариантов нужно перебрать (K = 36, L = 9) и за какое время компьютер злоумышленника переберёт их все?', a: 'N = 36^{9} ≈ 1,0·10^{14} вариантов; t = N / 10^{10} ≈ ' + sp(Math.round(sec)) + ' с ≈ ' + fm(sec / 3600, 1) + ' ч. Пароль ненадёжный: к тому же в нём есть имя и год рождения.', p: 2 },
+          { q: 'Предложи Тимуру три меры, которые сделают его аккаунты безопасными. Обоснуй.', a: 'Пароль из 12+ символов с заглавными буквами, цифрами и знаками (разный для каждого аккаунта); включить 2FA; установить и обновлять антивирус; делать резервные копии важных файлов.', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var L = r.pick([4, 5, 6]), a = Math.pow(10, L), b = Math.pow(36, L);
+      return { q: 'Пароль состоит из ' + L + ' символов. Сколько существует вариантов пароля, если используются: а) только цифры (K = 10); б) цифры и строчные латинские буквы (K = 36)? Во сколько раз второй пароль сложнее подобрать?', a: 'а) N = 10^{' + L + '} = ' + sp(a) + '; б) N = 36^{' + L + '} = ' + sp(b) + '; в ' + sp(Math.round(b / a)) + ' раз(а) больше вариантов.', d: ['записывает формулу N = K^{L}', 'вычисляет число вариантов для цифр', 'вычисляет число вариантов для букв и цифр', 'сравнивает результаты'] };
+    },
+    c: function (r) {
+      return { q: 'Ученице пришло SMS: «Ваш аккаунт Kundelik заблокирован. Перейдите по ссылке kundelik-help.ru и введите логин, пароль и код из SMS». Найди не менее трёх признаков мошенничества. Объясни, почему двухфакторная аутентификация не защитит, если сообщить код. Составь план из четырёх действий для защиты учётной записи и данных компьютера.', a: 'Признаки: срочность и угроза блокировки; подозрительный адрес сайта (не официальный домен); просьба сообщить пароль и код. Если сообщить код, злоумышленник получает оба фактора, и 2FA теряет смысл. План: не переходить по ссылке и сменить пароль на официальном сайте; включить 2FA и никому не сообщать коды; проверить компьютер антивирусом с обновлёнными базами; сделать архив (резервную копию) важных файлов на флешку или в облако.', d: ['называет признаки фишинга', 'объясняет роль второго фактора', 'включает в план антивирус и смену пароля', 'включает в план резервное копирование'] };
+    },
+    tf: [['Пароль «12345678» надёжный, потому что в нём 8 символов.', false], ['Двухфакторная аутентификация требует второй фактор, например код из SMS.', true], ['Базы антивируса нужно регулярно обновлять.', true], ['Резервную копию лучше хранить на том же диске, что и оригинал.', false], ['Архиватор позволяет сжать файлы и уменьшить их объём.', true]]
+  };
+
+  K.units = {
+    pic: ['bytes', {}], terms: 'бит, байт, килобайт, мегабайт, гигабайт, терабайт',
+    qty: [['Бит', '0 или 1', 'наименьшая единица информации'], ['Байт', '8 бит', 'кодирует один символ (ASCII)'], ['Килобайт', '1024 байта', 'объём короткого текста'], ['Гигабайт', '1024 Мбайт', 'объём памяти телефона или флешки']],
+    law: '1 байт = 8 бит; 1 Кбайт = 1024 байта = 2^{10} байт; 1 Мбайт = 1024 Кбайт; 1 Гбайт = 1024 Мбайт; 1 Тбайт = 1024 Гбайт. Из большей единицы в меньшую – умножаем, из меньшей в большую – делим.',
+    theory: ['Бит – наименьшая единица информации: 0 или 1.', 'Байт – 8 бит; одним байтом в ASCII кодируется один символ.', 'Каждая следующая единица в 1024 раза больше предыдущей (1024 = 2^{10}).', 'Объём файлов, памяти телефона и флешки измеряют в Кбайт, Мбайт, Гбайт.'],
+    fl: function (r) {
+      var free = r.pick([2, 3, 4]), nPh = r.i(40, 80), ph = r.pick([3, 3.5, 4]), vid = r.pick([1.2, 1.5]), nS = r.i(30, 50), app = r.pick([350, 450, 600]);
+      var items = [['Фото с экскурсии', nPh, fm(ph, 1) + ' Мбайт', nPh * ph], ['Видеоурок', 1, fm(vid, 1) + ' Гбайт', vid * 1024], ['Песни', nS, '8 Мбайт', nS * 8], ['Приложение для учёбы', 1, app + ' Мбайт', app]];
+      var tot = items.reduce(function (s, x) { return s + x[3]; }, 0);
+      return {
+        text: 'У Айгерим на телефоне осталось ' + free + ' Гбайт свободной памяти. Перед поездкой в Атырау она хочет загрузить файлы, перечисленные в таблице. Диаграмма показывает объём каждой группы файлов в мегабайтах.',
+        table: { head: ['Файлы', 'Количество', 'Размер одного', 'Общий объём, Мбайт'], rows: items.map(function (x) { return [x[0], String(x[1]), x[2], fm(x[3], 0)]; }) },
+        chart: { bar: true, title: 'Объём файлов, Мбайт', x: '1 – фото, 2 – видеоурок, 3 – песни, 4 – приложение', y: 'объём, Мбайт', series: [{ name: 'V', pts: items.map(function (x, i) { return [i + 1, Math.round(x[3])]; }) }] },
+        qs: [
+          { q: 'Найди общий объём всех файлов в мегабайтах и в гигабайтах.', a: fm(tot, 0) + ' Мбайт = ' + fm(tot, 0) + ' / 1024 ≈ ' + fm(tot / 1024, 2) + ' Гбайт.', p: 2 },
+          { q: 'Поместятся ли все файлы в свободную память телефона?', a: 'Свободно ' + free + ' Гбайт = ' + free * 1024 + ' Мбайт. ' + (tot <= free * 1024 ? 'Поместятся: ' + fm(tot, 0) + ' ≤ ' + free * 1024 + '.' : 'Не поместятся: ' + fm(tot, 0) + ' > ' + free * 1024 + ', не хватает ' + fm(tot - free * 1024, 0) + ' Мбайт.'), p: 1 },
+          { q: 'Какую группу файлов выгоднее всего перенести в облако, чтобы освободить больше места? Используй диаграмму.', a: 'Самый большой столбец диаграммы – ' + items.slice().sort(function (a, b) { return b[3] - a[3]; })[0][0].toLowerCase() + ' (' + fm(items.slice().sort(function (a, b) { return b[3] - a[3]; })[0][3], 0) + ' Мбайт).', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var a = r.pick([2, 4, 8]), b = r.pick([3, 5, 6]), c = r.pick([2048, 3072, 5120]), d = r.pick([16384, 32768, 65536]);
+      return { q: 'Переведи: а) ' + a + ' Кбайт – в байты и биты; б) ' + b + ' Мбайт – в Кбайт; в) ' + sp(c) + ' Мбайт – в Гбайт; г) ' + sp(d) + ' бит – в байты и Кбайт.', a: 'а) ' + sp(a * 1024) + ' байт = ' + sp(a * 8192) + ' бит; б) ' + sp(b * 1024) + ' Кбайт; в) ' + c / 1024 + ' Гбайт; г) ' + sp(d / 8) + ' байт = ' + d / 8192 + ' Кбайт.', d: ['переводит Кбайт в байты и биты', 'переводит Мбайт в Кбайт', 'переводит Мбайт в Гбайт', 'переводит биты в байты и Кбайт'] };
+    },
+    c: function (r) {
+      var cap = r.pick([8, 16]), n = r.pick([4, 5]), f = 1.2, ph = 3, free = (cap - n * f) * 1024;
+      return { q: 'На флешку ' + cap + ' Гбайт записали ' + n + ' фильмов по 1,2 Гбайт. Сколько фотографий по 3 Мбайт ещё поместится? Что больше: 3 Гбайт или 3000 Мбайт? Почему производитель пишет на коробке «' + cap + ' ГБ», а компьютер показывает меньший объём?', a: 'Свободно: ' + cap + ' − ' + n + '·1,2 = ' + fm(cap - n * f, 1) + ' Гбайт = ' + fm(free, 0) + ' Мбайт; ' + fm(free, 0) + ' / 3 ≈ ' + Math.floor(free / ph) + ' фото. 3 Гбайт = 3072 Мбайт > 3000 Мбайт. Производитель считает 1 Гбайт = 1000 Мбайт, а компьютер – 1024 Мбайт, поэтому показывает меньше.', d: ['находит свободный объём', 'переводит Гбайт в Мбайт', 'находит количество фото', 'сравнивает величины и объясняет разницу 1000 и 1024'] };
+    },
+    tf: [['1 байт = 8 бит.', true], ['1 Кбайт = 1000 байт.', false], ['Гигабайт больше мегабайта в 1024 раза.', true], ['При переводе из Мбайт в Кбайт число делят на 1024.', false], ['Бит – наименьшая единица измерения информации.', true]]
+  };
+
+  K.alpha = {
+    pic: ['alphabet', { n: 32 }], terms: 'алфавит, мощность алфавита, информационный вес символа, информационный объём, алфавитный подход',
+    qty: [['Мощность алфавита', 'N = 32', 'количество символов в алфавите'], ['Информационный вес символа', 'i = 5 бит', 'количество бит на один символ'], ['Длина сообщения', 'K = 100', 'количество символов в тексте'], ['Информационный объём', 'I = K·i', 'объём всего сообщения']],
+    law: 'N = 2^{i}; I = K · i, где N – мощность алфавита, i – информационный вес одного символа (бит), K – количество символов в сообщении, I – информационный объём сообщения.',
+    theory: ['Алфавитный подход: количество информации зависит от числа символов в тексте и мощности алфавита, а не от смысла.', 'Мощность алфавита N – количество символов в нём; вес символа i находят из N = 2^{i}.', 'Если N не является степенью двойки, берут ближайшую бо́льшую степень (например, N = 42 → i = 6 бит).', 'Объём сообщения: I = K · i бит; чтобы получить байты, делим на 8.'],
+    fl: function (r) {
+      var Ns = [8, 16, 32, 64], K = r.pick([40, 48, 56]), V = r.pick([200, 240]);
+      var rows = Ns.map(function (n, i) { var ii = Math.log2(n); return ['Группа ' + (i + 1), String(n), String(ii), String(K * ii)]; });
+      return {
+        text: 'На школьном конкурсе «Секретный код» каждая группа придумала свой алфавит и передаёт роботу сообщение из ' + K + ' символов. Канал связи с роботом за одну передачу пропускает не больше ' + V + ' бит. В таблице – мощности алфавитов групп.',
+        table: { head: ['Группа', 'Мощность алфавита N', 'Вес символа i, бит', 'Объём сообщения I, бит'], rows: rows },
+        chart: { bar: true, title: 'Объём сообщения из ' + K + ' символов', x: 'номер группы', y: 'I, бит', series: [{ name: 'I', pts: rows.map(function (x, i) { return [i + 1, Number(x[3])]; }) }] },
+        qs: [
+          { q: 'Как найден вес символа для группы 3 (N = 32)? Запиши формулу.', a: '32 = 2^{5}, поэтому i = 5 бит.', p: 1 },
+          { q: 'Сообщения каких групп пройдут по каналу за одну передачу?', a: 'Подходят группы с I ≤ ' + V + ' бит: ' + rows.filter(function (x) { return Number(x[3]) <= V; }).map(function (x) { return x[0].toLowerCase() + ' (' + x[3] + ' бит)'; }).join(', ') + '.', p: 2 },
+          { q: 'Почему при увеличении алфавита объём того же по длине сообщения растёт?', a: 'Чем больше символов в алфавите, тем больше бит нужно, чтобы закодировать каждый символ (i растёт), а I = K · i.', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var N = r.pick([16, 32, 64, 256]), K = r.pick([64, 80, 120, 160]), i = Math.log2(N);
+      return { q: 'Сообщение из ' + K + ' символов записано с помощью алфавита мощностью ' + N + ' символов. Найди информационный объём сообщения в битах и байтах.', a: 'i: ' + N + ' = 2^{' + i + '} ⇒ i = ' + i + ' бит; I = K · i = ' + K + ' · ' + i + ' = ' + K * i + ' бит = ' + K * i / 8 + ' байт.', d: ['находит вес символа', 'записывает формулу I = K · i', 'вычисляет объём в битах', 'переводит в байты'] };
+    },
+    c: function (r) {
+      var i = r.pick([5, 6, 7]), K = r.pick([96, 128, 160]), I = K * i / 8;
+      return { q: 'Информационный объём сообщения – ' + I + ' байт, в нём ' + K + ' символов. Найди мощность алфавита. Хватит ли алфавита такой мощности для текста на казахском языке (42 буквы)? Сколько бит нужно на символ для казахского алфавита?', a: 'I = ' + I + '·8 = ' + I * 8 + ' бит; i = ' + I * 8 + ' / ' + K + ' = ' + i + ' бит; N = 2^{' + i + '} = ' + Math.pow(2, i) + '. ' + (Math.pow(2, i) >= 42 ? 'Хватит' : 'Не хватит') + ': ' + Math.pow(2, i) + (Math.pow(2, i) >= 42 ? ' ≥ ' : ' < ') + '42. Для 42 букв нужно i = 6 бит (2^{5} = 32 < 42 ≤ 64 = 2^{6}).', d: ['переводит байты в биты', 'находит вес символа', 'находит мощность алфавита', 'определяет вес символа казахского алфавита'] };
+    },
+    tf: [['Мощность алфавита – это количество символов в нём.', true], ['Если N = 64, то вес символа i = 6 бит.', true], ['По алфавитному подходу объём зависит от смысла текста.', false], ['I = K · i.', true], ['Для алфавита из 20 символов достаточно 4 бит на символ.', false]]
+  };
+
+  K.coding = {
+    pic: ['pixels', {}], terms: 'кодирование, декодирование, кодовая таблица, ASCII, Unicode, пиксель, монохромное изображение',
+    qty: [['ASCII', 'A → 65', 'кодовая таблица латиницы, 1 байт на символ'], ['Unicode', 'Ә → 1240', 'единая таблица для всех языков мира'], ['Пиксель', '1 бит в ч/б рисунке', 'наименьший элемент изображения'], ['Двоичный код', '01000001', 'форма хранения данных в компьютере']],
+    law: 'ASCII: A = 65, B = 66, …, Z = 90; a = 97, …, z = 122; пробел = 32. Монохромное изображение: 1 – чёрный пиксель, 0 – белый; I = ширина × высота × 1 бит.',
+    theory: ['Кодирование – запись информации по правилам кодовой таблицы; декодирование – обратное преобразование.', 'ASCII содержит 256 кодов (1 символ = 1 байт); в ней нет букв казахского алфавита.', 'Unicode содержит символы всех языков; в кодировке UTF-16 символ занимает 2 байта.', 'Монохромное изображение кодируют построчно: каждый пиксель – 1 бит.'],
+    fl: function (r) {
+      var pats = [['00111100', '01000010', '10100101', '10000001', '10100101', '10011001', '01000010', '00111100'], ['01100110', '11111111', '11111111', '11111111', '01111110', '00111100', '00011000', '00000000'], ['00011000', '00111100', '01111110', '11111111', '00011000', '00011000', '00011000', '00011000']];
+      var nm = ['смайлик', 'сердце', 'стрелка вверх'], k = r.i(0, 2), g = pats[k];
+      var ones = g.map(function (row) { return row.split('').filter(function (c) { return c === '1'; }).length; });
+      return {
+        pic: ['pixels', { grid: g }],
+        text: 'Ученица 7 класса создаёт монохромный значок 8×8 пикселей («' + nm[k] + '») для школьного сайта BINOM SCHOOL. Каждую строку рисунка она записала двоичным кодом: 1 – чёрный пиксель, 0 – белый. Веб-разработчик попросил: значок должен занимать не больше 16 байт.',
+        table: { head: ['Строка', 'Двоичный код', 'Чёрных пикселей'], rows: g.map(function (row, i) { return [String(i + 1), row, String(ones[i])]; }) },
+        chart: { bar: true, title: 'Чёрные пиксели по строкам', x: 'номер строки', y: 'количество', series: [{ name: 'n', pts: ones.map(function (v, i) { return [i + 1, v]; }) }] },
+        qs: [
+          { q: 'Найди информационный объём значка в битах и байтах. Подходит ли он по требованию разработчика?', a: '8 · 8 · 1 = 64 бит = 8 байт ≤ 16 байт – подходит.', p: 2 },
+          { q: 'Сколько всего чёрных пикселей в значке? Используй таблицу или диаграмму.', a: ones.reduce(function (a, b) { return a + b; }, 0) + ' пикселей.', p: 1 },
+          { q: 'Какой объём займёт такой же значок размером 32×32 пикселя? Поместится ли он в 16 байт?', a: '32 · 32 = 1024 бит = 128 байт > 16 байт – не поместится.', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var w = r.pick(['CODE', 'DATA', 'ROBOT', 'BINOM', 'PIXEL']);
+      var codes = w.split('').map(function (c) { return c.charCodeAt(0); });
+      var w2 = r.pick(['AI', 'BYTE', 'WEB']), c2 = w2.split('').map(function (c) { return c.charCodeAt(0); });
+      return { q: 'Используя таблицу ASCII (A = 65, B = 66, …, Z = 90): а) закодируй слово ' + w + '; б) декодируй последовательность кодов ' + c2.join(' ') + '.', a: 'а) ' + w + ' → ' + codes.join(' ') + '; б) ' + c2.join(' ') + ' → ' + w2 + '.', d: ['находит коды букв по таблице', 'правильно кодирует слово', 'правильно декодирует последовательность'] };
+    },
+    c: function (r) {
+      var K = r.pick([20, 30, 40]);
+      return { q: 'Сообщение «Жайық – менің өзенім» и подобные тексты на казахском языке хранятся в Unicode (UTF-16, 2 байта на символ). Сколько байт займёт сообщение из ' + K + ' символов в UTF-16? Сколько оно заняло бы в ASCII, если бы это было возможно? Почему для казахского текста нельзя использовать ASCII?', a: 'UTF-16: ' + K + ' · 2 = ' + K * 2 + ' байт (' + K * 16 + ' бит). ASCII: ' + K + ' байт. В ASCII только 256 кодов, в ней нет букв Ә, Ғ, Қ, Ң, Ө, Ұ, Ү, Һ, І – текст исказится.', d: ['вычисляет объём в UTF-16', 'вычисляет объём в ASCII', 'объясняет ограничение ASCII'] };
+    },
+    tf: [['В ASCII код буквы A равен 65.', true], ['В ASCII есть все буквы казахского алфавита.', false], ['Чёрно-белый пиксель кодируется 1 битом.', true], ['Декодирование – перевод информации в двоичный код.', false], ['Unicode содержит символы разных языков мира.', true]]
+  };
+
+  // ===================== 2 четверть =====================
+  K.models3d = {
+    pic: ['cube3d', {}], terms: 'компьютерная модель, 3D-графика, 3D-редактор, сцена, объект, координаты X, Y, Z',
+    qty: [['3D-модель', 'модель здания, детали', 'объёмное цифровое представление объекта'], ['Ось Z', 'высота объекта', 'третья координата пространства'], ['3D-редактор', 'Blender, Tinkercad', 'программа для создания 3D-моделей'], ['Сцена', 'комната с мебелью', 'набор объектов, камеры и света']],
+    law: 'Компьютерная модель – упрощённое цифровое представление реального объекта или процесса. Положение точки в 3D-пространстве задаётся тремя координатами (X; Y; Z).',
+    theory: ['3D-модели используют в архитектуре, медицине, машиностроении, играх, кино и при 3D-печати.', 'Модель позволяет проверить идею до изготовления: это дешевле и безопаснее.', 'Интерфейс 3D-редактора: окно просмотра (вьюпорт), панель инструментов, свойства объекта, временная шкала.', 'Навигация по сцене: вращение вида, приближение, перемещение камеры.'],
+    fl: function (r) {
+      var sp_ = ['Архитектура', 'Медицина', 'Игры', 'Машиностроение', 'Кино'], ex = ['модель жилого комплекса', 'модель сердца пациента', 'персонажи и уровни', 'деталь двигателя', 'спецэффекты'];
+      var p = [r.i(20, 30), r.i(8, 14), r.i(18, 26), r.i(15, 22), r.i(8, 12)];
+      var cost = r.pick([450000, 600000, 750000]), cost3d = r.pick([60000, 80000, 90000]);
+      return {
+        text: 'Центр профориентации Уральска изучил, в каких сферах региона применяют 3D-модели. Результаты в таблице и на диаграмме. Инженер завода рассказал: изготовить опытный образец детали стоит ' + sp(cost) + ' тг, а 3D-модель и её проверка на компьютере – ' + sp(cost3d) + ' тг.',
+        table: { head: ['Сфера', 'Пример модели', 'Доля компаний, %'], rows: sp_.map(function (s, i) { return [s, ex[i], String(p[i])]; }) },
+        chart: { bar: true, title: 'Где применяют 3D-модели', x: '1 – архитектура, 2 – медицина, 3 – игры, 4 – машиностроение, 5 – кино', y: 'доля компаний, %', series: [{ name: '%', pts: p.map(function (v, i) { return [i + 1, v]; }) }] },
+        qs: [
+          { q: 'В какой сфере 3D-модели применяют чаще всего? Используй диаграмму.', a: sp_[p.indexOf(Math.max.apply(null, p))] + ' (' + Math.max.apply(null, p) + '%).', p: 1 },
+          { q: 'Сколько денег экономит завод, если сначала проверяет деталь на 3D-модели? Во сколько раз модель дешевле образца?', a: sp(cost) + ' − ' + sp(cost3d) + ' = ' + sp(cost - cost3d) + ' тг; в ' + fm(cost / cost3d, 1) + ' раза.', p: 2 },
+          { q: 'Приведи пример, как 3D-модель может помочь врачу. Почему это безопасно для пациента?', a: 'Например, модель сердца по снимкам КТ: врач заранее планирует операцию и тренируется на модели, не рискуя здоровьем пациента.', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var a = r.pick([2, 4, 6]);
+      return { q: 'В 3D-редакторе куб с ребром ' + a + ' единиц стоит так, что одна его вершина находится в начале координат (0; 0; 0), а рёбра идут вдоль положительных направлений осей X, Y, Z. Запиши координаты: а) противоположной вершины; б) верхней вершины над началом координат; в) центра куба.', a: 'а) (' + a + '; ' + a + '; ' + a + '); б) (0; 0; ' + a + '); в) (' + a / 2 + '; ' + a / 2 + '; ' + a / 2 + ').', d: ['находит координаты противоположной вершины', 'находит координаты вершины на оси Z', 'находит координаты центра'] };
+    },
+    c: function (r) {
+      return { q: 'Город планирует построить новый мост через реку Жайык. Предложи, какие компьютерные модели нужно создать перед строительством (не менее трёх), что проверяет каждая модель и почему модель не может полностью заменить реальные испытания.', a: 'Например: 3D-модель внешнего вида моста (как он впишется в город); модель нагрузки (выдержит ли транспорт); модель течения реки и паводка (не размоет ли опоры); модель движения транспорта (пробки). Модель – упрощение: она учитывает не все факторы, поэтому результаты проверяют реальными испытаниями.', d: ['приводит не менее трёх моделей', 'объясняет назначение каждой модели', 'объясняет ограничения моделей'] };
+    },
+    tf: [['Компьютерная модель – точная копия объекта со всеми свойствами.', false], ['Положение точки в 3D-пространстве задают три координаты.', true], ['Blender – пример 3D-редактора.', true], ['3D-модели используют в медицине.', true], ['Ось Z на экране 3D-редактора обычно задаёт ширину объекта.', false]]
+  };
+
+  K.prim3d = {
+    pic: ['cube3d', { title: 'примитивы: куб, цилиндр, сфера, конус' }], terms: 'примитив, тело вращения, перемещение, поворот, масштабирование, группировка',
+    qty: [['Примитив', 'куб, сфера, цилиндр, конус', 'простейший готовый 3D-объект'], ['Тело вращения', 'ваза, бокал, шахматная пешка', 'получается вращением профиля вокруг оси'], ['Масштабирование', 'S = 2', 'изменение размеров объекта'], ['Группировка', 'стол = столешница + 4 ножки', 'объединение объектов в один']],
+    law: 'Преобразования объекта: перемещение (G), поворот (R), масштабирование (S). Новый размер = исходный размер × коэффициент масштаба (по каждой оси свой).',
+    theory: ['Сложную модель собирают из примитивов: куб, сфера, цилиндр, конус, тор, плоскость.', 'Тело вращения получают, вращая профиль (контур) вокруг оси на 360°.', 'Масштаб по осям X, Y, Z можно задавать разным: из куба получается брусок или плита.', 'Объекты группируют или объединяют, чтобы перемещать их вместе.'],
+    fl: function (r) {
+      var parts = [['Стены (кереге)', 'цилиндр', r.pick([8, 10]), r.pick([1.2, 1.5])], ['Купол (уық)', 'конус', r.pick([6, 8]), r.pick([1.2, 1.5])], ['Шанырак', 'тор', r.pick([2, 3]), r.pick([1.2, 1.5])], ['Дверь', 'куб', r.pick([3, 4]), r.pick([1.2, 1.5])]];
+      var maxp = 20;
+      return {
+        text: 'Для выставки ко Дню Республики ученики школы BINOM печатают на 3D-принтере сувенирную юрту. Модель собирают из примитивов, затем масштабируют. Принтер печатает детали высотой не больше ' + maxp + ' см. В таблице – исходные размеры деталей и коэффициенты масштаба.',
+        table: { head: ['Деталь', 'Примитив', 'Исходная высота, см', 'Коэффициент масштаба', 'Итоговая высота, см'], rows: parts.map(function (x) { return [x[0], x[1], String(x[2]), fm(x[3], 1), '?']; }) },
+        chart: { bar: true, title: 'Итоговая высота деталей', x: '1 – стены, 2 – купол, 3 – шанырак, 4 – дверь', y: 'высота, см', series: [{ name: 'h', pts: parts.map(function (x, i) { return [i + 1, Math.round(x[2] * x[3] * 10) / 10]; }) }] },
+        qs: [
+          { q: 'Заполни последний столбец таблицы.', a: parts.map(function (x) { return x[0] + ': ' + x[2] + ' · ' + fm(x[3], 1) + ' = ' + fm(x[2] * x[3], 1) + ' см'; }).join('; ') + '.', p: 2 },
+          { q: 'Какая высота будет у собранной юрты (стены + купол)? Поместится ли она в принтер?', a: fm(parts[0][2] * parts[0][3], 1) + ' + ' + fm(parts[1][2] * parts[1][3], 1) + ' = ' + fm(parts[0][2] * parts[0][3] + parts[1][2] * parts[1][3], 1) + ' см; ' + (parts[0][2] * parts[0][3] + parts[1][2] * parts[1][3] <= maxp ? 'поместится (≤ 20 см).' : 'не поместится целиком – печатать стены и купол отдельно.'), p: 1 },
+          { q: 'Какую деталь можно получить как тело вращения? Объясни.', a: 'Купол (конус) и стены (цилиндр): конус – вращение треугольника, цилиндр – вращение прямоугольника вокруг оси.', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var rr = r.pick([2, 3]), h = r.pick([4, 6]);
+      return { q: 'Цилиндр радиусом ' + rr + ' и высотой ' + h + ' масштабировали: по X и Y с коэффициентом 2, по Z с коэффициентом 0,5. Найди новые радиус и высоту. Вращением какой фигуры вокруг оси можно получить цилиндр?', a: 'Радиус: ' + rr + ' · 2 = ' + rr * 2 + '; высота: ' + h + ' · 0,5 = ' + h / 2 + '. Цилиндр – тело вращения прямоугольника вокруг его стороны.', d: ['находит новый радиус', 'находит новую высоту', 'называет фигуру для тела вращения'] };
+    },
+    c: function (r) {
+      return { q: 'Составь план создания 3D-модели шахматной ладьи и стола: какие примитивы и тела вращения использовать, какие преобразования (перемещение, поворот, масштаб) применить и в каком порядке, как объединить детали.', a: 'Ладья: профиль (контур) вращаем вокруг оси – тело вращения; зубцы – масштабированные кубы, расставленные поворотом по кругу; объединить. Стол: столешница – куб с масштабом по Z 0,1; ножки – 4 цилиндра, перемещённые в углы; сгруппировать все детали.', d: ['использует тело вращения', 'подбирает примитивы', 'указывает преобразования и их порядок', 'объединяет детали'] };
+    },
+    tf: [['Сфера и конус – примитивы.', true], ['Тело вращения получается перемещением объекта вдоль оси.', false], ['Масштаб 0,5 уменьшает размер в 2 раза.', true], ['Масштаб по разным осям всегда одинаковый.', false], ['Группировка позволяет перемещать несколько объектов вместе.', true]]
+  };
+
+  K.anim3d = {
+    pic: ['keyframes', {}], terms: 'анимация, ключевой кадр, временная шкала, частота кадров, интерполяция',
+    qty: [['Ключевой кадр', 'кадр 1 и кадр 48', 'кадр, где задано положение объекта'], ['Частота кадров', '24 кадр/с', 'число кадров в секунду'], ['Интерполяция', 'кадры 2–47', 'автоматический расчёт промежуточных кадров'], ['Временная шкала', 'Timeline', 'показывает кадры и ключи анимации']],
+    law: 'Длительность анимации t = N / f, где N – число кадров, f – частота кадров (кадр/с). В ключевом кадре задают положение, вращение и масштаб объекта; промежуточные кадры редактор рассчитывает сам.',
+    theory: ['Анимация – быстрая смена кадров, создающая иллюзию движения.', 'Ключевой кадр (keyframe) хранит значения положения, вращения или масштаба в данный момент времени.', 'Интерполяция – плавный переход между ключевыми кадрами.', 'Стандартная частота кадров в кино – 24 кадр/с.'],
+    fl: function (r) {
+      var f = 24, hmax = r.pick([3, 4, 5]), T = r.pick([2, 3]);
+      var N = f * T, frames = [0, N / 4, N / 2, 3 * N / 4, N];
+      var z = [0, hmax * 0.75, hmax, hmax * 0.75, 0];
+      return {
+        text: 'Ученики создают в Blender 3D-ролик для школьного праздника: прыгает мяч с логотипом BINOM SCHOOL. Один прыжок длится ' + T + ' с при частоте 24 кадр/с. В таблице – ключевые кадры высоты мяча, на графике – высота мяча по кадрам.',
+        table: { head: ['Ключевой кадр', 'Высота Z, м', 'Поворот, °'], rows: frames.map(function (k, i) { return [String(k), fm(z[i], 2), String(i * 90)]; }) },
+        chart: { title: 'Высота мяча по кадрам', x: 'номер кадра', y: 'Z, м', series: [{ name: 'Z', pts: frames.map(function (k, i) { return [k, z[i]]; }) }] },
+        qs: [
+          { q: 'Сколько кадров в одном прыжке? Сколько секунд будет длиться ролик из 5 прыжков?', a: 'N = 24 · ' + T + ' = ' + N + ' кадров; 5 прыжков: 5 · ' + T + ' = ' + 5 * T + ' с (' + 5 * N + ' кадров).', p: 2 },
+          { q: 'В каком кадре мяч находится выше всего? Какая это высота?', a: 'В кадре ' + N / 2 + ', Z = ' + hmax + ' м.', p: 1 },
+          { q: 'На сколько градусов поворачивается мяч за один прыжок? Какие свойства мяча меняются в ключевых кадрах?', a: 'На 360° (полный оборот); меняются положение (высота Z) и вращение.', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var T = r.pick([2, 4, 5]), f = r.pick([24, 30]), d = r.pick([6, 8, 10]);
+      return { q: 'Анимация длится ' + T + ' с при частоте ' + f + ' кадр/с. Объект равномерно перемещается по оси X от 0 до ' + d + ' м. Сколько кадров в анимации? В каком кадре объект будет в точке X = ' + d / 2 + ' м?', a: 'N = ' + f + ' · ' + T + ' = ' + f * T + ' кадров; X = ' + d / 2 + ' м – середина пути, кадр ' + f * T / 2 + '.', d: ['находит число кадров', 'определяет середину пути', 'находит номер кадра'] };
+    },
+    c: function (r) {
+      return { q: 'Составь таблицу ключевых кадров для анимации планеты: за 4 с (24 кадр/с) она делает полный оборот вокруг своей оси, одновременно перемещается по X от 0 до 8 м и увеличивается в масштабе от 1 до 1,5. Укажи кадры 0, 48 и 96 и значения положения, вращения и масштаба.', a: 'Кадр 0: X = 0, поворот 0°, масштаб 1; кадр 48: X = 4 м, 180°, 1,25; кадр 96: X = 8 м, 360°, 1,5.', d: ['находит число кадров', 'рассчитывает положение', 'рассчитывает вращение', 'рассчитывает масштаб'] };
+    },
+    tf: [['Промежуточные кадры между ключевыми рассчитывает редактор.', true], ['При 24 кадр/с анимация из 48 кадров длится 4 с.', false], ['В ключевом кадре можно задать масштаб объекта.', true], ['Временная шкала показывает кадры анимации.', true], ['Анимация – это один неподвижный кадр.', false]]
+  };
+
+  // ===================== 3 четверть =====================
+  K.branch = {
+    pic: ['flow', { cond: 'сумма ≥ 1500', cond2: 'and карта', yes: 'скидка 10%', no: 'без скидки' }], terms: 'условие, ветвление, if, elif, else, логические операции and, or, not',
+    qty: [['if', 'if x > 0:', 'выполняет блок, если условие истинно'], ['elif', 'elif x == 0:', 'проверяет следующее условие'], ['and', 'x > 0 and x < 10', 'истинно, если оба условия истинны'], ['not', 'not ok', 'меняет значение на противоположное']],
+    law: 'if условие1:\n    действие1\nelif условие2:\n    действие2\nelse:\n    действие3\nСравнения: ==, !=, <, >, <=, >=; and – «и», or – «или», not – «не».',
+    theory: ['Ветвление – выбор действия в зависимости от условия.', 'Блок команд внутри if записывают с отступом (4 пробела).', 'elif проверяется, только если предыдущие условия ложны; else выполняется, если все условия ложны.', 'Составное условие: and – истинно, если истинны оба; or – если истинно хотя бы одно; not – отрицание.'],
+    fl: function (r) {
+      var lim = 1500, orders = [['Алия', r.pick([1200, 1400]), 'да'], ['Ерлан', r.pick([1600, 1800, 2200]), 'да'], ['Дана', r.pick([1700, 2500]), 'нет'], ['Тимур', r.pick([3200, 3500]), 'нет']];
+      function disc(s, c) { return (s >= 1500 && c === 'да') ? 10 : (s >= 3000 ? 5 : 0); }
+      return {
+        text: 'В школьной столовой касса работает по программе. Скидка 10% – если сумма заказа не меньше 1500 тг и у ученика есть карта столовой; скидка 5% – если карты нет, но сумма не меньше 3000 тг; в остальных случаях скидки нет. В таблице – заказы учеников.',
+        code: 'summa = int(input("Сумма: "))\ncard = input("Карта (да/нет): ")\nif summa >= 1500 and card == "да":\n    skidka = 10\nelif summa >= 3000:\n    skidka = 5\nelse:\n    skidka = 0\nprint("К оплате:", summa - summa * skidka // 100)',
+        table: { head: ['Ученик', 'Сумма, тг', 'Карта', 'Скидка, %', 'К оплате, тг'], rows: orders.map(function (o) { return [o[0], String(o[1]), o[2], '?', '?']; }) },
+        chart: { bar: true, title: 'Сумма заказов', x: '1 – Алия, 2 – Ерлан, 3 – Дана, 4 – Тимур', y: 'сумма, тг', series: [{ name: 's', pts: orders.map(function (o, i) { return [i + 1, o[1]]; }) }] },
+        qs: [
+          { q: 'Заполни таблицу: скидку и сумму к оплате для каждого ученика.', a: orders.map(function (o) { var d = disc(o[1], o[2]); return o[0] + ' – ' + d + '%, ' + (o[1] - o[1] * d / 100) + ' тг'; }).join('; ') + '.', p: 2 },
+          { q: 'Какая ветка программы сработает для Даны? Почему не первая?', a: orders[2][1] >= 3000 ? 'elif (5%): карты нет, поэтому условие с and ложно, а сумма ≥ 3000.' : 'else (0%): карты нет – условие с and ложно; сумма меньше 3000 – elif тоже ложно.', p: 1 },
+          { q: 'Что изменится, если в первом условии заменить and на or?', a: 'Скидку 10% получат все, у кого есть карта, или сумма ≥ 1500 – например Дана получила бы 10% без карты.', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var t = r.pick([-7, 8, 18, 31]);
+      var ans = t < 0 ? 'Мороз' : (t < 15 ? 'Холодно' : (t < 25 ? 'Тепло' : 'Жарко'));
+      return { q: 'Напиши программу: вводится температура t; вывести «Мороз», если t < 0; «Холодно», если 0 ≤ t < 15; «Тепло», если 15 ≤ t < 25; иначе «Жарко». Что выведет программа при t = ' + t + '?', ac: 't = int(input())\nif t < 0:\n    print("Мороз")\nelif t < 15:\n    print("Холодно")\nelif t < 25:\n    print("Тепло")\nelse:\n    print("Жарко")', a: 'При t = ' + t + ' программа выведет «' + ans + '».', d: ['использует if', 'использует elif для промежуточных условий', 'использует else', 'определяет результат для заданного t'] };
+    },
+    c: function (r) {
+      var ys = r.shuffle([1900, 2000, 2024, 2026, 2100]).slice(0, 3);
+      function leap(y) { return (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0; }
+      return { q: 'Год високосный, если он делится на 4 и не делится на 100, или делится на 400. Запиши составное условие на Python, напиши программу и определи, какие из годов ' + ys.join(', ') + ' високосные.', ac: 'y = int(input())\nif (y % 4 == 0 and y % 100 != 0) or y % 400 == 0:\n    print("Високосный")\nelse:\n    print("Не високосный")', a: ys.map(function (y) { return y + ' – ' + (leap(y) ? 'високосный' : 'не високосный'); }).join('; ') + '.', d: ['записывает составное условие с and и or', 'использует операцию %', 'правильно проверяет каждый год'] };
+    },
+    tf: [['Блок внутри if записывают с отступом.', true], ['Ветка else выполняется, если условие if истинно.', false], ['Выражение 5 > 3 and 2 > 4 истинно.', false], ['Выражение 5 > 3 or 2 > 4 истинно.', true], ['elif можно использовать несколько раз.', true]]
+  };
+
+  K.builtins = {
+    pic: ['code', { code: 'import random\ntemp = [-5, -2, 1, 3, 0, -4, 2]\nprint(len(temp))\nprint(max(temp), min(temp))\nprint(round(sum(temp) / len(temp), 1))\nprint(random.randint(1, 6))', file: 'functions.py' }],
+    terms: 'функция, аргумент, возвращаемое значение, len(), round(), max(), min(), модуль random',
+    qty: [['len()', 'len("Python") → 6', 'длина строки или списка'], ['round()', 'round(3.14159, 2) → 3.14', 'округление числа'], ['max()', 'max(4, 9, 2) → 9', 'наибольшее значение'], ['random.randint()', 'randint(1, 6)', 'случайное целое число']],
+    law: 'Вызов функции: имя_функции(аргументы). import random – подключение модуля; random.randint(a, b) – случайное целое от a до b включительно; round(x, n) – округление до n знаков.',
+    theory: ['Встроенные функции Python готовы к использованию: len(), round(), max(), min(), abs(), sum().', 'Функция получает аргументы в скобках и возвращает результат.', 'Функции модуля random подключают командой import random.', 'random.randint(1, 6) имитирует бросок кубика: результат каждый раз разный.'],
+    fl: function (r) {
+      var days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'], t = days.map(function () { return r.i(-9, 4); });
+      var avg = t.reduce(function (a, b) { return a + b; }, 0) / 7;
+      return {
+        text: 'Ученики школы записали температуру воздуха в Уральске в 8:00 каждый день недели в ноябре. Чтобы быстро обработать данные, они написали программу на Python со встроенными функциями.',
+        code: 'temp = [' + t.join(', ') + ']\nprint(len(temp))\nprint(max(temp))\nprint(min(temp))\nprint(round(sum(temp) / len(temp), 1))',
+        table: { head: ['День'].concat(days), rows: [['t, °C'].concat(t.map(String))] },
+        chart: { title: 'Температура в 8:00', x: 'день недели (1 – Пн … 7 – Вс)', y: 't, °C', series: [{ name: 't', pts: t.map(function (v, i) { return [i + 1, v]; }) }] },
+        qs: [
+          { q: 'Что выведут первые три команды print? Проверь по графику.', a: '7; ' + Math.max.apply(null, t) + '; ' + Math.min.apply(null, t) + '.', p: 2 },
+          { q: 'Что выведет последняя строка? Что делает функция round()?', a: 'Средняя температура ≈ ' + fm(avg, 1) + ' (round округляет до 1 знака после запятой; Python выведет её через точку).', p: 1 },
+          { q: 'Учитель физкультуры проводит урок на улице при температуре не ниже −5 °C. В сколько дней урок можно провести на улице?', a: t.filter(function (v) { return v >= -5; }).length + ' дн.', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var s = r.pick(['BINOM SCHOOL', 'Zhaiyk', 'Informatika']), x = r.pick([3.14159, 7.856, 12.349]), a = r.i(2, 9), b = r.i(10, 20), c = r.i(1, 9);
+      return { q: 'Что выведет программа?', code: 's = "' + s + '"\nprint(len(s))\nprint(round(' + x + ', 1))\nprint(max(' + a + ', ' + b + ', ' + c + '), min(' + a + ', ' + b + ', ' + c + '))', a: len(s) + '; ' + String(Math.round(x * 10) / 10) + '; ' + Math.max(a, b, c) + ' ' + Math.min(a, b, c) + '.', d: ['определяет результат len()', 'определяет результат round()', 'определяет результаты max() и min()'] };
+      function len(z) { return z.length; }
+    },
+    c: function (r) {
+      return { q: 'ИИ-помощник написал программу «Бросок двух кубиков», но она не работает или работает неправильно. Найди ошибки, исправь программу и объясни, почему результат каждый раз разный.', code: 'a = random.randint(1, 7)\nb = random.randint(1, 6)\nprint("Сумма:", a + b)\nif a = b:\n    print("Дубль!")', ac: 'import random\na = random.randint(1, 6)\nb = random.randint(1, 6)\nprint("Сумма:", a + b)\nif a == b:\n    print("Дубль!")', a: 'Ошибки: нет import random; randint(1, 7) даёт 7 – у кубика нет такой грани; в условии нужно == вместо =. randint каждый раз выбирает случайное число.', d: ['находит отсутствие import', 'находит ошибку в диапазоне', 'находит ошибку сравнения', 'объясняет случайность результата'] };
+    },
+    tf: [['len("кот") вернёт 3.', true], ['round(2.567, 1) вернёт 2.5.', false], ['max(3, 8, 1) вернёт 8.', true], ['Для random.randint() не нужно подключать модуль random.', false], ['random.randint(1, 6) может вернуть 6.', true]]
+  };
+
+  K.deffunc = {
+    pic: ['code', { code: 'def cost(km):\n    return 400 + 150 * km\n\nprint(cost(3))\nprint(cost(8))', file: 'delivery.py' }],
+    terms: 'функция, def, параметр, аргумент, return, вызов функции',
+    qty: [['def', 'def area(a, b):', 'объявление (создание) функции'], ['Параметр', 'a, b', 'входные данные функции'], ['return', 'return a * b', 'возвращает результат работы'], ['Вызов', 'area(3, 4) → 12', 'запуск функции с аргументами']],
+    law: 'def имя(параметры):\n    тело функции\n    return результат\nФункцию сначала объявляют, затем вызывают: x = имя(аргументы).',
+    theory: ['Собственная функция позволяет не повторять одинаковый код.', 'Параметры – переменные в скобках при объявлении; аргументы – значения при вызове.', 'return возвращает результат в место вызова; после return функция завершается.', 'print выводит на экран, а return возвращает значение, которое можно использовать дальше.'],
+    fl: function (r) {
+      var base = r.pick([400, 500]), pk = r.pick([120, 150, 180]), kms = [1, 3, 5, 8, 10];
+      return {
+        text: 'Служба доставки в Уральске считает стоимость так: ' + base + ' тг за заказ плюс ' + pk + ' тг за каждый километр. Программист оформил расчёт в виде функции. Ученики построили таблицу и график стоимости.',
+        code: 'def cost(km):\n    return ' + base + ' + ' + pk + ' * km\n\nprint(cost(3))\nprint(cost(8))',
+        table: { head: ['Расстояние, км'].concat(kms.map(String)), rows: [['Стоимость, тг'].concat(kms.map(function (k) { return String(base + pk * k); }))] },
+        chart: { title: 'Стоимость доставки', x: 'расстояние, км', y: 'стоимость, тг', series: [{ name: 'c', pts: kms.map(function (k) { return [k, base + pk * k]; }) }] },
+        qs: [
+          { q: 'Что выведет программа?', a: (base + pk * 3) + ' и ' + (base + pk * 8) + '.', p: 1 },
+          { q: 'У Арман 2000 тг. На какое наибольшее целое число километров он может заказать доставку? Проверь по графику.', a: '(' + 2000 + ' − ' + base + ') / ' + pk + ' ≈ ' + fm((2000 - base) / pk, 1) + ' ⇒ ' + Math.floor((2000 - base) / pk) + ' км.', p: 2 },
+          { q: 'Ночью тариф на 20% выше. Допиши функцию night(km), которая использует cost(km).', a: 'def night(km):\n    return cost(km) * 1.2', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var a = r.i(3, 9), b = r.i(4, 12);
+      return { q: 'Создай функцию perimeter(a, b), которая возвращает периметр прямоугольника. Вызови её для сторон ' + a + ' и ' + b + ' и выведи результат.', ac: 'def perimeter(a, b):\n    return 2 * (a + b)\n\nprint(perimeter(' + a + ', ' + b + '))', a: 'Программа выведет ' + 2 * (a + b) + '.', d: ['объявляет функцию через def', 'задаёт два параметра', 'использует return', 'вызывает функцию и получает ' + 2 * (a + b)] };
+    },
+    c: function (r) {
+      var sc = r.shuffle([92, 70, 55, 30]).slice(0, 3);
+      function g(s) { return s >= 85 ? 5 : (s >= 65 ? 4 : (s >= 40 ? 3 : 2)); }
+      return { q: 'Создай функцию grade(score), которая по проценту выполнения СОР возвращает оценку: 85 и выше – 5; 65–84 – 4; 40–64 – 3; ниже 40 – 2. Проверь функцию для значений ' + sc.join(', ') + '. Объясни, чем отличается return от print.', ac: 'def grade(score):\n    if score >= 85:\n        return 5\n    elif score >= 65:\n        return 4\n    elif score >= 40:\n        return 3\n    else:\n        return 2', a: sc.map(function (s) { return 'grade(' + s + ') = ' + g(s); }).join('; ') + '. return возвращает значение для дальнейших вычислений, print только выводит его на экран.', d: ['объявляет функцию с параметром', 'использует ветвление внутри функции', 'возвращает результат через return', 'проверяет функцию и объясняет разницу return и print'] };
+    },
+    tf: [['Функцию в Python объявляют словом def.', true], ['return выводит результат на экран.', false], ['Параметры функции записывают в скобках.', true], ['Функцию можно вызвать несколько раз с разными аргументами.', true], ['Код после return внутри функции всегда выполняется.', false]]
+  };
+
+  K.decision = {
+    pic: ['flow', { cond: 'влажность < 40', cond2: 'and t > 20', yes: 'включить полив', no: 'не поливать' }],
+    terms: 'система принятия решений, знание, правило, модель, данные, искусственный интеллект, проверка кода',
+    qty: [['Правило', 'ЕСЛИ дождь ТО взять зонт', 'знание в виде условия'], ['Модель', 'дерево решений', 'знание, полученное из данных'], ['Данные', 'таблица наблюдений', 'основа для принятия решений'], ['Проверка кода ИИ', 'запуск на тестах', 'поиск ошибок до использования']],
+    law: 'Знание как правило: ЕСЛИ <условие> ТО <решение>. Система принятия решений проверяет условия и выдаёт решение. Код, полученный от ИИ, нужно прочитать, запустить на тестах (включая граничные значения) и только потом использовать.',
+    theory: ['Знания можно представить правилами (если – то) или моделью, построенной по данным.', 'Простая система принятия решений – это набор условий if/elif/else.', 'ИИ может ошибаться: код от ИИ может содержать синтаксические и логические ошибки, небезопасные команды.', 'Проверка кода: прочитать, понять каждую строку, протестировать на разных данных, сравнить с ожидаемым результатом.'],
+    fl: function (r) {
+      var days = [1, 2, 3, 4, 5, 6], hum = days.map(function () { return r.i(25, 65); }), tt = days.map(function () { return r.i(15, 30); });
+      function need(h, t) { return h < 40 && t > 20; }
+      return {
+        text: 'Школьная теплица BINOM SCHOOL оборудована датчиками. Агроном задал правило: поливать, если влажность почвы меньше 40% и температура воздуха выше 20 °C. ИИ-помощник написал код для автоматического полива, но ученики решили проверить его на данных недели.',
+        code: 'def poliv(vlazh, temp):\n    if vlazh < 40 or temp > 20:\n        return "полить"\n    return "не поливать"',
+        table: { head: ['День', 'Влажность почвы, %', 'Температура, °C', 'Решение по правилу'], rows: days.map(function (d, i) { return [String(d), String(hum[i]), String(tt[i]), '?']; }) },
+        chart: { title: 'Влажность почвы', x: 'день', y: 'влажность, %', series: [{ name: 'h', pts: days.map(function (d, i) { return [d, hum[i]]; }) }, { name: 'порог 40%', pts: [[1, 40], [6, 40]] }] },
+        qs: [
+          { q: 'Заполни последний столбец таблицы по правилу агронома.', a: days.map(function (d, i) { return 'день ' + d + ' – ' + (need(hum[i], tt[i]) ? 'полить' : 'не поливать'); }).join('; ') + '.', p: 2 },
+          { q: 'Найди ошибку в коде ИИ. К чему она приведёт?', a: 'Вместо and стоит or: полив включится и тогда, когда почва влажная, но жарко – растения перельёт.', p: 1 },
+          { q: 'Как проверить исправленный код перед установкой в теплицу?', a: 'Запустить функцию на данных из таблицы и на граничных значениях (влажность 40, температура 20) и сравнить с решениями по правилу.', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var sits = [[r.pick([-15, -5, 10]), r.pick(['нет', 'да'])], [r.pick([18, 24]), 'нет'], [r.pick([22, 28]), 'да']];
+      function dec(t, rain) { return (t >= -10 && rain === 'нет') ? 'идти на прогулку' : (t < -10 ? 'остаться дома' : 'взять зонт и идти'); }
+      return { q: 'Система «Прогулка» работает по правилам: ЕСЛИ температура ≥ −10 °C И нет дождя ТО «идти на прогулку»; ЕСЛИ температура < −10 °C ТО «остаться дома»; ИНАЧЕ «взять зонт и идти». Определи решение для ситуаций: ' + sits.map(function (s, i) { return (i + 1) + ') ' + s[0] + ' °C, дождь – ' + s[1]; }).join('; ') + '.', a: sits.map(function (s, i) { return (i + 1) + ') ' + dec(s[0], s[1]); }).join('; ') + '.', d: ['применяет первое правило', 'применяет второе правило', 'применяет правило «иначе»'] };
+    },
+    c: function (r) {
+      return { q: 'ИИ сгенерировал функцию проверки пароля: пароль надёжный, если в нём не меньше 8 символов и есть хотя бы одна цифра. Найди две ошибки, предложи тесты (не менее трёх паролей) и исправь код.', code: 'def check(p):\n    has_digit = False\n    for ch in p:\n        if ch.isdigit():\n            has_digit = True\n    if len(p) > 8 or has_digit:\n        return "надёжный"\n    return "слабый"', ac: 'def check(p):\n    has_digit = False\n    for ch in p:\n        if ch.isdigit():\n            has_digit = True\n    if len(p) >= 8 and has_digit:\n        return "надёжный"\n    return "слабый"', a: 'Ошибки: > 8 вместо >= 8 (пароль ровно из 8 символов отклоняется); or вместо and (пароль «1» считается надёжным). Тесты: «abc12345» (8 символов с цифрой – надёжный), «abcdefgh» (без цифр – слабый), «a1» (короткий – слабый).', d: ['находит ошибку в сравнении длины', 'находит ошибку в логической операции', 'предлагает тесты с граничным значением', 'исправляет код'] };
+    },
+    tf: [['Знание можно записать в виде правила «если – то».', true], ['Код от ИИ всегда правильный, проверять его не нужно.', false], ['Граничные значения нужно включать в тесты.', true], ['Система принятия решений может работать на основе условий и данных.', true], ['Если код запустился без ошибок, он точно работает правильно.', false]]
+  };
+
+  // ===================== 4 четверть =====================
+  function sheetPic(rows, fx, mark) { return ['sheet', { rows: rows, fx: fx, mark: mark }]; }
+
+  K.ssintro = {
+    pic: sheetPic([['Жанр', 'Книг', 'Выдано', 'Осталось'], ['Сказки', '45', '12', '33'], ['Фантастика', '38', '20', '18'], ['Наука', '27', '9', '18']], '=B2-C2'),
+    terms: 'электронная таблица, ячейка, адрес ячейки, строка, столбец, диапазон, лист, книга',
+    qty: [['Ячейка', 'B3', 'пересечение столбца и строки'], ['Диапазон', 'A1:C5', 'прямоугольная группа ячеек'], ['Строка формул', '=B2*C2', 'показывает содержимое активной ячейки'], ['Лист', 'Лист1', 'рабочая таблица внутри книги']],
+    law: 'Адрес ячейки = буква столбца + номер строки (C5). Диапазон записывают через двоеточие: A1:D4. Число ячеек в диапазоне = число столбцов × число строк.',
+    theory: ['Электронная таблица (Excel, Google Таблицы) состоит из строк (1, 2, 3…) и столбцов (A, B, C…).', 'Файл называется книгой, книга состоит из листов.', 'Активная ячейка выделена рамкой; её содержимое видно в строке формул.', 'Элементы таблицы форматируют: шрифт, выравнивание, границы, заливка, ширина столбца.'],
+    fl: function (r) {
+      var g = [['Сказки', r.i(30, 50), 0], ['Фантастика', r.i(30, 50), 0], ['Наука', r.i(20, 40), 0], ['Учебники', r.i(50, 80), 0]];
+      g.forEach(function (x) { x[2] = r.i(5, x[1] - 5); });
+      return {
+        pic: sheetPic([['Жанр', 'Книг', 'Выдано', 'Осталось']].concat(g.map(function (x) { return [x[0], String(x[1]), String(x[2]), String(x[1] - x[2])]; })), '=B2-C2'),
+        text: 'Библиотекарь школы ведёт учёт книг в электронной таблице: в столбце A – жанр, B – всего книг, C – выдано ученикам, D – осталось в библиотеке. Заголовки находятся в строке 1.',
+        table: { head: ['', 'A', 'B', 'C', 'D'], rows: [['1', 'Жанр', 'Книг', 'Выдано', 'Осталось']].concat(g.map(function (x, i) { return [String(i + 2), x[0], String(x[1]), String(x[2]), String(x[1] - x[2])]; })) },
+        chart: { bar: true, title: 'Выдано книг по жанрам', x: '1 – сказки, 2 – фантастика, 3 – наука, 4 – учебники', y: 'книг', series: [{ name: 'C', pts: g.map(function (x, i) { return [i + 1, x[2]]; }) }] },
+        qs: [
+          { q: 'В какой ячейке записано, сколько книг по фантастике выдано? Какое там число?', a: 'C3 – ' + g[1][2] + '.', p: 1 },
+          { q: 'Запиши диапазон с числовыми данными таблицы. Сколько в нём ячеек?', a: 'B2:D5; 3 столбца × 4 строки = 12 ячеек.', p: 2 },
+          { q: 'Как оформить таблицу, чтобы её было удобно читать? Назови не менее двух действий.', a: 'Выделить заголовки полужирным и заливкой, добавить границы, выровнять числа по правому краю, подобрать ширину столбцов.', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var c1 = r.pick(['B', 'C']), c2 = r.pick(['E', 'F']), r1 = r.i(2, 4), r2 = r.i(6, 9);
+      var nc = c2.charCodeAt(0) - c1.charCodeAt(0) + 1, nr = r2 - r1 + 1;
+      return { q: 'Сколько ячеек в диапазоне ' + c1 + r1 + ':' + c2 + r2 + '? Запиши адреса четырёх угловых ячеек этого диапазона.', a: nc + ' столбц. × ' + nr + ' строк = ' + nc * nr + ' ячеек; углы: ' + c1 + r1 + ', ' + c2 + r1 + ', ' + c1 + r2 + ', ' + c2 + r2 + '.', d: ['находит число столбцов', 'находит число строк', 'вычисляет количество ячеек', 'записывает адреса угловых ячеек'] };
+    },
+    c: function (r) {
+      return { q: 'Спроектируй электронную таблицу «Бюджет класса на экскурсию в Атырау»: перечисли заголовки столбцов (не менее четырёх), укажи для каждого тип данных и формат, запиши адрес ячейки с итоговой суммой и диапазон данных, если учеников 25.', a: 'Например: A – ФИО (текст), B – дата оплаты (дата), C – сумма (денежный, ₸), D – отметка об оплате (текст «да/нет»). Данные в строках 2–26: диапазон A2:D26; итог – C27 (=СУММ(C2:C26)).', d: ['предлагает заголовки столбцов', 'указывает типы и форматы данных', 'правильно указывает диапазон', 'указывает ячейку итога'] };
+    },
+    tf: [['Адрес ячейки состоит из буквы столбца и номера строки.', true], ['Диапазон A1:B3 содержит 6 ячеек.', true], ['Строки в таблице обозначаются буквами.', false], ['Файл электронной таблицы называется книгой.', true], ['Строка формул показывает только номер строки.', false]]
+  };
+
+  K.sstypes = {
+    pic: sheetPic([['Товар', 'Цена, ₸', 'Скидка', 'Поступил'], ['Пиджак', '18 500', '15%', '01.09.2026'], ['Брюки', '9 800', '10%', '28.08.2026'], ['Рубашка', '6 400', '5%', '25.08.2026']], '=B2*(1-C2)'),
+    terms: 'тип данных, число, текст, дата, денежный формат, процентный формат, формат ячейки',
+    qty: [['Число', '245', 'используется в вычислениях'], ['Текст', 'Ученик', 'подписи, заголовки'], ['Дата', '01.11.2026', 'календарные даты'], ['Процентный формат', '15%', 'доля от целого']],
+    law: 'Типы данных: число, текст, дата/время, формула. Формат меняет вид, а не значение: 0,15 в процентном формате – 15%. Числа выравниваются по правому краю, текст – по левому.',
+    theory: ['Если ввести «1500 тг» с буквами, ячейка станет текстом и не будет участвовать в вычислениях.', 'Денежный формат добавляет знак валюты (₸), не превращая число в текст.', 'Дата хранится как число, поэтому даты можно вычитать.', 'Формат задают командой «Формат ячеек» или кнопками на панели.'],
+    fl: function (r) {
+      var it = [['Пиджак', r.pick([16500, 18500]), r.pick([0.1, 0.15])], ['Брюки', r.pick([8900, 9800]), r.pick([0.05, 0.1])], ['Рубашка', r.pick([5900, 6400]), 0.05], ['Галстук', r.pick([2500, 3200]), 0.2]];
+      var tot = it.reduce(function (s, x) { return s + x[1] * (1 - x[2]); }, 0);
+      return {
+        text: 'Магазин школьной формы ведёт прайс в электронной таблице. Продавец ввёл цену галстука как «' + it[3][1] + ' тг» (с буквами), и итоговая сумма заказа посчитана неправильно. Семья покупает по одному предмету каждого вида.',
+        table: { head: ['Товар (A)', 'Цена, ₸ (B)', 'Скидка (C)', 'Цена со скидкой, ₸'], rows: it.map(function (x, i) { return [x[0], i === 3 ? x[1] + ' тг' : sp(x[1]), Math.round(x[2] * 100) + '%', '?']; }) },
+        chart: { bar: true, title: 'Цена со скидкой', x: '1 – пиджак, 2 – брюки, 3 – рубашка, 4 – галстук', y: 'цена, ₸', series: [{ name: 'p', pts: it.map(function (x, i) { return [i + 1, Math.round(x[1] * (1 - x[2]))]; }) }] },
+        qs: [
+          { q: 'Определи тип данных в каждом столбце A, B, C. Какое значение реально хранится в ячейке «15%»?', a: 'A – текст, B – число (денежный формат), C – число (процентный формат); «15%» хранится как 0,15.', p: 1 },
+          { q: 'Почему цена галстука не попала в сумму и как это исправить?', a: '«' + it[3][1] + ' тг» – текст; нужно ввести только число ' + it[3][1] + ' и задать денежный формат.', p: 1 },
+          { q: 'Найди цены со скидкой и общую сумму покупки.', a: it.map(function (x) { return x[0] + ' – ' + sp(Math.round(x[1] * (1 - x[2]))); }).join('; ') + '; всего ' + sp(Math.round(tot)) + ' ₸.', p: 2 }
+        ]
+      };
+    },
+    b: function (r) {
+      return { q: 'Определи тип данных и формат: а) 125; б) 12.11.2026; в) 7А; г) 0,35, отображаемое как 35%; д) =A1+B1; е) 3,5 кг.', a: 'а) число; б) дата; в) текст; г) число в процентном формате; д) формула; е) текст (из-за «кг» не участвует в вычислениях).', d: ['определяет число и дату', 'определяет текст', 'определяет процентный формат', 'определяет формулу'] };
+    },
+    c: function (r) {
+      var a = r.pick([0.25, 0.4]), b = r.pick([0.125, 0.6]);
+      return { q: 'Ученица ввела в таблицу оценки за неделю как «5 баллов», «4 балла» и т. д., и функция среднего значения выдала ошибку. Объясни причину и исправь. Как будут выглядеть числа ' + fm(a, 3) + ' и ' + fm(b, 3) + ' в процентном формате?', a: 'Ячейки с «баллами» – текст, вычисления с ним невозможны; нужно вводить только числа (5, 4…), а слово «баллы» написать в заголовке столбца. ' + fm(a, 3) + ' → ' + fm(a * 100, 1) + '%; ' + fm(b, 3) + ' → ' + fm(b * 100, 1) + '%.', d: ['объясняет причину ошибки', 'предлагает исправление', 'переводит доли в проценты'] };
+    },
+    tf: [['Формат ячейки меняет только вид числа.', true], ['«1500 тг» – числовое значение.', false], ['0,2 в процентном формате выглядит как 20%.', true], ['По умолчанию текст выравнивается по правому краю.', false], ['Дату можно использовать в вычислениях.', true]]
+  };
+
+  K.ssformula = {
+    pic: sheetPic([['Товар', 'Цена, $', 'Кол-во', 'Сумма, ₸'], ['Наушники', '25', '2', '=B2*C2*$F$1'], ['Мышь', '12', '3', '=B3*C3*$F$1'], ['Флешка', '8', '5', '=B4*C4*$F$1']], '=B2*C2*$F$1'),
+    terms: 'формула, относительная ссылка, абсолютная ссылка, знак $, автозаполнение, функция СУММ',
+    qty: [['Формула', '=B2*C2', 'вычисление в ячейке'], ['Относительная ссылка', 'B2', 'меняется при копировании'], ['Абсолютная ссылка', '$F$1', 'не меняется при копировании'], ['СУММ', '=СУММ(D2:D6)', 'сумма значений диапазона']],
+    law: 'Формула начинается со знака «=». При копировании вниз относительная ссылка B2 → B3, абсолютная $F$1 остаётся неизменной. Смешанная ссылка: $A1 (закреплён столбец), A$1 (закреплена строка).',
+    theory: ['Формулы пересчитываются автоматически при изменении данных.', 'Относительные ссылки удобны для одинаковых расчётов в каждой строке.', 'Абсолютная ссылка нужна, когда все формулы обращаются к одной ячейке (курс, тариф, процент).', 'Клавиша F4 быстро ставит знаки $.'],
+    fl: function (r) {
+      var rate = r.pick([475, 490, 505, 520]), it = [['Наушники', r.pick([20, 25, 30]), r.i(1, 3)], ['Компьютерная мышь', r.pick([10, 12, 15]), r.i(2, 4)], ['Флешка 64 Гбайт', r.pick([8, 9]), r.i(3, 6)]];
+      var tot = it.reduce(function (s, x) { return s + x[1] * x[2] * rate; }, 0);
+      return {
+        text: 'Компьютерный класс заказывает товары в интернет-магазине, где цены указаны в долларах. Курс ' + rate + ' ₸ за 1 $ записан в ячейке F1. Ученик заполнил формулу в D2 и скопировал её вниз.',
+        table: { head: ['', 'A: товар', 'B: цена, $', 'C: кол-во', 'D: сумма, ₸'], rows: it.map(function (x, i) { return [String(i + 2), x[0], String(x[1]), String(x[2]), i === 0 ? '=B2*C2*$F$1' : '?']; }) },
+        chart: { bar: true, title: 'Сумма по товарам, ₸', x: '1 – наушники, 2 – мышь, 3 – флешки', y: 'сумма, ₸', series: [{ name: 'D', pts: it.map(function (x, i) { return [i + 1, x[1] * x[2] * rate]; }) }] },
+        qs: [
+          { q: 'Какая формула окажется в ячейке D4 после копирования? Найди её значение.', a: '=B4*C4*$F$1 = ' + it[2][1] + '·' + it[2][2] + '·' + rate + ' = ' + sp(it[2][1] * it[2][2] * rate) + ' ₸.', p: 1 },
+          { q: 'Что произойдёт, если в D2 записать =B2*C2*F1 без знаков $ и скопировать вниз?', a: 'В D3 получится =B3*C3*F2, в D4 – =B4*C4*F3: ячейки F2, F3 пустые, результат будет 0.', p: 1 },
+          { q: 'Запиши формулу для общей суммы в D5 и найди её значение.', a: '=СУММ(D2:D4) = ' + sp(tot) + ' ₸.', p: 2 }
+        ]
+      };
+    },
+    b: function (r) {
+      return { q: 'В ячейке C2 записана формула =A2*$B$1. Её скопировали в ячейки C5 и D3. Какие формулы там окажутся?', a: 'C5: =A5*$B$1; D3: =B3*$B$1 (относительная ссылка сдвинулась, абсолютная $B$1 не изменилась).', d: ['правильно определяет формулу в C5', 'правильно определяет формулу в D3', 'объясняет поведение абсолютной ссылки'] };
+    },
+    c: function (r) {
+      var n = r.pick([5, 7, 9]);
+      return { q: 'Нужно построить таблицу умножения ' + n + '×' + n + ': числа 1…' + n + ' записаны в B1:' + String.fromCharCode(65 + n) + '1 и в A2:A' + (n + 1) + '. Какую одну формулу записать в B2, чтобы, скопировав её на весь диапазон, получить всю таблицу? Объясни назначение каждого знака $.', a: '=$A2*B$1. $A – столбец A не меняется (берём множитель из первого столбца), $1 – строка 1 не меняется (берём множитель из первой строки).', d: ['использует смешанные ссылки', 'записывает правильную формулу', 'объясняет назначение знаков $'] };
+    },
+    tf: [['Формула в электронной таблице начинается со знака «=».', true], ['Ссылка $B$1 меняется при копировании.', false], ['При копировании вниз B2 превращается в B3.', true], ['=СУММ(A1:A5) складывает пять ячеек.', true], ['После изменения данных формулы нужно вводить заново.', false]]
+  };
+
+  K.sscond = {
+    pic: sheetPic([['День', 'AQI', 'Оценка', ''], ['Пн', '42', 'хорошо', ''], ['Вт', '87', 'умеренно', ''], ['Ср', '134', 'вредно', '']], 'Формат > Условное форматирование', { 1: { 1: '#d8ebe2' }, 2: { 1: '#fff1c7' }, 3: { 1: '#f6dada' } }),
+    terms: 'условное форматирование, правило, условие, цветовая шкала, гистограмма, набор значков',
+    qty: [['Правило «больше»', '> 85 → зелёный', 'выделяет значения выше порога'], ['Цветовая шкала', 'от красного к зелёному', 'показывает величину цветом'], ['Гистограмма', 'полоска в ячейке', 'длина полосы ~ значению'], ['Набор значков', '▲ ● ▼', 'значки по диапазонам значений']],
+    law: 'Условное форматирование автоматически меняет оформление ячейки, если её значение удовлетворяет правилу: например, значение < 40 → красная заливка. При изменении данных оформление меняется само.',
+    theory: ['Правила: больше, меньше, между, равно, текст содержит, первые/последние значения.', 'Цветовые шкалы, гистограммы и наборы значков показывают данные наглядно.', 'Правила проверяются по порядку; ими управляют в «Диспетчере правил».', 'Условное форматирование помогает быстро найти важные значения в больших таблицах.'],
+    fl: function (r) {
+      var days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'], aqi = days.map(function () { return r.i(25, 160); });
+      function col(v) { return v <= 50 ? 'зелёный' : (v <= 100 ? 'жёлтый' : 'красный'); }
+      return {
+        text: 'Экоклуб школы следит за индексом качества воздуха (AQI) в Уральске. Правила окраски ячеек: 0–50 – зелёный (хорошо), 51–100 – жёлтый (умеренно), больше 100 – красный (вредно; урок физкультуры проводят в зале).',
+        table: { head: ['День', 'AQI', 'Цвет ячейки'], rows: days.map(function (d, i) { return [d, String(aqi[i]), '?']; }) },
+        chart: { title: 'Индекс качества воздуха', x: 'день (1 – Пн … 7 – Вс)', y: 'AQI', series: [{ name: 'AQI', pts: aqi.map(function (v, i) { return [i + 1, v]; }) }, { name: 'порог 100', pts: [[1, 100], [7, 100]] }] },
+        qs: [
+          { q: 'Заполни столбец «Цвет ячейки».', a: days.map(function (d, i) { return d + ' – ' + col(aqi[i]); }).join('; ') + '.', p: 2 },
+          { q: 'Сколько уроков физкультуры за неделю нужно провести в зале? Проверь по графику.', a: aqi.filter(function (v) { return v > 100; }).length + ' (дни выше линии 100).', p: 1 },
+          { q: 'Запиши три правила условного форматирования для столбца B (диапазон B2:B8).', a: 'B2:B8: «значение ≤ 50» – зелёная заливка; «между 51 и 100» – жёлтая; «больше 100» – красная.', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      var s = [r.i(20, 39), r.i(40, 84), r.i(85, 100), r.i(40, 84), r.i(20, 39)];
+      return { q: 'Результаты СОР (в %) в ячейках B2:B6: ' + s.join(', ') + '. Правила: ≥ 85 – зелёная заливка, < 40 – красная. Какие ячейки окрасятся и в какой цвет? Какие останутся без заливки?', a: s.map(function (v, i) { return 'B' + (i + 2) + ' – ' + (v >= 85 ? 'зелёная' : (v < 40 ? 'красная' : 'без заливки')); }).join('; ') + '.', d: ['находит ячейки с зелёной заливкой', 'находит ячейки с красной заливкой', 'находит ячейки без заливки'] };
+    },
+    c: function (r) {
+      return { q: 'Ты ведёшь таблицу личных расходов за месяц (столбец C – сумма в ₸, столбец D – категория). Предложи систему из трёх правил условного форматирования, которая поможет экономить: укажи диапазон, условие и оформление каждого правила. Что произойдёт, если два правила подходят к одной ячейке?', a: 'Например: C2:C31 – «больше 5000» → красная заливка; C2:C31 – гистограмма для сравнения сумм; D2:D31 – «текст содержит игры» → оранжевый шрифт. Если подходят два правила, применяются оба (если не противоречат), иначе – правило, стоящее выше в «Диспетчере правил».', d: ['указывает диапазоны', 'формулирует условия', 'выбирает оформление', 'объясняет порядок правил'] };
+    },
+    tf: [['Условное форматирование меняет оформление ячейки по правилу.', true], ['При изменении значения цвет ячейки нужно менять вручную.', false], ['Гистограмма в ячейке показывает величину полоской.', true], ['Условное форматирование меняет значения в ячейках.', false], ['Можно задать несколько правил для одного диапазона.', true]]
+  };
+
+  K.sschart = {
+    pic: sheetPic([['Класс', 'Сдано, кг', '', ''], ['7А', '86', '', ''], ['7Б', '120', '', ''], ['7В', '64', '', '']], 'Вставка > Диаграмма'),
+    terms: 'диаграмма, гистограмма, круговая диаграмма, график, легенда, оси, подписи данных',
+    qty: [['Гистограмма', 'сравнение классов', 'сравнивает величины'], ['Круговая диаграмма', 'доли бюджета', 'показывает части целого'], ['График', 'температура по дням', 'изменение во времени'], ['Легенда', '«7А», «7Б»', 'поясняет ряды данных']],
+    law: 'Выбор диаграммы: сравнение величин – гистограмма; доли целого – круговая; изменение во времени – график. Диаграмму строят по выделенному диапазону; при изменении данных она меняется сама. Доля сектора: (часть / целое)·100%, угол сектора = доля · 360°.',
+    theory: ['Перед построением выделяют диапазон с подписями и числами.', 'Элементы диаграммы: название, оси, подписи данных, легенда.', 'Круговая диаграмма подходит только для одного ряда данных, сумма долей = 100%.', 'Диаграмма должна иметь название и понятные подписи, иначе её трудно читать.'],
+    fl: function (r) {
+      var cl = ['7А', '7Б', '7В', '7Г'], kg = cl.map(function () { return r.i(50, 140); }), tot = kg.reduce(function (a, b) { return a + b; }, 0);
+      var best = kg.indexOf(Math.max.apply(null, kg));
+      return {
+        text: 'В школе прошла экоакция «Сохраним деревья»: классы сдавали макулатуру. Из 60 кг макулатуры получают столько бумаги, сколько из одного дерева. Результаты внесли в электронную таблицу и построили гистограмму.',
+        table: { head: ['Класс', 'Сдано, кг', 'Доля от общего, %'], rows: cl.map(function (c, i) { return [c, String(kg[i]), '?']; }) },
+        chart: { bar: true, title: 'Сдано макулатуры, кг', x: '1 – 7А, 2 – 7Б, 3 – 7В, 4 – 7Г', y: 'масса, кг', series: [{ name: 'кг', pts: kg.map(function (v, i) { return [i + 1, v]; }) }] },
+        qs: [
+          { q: 'Какой класс победил? Сколько всего сдано макулатуры и сколько деревьев сохранено?', a: cl[best] + ' (' + kg[best] + ' кг); всего ' + tot + ' кг; ' + tot + ' / 60 ≈ ' + fm(tot / 60, 1) + ' дерева.', p: 2 },
+          { q: 'Заполни столбец «Доля от общего». Какая диаграмма лучше покажет вклад каждого класса в общий результат?', a: cl.map(function (c, i) { return c + ' – ' + fm(kg[i] / tot * 100, 1) + '%'; }).join('; ') + '. Круговая диаграмма (доли целого).', p: 1 },
+          { q: 'Как изменится диаграмма, если 7В досдаст ещё 20 кг?', a: 'Диаграмма изменится автоматически после изменения числа в ячейке: столбец 7В станет выше на 20 кг.', p: 1 }
+        ]
+      };
+    },
+    b: function (r) {
+      return { q: 'Подбери тип диаграммы для каждой ситуации и объясни выбор: а) рост ученика с 1 по 7 класс; б) из чего состоит дневной рацион (белки, жиры, углеводы); в) количество учеников в кружках робототехники, шахмат и домбры; г) температура в Уральске по месяцам.', a: 'а) график – изменение во времени; б) круговая – доли целого; в) гистограмма – сравнение величин; г) график – изменение во времени.', d: ['выбирает график для изменения во времени', 'выбирает круговую для долей', 'выбирает гистограмму для сравнения', 'обосновывает выбор'] };
+    },
+    c: function (r) {
+      var it = [['Продукты', r.pick([120, 150])], ['Коммунальные услуги', r.pick([40, 50])], ['Транспорт', r.pick([20, 30])], ['Прочее', r.pick([30, 40])]];
+      var tot = it.reduce(function (s, x) { return s + x[1]; }, 0);
+      return { q: 'Месячные расходы семьи (тыс. ₸): ' + it.map(function (x) { return x[0].toLowerCase() + ' – ' + x[1]; }).join(', ') + '. Вычисли долю каждой статьи в процентах и угол сектора круговой диаграммы. Запиши формулу для доли в электронной таблице, если суммы в B2:B5, а итог в B6.', a: 'Итого ' + tot + ' тыс. ₸. ' + it.map(function (x) { return x[0] + ': ' + fm(x[1] / tot * 100, 1) + '%, ' + fm(x[1] / tot * 360, 0) + '°'; }).join('; ') + '. Формула в C2: =B2/$B$6 (процентный формат), скопировать вниз.', d: ['находит общую сумму', 'вычисляет доли в процентах', 'вычисляет углы секторов', 'записывает формулу с абсолютной ссылкой'] };
+    },
+    tf: [['Для изменения величины во времени лучше подходит график.', true], ['Круговая диаграмма подходит для сравнения нескольких рядов данных.', false], ['Легенда поясняет, какой цвет соответствует какому ряду.', true], ['После изменения данных диаграмму нужно строить заново.', false], ['Сумма долей круговой диаграммы равна 100%.', true]]
+  };
+
+  return { K: K, fm: fm, sci: sci };
+})();
+if (typeof module !== 'undefined') module.exports = KINDS;
+// ҚМЖ құрастырушы: деректер → жоспар → Word
+var LESSON = (function () {
+  var isNode = typeof module !== 'undefined' && typeof window === 'undefined';
+  var _CUR = isNode ? require('./curriculum.js') : CUR;
+  var _K = isNode ? require('./kinds.js') : KINDS;
+  var _P = isNode ? require('./pics.js') : PICS;
+  var _D = isNode ? require('./docx.js') : DOCX;
+
+  var CFG = (typeof QMJ_CFG !== 'undefined') ? QMJ_CFG : {};
+  var TEACHER = CFG.teacher || 'Шайхиева Самал Жадигеровна';
+  var SCHOOL = CFG.school || 'ТОО «BINOM BARYS» школа-лицей BINOM SCHOOL «ЖАЙЫҚ»';
+  var VALUES = [
+    ['Трудолюбие и профессионализм', 'через аккуратное выполнение заданий и эффективное использование времени'],
+    ['Созидание и новаторство', 'через поиск решения жизненной ситуации и обсуждение новых идей'],
+    ['Справедливость и ответственность', 'через честное выполнение своей части работы в паре и справедливое взаимооценивание'],
+    ['Единство и солидарность', 'через совместную работу в группе и умение слушать мнение других'],
+    ['Закон и порядок', 'через соблюдение правил безопасности и дисциплины в классе'],
+    ['Независимость и патриотизм', 'через знакомство с достижениями науки и производства Казахстана']
+  ];
+  var LINKS = { band1: 'математика (степени, проценты, координаты), физика, английский язык, технология', band2: 'математика (функции, графики), химия, информатика', band3: 'алгебра (функции, производная), химия, информатика, география' };
+
+  function rng(seedStr) {
+    var h = 2166136261;
+    for (var i = 0; i < seedStr.length; i++) { h ^= seedStr.charCodeAt(i); h = Math.imul(h, 16777619); }
+    var s = h >>> 0;
+    function next() { s += 0x6D2B79F5; var t = s; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }
+    return { f: next, i: function (a, b) { return a + Math.floor(next() * (b - a + 1)); }, pick: function (arr) { return arr[Math.floor(next() * arr.length)]; }, shuffle: function (arr) { var a = arr.slice(); for (var k = a.length - 1; k > 0; k--) { var j = Math.floor(next() * (k + 1)); var x = a[k]; a[k] = a[j]; a[j] = x; } return a; } };
+  }
+  function fmtDate(iso) { var p = iso.split('-'); return p[2] + '.' + p[1] + '.' + p[0]; }
+
+  // Тоқсанды күнге қарай анықтау (2026–2027 оқу жылы, шамамен)
+  function quarterOf(iso) {
+    var d = new Date(iso + 'T12:00:00'), m = d.getMonth() + 1, day = d.getDate();
+    if (m >= 9 && (m < 10 || (m === 10 && day <= 31))) return 1;
+    if (m === 11 || m === 12) return 2;
+    if (m === 1 || m === 2 || (m === 3 && day <= 20)) return 3;
+    if (m >= 3 && m <= 6) return 4;
+    return 1;
+  }
+
+  function buildPlan(gk, q, idx, opts) {
+    opts = opts || {};
+    var G = _CUR[gk], topic = G.q[q][idx];
+    var kind = _K.K[topic.k];
+    if (!kind) throw new Error('Тип темы не найден: ' + topic.k);
+    var date = opts.date || new Date().toISOString().slice(0, 10);
+    var r = rng(gk + '|' + q + '|' + idx + '|' + date);
+    var band = G.band, adv = G.adv;
+    var objectives = opts.objectives || topic.o;
+    var title = opts.title || topic.t;
+    var fl = kind.fl(r, band);
+    var tB = kind.b(r, band), tC = kind.c(r, band, adv);
+    var val = VALUES[r.i(0, VALUES.length - 1)];
+    var gradeNum = parseInt(gk, 10);
+    var dir = gk.indexOf('Ж') > 0 ? 'ЕМН' : (gk.indexOf('Қ') > 0 ? 'ОГН' : '');
+
+    // Тапсырма 2: сәйкестендіру
+    var qty = kind.qty;
+    var shufSym = r.shuffle(qty.map(function (x) { return x[1]; }));
+    var shufUnit = r.shuffle(qty.map(function (x) { return x[2]; }));
+    var letters = 'АБВГДЕЖ';
+    var t2 = {
+      q: 'Сопоставь понятие с примером и его назначением. Ответ запиши в виде «1 – ?, ?».',
+      table: { head: ['№', 'Понятие', 'Пример', 'Назначение'], rows: qty.map(function (x, i) { return [String(i + 1), x[0], letters[i] + ') ' + shufSym[i], String.fromCharCode(97 + i) + ') ' + shufUnit[i]]; }) },
+      a: qty.map(function (x, i) { return (i + 1) + ' – ' + letters[shufSym.indexOf(x[1])] + ', ' + String.fromCharCode(97 + shufUnit.indexOf(x[2])) + ' (' + x[1] + ', ' + x[2] + ')'; }).join('; ') + '.',
+      d: qty.map(function (x) { return x[0] + ' – правильно сопоставляет понятие'; })
+    };
+    // Бекіту
+    var tf = r.shuffle(kind.tf);
+    var bek = {
+      q: 'Игра «Да – Нет». Отметь, верно (Да) или неверно (Нет) каждое утверждение. Исправь неверные утверждения.',
+      table: { head: ['№', 'Утверждение', 'Да / Нет'], rows: tf.map(function (x, i) { return [String(i + 1), x[0], '']; }) },
+      a: tf.map(function (x, i) { return (i + 1) + ' – ' + (x[1] ? 'Да' : 'Нет'); }).join('; ') + '.',
+      d: ['правильно оценивает не менее 4 утверждений', 'исправляет неверные утверждения'],
+      formula: kind.law
+    };
+    // ЖМБ/ҚГБ қосымша тапсырмасы
+    var t5 = null;
+    if (dir === 'ЕМН') t5 = { title: 'Задание №5 (высокий уровень, ЕМН). Составление обратной задачи', q: 'Составь обратную задачу: найденную в задании №3 величину сделай данной, а одну из данных величин – искомой. Реши её и проверь ответ, сравнив с условием задания №3. Докажи правильность формулы проверкой единиц измерения (методом размерностей).', a: 'Ответы могут различаться. Ответ обратной задачи должен совпасть с исходными данными задания №3; проверка размерности даёт одинаковые единицы в обеих частях формулы.', d: ['правильно составляет условие обратной задачи', 'решает задачу', 'проверяет ответ по исходному условию', 'применяет метод размерностей'] };
+    if (dir === 'ОГН') t5 = { title: 'Задание №5 (ОГН). Работа с текстом: мини-эссе', q: '«' + title + '» – напиши мини-эссе из 5–7 предложений о значимости этой темы в повседневной жизни, профессии или обществе. В эссе правильно используй не менее двух физических терминов (' + kind.terms.split(', ').slice(0, 4).join(', ') + ') и приведи один конкретный пример.', a: 'Ответы могут различаться. Образец: называется применение темы в быту/технике, её польза и меры безопасности, термины используются по смыслу.', d: ['объясняет значимость темы', 'правильно использует не менее двух терминов', 'приводит конкретный пример', 'излагает мысли логично и последовательно'] };
+
+    var pic = fl.pic || kind.pic;
+    var plan = {
+      gk: gk, grade: G.label, gradeNum: gradeNum, dir: dir, q: q, date: date, title: title, section: topic.s,
+      teacher: TEACHER, school: SCHOOL, objectives: objectives, kind: topic.k, band: band, adv: adv,
+      terms: kind.terms, law: kind.law, theory: kind.theory, value: val, links: LINKS['band' + band],
+      fl: fl, picSvg: _P.P[pic[0]](pic[1]), chartSvg: _P.chart(fl.chart),
+      t2: t2, t3: tB, t4: tC, t5: t5, bek: bek
+    };
+    return plan;
+  }
+
+  function pts(d) { return d.length; }
+
+  async function toDocx(plan, svg2png) {
+    var d = new _D.Doc();
+    var o = plan.objectives;
+    var objText = o.map(function (x) { return x[0] + ' – ' + x[1]; });
+    var crit = o.map(function (x) { return '• ' + x[1].charAt(0).toUpperCase() + x[1].slice(1) + ';'; });
+    crit.push('• Анализирует данные жизненной ситуации (текст, рисунок, таблица, график) и делает вывод.');
+    var termsArr = plan.terms.split(', ');
+
+    d.p(plan.school, { align: 'center', b: true, after: 0 });
+    d.h('Краткосрочный план', 1);
+    var W = [3000, 7200];
+    var head = [
+      [{ c: 'Раздел:', o: { b: true } }, plan.section],
+      [{ c: 'ФИО педагога:', o: { b: true } }, plan.teacher],
+      [{ c: 'Дата:', o: { b: true } }, fmtDate(plan.date) + ' (' + plan.q + ' четверть)'],
+      [{ c: 'Класс:', o: { b: true } }, plan.grade + (plan.dir ? ' (' + (plan.dir === 'ЕМН' ? 'естественно-математическое направление' : 'общественно-гуманитарное направление') + ')' : '') + '    Количество присутствующих: ____    Количество отсутствующих: ____'],
+      [{ c: 'Тема урока:', o: { b: true } }, { c: plan.title, o: { b: true } }],
+      [{ c: 'Цели обучения в соответствии с учебной программой:', o: { b: true } }, objText],
+      [{ c: 'Цели урока:', o: { b: true } }, [
+        '**Все ученики:** знают понятия: ' + termsArr.slice(0, 4).join(', ') + '; объясняют их назначение и приводят примеры;',
+        '**Большинство:** применяя правила, формулы и алгоритмы, выполняют практические задания, извлекают информацию из таблиц и диаграмм;',
+        '**Некоторые:** применяют полученные знания в жизненных ситуациях, решают сложные задачи, делают выводы и предлагают решения.'
+      ]]
+    ];
+    d.table(head, W, {});
+
+    d.h('Ход урока', 2);
+    var C = [1500, 3500, 2300, 1500, 1400];
+    var fl = plan.fl;
+    var flPts = fl.qs.reduce(function (s, x) { return s + x.p; }, 0);
+    var rows = [['Этап урока / время', 'Действия педагога', 'Действия ученика', 'Оценивание', 'Ресурсы']];
+    rows.push([{ c: ['**Начало урока**', 'Организационный момент', '2 мин'] }, ['Приветствует учеников, отмечает присутствующих.', 'Создаёт атмосферу сотрудничества через круг «Добрых пожеланий».', 'Знакомит с темой и целями урока.'], ['Приветствуют друг друга, высказывают добрые пожелания. Знакомятся с целями урока.'], 'Похвала', 'Слайд, оценочный лист']);
+    rows.push([{ c: ['Актуализация знаний', '«Мозговой штурм»', '4 мин'] }, ['Задаёт вопросы:', '1) ' + plan.section + ': что вы уже знаете по этому разделу?', '2) ' + termsArr[0].charAt(0).toUpperCase() + termsArr[0].slice(1) + ' – что это такое?', '3) Где в повседневной жизни мы встречаемся с этой темой?'], ['Отвечают на вопросы, высказывают своё мнение, дополняют друг друга.'], 'Устная обратная связь', 'Слайд']);
+    rows.push([{ c: ['**Середина урока**', 'Задание №1. Функциональная грамотность', '8 мин'] }, ['Предлагает парам жизненную ситуацию: данные в виде текста, рисунка, таблицы и графика (Приложение 1).', 'Поручает ученикам сравнить данные, выполнить расчёты и принять решение. Оказывает индивидуальную поддержку.'], ['Работа в парах: читают текст, анализируют рисунок, таблицу и график, отвечают на вопросы, предлагают решение.'], 'По дескрипторам: ' + flPts + ' б.', 'Приложение 1, рисунок, график']);
+    rows.push([{ c: ['Изучение новой темы', '8 мин'] }, ['Объясняет новую тему с помощью опорного конспекта (Приложение 2):'].concat(plan.theory.map(function (x) { return '• ' + x; })).concat(['**Основное правило:** ' + plan.law]), ['Слушают, заполняют опорный конспект, задают вопросы, записывают основные правила в тетрадь.'], 'Метод «Большой палец»', 'Приложение 2, доска']);
+    rows.push([{ c: ['Задание №2', 'Знание (уровень А)', '4 мин'] }, ['Предлагает сопоставить понятия, примеры и их назначение (Приложение 3).'], ['Индивидуальная работа: заполняют таблицу, проверяют в паре.'], 'По дескрипторам: ' + pts(plan.t2.d) + ' б.', 'Приложение 3']);
+    rows.push([{ c: ['Задание №3', 'Применение (уровень В)', '6 мин'] }, ['Предлагает практическое задание (Приложение 4). Разбор: условие, алгоритм (формула, код), решение, проверка. Испытывающим затруднения выдаёт опорную карточку.'], ['Индивидуальная работа за компьютером или в тетради: выполняют задание, представляют результат.'], 'По дескрипторам: ' + pts(plan.t3.d) + ' б.', 'Приложение 4, компьютеры']);
+    rows.push([{ c: ['Задание №4', 'Высокий уровень (уровень С)', '6 мин'] }, ['Предлагает сложное задание (Приложение 5). Направляет группы на обсуждение.'], ['Групповая работа: обсуждают способы решения, обосновывают, делают выводы.'], 'По дескрипторам: ' + pts(plan.t4.d) + ' б.', 'Приложение 5']);
+    var bekN = 6;
+    if (plan.t5) {
+      rows.push([{ c: ['Задание №5', plan.dir === 'ЕМН' ? 'ЕМН: высокий уровень' : 'ОГН: работа с текстом', '3 мин'] }, [plan.dir === 'ЕМН' ? 'Предлагает составить обратную задачу и проверить её методом размерностей (Приложение 6). Даётся одарённым ученикам как дополнительное задание.' : 'Предлагает написать мини-эссе о значимости темы в жизни (Приложение 6).'], [plan.dir === 'ЕМН' ? 'Составляют и решают обратную задачу, проверяют размерность.' : 'Пишут мини-эссе, используют термины, 1–2 ученика зачитывают.'], 'По дескрипторам: ' + pts(plan.t5.d) + ' б.', 'Приложение 6']);
+      bekN = 7;
+    }
+    rows.push([{ c: ['**Закрепление новой темы**', 'Игра «Да – Нет»', plan.t5 ? '3 мин' : '5 мин'] }, ['Для закрепления новой темы предлагает утверждения (Приложение ' + bekN + '). Вместе исправляют неверные утверждения.', 'Организует устное повторение основного правила.'], ['Определяют верность утверждений, исправляют неверные, повторяют правило.'], 'Самооценивание: ' + pts(plan.bek.d) + ' б.', 'Приложение ' + bekN]);
+    rows.push([{ c: ['**Конец урока**', 'Обратная связь', '2 мин'] }, ['Организует рефлексию «Незаконченное предложение»:', '– Сегодня я узнал(а) …', '– Мне было трудно …', '– Эти знания я применю …', '**Домашнее задание:** прочитать параграф учебника по теме, найти пример из жизни, похожий на ситуацию из Приложения 1, и составить задачу.'], ['Заканчивают предложения, подсчитывают баллы в оценочном листе.'], 'Общий балл', 'Стикеры']);
+    d.table(rows, C, { head: true });
+
+    // ---------- ҚОСЫМШАЛАР ----------
+    async function addImg(svg, cm) {
+      var im = await svg2png(svg);
+      d.image(im.png, im.w, im.h, cm);
+    }
+    function answers(a, ds, ac) {
+      if (ac) { d.p('**Ответ (программа):**', { shade: 'EEF6EE' }); d.p(ac, { mono: true, shade: 'EEF6EE' }); }
+      d.p('**Ответ:** ' + a, { shade: 'EEF6EE' });
+      var rowsD = [['№', 'Дескриптор: обучающийся', 'Балл']];
+      ds.forEach(function (x, i) { rowsD.push([String(i + 1), x, '1']); });
+      rowsD.push(['', { c: 'Всего', o: { b: true } }, { c: String(ds.length), o: { b: true } }]);
+      d.table(rowsD, [700, 8300, 1200], { head: true, headFill: 'FFF2CC' });
+    }
+
+    d.br();
+    d.h('Приложение 1. Задание №1. Функциональная грамотность', 2);
+    d.p('**Ситуация.** ' + fl.text);
+    await addImg(plan.picSvg, 12);
+    d.p('Рисунок 1', { align: 'center', i: true });
+    if (fl.extra) d.p(fl.extra);
+    if (fl.code) { d.p('**Программа:**'); d.p(fl.code, { mono: true, shade: 'F2F2F2' }); }
+    d.p('**Таблица 1.**');
+    d.table([fl.table.head].concat(fl.table.rows), fl.table.head.map(function () { return Math.floor(10200 / fl.table.head.length); }), { head: true });
+    await addImg(plan.chartSvg, 13.5);
+    d.p('График 1. ' + (fl.chart.title || ''), { align: 'center', i: true });
+    d.p('**Вопросы:**');
+    fl.qs.forEach(function (x, i) { d.p((i + 1) + '. ' + x.q + ' (' + x.p + ' б.)', { ind: 200 }); });
+    d.p('**Ответы:**', { shade: 'EEF6EE' });
+    fl.qs.forEach(function (x, i) { d.p((i + 1) + '. ' + x.a, { shade: 'EEF6EE', ind: 200 }); });
+    var flRows = [['№', 'Дескриптор: обучающийся', 'Балл']];
+    var flDesc = ['находит необходимую информацию в тексте, рисунке и таблице', 'правильно считывает данные с графика', 'правильно выполняет вычисления', 'предлагает обоснованный вывод (решение), опираясь на данные'];
+    var dist = [1, 1, Math.max(1, flPts - 3), 1];
+    flDesc.forEach(function (x, i) { flRows.push([String(i + 1), x, String(dist[i])]); });
+    flRows.push(['', { c: 'Всего', o: { b: true } }, { c: String(dist.reduce(function (a, b) { return a + b; }, 0)), o: { b: true } }]);
+    d.table(flRows, [700, 8300, 1200], { head: true, headFill: 'FFF2CC' });
+
+    d.br(); d.h('Приложение 2. Опорный конспект: «' + plan.title + '»', 2);
+    plan.theory.forEach(function (x) { d.p('• ' + x, { ind: 200 }); });
+    d.p('**Основные правила / формулы:** ' + plan.law, { shade: 'E8EEF8' });
+    d.p('**Словарь терминов:** ' + plan.terms + '.');
+    d.table([['Понятие', 'Пример', 'Назначение']].concat(plan.t2.table.rows.map(function (r0, i) { var qy = plan.t2.table.rows[i]; return [qy[1], '', '']; })), [4400, 2900, 2900], { head: true });
+    d.p('Таблицу ученик заполняет во время объяснения новой темы.', { i: true });
+
+    d.br(); d.h('Приложение 3. Задание №2. Знание (уровень А)', 2);
+    d.p(plan.t2.q);
+    d.table([plan.t2.table.head].concat(plan.t2.table.rows), [700, 4100, 2700, 2700], { head: true });
+    answers(plan.t2.a, plan.t2.d);
+
+    d.br(); d.h('Приложение 4. Задание №3. Применение (уровень В)', 2);
+    d.p(plan.t3.q);
+    if (plan.t3.code) d.p(plan.t3.code, { mono: true, shade: 'F2F2F2' });
+    d.p('Образец решения: Условие → Алгоритм (формула, код) → Решение → Проверка → Ответ.', { i: true });
+    answers(plan.t3.a, plan.t3.d, plan.t3.ac);
+
+    d.br(); d.h('Приложение 5. Задание №4. Высокий уровень (уровень С)', 2);
+    d.p(plan.t4.q);
+    if (plan.t4.code) d.p(plan.t4.code, { mono: true, shade: 'F2F2F2' });
+    answers(plan.t4.a, plan.t4.d, plan.t4.ac);
+
+    if (plan.t5) {
+      d.br(); d.h('Приложение 6. ' + plan.t5.title, 2);
+      d.p(plan.t5.q);
+      answers(plan.t5.a, plan.t5.d);
+    }
+
+    d.br(); d.h('Приложение ' + bekN + '. Закрепление новой темы', 2);
+    d.p(plan.bek.q);
+    d.table([plan.bek.table.head].concat(plan.bek.table.rows), [700, 7700, 1800], { head: true });
+    d.p('**Вспомни правило:** ' + plan.bek.formula);
+    answers(plan.bek.a, plan.bek.d);
+
+    d.br(); d.h('Приложение ' + (bekN + 1) + '. Оценочный лист', 2);
+    var sheet = [['Задание', 'Максимальный балл', 'Мой балл']];
+    sheet.push(['№1 Функциональная грамотность', String(dist.reduce(function (a, b) { return a + b; }, 0)), '']);
+    sheet.push(['№2 Знание', String(pts(plan.t2.d)), '']);
+    sheet.push(['№3 Применение', String(pts(plan.t3.d)), '']);
+    sheet.push(['№4 Высокий уровень', String(pts(plan.t4.d)), '']);
+    if (plan.t5) sheet.push(['№5 ' + (plan.dir === 'ЕМН' ? 'Обратная задача' : 'Мини-эссе'), String(pts(plan.t5.d)), '']);
+    sheet.push(['Закрепление', String(pts(plan.bek.d)), '']);
+    d.table(sheet, [5200, 2500, 2500], { head: true });
+
+    return d.build();
+  }
+
+  function fileName(plan) {
+    var t = plan.title.replace(/[\\\/:*?"<>|«»]/g, '').replace(/\s+/g, ' ').trim().slice(0, 60);
+    return 'КСП_' + plan.grade.replace(/[ ·]/g, '') + '_' + fmtDate(plan.date) + '_' + t + '.docx';
+  }
+
+  return { buildPlan: buildPlan, toDocx: toDocx, quarterOf: quarterOf, fmtDate: fmtDate, fileName: fileName, TEACHER: TEACHER, SCHOOL: SCHOOL };
+})();
+if (typeof module !== 'undefined') module.exports = LESSON;
+</script>
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  var S={g:null,d:null,q:1,date:null,i:null};
+  var PFX='qmj:'+((window.QMJ_CFG&&QMJ_CFG.id)||'')+':';
+  var store={get:function(k){try{return JSON.parse(localStorage.getItem(PFX+k))}catch(e){return null}},set:function(k,v){try{localStorage.setItem(PFX+k,JSON.stringify(v))}catch(e){}}};
+  $('tname').textContent=LESSON.TEACHER; if(window.QMJ_CFG&&QMJ_CFG.brand) $('bname').textContent=QMJ_CFG.brand; if(window.QMJ_CFG&&QMJ_CFG.glabel) $('glabel').textContent=QMJ_CFG.glabel; $('sname').textContent=LESSON.SCHOOL;
+  if(!store.get('seen')){ $('install').open=true; store.set('seen',1); }
+  var today=new Date(); today=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
+  $('date').value=today; S.date=today; S.q=LESSON.quarterOf(today);
+  var last=store.get('last')||{};
+  if(last.g){S.g=last.g;S.d=last.d||null;}
+  if(!CUR[S.g]) S.g='7';
+  function key(){ if(!S.g) return null; var n=parseInt(S.g,10); if(n>=10){ return S.d? n+S.d : null;} return S.g; }
+  function grades(){var h='';(window.QMJ_CFG&&QMJ_CFG.grades||['7','8','9','10','11']).forEach(function(g){h+='<button class="chip" type="button" data-g="'+g+'" aria-pressed="'+(S.g===g)+'">'+g+'</button>'});$('grades').innerHTML=h;}
+  function quarters(){var h='';[1,2,3,4].forEach(function(q){h+='<button class="chip" type="button" data-q="'+q+'" aria-pressed="'+(S.q===q)+'">'+q+'</button>'});$('quarters').innerHTML=h;}
+  function ovKey(){return 'ov:'+key()+':'+S.q+':'+S.i;}
+  function current(){var k=key(); if(!k||S.i==null) return null; var t=CUR[k].q[S.q][S.i]; var ov=store.get(ovKey()); return {t:t,title:(ov&&ov.title)||t.t,o:(ov&&ov.o)||t.o};}
+  function render(){
+    grades(); quarters();
+    var n=parseInt(S.g,10), hi=n>=10, fd=window.QMJ_CFG&&QMJ_CFG.fixedDir;
+    if(hi&&fd) S.d=fd;
+    $('dirStep').hidden=!hi||!!fd;
+    var base=(hi&&!fd)?3:2; $('nq').textContent=base; $('nd').textContent=base+1; $('nt').textContent=base+2; $('ns').textContent=base+3;
+    document.querySelectorAll('#dirs .chip').forEach(function(b){b.setAttribute('aria-pressed',String(S.d===b.dataset.d))});
+    var k=key(), box=$('topics');
+    if(!k){ box.innerHTML='<p class="hint">'+(hi?'Сначала выберите направление.':'Сначала выберите класс.')+'</p>'; $('load').textContent=''; S.i=null; }
+    else{
+      var G=CUR[k], list=G.q[S.q], h='', sec='';
+      $('load').textContent=G.label+' · '+G.load+' · '+S.q+' четверть';
+      list.forEach(function(t,i){
+        if(t.s!==sec){sec=t.s;h+='<div class="sec">'+esc(sec)+'</div>';}
+        var ov=store.get('ov:'+k+':'+S.q+':'+i);
+        var title=(ov&&ov.title)||t.t, codes=((ov&&ov.o)||t.o).map(function(o){return o[0]}).join(', ');
+        h+='<button class="topic" type="button" data-i="'+i+'" aria-pressed="'+(S.i===i)+'"><b>'+esc(title)+'</b><span class="codes">'+esc(codes)+'</span></button>';
+      });
+      box.innerHTML=h;
+      if(S.i!=null && S.i>=list.length) S.i=null;
+    }
+    var c=current();
+    $('selStep').hidden=!c; $('go').disabled=!c;
+    if(c){
+      $('selTitle').textContent=c.title;
+      $('selObj').innerHTML='<p class="hint" style="margin:0 0 4px">Цели обучения:</p>'+c.o.map(function(o){return '<div><b>'+esc(o[0])+'</b> – '+esc(o[1])+'</div>'}).join('');
+      $('eTitle').value=c.title; $('eObj').value=c.o.map(function(o){return o[0]+' – '+o[1]}).join('\n');
+      setStatus('Готово: нажмите кнопку «Скачать Word»','');
+    } else setStatus(k?'Выберите тему':'Выберите класс и тему','');
+    store.set('last',{g:S.g,d:S.d});
+  }
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function setStatus(t,cls){var s=$('status');s.textContent=t;s.className='status '+(cls||'');}
+  $('grades').addEventListener('click',function(e){var b=e.target.closest('[data-g]');if(!b)return;if(S.g!==b.dataset.g){S.g=b.dataset.g;S.i=null;if(parseInt(S.g,10)<10)S.d=null;}render();});
+  $('dirs').addEventListener('click',function(e){var b=e.target.closest('[data-d]');if(!b)return;S.d=b.dataset.d;S.i=null;render();});
+  $('quarters').addEventListener('click',function(e){var b=e.target.closest('[data-q]');if(!b)return;S.q=parseInt(b.dataset.q,10);S.i=null;render();});
+  $('date').addEventListener('change',function(){if(!this.value)return;S.date=this.value;var q=LESSON.quarterOf(S.date);if(q!==S.q){S.q=q;S.i=null;}render();});
+  $('topics').addEventListener('click',function(e){var b=e.target.closest('[data-i]');if(!b)return;S.i=parseInt(b.dataset.i,10);$('editBox').hidden=true;render();$('selStep').scrollIntoView({behavior:'smooth',block:'start'});});
+  $('editBtn').addEventListener('click',function(){$('editBox').hidden=!$('editBox').hidden;});
+  function saveEdit(){var c=current();if(!c)return;var o=$('eObj').value.split('\n').map(function(l){return l.trim()}).filter(Boolean).map(function(l){var m=l.match(/^([\d.]+)\s*[–\-—:]\s*(.+)$/);return m?[m[1],m[2]]:['',l];});
+    store.set(ovKey(),{title:$('eTitle').value.trim()||c.t.t,o:o.length?o:c.t.o});
+    var cc=current();$('selTitle').textContent=cc.title;$('selObj').innerHTML='<p class="hint" style="margin:0 0 4px">Цели обучения:</p>'+cc.o.map(function(x){return '<div><b>'+esc(x[0])+'</b> – '+esc(x[1])+'</div>'}).join('');}
+  $('eTitle').addEventListener('change',saveEdit); $('eObj').addEventListener('change',saveEdit);
+  $('resetBtn').addEventListener('click',function(){try{localStorage.removeItem(PFX+ovKey())}catch(e){}render();$('editBox').hidden=false;});
+
+  function svg2png(svg){return new Promise(function(res,rej){
+    var img=new Image();img.onload=function(){var sc=2,w=img.naturalWidth||640,h=img.naturalHeight||360;var cv=document.createElement('canvas');cv.width=w*sc;cv.height=h*sc;var ctx=cv.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,cv.width,cv.height);ctx.drawImage(img,0,0,cv.width,cv.height);
+      cv.toBlob(function(b){if(!b)return rej(new Error('png'));b.arrayBuffer().then(function(ab){res({png:new Uint8Array(ab),w:cv.width,h:cv.height})})},'image/png');};
+    img.onerror=function(){rej(new Error('Не удалось нарисовать рисунок'))};
+    img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);});}
+
+  var dl=null;
+  function plainSave(bytes,name){var blob=new Blob([bytes],{type:'application/vnd.openxmlformats-officedocument.wordprocessingml.document'});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},4000);}
+  var lastFile=null, DOCX_MIME='application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+  function prepareShare(bytes,name){
+    lastFile=null; var ok=false;
+    try{ var f=new File([bytes],name,{type:DOCX_MIME}); if(navigator.canShare&&navigator.canShare({files:[f]})){ lastFile=f; ok=true; } }catch(e){}
+    $('share').hidden=!ok; $('tip').hidden=ok;
+  }
+  $('share').addEventListener('click',async function(){
+    if(!lastFile) return;
+    try{ await navigator.share({files:[lastFile],title:lastFile.name}); setStatus('Отправлено: '+lastFile.name,'ok'); }
+    catch(e){ if(e&&e.name==='AbortError') setStatus('Отправка отменена',''); else { $('share').hidden=true; $('tip').hidden=false; setStatus('Окно «Поделиться» не открылось. Отправьте файл из папки «Загрузки».','err'); } }
+  });
+  $('go').addEventListener('click',async function(){
+    var c=current();if(!c)return;var btn=this;btn.disabled=true;$('share').hidden=true;$('tip').hidden=true;setStatus('КСП готовится…','');
+    try{
+      var plan=LESSON.buildPlan(key(),S.q,S.i,{date:S.date,title:c.title,objectives:c.o});
+      var bytes=await LESSON.toDocx(plan,svg2png), name=LESSON.fileName(plan);
+      prepareShare(bytes,name);
+      if(dl){ try{ await dl.save({filename:name,data:new Blob([bytes])}); setStatus('Сохранено: '+name,'ok'); }
+        catch(e){ setStatus(e&&e.code==='declined'?'Скачивание отменено':'Не удалось скачать: '+((e&&e.message)||''),'err'); } }
+      else { plainSave(bytes,name); setStatus('Скачано: '+name,'ok'); }
+    }catch(e){ setStatus('Ошибка: '+e.message,'err'); }
+    btn.disabled=false;
+  });
+  render();
+})();
+</script>
+
+<script>
+(function(){
+  var ua=navigator.userAgent||'', isAnd=/Android/i.test(ua), isIOS=/iPhone|iPad|iPod/i.test(ua);
+  var inApp=/WhatsApp|FBAN|FBAV|FB_IAB|Instagram|Telegram|wv\)|Line\//i.test(ua);
+  var standalone=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone;
+  var el=function(id){return document.getElementById(id)};
+  if(inApp&&!standalone){
+    el('inapp').hidden=false;
+    if(isAnd){var b=el('toChrome');b.hidden=false;b.onclick=function(){
+      location.href='intent://'+location.host+location.pathname+location.search+'#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url='+encodeURIComponent(location.href)+';end';};}
+    else if(isIOS){el('inappTxt').innerHTML='Нажмите <b>⋯</b> или <b>⤴</b> внизу справа и выберите <b>«Открыть в Safari»</b>.';}
+  }
+  var dp=null;
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;var b=el('instBtn');b.hidden=false;var d=el('install');if(d&&!standalone)d.open=true;});
+  el('instBtn').addEventListener('click',function(){if(!dp)return;dp.prompt();dp.userChoice.then(function(){dp=null;el('instBtn').hidden=true;});});
+  window.addEventListener('appinstalled',function(){el('instBtn').hidden=true;var d=el('install');if(d)d.open=false;});
+  if(standalone){var d=el('install');if(d)d.hidden=true;}
+  if('serviceWorker' in navigator && location.protocol==='https:'){
+    navigator.serviceWorker.register('sw.js').then(function(r){
+      r.addEventListener('updatefound',function(){var w=r.installing;if(!w)return;w.addEventListener('statechange',function(){
+        if(w.state==='installed'&&navigator.serviceWorker.controller){
+          var u=document.createElement('div');u.className='upd';u.innerHTML='<span>Готова новая версия</span><button type="button">Обновить</button>';
+          u.querySelector('button').onclick=function(){location.reload()};document.body.appendChild(u);}
+      });});
+      r.update();
+    }).catch(function(){});
+  }
+})();
+</script>
+</body></html>

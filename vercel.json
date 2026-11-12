@@ -33,6 +33,16 @@
   },
   {
    "source": "/(.*)",
+   "has": [
+    {
+     "type": "host",
+     "value": "shaikhieva-qmj.vercel.app"
+    }
+   ],
+   "destination": "/shaikhieva/$1"
+  },
+  {
+   "source": "/(.*)",
    "destination": "/sharapatova/$1"
   }
  ]
