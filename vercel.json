@@ -19,5 +19,21 @@
     }
    ]
   }
+ ],
+ "rewrites": [
+  {
+   "source": "/(.*)",
+   "has": [
+    {
+     "type": "host",
+     "value": "avij-qmj.vercel.app"
+    }
+   ],
+   "destination": "/avij/$1"
+  },
+  {
+   "source": "/(.*)",
+   "destination": "/sharapatova/$1"
+  }
  ]
 }
