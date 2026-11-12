@@ -1,0 +1,1487 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>.inapp{background:#efe3c4;color:#23272b;border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;font-size:16px}.inapp b{font-size:17px}.inapp .go2,.instbtn{appearance:none;border:none;border-radius:12px;min-height:52px;font:700 18px var(--f-body);background:var(--accent);color:var(--accent-ink);cursor:pointer;padding:0 16px}.instbtn{width:100%;margin:6px 0 10px}.upd{position:fixed;left:12px;right:12px;bottom:calc(150px + env(safe-area-inset-bottom,0px));max-width:696px;margin:0 auto;background:var(--ink);color:var(--paper);border-radius:12px;padding:12px 14px;font-size:16px;display:flex;gap:10px;align-items:center;justify-content:space-between;z-index:20}.upd button{appearance:none;border:none;border-radius:10px;background:var(--paper);color:var(--ink);font:700 16px var(--f-body);min-height:44px;padding:0 14px}</style>
+<style>/* қазақ тілі элементтері */
+body{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22340%22%20height%3D%22320%22%20viewBox%3D%220%200%20340%20320%22%3E%3Cg%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%233b5b8a%22%20fill-opacity%3D%22.09%22%20font-size%3D%2226%22%3E%3Ctext%20x%3D%2214%22%20y%3D%2244%22%3E%D3%98%D3%99%3C/text%3E%3Ctext%20x%3D%22250%22%20y%3D%2258%22%3E%D2%92%D2%93%3C/text%3E%3Ctext%20x%3D%22150%22%20y%3D%22132%22%3E%D2%9A%D2%9B%3C/text%3E%3Ctext%20x%3D%2222%22%20y%3D%22206%22%3E%D2%A2%D2%A3%3C/text%3E%3Ctext%20x%3D%22270%22%20y%3D%22196%22%3E%D3%A8%D3%A9%3C/text%3E%3Ctext%20x%3D%22120%22%20y%3D%22298%22%3E%D2%B0%D2%B1%3C/text%3E%3Ctext%20x%3D%22286%22%20y%3D%22300%22%3E%D2%AE%D2%AF%3C/text%3E%3C/g%3E%3Cg%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%233b5b8a%22%20fill-opacity%3D%22.09%22%20font-size%3D%2214%22%20font-style%3D%22italic%22%3E%3Ctext%20x%3D%2280%22%20y%3D%2282%22%3E%D0%B7%D0%B0%D1%82%20%D0%B5%D1%81%D1%96%D0%BC%3C/text%3E%3Ctext%20x%3D%22200%22%20y%3D%22110%22%3E%D0%B5%D1%82%D1%96%D1%81%D1%82%D1%96%D0%BA%3C/text%3E%3Ctext%20x%3D%2210%22%20y%3D%22150%22%3E%D1%81%D1%8B%D0%BD%20%D0%B5%D1%81%D1%96%D0%BC%3C/text%3E%3Ctext%20x%3D%22190%22%20y%3D%22246%22%3E%D3%A9%D0%BB%D0%B5%D2%A3%3C/text%3E%3Ctext%20x%3D%2240%22%20y%3D%22256%22%3E%D0%B5%D1%80%D1%82%D0%B5%D0%B3%D1%96%3C/text%3E%3C/g%3E%3C/svg%3E");background-size:340px 320px;background-attachment:fixed}
+.hero{position:relative;overflow:hidden}
+.hero>*{position:relative;z-index:1}
+.hero::after{content:"";position:absolute;right:-36px;top:-30px;width:200px;height:200px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%20fill%3D%22none%22%20stroke%3D%22%233b5b8a%22%20stroke-width%3D%224%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M100%2060c-18-12-46-14-70-8v100c24-6%2052-4%2070%208%2018-12%2046-14%2070-8V52c-24-6-52-4-70%208z%22/%3E%3Cpath%20d%3D%22M100%2060v100%22/%3E%3Cpath%20d%3D%22M45%2075c14-3%2030-2%2042%204M45%2092c14-3%2030-2%2042%204M45%20109c14-3%2030-2%2042%204M113%2079c12-6%2028-7%2042-4M113%2096c12-6%2028-7%2042-4M113%20113c12-6%2028-7%2042-4%22/%3E%3Cpath%20d%3D%22M150%2018c10%2010%2014%2026%206%2040l-22%2038-6-4%2022-38c4-8%204-20%200-36z%22/%3E%3Cpath%20d%3D%22M128%2096l-2%2010%208-6%22/%3E%3C/svg%3E") no-repeat center/contain;opacity:.17;pointer-events:none;z-index:0}
+.who{border-top:0;padding-top:18px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2248%22%20height%3D%2214%22%20viewBox%3D%220%200%2048%2014%22%3E%3Cpath%20d%3D%22M2%2012c0-6%204-10%208-10s6%203%204%206-6%202-6-1M46%2012c0-6-4-10-8-10s-6%203-4%206%206%202%206-1M14%2012h20%22%20fill%3D%22none%22%20stroke%3D%22%233b5b8a%22%20stroke-opacity%3D%22.5%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E") repeat-x left top/48px 14px}
+.sec::before{content:"✎ ";color:var(--accent)}
+.step h2 .n{background:var(--accent);color:var(--accent-ink)}
+@media (prefers-color-scheme: dark){body{background-image:none}}
+</style>
+<title>Самалова Айгерим · ҚМЖ</title>
+<meta name="theme-color" content="#eef2f7">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Самалова">
+<style>
+/* Лабораториялық дәптер: миллиметрлік тор, сия-көк мәтін, кобальт белгі, ашық сары белгілеу */
+/* Спокойная палитра: мягкий фон, приглушённый сине-зелёный акцент, без ярких заливок */
+:root{
+  --paper:#eef2f7; --grid:transparent; --ink:#1f2a37; --muted:#56637a; --line:#d3dbe6;
+  --accent:#3b5b8a; --accent-ink:#ffffff; --mark:#e3e9f4; --ok:#2f6b4a; --warn:#9a4a1c; --card:#f9fbfd;
+  --hero1:#dfe7f2; --hero2:#dfe7f2; --hero-ink:#1f2a37; --hero-dim:#56637a; --hero-line:#c9d4e3; --hi:#3b5b8a;
+  --f-display:"Unbounded","PT Sans",system-ui,sans-serif; --f-body:"PT Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#1a1f27; --ink:#e3e8ef; --muted:#a3adbd; --line:#323b48;
+  --accent:#8fb0dc; --accent-ink:#121a26; --mark:#4a4430; --ok:#8cc7a4; --warn:#e3a27a; --card:#212835;
+  --hero1:#243044; --hero2:#243044; --hero-ink:#e3e8ef; --hero-dim:#a3adbd; --hero-line:#36445a; --hi:#8fb0dc; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#1a1f27; --ink:#e3e8ef; --muted:#a3adbd; --line:#323b48;
+  --accent:#8fb0dc; --accent-ink:#121a26; --mark:#4a4430; --ok:#8cc7a4; --warn:#e3a27a; --card:#212835;
+  --hero1:#243044; --hero2:#243044; --hero-ink:#e3e8ef; --hero-dim:#a3adbd; --hero-line:#36445a; --hi:#8fb0dc; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{min-height:100%}
+body{margin:0;background-color:var(--paper);
+color:var(--ink);font-family:var(--f-body);font-size:19px;line-height:1.45}
+.wrap{max-width:720px;margin:0 auto;padding-block:20px 120px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:18px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.step h2{margin:0;font-family:var(--f-display);font-weight:600;font-size:18px;display:flex;gap:10px;align-items:center}
+.step h2 .n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:15px;flex:none}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{appearance:none;border:1.5px solid var(--line);background:transparent;color:var(--ink);font:700 20px var(--f-body);border-radius:12px;min-height:56px;min-width:64px;padding:8px 16px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.chip:focus-visible,.topic:focus-visible,.go:focus-visible,input:focus-visible,textarea:focus-visible,.link:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
+.chip small{display:block;font-weight:400;font-size:14px}
+input[type=date]{font:700 21px var(--f-body);padding:10px 12px;border:2px solid var(--ink);border-radius:12px;background:var(--card);color:var(--ink);min-height:56px;width:100%;max-width:260px}
+.hint{color:var(--muted);font-size:16px;margin:0}
+.sec{font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:10px 0 2px}
+.list{display:flex;flex-direction:column;gap:8px}
+.topic{appearance:none;text-align:left;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:12px 14px;font:400 18px/1.35 var(--f-body);cursor:pointer;display:flex;flex-direction:column;gap:4px}
+.topic b{font-weight:700}
+.topic .codes{font-size:15px;color:var(--muted);font-variant-numeric:tabular-nums}
+.topic[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 6px 0 0 var(--accent)}
+.sel{display:flex;flex-direction:column;gap:8px}
+.sel .t{font-weight:700;font-size:20px}
+label{font-weight:700;font-size:16px}
+textarea,.ti{width:100%;font:400 17px/1.4 var(--f-body);padding:10px 12px;border:2px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);min-width:0}
+textarea{min-height:120px;resize:vertical}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.link{appearance:none;background:none;border:none;color:var(--accent);font:700 16px var(--f-body);text-decoration:underline;cursor:pointer;padding:6px 0}
+.dock{position:fixed;left:0;right:0;bottom:0;background:var(--paper);border-top:1px solid var(--line);padding-top:12px;padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.dock .in{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:6px}
+.go{appearance:none;width:100%;min-height:64px;border:none;border-radius:14px;background:var(--accent);color:var(--accent-ink);font:600 20px var(--f-display);cursor:pointer;letter-spacing:.01em}
+.btns{display:flex;gap:10px}
+.btns .go{flex:1;min-width:0}
+.share{appearance:none;min-height:64px;padding:0 20px;border-radius:14px;border:2px solid var(--accent);background:var(--card);color:var(--accent);font:800 19px var(--f-display);cursor:pointer;flex:none}
+.share:focus-visible{outline:3px solid var(--warn);outline-offset:2px}
+.tip{margin:0;font-size:15px;text-align:center;color:var(--muted)}
+.go[disabled]{opacity:.45;cursor:not-allowed}
+.status{min-height:22px;font-size:16px;text-align:center;color:var(--muted)}
+.status.ok{color:var(--ok);font-weight:700}.status.err{color:var(--warn);font-weight:700}
+.note{font-size:15px;color:var(--muted);border-left:4px solid var(--line);padding-left:10px;margin:0}
+.hero{border-radius:18px;padding:22px 20px;color:var(--hero-ink);display:flex;flex-direction:column;gap:12px;background:var(--hero1);border:1px solid var(--hero-line)}
+.kicker{font-size:14px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--hero-dim)}
+.brand{margin:0;font-family:var(--f-display);font-weight:600;font-size:clamp(30px,9vw,46px);line-height:1.1;text-wrap:balance;letter-spacing:-.02em}
+.brand .tag{color:var(--accent-ink);background:var(--hi);padding:0 .14em;border-radius:8px}
+.lead{margin:0;font-size:18px;max-width:34ch}
+.flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.flow span{font-weight:700;font-size:16px;border:1px solid var(--hero-line);background:var(--card);border-radius:999px;padding:6px 14px}
+.flow i{font-style:normal;color:var(--hi);font-weight:800}
+.who{display:flex;flex-direction:column;gap:2px;font-size:15px;color:var(--hero-dim);border-top:1px solid var(--hero-line);padding-top:12px}
+.who b{color:var(--hero-ink);font-size:18px}
+.install{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:4px 16px}
+.install summary{list-style:none;cursor:pointer;display:flex;gap:12px;align-items:center;min-height:62px;font-size:19px}
+.install summary::-webkit-details-marker{display:none}
+.install summary small{display:block;color:var(--muted);font-size:15px}
+.install summary::after{content:"+";margin-left:auto;font:700 26px var(--f-display);color:var(--accent)}
+.install[open] summary::after{content:"–"}
+.install .ic{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--accent);color:var(--accent-ink);font:800 22px var(--f-display);flex:none}
+.install .hint{margin:0 0 6px}
+.os{margin:10px 0 0;font:700 17px var(--f-display);color:var(--accent)}
+.steps{margin:6px 0 12px;padding-left:26px;display:flex;flex-direction:column;gap:10px;font-size:18px}
+.steps li::marker{font-weight:800;color:var(--accent)}
+.warn{margin:0 0 10px;font-size:16px;background:var(--mark);color:var(--ink);border-radius:10px;padding:10px 12px}
+.install .note{margin:0 0 14px}
+@media (prefers-reduced-motion:no-preference){.chip,.topic,.go{transition:background-color .15s,border-color .15s,transform .1s}.go:active{transform:scale(.99)}}
+</style>
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker" id="kicker">Физика · қысқа мерзімді жоспар</div>
+    <h1 class="brand"><span class="nm" id="bname">Физика</span> <span class="tag">ҚМЖ</span></h1>
+    <p class="lead"><span id="glabel">5-сынып қазақ тілі мен әдебиетіне</span> арналған қысқа мерзімді жоспар. Тақырыпты таңдаңыз – дайын ҚМЖ Word файлы болып жүктеледі.</p>
+    <div class="flow" aria-label="Жұмыс реті"><span>КТЖ</span><i>→</i><span>ҚМЖ</span><i>→</i><span>Word</span></div>
+    <div class="who"><b id="tname"></b><span id="sname"></span></div>
+  </header>
+
+  <div class="inapp" id="inapp" hidden><b>Қосымша WhatsApp ішінде ашылды</b><span id="inappTxt">Word файлы дұрыс жүктелуі үшін браузерде ашыңыз.</span><button class="go2" type="button" id="toChrome" hidden>Chrome-да ашу</button></div>
+  <details class="install" id="install">
+    <summary><span class="ic" aria-hidden="true">↓</span><span><b>Телефонға орнату</b><small>Android және iPhone · бір рет қана</small></span></summary>
+    <button class="instbtn" type="button" id="instBtn" hidden>📲 Телефонға орнату</button>
+    <p class="hint">Басты экранға бір рет қосыңыз, кейін «<span id="appn">Физика ҚМЖ</span>» белгішесін басып ашасыз.</p>
+    <h3 class="os">Android (Samsung т.б.)</h3>
+    <ol class="steps">
+      <li>Сілтемені <b>Chrome</b> браузерінде ашыңыз.</li>
+      <li>Жоғарғы оң жақтағы <b>⋮</b> (үш нүкте) мәзірін басыңыз.</li>
+      <li><b>«Қосымшаны орнату»</b> немесе <b>«Басты экранға қосу»</b> пунктін таңдаңыз.</li>
+      <li><b>«Орнату»</b> / <b>«Қосу»</b> батырмасын басыңыз.</li>
+    </ol>
+    <h3 class="os">iPhone / iPad</h3>
+    <ol class="steps">
+      <li>Сілтемені <b>Safari</b> браузерінде ашыңыз.</li>
+      <li>Төмендегі <b>«Бөлісу»</b> батырмасын (жоғары бағытталған нұсқары бар шаршы) басыңыз.</li>
+      <li>Тізімді төмен сырғытып, <b>«Басты экранға қосу»</b> (На экран «Домой») таңдаңыз.</li>
+      <li>Жоғарғы оң жақтағы <b>«Қосу»</b> батырмасын басыңыз.</li>
+    </ol>
+    <p class="warn">WhatsApp ішінде ашылса, алдымен сыртқы браузерге шығыңыз: Android-та ⋮ → <b>«Chrome-да ашу»</b>, iPhone-да <b>«Safari-де ашу»</b>.</p>
+    <p class="note"><b>Word файлы</b> Android-та <b>«Жүктелгендер»</b> (Загрузки) бумасына, iPhone-да <b>«Файлдар»</b> (Файлы) қосымшасына сақталады. Оны Word, WPS Office немесе Pages арқылы ашыңыз.</p>
+  </details>
+
+  <section class="step" aria-labelledby="h1"><h2 id="h1"><span class="n">1</span><span id="h1t">Сынып</span></h2>
+    <div class="chips" id="grades"></div></section>
+
+  <section class="step" id="dirStep" hidden aria-labelledby="h2"><h2 id="h2"><span class="n">2</span>Бағыт</h2>
+    <div class="chips" id="dirs">
+      <button class="chip" data-d="Ж" type="button">ЖМБ<small>жаратылыстану-математикалық</small></button>
+      <button class="chip" data-d="Қ" type="button">ҚГБ<small>қоғамдық-гуманитарлық</small></button>
+    </div></section>
+
+  <section class="step" aria-labelledby="h3"><h2 id="h3"><span class="n" id="nq">2</span>Тоқсан</h2>
+    <div class="chips" id="quarters"></div></section>
+
+  <section class="step" aria-labelledby="h4"><h2 id="h4"><span class="n" id="nd">3</span>Күні</h2>
+    <input type="date" id="date" aria-label="Сабақтың күні">
+    <p class="hint">Бүгінгі күн өздігінен қойылады, оны өзгертуге болады.</p></section>
+
+  <section class="step" aria-labelledby="h5"><h2 id="h5"><span class="n" id="nt">4</span>Тақырып</h2>
+    <p class="hint" id="load"></p>
+    <div class="list" id="topics"></div></section>
+
+  <section class="step" id="selStep" hidden aria-labelledby="h6"><h2 id="h6"><span class="n" id="ns">5</span>Таңдалған сабақ</h2>
+    <div class="sel">
+      <div class="t" id="selTitle"></div>
+      <div id="selObj"></div>
+      <div class="row"><button class="link" id="editBtn" type="button">Тақырыпты немесе мақсатты түзету</button></div>
+      <div id="editBox" hidden class="sel">
+        <label for="eTitle">Сабақтың тақырыбы</label>
+        <input class="ti" id="eTitle" type="text">
+        <label for="eObj">Оқу мақсаттары (әр жолға біреу: «код – мақсат»)</label>
+        <textarea id="eObj"></textarea>
+        <div class="row"><button class="link" id="resetBtn" type="button">Бағдарламадағы нұсқаны қайтару</button></div>
+        <p class="note">Түзетулер осы құрылғыда сақталады.</p>
+      </div>
+    </div></section>
+</div>
+
+<div class="dock"><div class="in">
+  <div class="btns"><button class="go" id="go" type="button" disabled>Word жүктеу</button><button class="share" id="share" type="button" hidden>Бөлісу</button></div>
+  <p class="tip" id="tip" hidden>WhatsApp-қа немесе Google Drive-қа жіберу: «Жүктелгендер» бумасынан файлды ұстап тұрып, <b>«Бөлісу»</b> → WhatsApp / Drive таңдаңыз.</p>
+  <div class="status" id="status" role="status" aria-live="polite">Сыныпты және тақырыпты таңдаңыз</div>
+</div></div>
+
+<script>var QMJ_CFG={"id":"s120b","teacher":"Самалова Айгерим Мырзагажиевна","school":"«120 мектеп-лицейі» КММ","grades":["T5","L5"],"gradeLabels":{"T5":"5 · Қазақ тілі","L5":"5 · Қазақ әдебиеті"},"glabel":"5-сынып қазақ тілі мен әдебиетіне","title":"Самалова Айгерим · ҚМЖ","brand":"Самалова Айгерим","kicker":"Қазақ тілі мен әдебиеті · қысқа мерзімді жоспар","appname":"Самалова","h1":"Пән","libs":["docx","kz_cur","kz_packs","kz_banks_til","kz_banks_lit","kz_lesson"]};window.QMJ_CFG=QMJ_CFG;
+// Minimal .docx writer: WordprocessingML + store-only ZIP. No dependencies.
+var DOCX = (function () {
+  var enc = new TextEncoder();
+  var CRC = (function () {
+    var t = new Uint32Array(256);
+    for (var n = 0; n < 256; n++) { var c = n; for (var k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; }
+    return t;
+  })();
+  function crc32(b) { var c = 0xFFFFFFFF; for (var i = 0; i < b.length; i++) c = CRC[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+  function zip(files) { // files: [{name, data:Uint8Array}]
+    var parts = [], central = [], off = 0;
+    files.forEach(function (f) {
+      var nm = enc.encode(f.name), d = f.data, crc = crc32(d);
+      var h = new DataView(new ArrayBuffer(30));
+      h.setUint32(0, 0x04034b50, true); h.setUint16(4, 20, true); h.setUint16(6, 0x0800, true); h.setUint16(8, 0, true);
+      h.setUint16(10, 0, true); h.setUint16(12, 0x21, true); h.setUint32(14, crc, true); h.setUint32(18, d.length, true);
+      h.setUint32(22, d.length, true); h.setUint16(26, nm.length, true); h.setUint16(28, 0, true);
+      parts.push(new Uint8Array(h.buffer), nm, d);
+      var c = new DataView(new ArrayBuffer(46));
+      c.setUint32(0, 0x02014b50, true); c.setUint16(4, 20, true); c.setUint16(6, 20, true); c.setUint16(8, 0x0800, true);
+      c.setUint16(10, 0, true); c.setUint16(12, 0, true); c.setUint16(14, 0x21, true); c.setUint32(16, crc, true);
+      c.setUint32(20, d.length, true); c.setUint32(24, d.length, true); c.setUint16(28, nm.length, true);
+      c.setUint32(42, off, true);
+      central.push(new Uint8Array(c.buffer), nm);
+      off += 30 + nm.length + d.length;
+    });
+    var csize = central.reduce(function (s, a) { return s + a.length; }, 0);
+    var e = new DataView(new ArrayBuffer(22));
+    e.setUint32(0, 0x06054b50, true); e.setUint16(8, files.length, true); e.setUint16(10, files.length, true);
+    e.setUint32(12, csize, true); e.setUint32(16, off, true);
+    var all = parts.concat(central, [new Uint8Array(e.buffer)]);
+    var len = all.reduce(function (s, a) { return s + a.length; }, 0), out = new Uint8Array(len), p = 0;
+    all.forEach(function (a) { out.set(a, p); p += a.length; });
+    return out;
+  }
+  function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+
+  function Doc() { this.body = []; this.media = []; this.html = []; }
+  // run: string or {t, b, i, sz, color, sub, sup}
+  function runXml(r) {
+    if (typeof r === 'string') r = { t: r };
+    var pr = '';
+    if (r.b) pr += '<w:b/>';
+    if (r.i) pr += '<w:i/>';
+    if (r.u) pr += '<w:u w:val="single"/>';
+    if (r.color) pr += '<w:color w:val="' + r.color + '"/>';
+    if (r.sz) pr += '<w:sz w:val="' + r.sz * 2 + '"/><w:szCs w:val="' + r.sz * 2 + '"/>';
+    if (r.sub) pr += '<w:vertAlign w:val="subscript"/>';
+    if (r.sup) pr += '<w:vertAlign w:val="superscript"/>';
+    var lines = String(r.t).split('\n'), x = '';
+    lines.forEach(function (ln, i) {
+      if (i) x += '<w:br/>';
+      x += '<w:t xml:space="preserve">' + esc(ln) + '</w:t>';
+    });
+    return '<w:r>' + (pr ? '<w:rPr>' + pr + '</w:rPr>' : '') + x + '</w:r>';
+  }
+  // Supports inline markup: **bold**, _{sub}, ^{sup}
+  function parseRuns(s, base) {
+    base = base || {};
+    var out = [], re = /(\*\*[^*]+\*\*|_\{[^}]+\}|\^\{[^}]+\})/g, last = 0, m;
+    while ((m = re.exec(s))) {
+      if (m.index > last) out.push(Object.assign({}, base, { t: s.slice(last, m.index) }));
+      var tok = m[0];
+      if (tok[0] === '*') out.push(Object.assign({}, base, { t: tok.slice(2, -2), b: true }));
+      else if (tok[0] === '_') out.push(Object.assign({}, base, { t: tok.slice(2, -1), sub: true }));
+      else out.push(Object.assign({}, base, { t: tok.slice(2, -1), sup: true }));
+      last = m.index + tok.length;
+    }
+    if (last < s.length) out.push(Object.assign({}, base, { t: s.slice(last) }));
+    return out;
+  }
+  function pXml(content, o) {
+    o = o || {};
+    var runs = Array.isArray(content) ? content : parseRuns(String(content), { b: o.b, i: o.i, sz: o.sz, color: o.color });
+    var pp = '';
+    if (o.style) pp += '<w:pStyle w:val="' + o.style + '"/>';
+    if (o.keep) pp += '<w:keepNext/>';
+    if (o.pageBreak) pp += '<w:pageBreakBefore/>';
+    if (o.num) pp += '';
+    pp += '<w:spacing w:before="' + (o.before || 0) + '" w:after="' + (o.after == null ? 60 : o.after) + '"/>';
+    if (o.ind) pp += '<w:ind w:left="' + o.ind + '"/>';
+    if (o.align) pp += '<w:jc w:val="' + o.align + '"/>';
+    if (o.shade) pp += '<w:shd w:val="clear" w:color="auto" w:fill="' + o.shade + '"/>';
+    return '<w:p><w:pPr>' + pp + '</w:pPr>' + runs.map(runXml).join('') + '</w:p>';
+  }
+  Doc.prototype.p = function (c, o) { this.body.push(pXml(c, o)); return this; };
+  Doc.prototype.h = function (c, lvl, o) { this.body.push(pXml(c, Object.assign({ style: 'Heading' + (lvl || 1), keep: true }, o || {}))); return this; };
+  Doc.prototype.br = function () { this.body.push('<w:p><w:r><w:br w:type="page"/></w:r></w:p>'); return this; };
+  // cell content: string | array of paragraphs (strings or {c, o}) | {img}
+  Doc.prototype.cellXml = function (cell, w, opt) {
+    opt = opt || {};
+    var paras = [];
+    var c = cell && cell.c !== undefined ? cell.c : cell;
+    var co = (cell && cell.o) || {};
+    if (Array.isArray(c)) c.forEach(function (x) { paras.push(typeof x === 'string' ? pXml(x, { b: co.b || opt.b, after: 40, align: co.align }) : (x.img ? x.img : pXml(x.c, Object.assign({ after: 40 }, x.o)))); });
+    else if (c && c.imgXml) paras.push(c.imgXml);
+    else paras.push(pXml(c == null ? '' : String(c), { b: co.b || opt.b, after: 40, align: co.align || opt.align, sz: co.sz }));
+    var tcp = '<w:tcW w:w="' + w + '" w:type="dxa"/>';
+    if (co.span) tcp += '<w:gridSpan w:val="' + co.span + '"/>';
+    var fill = co.fill || opt.fill;
+    if (fill) tcp += '<w:shd w:val="clear" w:color="auto" w:fill="' + fill + '"/>';
+    tcp += '<w:vAlign w:val="' + (co.valign || 'top') + '"/>';
+    return '<w:tc><w:tcPr>' + tcp + '</w:tcPr>' + paras.join('') + '</w:tc>';
+  };
+  // rows: array of arrays of cells. widths in twips (sum ~ 10200). o.head: first row is header
+  Doc.prototype.table = function (rows, widths, o) {
+    o = o || {};
+    var self = this, total = widths.reduce(function (a, b) { return a + b; }, 0);
+    var x = '<w:tbl><w:tblPr><w:tblW w:w="' + total + '" w:type="dxa"/><w:tblLayout w:type="fixed"/>' +
+      '<w:tblBorders><w:top w:val="single" w:sz="6" w:color="444444"/><w:left w:val="single" w:sz="6" w:color="444444"/><w:bottom w:val="single" w:sz="6" w:color="444444"/><w:right w:val="single" w:sz="6" w:color="444444"/><w:insideH w:val="single" w:sz="4" w:color="777777"/><w:insideV w:val="single" w:sz="4" w:color="777777"/></w:tblBorders>' +
+      '<w:tblCellMar><w:top w:w="50" w:type="dxa"/><w:left w:w="90" w:type="dxa"/><w:bottom w:w="50" w:type="dxa"/><w:right w:w="90" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>' +
+      widths.map(function (w) { return '<w:gridCol w:w="' + w + '"/>'; }).join('') + '</w:tblGrid>';
+    rows.forEach(function (r, ri) {
+      var isHead = o.head && ri === 0;
+      x += '<w:tr>' + (isHead ? '<w:trPr><w:tblHeader/><w:cantSplit/></w:trPr>' : '<w:trPr><w:cantSplit/></w:trPr>');
+      var ci = 0;
+      r.forEach(function (cell) {
+        var span = (cell && cell.o && cell.o.span) || 1, w = 0;
+        for (var k = 0; k < span; k++) w += widths[ci + k] || 0;
+        x += self.cellXml(cell, w, isHead ? { b: true, fill: o.headFill || 'D9E2F3', align: 'center' } : { fill: (o.firstColFill && ci === 0) ? o.firstColFill : null, b: (o.firstColBold && ci === 0) });
+        ci += span;
+      });
+      x += '</w:tr>';
+    });
+    x += '</w:tbl>';
+    this.body.push(x);
+    this.body.push(pXml('', { after: 60 }));
+    return this;
+  };
+  // png: Uint8Array, wPx/hPx natural size, widthCm
+  Doc.prototype.imageXml = function (png, wPx, hPx, widthCm) {
+    var id = this.media.length + 1, rid = 'rIdImg' + id;
+    this.media.push({ name: 'image' + id + '.png', data: png, rid: rid });
+    var cx = Math.round(widthCm * 360000), cy = Math.round(cx * hPx / wPx);
+    var xml = '<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:after="60"/></w:pPr><w:r><w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0"><wp:extent cx="' + cx + '" cy="' + cy + '"/><wp:docPr id="' + id + '" name="Сурет ' + id + '"/>' +
+      '<a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:nvPicPr><pic:cNvPr id="' + id + '" name="image' + id + '.png"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed="' + rid + '"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill><pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="' + cx + '" cy="' + cy + '"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r></w:p>';
+    return xml;
+  };
+  Doc.prototype.image = function (png, wPx, hPx, widthCm) { this.body.push(this.imageXml(png, wPx, hPx, widthCm)); return this; };
+
+  Doc.prototype.build = function () {
+    var NS = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"';
+    var document = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document ' + NS + '><w:body>' + this.body.join('') +
+      '<w:sectPr><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="850" w:right="680" w:bottom="850" w:left="1020" w:header="400" w:footer="400" w:gutter="0"/></w:sectPr></w:body></w:document>';
+    var styles = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">' +
+      '<w:docDefaults><w:rPrDefault><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:eastAsia="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/><w:lang w:val="kk-KZ"/></w:rPr></w:rPrDefault><w:pPrDefault><w:pPr><w:spacing w:after="60" w:line="252" w:lineRule="auto"/></w:pPr></w:pPrDefault></w:docDefaults>' +
+      '<w:style w:type="paragraph" w:default="1" w:styleId="Normal"><w:name w:val="Normal"/></w:style>' +
+      '<w:style w:type="paragraph" w:styleId="Heading1"><w:name w:val="heading 1"/><w:basedOn w:val="Normal"/><w:next w:val="Normal"/><w:qFormat/><w:pPr><w:keepNext/><w:spacing w:before="120" w:after="120"/><w:jc w:val="center"/><w:outlineLvl w:val="0"/></w:pPr><w:rPr><w:b/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:style>' +
+      '<w:style w:type="paragraph" w:styleId="Heading2"><w:name w:val="heading 2"/><w:basedOn w:val="Normal"/><w:next w:val="Normal"/><w:qFormat/><w:pPr><w:keepNext/><w:spacing w:before="200" w:after="80"/><w:outlineLvl w:val="1"/></w:pPr><w:rPr><w:b/><w:sz w:val="26"/><w:szCs w:val="26"/><w:color w:val="1F3864"/></w:rPr></w:style>' +
+      '<w:style w:type="paragraph" w:styleId="Heading3"><w:name w:val="heading 3"/><w:basedOn w:val="Normal"/><w:next w:val="Normal"/><w:qFormat/><w:pPr><w:keepNext/><w:spacing w:before="120" w:after="60"/><w:outlineLvl w:val="2"/></w:pPr><w:rPr><w:b/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr></w:style>' +
+      '</w:styles>';
+    var rels = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rIdStyles" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>' +
+      this.media.map(function (m) { return '<Relationship Id="' + m.rid + '" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/' + m.name + '"/>'; }).join('') + '</Relationships>';
+    var ct = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="png" ContentType="image/png"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/><Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/></Types>';
+    var root = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="docProps/core.xml"/></Relationships>';
+    var core = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><dc:title>ҚМЖ</dc:title><dc:creator>Абданбекова К.Т.</dc:creator></cp:coreProperties>';
+    var files = [
+      { name: '[Content_Types].xml', data: enc.encode(ct) },
+      { name: '_rels/.rels', data: enc.encode(root) },
+      { name: 'docProps/core.xml', data: enc.encode(core) },
+      { name: 'word/document.xml', data: enc.encode(document) },
+      { name: 'word/styles.xml', data: enc.encode(styles) },
+      { name: 'word/_rels/document.xml.rels', data: enc.encode(rels) }
+    ];
+    this.media.forEach(function (m) { files.push({ name: 'word/media/' + m.name, data: m.data }); });
+    return zip(files);
+  };
+
+  // --- HTML айнасы (бетте көрсету және көшіру үшін) ---
+  function runsHtml(s, base) {
+    return parseRuns(String(s == null ? '' : s), base || {}).map(function (r) {
+      var t = esc(r.t).replace(/\n/g, '<br>');
+      if (r.sub) t = '<sub>' + t + '</sub>'; if (r.sup) t = '<sup>' + t + '</sup>';
+      if (r.b) t = '<b>' + t + '</b>'; if (r.i) t = '<i>' + t + '</i>';
+      return t;
+    }).join('');
+  }
+  function pStyle(o) {
+    o = o || {}; var st = 'margin:0 0 4pt 0;';
+    if (o.align === 'center') st += 'text-align:center;';
+    if (o.shade) st += 'background:#' + o.shade + ';padding:2pt 4pt;';
+    if (o.ind) st += 'margin-left:' + Math.round(o.ind / 20) + 'pt;';
+    return st;
+  }
+  function cellHtml(cell, opt) {
+    opt = opt || {};
+    var c = cell && cell.c !== undefined ? cell.c : cell, co = (cell && cell.o) || {};
+    var inner = Array.isArray(c) ? c.map(function (x) { return '<p style="margin:0 0 3pt 0">' + runsHtml(typeof x === 'string' ? x : x.c, { b: co.b || opt.b }) + '</p>'; }).join('')
+      : '<p style="margin:0">' + runsHtml(c, { b: co.b || opt.b }) + '</p>';
+    var fill = co.fill || opt.fill;
+    return '<td' + (co.span ? ' colspan="' + co.span + '"' : '') + ' style="border:1px solid #555;padding:3pt 5pt;vertical-align:top;' + (fill ? 'background:#' + fill + ';' : '') + (opt.align === 'center' ? 'text-align:center;' : '') + '">' + inner + '</td>';
+  }
+  var _p = Doc.prototype.p, _h = Doc.prototype.h, _br = Doc.prototype.br, _t = Doc.prototype.table, _i = Doc.prototype.image;
+  Doc.prototype.p = function (c, o) { this.html.push('<p style="' + pStyle(o) + '">' + runsHtml(c, { b: o && o.b, i: o && o.i }) + '</p>'); return _p.call(this, c, o); };
+  Doc.prototype.h = function (c, lvl, o) { lvl = lvl || 1; this.html.push('<h' + lvl + ' style="margin:10pt 0 6pt;' + (lvl === 1 ? 'text-align:center;font-size:14pt' : lvl === 2 ? 'font-size:13pt;color:#1F3864' : 'font-size:12pt') + '">' + runsHtml(c) + '</h' + lvl + '>'); return _h.call(this, c, lvl, o); };
+  Doc.prototype.br = function () { this.html.push('<hr style="border:0;border-top:1px dashed #999;margin:14pt 0">'); return _br.call(this); };
+  Doc.prototype.table = function (rows, widths, o) {
+    o = o || {}; var total = widths.reduce(function (a, b) { return a + b; }, 0);
+    var h = '<table style="border-collapse:collapse;width:100%;font-size:11pt;margin:0 0 6pt"><colgroup>' + widths.map(function (w) { return '<col style="width:' + (w / total * 100).toFixed(1) + '%">'; }).join('') + '</colgroup>';
+    rows.forEach(function (r, ri) {
+      var head = o.head && ri === 0;
+      h += '<tr>' + r.map(function (cell, ci) { return cellHtml(cell, head ? { b: true, fill: o.headFill || 'D9E2F3', align: 'center' } : { b: o.firstColBold && ci === 0 }); }).join('') + '</tr>';
+    });
+    this.html.push(h + '</table>');
+    return _t.call(this, rows, widths, o);
+  };
+  function b64(u8) { var s = '', ch = 0x8000; for (var i = 0; i < u8.length; i += ch) s += String.fromCharCode.apply(null, u8.subarray(i, i + ch)); return typeof btoa !== 'undefined' ? btoa(s) : Buffer.from(u8).toString('base64'); }
+  Doc.prototype.image = function (png, wPx, hPx, widthCm) { this.html.push('<p style="text-align:center;margin:4pt 0"><img alt="" src="data:image/png;base64,' + b64(png) + '" style="width:' + Math.round(widthCm * 37.8) + 'px;max-width:100%;height:auto"></p>'); return _i.call(this, png, wPx, hPx, widthCm); };
+  Doc.prototype.toHtml = function () { return '<div style="font-family:\'Times New Roman\',serif;font-size:12pt;color:#000;background:#fff;line-height:1.3">' + this.html.join('') + '</div>'; };
+  return { Doc: Doc, parseRuns: parseRuns, esc: esc };
+})();
+if (typeof module !== 'undefined') module.exports = DOCX;
+
+// КТЖ-дан алынған тақырыптар (Самалова А.М., 5-сынып, 2026-2027)
+var CUR = {"T5": {"label": "5-сынып · Қазақ тілі", "load": "КТЖ бойынша 102 сағат", "band": 0, "adv": 0, "q": {"1": [{"n": 1, "t": "Ана тілі - ұлт байлығы", "s": "1. Мәдениет: тіл және қарым-қатынас", "o": [["5.1.5.1", "Тыңдалған мәтін мазмұны негізінде сұрақтарға жауап беру, көтерілген мәселе бойынша өз ойын білдіру"], ["5.4.1.1", "Қазақ тілінің дыбыстар жүйесін, үндестік заңын, емлелік ерекшеліктерін ескере отырып, орфографиялық нормаға сай жазу"]], "b": "ana_til", "p": "P1"}, {"n": 2, "t": "Тіл -қатынас құралы", "s": "1. Мәдениет: тіл және қарым-қатынас", "o": [["5.2.1.1", "Мәтіндегі негізгі және қосымша ақпаратты түсіну, анықтау"], ["5.4.1.1", "Қазақ тілінің дыбыстар жүйесін, үндестік заңын, емлелік ерекшеліктерін ескере отырып, орфографиялық нормаға сай жазу"]], "b": "ana_til", "p": "P1"}, {"n": 3, "t": "Тіл - бірлік құралы", "s": "1. Мәдениет: тіл және қарым-қатынас", "o": [["5.1.1.1", "Тірек сөздер мен ұсынылған иллюстрациялар арқылы тақырыпты болжау"], ["5.4.1.1", "Қазақ тілінің дыбыстар жүйесін, үндестік заңын, емлелік ерекшеліктерін ескере отырып, орфографиялық нормаға сай жазу"]], "b": "ana_til", "p": "P1"}, {"n": 4, "t": "Тіл тазалығы", "s": "1. Мәдениет: тіл және қарым-қатынас", "o": [["5.2.1.1", "Мәтіндегі негізгі және қосымша ақпаратты түсіну, анықтау"], ["5.4.1.1", "Қазақ тілінің дыбыстар жүйесін, үндестік заңын, емлелік ерекшеліктерін ескере отырып, орфографиялық нормаға сай жазу"]], "b": "ana_til", "p": "P1"}, {"n": 5, "t": "Жеті жұрттың тілін біл", "s": "1. Мәдениет: тіл және қарым-қатынас", "o": [["5.1.5.1", "Тыңдалған мәтін мазмұны негізінде сұрақтарға жауап беру, көтерілген мәселе бойынша өз ойын білдіру"], ["5.4.1.1", "Қазақ тілінің дыбыстар жүйесін, үндестік заңын, емлелік ерекшеліктерін ескере отырып, орфографиялық нормаға сай жазу"]], "b": "ana_til", "p": "P1"}, {"n": 6, "t": "Сөйлеу мәдениеті. Амандасу, қоштасу", "s": "1. Мәдениет: тіл және қарым-қатынас", "o": [["5.2.2.1", "Лексиканың ауызекі сөйлеу және жазба стильдік айырмашылықтарын мәтіндер арқылы тану"], ["5.4.1.1", "Қазақ тілінің дыбыстар жүйесін, үндестік заңын, емлелік ерекшеліктерін ескере отырып, орфографиялық нормаға сай жазу"]], "b": "soylem", "p": "P1"}, {"n": 7, "t": "Сөйлеу мәдениеті. Амандасу, қоштасу", "s": "1. Мәдениет: тіл және қарым-қатынас", "o": [["5.1.5.1", "Тыңдалған мәтін мазмұны негізінде сұрақтарға жауап беру, көтерілген мәселе бойынша өз ойын білдіру"], ["5.4.1.1", "Қазақ тілінің дыбыстар жүйесін, үндестік заңын, емлелік ерекшеліктерін ескере отырып, орфографиялық нормаға сай жазу"]], "b": "soylem", "p": "P1"}, {"n": 8, "t": "Сөйлеу мәдениеті. Сыпайылық, әдептілік", "s": "1. Мәдениет: тіл және қарым-қатынас", "o": [["5.2.2.1", "Лексиканың ауызекі сөйлеу және жазба стильдік айырмашылықтарын мәтіндер арқылы тану"], ["5.3.1.1", "Берілген мәтінге сәйкес кіріспе, негізгі және қорытынды бөлімдерді қамтитын қарапайым жоспар құру"], ["5.3.4.1", "Эссенің кіріспе, негізгі, қорытынды бөлімдерін сақтай отырып, өзіне таныс адамды, белгілі бір мекен мен оқиғаны сипаттап не суреттеп жазу"]], "b": "soylem", "p": "P1"}, {"n": 9, "t": "Тілі байдың ойы бай. Бөлім бойынша жиынтық бағалау-1", "s": "1. Мәдениет: тіл және қарым-қатынас", "o": [["5.1.1.1", "Тірек сөздер мен ұсынылған иллюстрациялар арқылы тақырыпты болжау"], ["5.4.1.1", "Қазақ тілінің дыбыстар жүйесін, үндестік заңын, емлелік ерекшеліктерін ескере отырып, орфографиялық нормаға сай жазу"]], "b": "soylem", "p": "P1"}, {"n": 10, "t": "Киім түрлері және сән туралы түсінік.", "s": "2. Киіну. Сән. Талғам", "o": [["5.1.3.1", "Тыңдалған мәтіннің мазмұнын түсіну, негізгі және қосымша ақпаратты анықтау"], ["5.4.2.1", "Сөз ішіндегі және сөз аралығындағы ілгерінді, кейінді және тоғыспалы ықпал заңдылықтарына сәйкес айта білу"]], "b": "kiim", "p": "P2"}, {"n": 11, "t": "Киім стильдері", "s": "2. Киіну. Сән. Талғам", "o": [["5.2.5.1", "Мәтін мазмұнын түсінуге, нақты ақпараттарды анықтауға бағытталған сұрақтар құрастыру"], ["5.4.2.1", "Сөз ішіндегі және сөз аралығындағы ілгерінді, кейінді және тоғыспалы ықпал заңдылықтарына сәйкес айта білу"]], "b": "kiim", "p": "P2"}, {"n": 12, "t": "Қазақтың ұлттық киімдері", "s": "2. Киіну. Сән. Талғам", "o": [["5.1.3.1", "Тыңдалған мәтіннің мазмұнын түсіну, негізгі және қосымша ақпаратты анықтау"], ["5.4.2.1", "Сөз ішіндегі және сөз аралығындағы ілгерінді, кейінді және тоғыспалы ықпал заңдылықтарына сәйкес айта білу"]], "b": "ult_kiim", "p": "P2"}, {"n": 13, "t": "Қазақтың ұлттық киімдері", "s": "2. Киіну. Сән. Талғам", "o": [["5.2.5.1", "Мәтін мазмұнын түсінуге, нақты ақпараттарды анықтауға бағытталған сұрақтар құрастыру"], ["5.4.2.1", "Сөз ішіндегі және сөз аралығындағы ілгерінді, кейінді және тоғыспалы ықпал заңдылықтарына сәйкес айта білу"]], "b": "ult_kiim", "p": "P2"}, {"n": 14, "t": "Қазақстандық дизайнерлер", "s": "2. Киіну. Сән. Талғам", "o": [["5.1.2.1", "Әлеуметтік-тұрмыстық, әлеуметтік-мәдени, тақырыптарға байланысты диалог, монологтердегі (ән мәтіні, жарнама) көтерілген мәселені түсіндіру"], ["5.4.2.1", "Сөз ішіндегі және сөз аралығындағы ілгерінді, кейінді және тоғыспалы ықпал заңдылықтарына сәйкес айта білу"]], "b": "kiim", "p": "P2"}, {"n": 15, "t": "Талғам", "s": "2. Киіну. Сән. Талғам", "o": [["5.2.3.1", "Жарнама құрылымы мен ресімделуі арқылы жанрлық ерекшеліктерін ажырату"], ["5.3.2.1", "Жанрлық ерекшеліктеріне сай ресімделуі мен құрылымын сақтап, жарнама құрастырып жазу"]], "b": "kiim", "p": "P2"}, {"n": 16, "t": "Киім кию мәдениеті", "s": "2. Киіну. Сән. Талғам", "o": [["5.1.2.1", "Әлеуметтік-тұрмыстық, әлеуметтік-мәдени, тақырыптарға байланысты диалог, монологтердегі (ән мәтіні, жарнама) көтерілген мәселені түсіндіру"], ["5.3.6.1", "Мәтіндегі орфографиялық қателерді сөздіктерге сүйене отырып, түзету және редакциялау"]], "b": "kiim", "p": "P2"}, {"n": 17, "t": "Балаға ат қою", "s": "3. Отбасылық дәстүрлер мен мерекелер", "o": [["5.2.3.1", "Жарнама құрылымы мен ресімделуі арқылы жанрлық ерекшеліктерін ажырату"], ["5.3.2.1", "Жанрлық ерекшеліктеріне сай ресімделуі мен құрылымын сақтап, жарнама құрастырып жазу"]], "b": "dastur", "p": "P3"}, {"n": 18, "t": "Бесікке салу", "s": "3. Отбасылық дәстүрлер мен мерекелер", "o": [["5.1.2.1", "Әлеуметтік-тұрмыстық, әлеуметтік-мәдени, тақырыптарға байланысты диалог, монологтердегі (ән мәтіні, хабарлама) көтерілген мәселені түсіндіру"], ["5.4.3.1", "Тура және ауыспалы мағыналы сөздерді, көп мағыналы сөздерді көркемдік ерекшеліктеріне сай қолдану"]], "b": "dastur", "p": "P3"}, {"n": 19, "t": "Тұсау кесу", "s": "3. Отбасылық дәстүрлер мен мерекелер", "o": [["5.2.3.1", "Хаттың құрылымы мен ресімделуі арқылы жанрлық ерекшеліктерін ажырату"], ["5.3.2.1", "Жанрлық ерекшеліктеріне сай ресімделуі мен құрылымын сақтап, хат құрастырып жазу"]], "b": "dastur", "p": "P3"}, {"n": 20, "t": "Тілашар", "s": "3. Отбасылық дәстүрлер мен мерекелер", "o": [["5.1.2.1", "Әлеуметтік-тұрмыстық, әлеуметтік-мәдени, тақырыптарға байланысты диалог, монологтердегі (ән мәтіні, хабарлама) көтерілген мәселені түсіндіру"], ["5.4.3.1", "Тура және ауыспалы мағыналы сөздерді, көп мағыналы сөздерді көркемдік ерекшеліктеріне сай қолдану"]], "b": "dastur", "p": "P3"}, {"n": 21, "t": "Туған күн Бөлім бойынша жиынтық бағалау-2", "s": "3. Отбасылық дәстүрлер мен мерекелер", "o": [["5.2.4.1", "Ауызекі стильдегі мәтіндердің мазмұнын, тақырыбын және тілдік құралдарын салыстыру"], ["5.4.3.1", "Тура және ауыспалы мағыналы сөздерді, көп мағыналы сөздерді көркемдік ерекшеліктеріне сай қолдану"]], "b": "dastur", "p": "P3"}, {"n": 22, "t": "Қонақ күту дәстүрі", "s": "3. Отбасылық дәстүрлер мен мерекелер", "o": [["5.1.4.1", "Тірек сөздер мен жетекші сұрақтар арқылы негізгі ойды анықтау"], ["5.3.5.1", "Оқылым және тыңдалым материалдары бойынша негізгі ақпараттарды сақтай отырып, жинақы мәтін жазу"]], "b": "dastur", "p": "P3"}, {"n": 23, "t": "Тоқсандық жиынтық бағалау-1", "s": "3. Отбасылық дәстүрлер мен мерекелер", "o": [["", "Бөлім бойынша қарастырылған оқу мақсаттарына негізделген"]], "b": "dastur", "p": "P3"}, {"n": 24, "t": "Қазақ халқының салт-дәстүрлері", "s": "3. Отбасылық дәстүрлер мен мерекелер", "o": [["5.1.2.1", "Әлеуметтік-тұрмыстық, әлеуметтік-мәдени, тақырыптарға байланысты диалог, монологтердегі (ән мәтіні, хабарлама) көтерілген мәселені түсіндіру"], ["5.3.2.1", "Жанрлық ерекшеліктеріне сай ресімделуі мен құрылымын сақтап, хат құрастырып жазу"]], "b": "dastur", "p": "P3"}], "2": [{"n": 1, "t": "Адам және табиғат", "s": "4. Жануарлар әлемі мен өсімдіктер дүниесі", "o": [["5.1.2.1", "Әлеуметтік-тұрмыстық, әлеуметтік-мәдени тақырыптарға байланысты диалог, монологтердегі (хабарландыру) көтерілген мәселені түсіндіру"], ["5.3.2.1", "Жанрлық ерекшеліктеріне сай ресімделуі мен құрылымын сақтап хабарландыру құрастырып жазу"]], "b": "tabigat", "p": "P4"}, {"n": 2, "t": "«Қазақстанның Қызыл Кітабы»", "s": "4. Жануарлар әлемі мен өсімдіктер дүниесі", "o": [["5.2.1.1", "Мәтіндегі негізгі және қосымша ақпаратты түсіну, анықтау"], ["5.3.6.1", "Мәтіндегі орфографиялық қателерді сөздіктерге сүйене отырып, түзету және редакциялау"]], "b": "tabigat", "p": "P4"}, {"n": 3, "t": "«Бақа мен үйрек» ертегісі", "s": "4. Жануарлар әлемі мен өсімдіктер дүниесі", "o": [["5.1.2.1", "Әлеуметтік-тұрмыстық, әлеуметтік-мәдени тақырыптарға байланысты диалог, монологтердегі (хабарландыру) көтерілген мәселені түсіндіру"], ["5.4.3.1", "Омоним, антоним, синонимдерді көркемдік ерекшеліктеріне сай қолдану"]], "b": "ertegi_an", "p": "P4"}, {"n": 4, "t": "Жан-жануарлар туралы ертегілер", "s": "4. Жануарлар әлемі мен өсімдіктер дүниесі", "o": [["5.2.3.1", "Хабарландырудың құрылымы мен ресімделуі арқылы жанрлық ерекшеліктерін ажырату"], ["5.4.3.1", "Омоним, антоним, синонимдерді көркемдік ерекшеліктеріне сай қолдану"]], "b": "ertegi_an", "p": "P4"}, {"n": 5, "t": "Адам және жыртқыш аң", "s": "4. Жануарлар әлемі мен өсімдіктер дүниесі", "o": [["5.1.3.1", "Тыңдалған мәтіннің мазмұнын түсіну, негізгі және қосымша ақпаратты анықтау"], ["5.4.3.1", "Омоним, антоним, синонимдерді көркемдік ерекшеліктеріне сай қолдану"]], "b": "ertegi_an", "p": "P4"}, {"n": 6, "t": "Өсімдік және музыка", "s": "4. Жануарлар әлемі мен өсімдіктер дүниесі", "o": [["5.2.1.1", "Мәтіндегі негізгі және қосымша ақпаратты түсіну, анықтау"], ["5.4.3.1", "Омоним, антоним, синонимдерді көркемдік ерекшеліктеріне сай қолдану"]], "b": "osimdik", "p": "P4"}, {"n": 7, "t": "Ғажайып ағаштар", "s": "4. Жануарлар әлемі мен өсімдіктер дүниесі", "o": [["5.1.3.1", "Тыңдалған мәтіннің мазмұнын түсіну, негізгі және қосымша ақпаратты анықтау"], ["5.4.3.1", "Омоним, антоним, синонимдерді көркемдік ерекшеліктеріне сай қолдану"]], "b": "osimdik", "p": "P4"}, {"n": 8, "t": "Миуалы ағаш", "s": "4. Жануарлар әлемі мен өсімдіктер дүниесі", "o": [["5.2.1.1", "Мәтіндегі негізгі және қосымша ақпаратты түсіну, анықтау"], ["5.4.3.1", "Омоним, антоним, синонимдерді көркемдік ерекшеліктеріне сай қолдану"]], "b": "osimdik", "p": "P4"}, {"n": 9, "t": "Жеміс-жидектің пайдасы. Бөлім бойынша жиынтық бағалау-3", "s": "4. Жануарлар әлемі мен өсімдіктер дүниесі", "o": [["5.1.2.1", "Әлеуметтік-тұрмыстық, әлеуметтік-мәдени тақырыптарға байланысты диалог, монологтердегі (хабарландыру) көтерілген мәселені түсіндіру"], ["5.3.2.1", "Жанрлық ерекшеліктеріне сай ресімделуі мен құрылымын сақтап хабарландыру құрастырып жазу"]], "b": "osimdik", "p": "P4"}, {"n": 10, "t": "Нәтиже сабақ.", "s": "4. Жануарлар әлемі мен өсімдіктер дүниесі", "o": [["5.2.3.1", "Хабарландырудың құрылымы мен ресімделуі арқылы жанрлық ерекшеліктерін ажырату"], ["5.3.6.1", "Мәтіндегі орфографиялық қателерді сөздіктерге сүйене отырып, түзету және редакциялау"]], "b": "tabigat", "p": "P4"}, {"n": 11, "t": "Бос уақытты тиімді пайдалану", "s": "5. Бос уақыт және хобби", "o": [["5.1.2.1", "Әлеуметтік-тұрмыстық, әлеуметтік-мәдени, тақырыптарға байланысты диалог, монологтердегі (хабарландыру) көтерілген мәселені түсіндіру"], ["5.4.4.1", "Жұрнақ арқылы жасалған туынды сөздерді және күрделі сөздерді ауызша және жазбаша тілдесім барысында қолдану"]], "b": "uaqyt", "p": "P5"}, {"n": 12, "t": "Уақыттың қадірі", "s": "5. Бос уақыт және хобби", "o": [["5.2.2.1", "Лексиканың ауызекі сөйлеу және жазба стильдік айырмашылықтарын мәтіндер арқылы тану"], ["5.3.2.1", "Жанрлық ерекшеліктеріне сай ресімделуі мен құрылымын сақтап, хабарландыру құрастырып жазу"]], "b": "uaqyt", "p": "P5"}, {"n": 13, "t": "Балалық шақ", "s": "5. Бос уақыт және хобби", "o": [["5.1.5.1", "Тыңдалған мәтін мазмұны негізінде сұрақтарға жауап беру, көтерілген мәселе бойынша өз ойын білдіру"], ["5.3.1.1", "Берілген мәтінге сәйкес кіріспе, негізгі және қорытынды бөлімдерді қамтитын қарапайым жоспар құру"]], "b": "uaqyt", "p": "P5"}, {"n": 14, "t": "Уақыт алтыннан қымбат", "s": "5. Бос уақыт және хобби", "o": [["5.2.3.1", "Хабарлама құрылымы мен ресімделуі арқылы жанрлық ерекшеліктерін ажырату"], ["5.3.2.1", "Жанрлық ерекшеліктеріне сай ресімделуі мен құрылымын сақтап, хабарландыру құрастырып жазу"]], "b": "uaqyt", "p": "P5"}, {"n": 15, "t": "Үйірменің үйретері көп", "s": "5. Бос уақыт және хобби", "o": [["5.1.5.1", "Тыңдалған мәтін мазмұны негізінде сұрақтарға жауап беру, көтерілген мәселе бойынша өз ойын білдіру"], ["5.4.4.1", "Жұрнақ арқылы жасалған туынды сөздерді және күрделі сөздерді ауызша және жазбаша тілдесім барысында қолдану"]], "b": "hobby", "p": "P5"}, {"n": 16, "t": "Хобби", "s": "5. Бос уақыт және хобби", "o": [["5.2.2.1", "Лексиканың ауызекі сөйлеу және жазба стильдік айырмашылықтарын мәтіндер арқылы тану"], ["5.3.2.1", "Жанрлық ерекшеліктеріне сай ресімделуі мен құрылымын сақтап, хабарландыру құрастырып жазу"]], "b": "hobby", "p": "P5"}, {"n": 17, "t": "Ұлы адамдардың өмірінен", "s": "5. Бос уақыт және хобби", "o": [["5.1.5.1", "Тыңдалған мәтін мазмұны негізінде сұрақтарға жауап беру, көтерілген мәселе бойынша өз ойын білдіру"], ["5.4.4.1", "Жұрнақ арқылы жасалған туынды сөздерді және күрделі сөздерді ауызша және жазбаша тілдесім барысында қолдану"]], "b": "hobby", "p": "P5"}, {"n": 18, "t": "Шаршамаймын десең", "s": "5. Бос уақыт және хобби", "o": [["5.2.2.1", "Лексиканың ауызекі сөйлеу және жазба стильдік айырмашылықтарын мәтіндер арқылы тану"], ["5.3.1.1", "Берілген мәтінге сәйкес кіріспе, негізгі және қорытынды бөлімдерді қамтитын қарапайым жоспар құру"]], "b": "hobby", "p": "P5"}, {"n": 19, "t": "Мен еліктейтін кейіпкердің сүйікті ісі", "s": "5. Бос уақыт және хобби", "o": [["5.1.2.1", "Әлеуметтік-тұрмыстық, әлеуметтік-мәдени, тақырыптарға байланысты диалог, монологтердегі (хабарландыру) көтерілген мәселені түсіндіру"], ["5.3.4.1", "Эссенің кіріспе, негізгі, қорытынды бөлімдерін сақтай отырып, өзіне таныс адамды, белгілі бір мекен мен оқиғаны сипаттап не суреттеп жазу"]], "b": "hobby", "p": "P5"}, {"n": 20, "t": "Нәтиже сабақ Бөлім бойынша жиынтық бағалау-4", "s": "5. Бос уақыт және хобби", "o": [["5.2.3.1", "Хабарлама құрылымы мен ресімделуі арқылы жанрлық ерекшеліктерін ажырату"], ["5.3.2.1", "Жанрлық ерекшеліктеріне сай ресімделуі мен құрылымын сақтап, хабарландыру құрастырып жазу"]], "b": "hobby", "p": "P5"}, {"n": 21, "t": "Бақылау диктанты", "s": "5. Бос уақыт және хобби", "o": [["5.4.4.1", "Жұрнақ арқылы жасалған туынды сөздерді және күрделі сөздерді ауызша және жазбаша тілдесім барысында қолдану"]], "b": "hobby", "p": "P5"}, {"n": 22, "t": "Эссе «Қазақстандағы көп адамның хоббиі – спорт»", "s": "5. Бос уақыт және хобби", "o": [["5.3.4.1", "Эссенің кіріспе, негізгі, қорытынды бөлімдерін сақтай отырып, өзіне таныс адамды, белгілі бір мекен мен оқиғаны сипаттап не суреттеп жазу"]], "b": "hobby", "p": "P5"}, {"n": 23, "t": "Тоқсандық жиынтық бағалау-2", "s": "5. Бос уақыт және хобби", "o": [["", "Бөлім бойынша қарастырылған оқу мақсаттарына негізделген"]], "b": "hobby", "p": "P5"}, {"n": 24, "t": "Қайталау. Тест сынағы", "s": "5. Бос уақыт және хобби", "o": [["5.2.3.1", "Хабарлама құрылымы мен ресімделуі арқылы жанрлық ерекшеліктерін ажырату"], ["5.4.4.1", "Жұрнақ арқылы жасалған туынды сөздерді және күрделі сөздерді ауызша және жазбаша тілдесім барысында қолдану"]], "b": "hobby", "p": "P5"}], "3": [{"n": 1, "t": "Фантазия", "s": "6. Қиял әлемі", "o": [["5.1.5.1", "Тыңдалған мәтін мазмұны негізінде сұрақтарға жауап беру, көтерілген мәселе бойынша өз ойын білдіру"], ["5.4.2.2", "Зат есімдердің мағыналық түрлерін мәнмәтін аясында жалғаулар арқылы түрлендіріп қолдану"]], "b": "qiyal", "p": "P6"}, {"n": 2, "t": "«Керқұла атты Кендебай» ертегісі", "s": "6. Қиял әлемі", "o": [["5.2.2.1", "Лексиканың ауызекі сөйлеу және жазба стильдік айырмашылықтарын мәтіндер арқылы тану"], ["5.4.2.2", "Зат есімдердің мағыналық түрлерін мәнмәтін аясында жалғаулар арқылы түрлендіріп қолдану"]], "b": "ertegi_q", "p": "P6"}, {"n": 3, "t": "«Ер Төстік» ертегісі", "s": "6. Қиял әлемі", "o": [["5.1.1.1", "Тірек сөздер мен ұсынылған иллюстрациялар арқылы тақырыпты болжау"], ["5.4.2.2", "Зат есімдердің мағыналық түрлерін мәнмәтін аясында жалғаулар арқылы түрлендіріп қолдану"]], "b": "ertegi_q", "p": "P6"}, {"n": 4, "t": "Қиял мен аңыз", "s": "6. Қиял әлемі", "o": [["5.2.5.1", "Мәтін мазмұнын түсінуге, нақты ақпараттарды анықтауға бағытталған сұрақтар құрастыру"], ["5.4.2.2", "Зат есімдердің мағыналық түрлерін мәнмәтін аясында жалғаулар арқылы түрлендіріп қолдану"]], "b": "qiyal", "p": "P6"}, {"n": 5, "t": "Өнер-білім бар жұрттар", "s": "6. Қиял әлемі", "o": [["5.1.1.1", "Тірек сөздер мен ұсынылған иллюстрациялар арқылы тақырыпты болжау"], ["5.4.2.2", "Зат есімдердің мағыналық түрлерін мәнмәтін аясында жалғаулар арқылы түрлендіріп қолдану"]], "b": "qiyal", "p": "P6"}, {"n": 6, "t": "Қожаның қиялы", "s": "6. Қиял әлемі", "o": [["5.2.7.1", "Энциклопедиялар, балаларға арналған газет-журналдардан қажетті ақпаратты ала білу"], ["5.4.2.2", "Зат есімдердің мағыналық түрлерін мәнмәтін аясында жалғаулар арқылы түрлендіріп қолдану"]], "b": "qiyal", "p": "P6"}, {"n": 7, "t": "Космогондық ою-өрнек адам қиялының жемісі", "s": "6. Қиял әлемі", "o": [["5.1.1.1", "Тірек сөздер мен ұсынылған иллюстрациялар арқылы тақырыпты болжау"], ["5.3.6.1", "Мәтіндегі орфографиялық қателерді сөздіктерге сүйене отырып, түзету және редакциялау"]], "b": "galam", "p": "P6"}, {"n": 8, "t": "«Ғажайып планета»", "s": "6. Қиял әлемі", "o": [["5.2.7.1", "Энциклопедиялар, балаларға арналған газет-журналдардан қажетті ақпаратты ала білу"], ["5.3.4.1", "Эссенің кіріспе, негізгі, қорытынды бөлімдерін сақтай отырып, өзіне таныс адамды, белгілі бір мекен мен оқиғаны сипаттап не суреттеп жазу"]], "b": "galam", "p": "P6"}, {"n": 9, "t": "Плутонға сапар", "s": "6. Қиял әлемі", "o": [["5.2.5.1", "Мәтін мазмұнын түсінуге, нақты ақпараттарды анықтауға бағытталған сұрақтар құрастыру"], ["5.4.2.2", "Зат есімдердің мағыналық түрлерін мәнмәтін аясында жалғаулар арқылы түрлендіріп қолдану"]], "b": "galam", "p": "P6"}, {"n": 10, "t": "Нәтиже сабақ. Бөлім бойынша жиынтық бағалау-5", "s": "6. Қиял әлемі", "o": [["5.1.5.1", "Тыңдалған мәтін мазмұны негізінде сұрақтарға жауап беру, көтерілген мәселе бойынша өз ойын білдіру"], ["5.3.4.1", "Эссенің кіріспе, негізгі, қорытынды бөлімдерін сақтай отырып, өзіне таныс адамды, белгілі бір мекен мен оқиғаны сипаттап не суреттеп жазу"]], "b": "qiyal", "p": "P6"}, {"n": 11, "t": "Бағдаршам", "s": "7. Көлік және жол белгілері", "o": [["5.1.4.1", "Тірек сөздер мен жетекші сұрақтар арқылы негізгі ойды анықтау"], ["5.3.3.1", "Сюжетті суреттердің (фотосуреттер) желісі бойынша әңгіме құрастыру"]], "b": "jol", "p": "P7"}, {"n": 12, "t": "Жол қауіпсіздігінің ережелері", "s": "7. Көлік және жол белгілері", "o": [["5.2.5.1", "Мәтін мазмұнын түсінуге, нақты ақпараттарды анықтауға бағытталған сұрақтар құрастыру"], ["5.4.4.4", "Сан есімнің мағыналық түрлерін ажырата білу, сан есімді зат есім орнына қолдана білу"]], "b": "jol", "p": "P7"}, {"n": 13, "t": "Көліктің пайда болу тарихы", "s": "7. Көлік және жол белгілері", "o": [["5.1.4.1", "Тірек сөздер мен жетекші сұрақтар арқылы негізгі ойды анықтау"], ["5.4.4.4", "Сан есімнің мағыналық түрлерін ажырата білу, сан есімді зат есім орнына қолдана білу"]], "b": "kolik", "p": "P7"}, {"n": 14, "t": "Қазіргі кездегі автокөлік түрлері", "s": "7. Көлік және жол белгілері", "o": [["5.2.5.1", "Мәтін мазмұнын түсінуге, нақты ақпараттарды анықтауға бағытталған сұрақтар құрастыру"], ["5.4.4.4", "Сан есімнің мағыналық түрлерін ажырата білу, сан есімді зат есім орнына қолдана білу"]], "b": "kolik", "p": "P7"}, {"n": 15, "t": "Су көліктері", "s": "7. Көлік және жол белгілері", "o": [["5.1.3.1", "Тыңдалған мәтіннің мазмұнын түсіну, негізгі және қосымша ақпаратты анықтау"], ["5.4.4.4", "Сан есімнің мағыналық түрлерін ажырата білу, сан есімді зат есім орнына қолдана білу"]], "b": "kolik", "p": "P7"}, {"n": 16, "t": "Әуе көліктері", "s": "7. Көлік және жол белгілері", "o": [["5.2.3.1", "Нұсқаулық құрылымы мен ресімделуі арқылы жанрлық ерекшеліктерін ажырату"], ["5.3.5.1", "Оқылым және тыңдалым материалдары бойынша негізгі ақпараттарды сақтай отырып, жинақы мәтін жазу"]], "b": "kolik", "p": "P7"}, {"n": 17, "t": "Жол қозғалысына қатысушылар", "s": "7. Көлік және жол белгілері", "o": [["5.1.4.1", "Тірек сөздер мен жетекші сұрақтар арқылы негізгі ойды анықтау"], ["5.4.4.4", "Сан есімнің мағыналық түрлерін ажырата білу, сан есімді зат есім орнына қолдана білу"]], "b": "jol", "p": "P7"}, {"n": 18, "t": "Жол ережесін сақтаймыз", "s": "7. Көлік және жол белгілері", "o": [["5.2.5.1", "Мәтін мазмұнын түсінуге, нақты ақпараттарды анықтауға бағытталған сұрақтар құрастыру"], ["5.4.4.4", "Сан есімнің мағыналық түрлерін ажырата білу, сан есімді зат есім орнына қолдана білу"]], "b": "jol", "p": "P7"}, {"n": 19, "t": "Қоғамдық көлік атаулары Нәтиже сабақ", "s": "7. Көлік және жол белгілері", "o": [["5.3.3.1", "Сюжетті суреттердің (фотосуреттер) желісі бойынша әңгіме құрастыру"], ["5.4.4.4", "Сан есімнің мағыналық түрлерін ажырата білу, сан есімді зат есім орнына қолдана білу"]], "b": "kolik", "p": "P7"}, {"n": 20, "t": "Бала Абай", "s": "8. Адамның сырт келбеті мен мінезі", "o": [["5.1.4.1", "Тірек сөздер мен жетекші сұрақтар арқылы негізгі ойды анықтау"], ["5.3.3.1", "Сюжетті суреттердің (фотосуреттер) желісі бойынша әңгіме құрастыру"]], "b": "abai", "p": "P8"}, {"n": 21, "t": "Бағып-қағуда көп мән бар", "s": "8. Адамның сырт келбеті мен мінезі", "o": [["5.2.6.1", "Оқылым стратегияларын қолдану: жалпы мазмұнын түсіну үшін оқу, нақты ақпаратты табу үшін оқу"], ["5.3.1.1", "Берілген мәтінге сәйкес кіріспе, негізгі және қорытынды бөлімдерді қамтитын қарапайым жоспар құру"], ["5.4.4.3", "Сын есімдердің, шырай түрлерінің көркемдік ерекшелігін тану, сын есімді зат есім орнына қолдана білу"]], "b": "minez", "p": "P8"}, {"n": 22, "t": "Асыл қасиет", "s": "8. Адамның сырт келбеті мен мінезі", "o": [["5.1.6.1", "Коммуникативтік жағдаятқа сай эмоционалды сөздерді, дауыс ырғақтары арқылы қыстырма, қаратпа, одағай сөздерді еркін қолданып, диалогке даярлықсыз қатысу, өз пікірін білдіру"], ["5.4.4.3", "Сын есімдердің, шырай түрлерінің көркемдік ерекшелігін тану, сын есімді зат есім орнына қолдана білу"]], "b": "minez", "p": "P8"}, {"n": 23, "t": "Уәдеге адалдық", "s": "8. Адамның сырт келбеті мен мінезі", "o": [["5.2.6.1", "Оқылым стратегияларын қолдану: жалпы мазмұнын түсіну үшін оқу, нақты ақпаратты табу үшін оқу"], ["5.3.3.1", "Сюжетті суреттердің (фотосуреттер) желісі бойынша әңгіме құрастыру"]], "b": "minez", "p": "P8"}, {"n": 24, "t": "Жауынгердің тұлғасы", "s": "8. Адамның сырт келбеті мен мінезі", "o": [["5.1.4.1", "Тірек сөздер мен жетекші сұрақтар арқылы негізгі ойды анықтау"], ["5.4.4.3", "Сын есімдердің, шырай түрлерінің көркемдік ерекшелігін тану, сын есімді зат есім орнына қолдана білу"]], "b": "minez", "p": "P8"}, {"n": 25, "t": "Әке – балаға сыншы", "s": "8. Адамның сырт келбеті мен мінезі", "o": [["5.2.4.1", "Ауызекі стильдегі мәтіндердің мазмұнын, тақырыбын және тілдік құралдарын салыстыру"], ["5.4.4.3", "Сын есімдердің, шырай түрлерінің көркемдік ерекшелігін тану, сын есімді зат есім орнына қолдана білу"]], "b": "minez", "p": "P8"}, {"n": 26, "t": "Әлін білмеген әлек", "s": "8. Адамның сырт келбеті мен мінезі", "o": [["5.1.4.1", "Тірек сөздер мен жетекші сұрақтар арқылы негізгі ойды анықтау"], ["5.4.4.3", "Сын есімдердің, шырай түрлерінің көркемдік ерекшелігін тану, сын есімді зат есім орнына қолдана білу"]], "b": "minez", "p": "P8"}, {"n": 27, "t": "Жақсыдан үйрен, жаманнан жирен Бөлім бойынша жиынтық бағалау-6", "s": "8. Адамның сырт келбеті мен мінезі", "o": [["5.2.6.1", "Оқылым стратегияларын қолдану: жалпы мазмұнын түсіну үшін оқу, нақты ақпаратты табу үшін оқу"], ["5.4.4.3", "Сын есімдердің, шырай түрлерінің көркемдік ерекшелігін тану, сын есімді зат есім орнына қолдана білу"]], "b": "minez", "p": "P8"}, {"n": 28, "t": "Күш атасы", "s": "8. Адамның сырт келбеті мен мінезі", "o": [["5.1.6.1", "Коммуникативтік жағдаятқа сай эмоционалды сөздерді, дауыс ырғақтары арқылы қыстырма, қаратпа, одағай сөздерді еркін қолданып, диалогке даярлықсыз қатысу, өз пікірін білдіру"], ["5.4.4.3", "Сын есімдердің, шырай түрлерінің көркемдік ерекшелігін тану, сын есімді зат есім орнына қолдана білу"]], "b": "minez", "p": "P8"}, {"n": 29, "t": "Тоқсандық жиынтық бағалау-3", "s": "8. Адамның сырт келбеті мен мінезі", "o": [["", "Бөлім бойынша қарастырылған оқу мақсаттарына негізделген"]], "b": "minez", "p": "P8"}, {"n": 30, "t": "Кейіпкер бейнесі", "s": "8. Адамның сырт келбеті мен мінезі", "o": [["5.2.6.1", "Оқылым стратегияларын қолдану: жалпы мазмұнын түсіну үшін оқу, нақты ақпаратты табу үшін оқу"], ["5.4.4.3", "Сын есімдердің, шырай түрлерінің көркемдік ерекшелігін тану, сын есімді зат есім орнына қолдана білу"]], "b": "minez", "p": "P8"}], "4": [{"n": 1, "t": "Ерте дүниедегі халық астрономиясы", "s": "9. Аспан әлемінің құпиялары", "o": [["5.1.4.1", "Тірек сөздер мен жетекші сұрақтар арқылы негізгі ойды анықтау"], ["5.4.5.5", "Төл сөз, төлеу сөз, автор сөзінің жасалу жолдарын, қызметін білу, төл сөзді төлеу сөзге айналдыру"]], "b": "aspan", "p": "P9"}, {"n": 2, "t": "Жер - ғаламшар", "s": "9. Аспан әлемінің құпиялары", "o": [["5.2.6.1", "Оқылым стратегияларын қолдану: жалпы мазмұнын түсіну үшін оқу, нақты ақпаратты табу үшін оқу"], ["5.3.5.1", "Оқылым және тыңдалым материалдары бойынша негізгі ақпараттарды сақтай отырып, жинақы мәтін жазу"]], "b": "aspan", "p": "P9"}, {"n": 3, "t": "Ай мен Күн", "s": "9. Аспан әлемінің құпиялары", "o": [["5.1.6.1", "Коммуникативтік жағдаятқа сай эмоционалды сөздерді, дауыс ырғақтары арқылы қыстырма, қаратпа, одағай сөздерді еркін қолданып, диалогке даярлықсыз қатысу, өз пікірін білдіру"], ["5.4.5.5", "Төл сөз, төлеу сөз, автор сөзінің жасалу жолдарын, қызметін білу, төл сөзді төлеу сөзге айналдыру"]], "b": "aspan", "p": "P9"}, {"n": 4, "t": "Көк аспан", "s": "9. Аспан әлемінің құпиялары", "o": [["5.2.7.1", "Энциклопедиялар, балаларға арналған газет-журналдардан қажетті ақпаратты ала білу"], ["5.3.4.1", "Эссенің кіріспе, негізгі, қорытынды бөлімдерін сақтай отырып, өзіне таныс адамды, белгілі бір мекен мен оқиғаны сипаттап не суреттеп жазу"]], "b": "aspan", "p": "P9"}, {"n": 5, "t": "Жұлдыздар жымыңдайды", "s": "9. Аспан әлемінің құпиялары", "o": [["5.1.6.1", "Коммуникативтік жағдаятқа сай эмоционалды сөздерді, дауыс ырғақтары арқылы қыстырма, қаратпа, одағай сөздерді еркін қолданып, диалогке даярлықсыз қатысу, өз пікірін білдіру"], ["5.4.5.5", "Төл сөз, төлеу сөз, автор сөзінің жасалу жолдарын, қызметін білу, төл сөзді төлеу сөзге айналдыру"]], "b": "aspan", "p": "P9"}, {"n": 6, "t": "Аспан өрнектері", "s": "9. Аспан әлемінің құпиялары", "o": [["5.2.6.1", "Оқылым стратегияларын қолдану: жалпы мазмұнын түсіну үшін оқу, нақты ақпаратты табу үшін оқу"], ["5.3.5.1", "Оқылым және тыңдалым материалдары бойынша негізгі ақпараттарды сақтай отырып, жинақы мәтін жазу"]], "b": "aspan", "p": "P9"}, {"n": 7, "t": "Аспан шамдары", "s": "9. Аспан әлемінің құпиялары", "o": [["5.1.4.1", "Тірек сөздер мен жетекші сұрақтар арқылы негізгі ойды анықтау"], ["5.4.5.5", "Төл сөз, төлеу сөз, автор сөзінің жасалу жолдарын, қызметін білу, төл сөзді төлеу сөзге айналдыру"]], "b": "aspan", "p": "P9"}, {"n": 8, "t": "Айға сапар", "s": "9. Аспан әлемінің құпиялары", "o": [["5.2.7.1", "Энциклопедиялар, балаларға арналған газет-журналдардан қажетті ақпаратты ала білу"], ["5.4.5.5", "Төл сөз, төлеу сөз, автор сөзінің жасалу жолдарын, қызметін білу, төл сөзді төлеу сөзге айналдыру"]], "b": "garysh", "p": "P9"}, {"n": 9, "t": "Нәтиже сабақ . Бөлім бойынша жиынтық бағалау-7", "s": "9. Аспан әлемінің құпиялары", "o": [["5.3.4.1", "Эссенің кіріспе, негізгі, қорытынды бөлімдерін сақтай отырып, өзіне таныс адамды, белгілі бір мекен мен оқиғаны сипаттап не суреттеп жазу"]], "b": "garysh", "p": "P9"}, {"n": 10, "t": "Мен ғарышкер боламын", "s": "9. Аспан әлемінің құпиялары", "o": [["5.2.6.1", "Оқылым стратегияларын қолдану: жалпы мазмұнын түсіну үшін оқу, нақты ақпаратты табу үшін оқу"], ["5.4.5.5", "Төл сөз, төлеу сөз, автор сөзінің жасалу жолдарын, қызметін білу, төл сөзді төлеу сөзге айналдыру"]], "b": "garysh", "p": "P9"}, {"n": 11, "t": "«Марста тұрғым келеді келмейді» тақырыбында эссе жазу", "s": "9. Аспан әлемінің құпиялары", "o": [["5.3.4.1", "Эссенің кіріспе, негізгі, қорытынды бөлімдерін сақтай отырып, өзіне таныс адамды, белгілі бір мекен мен оқиғаны сипаттап не суреттеп жазу"]], "b": "garysh", "p": "P9"}, {"n": 12, "t": "Саяхат және оның түрлері", "s": "10. Саяхат және демалыс", "o": [["5.1.5.1", "Тыңдалған мәтін мазмұны негізінде сұрақтарға жауап беру, көтерілген мәселе бойынша өз ойын білдіру"], ["5.4.4.5", "Төл сөз, төлеу сөз, автор сөзінің жасалу жолдарын, қызметін білу, төл сөзді төлеу сөзге айналдыру"]], "b": "sayahat", "p": "P9"}, {"n": 13, "t": "Жазғы саяхат", "s": "10. Саяхат және демалыс", "o": [["5.2.7.1", "Энциклопедиялар, балаларға арналған газет-журналдардан қажетті ақпаратты ала білу"], ["5.3.2.1", "Жанрлық ерекшеліктеріне сай ресімделуі мен құрылымын сақтап, хат құрастырып жазу"]], "b": "sayahat", "p": "P9"}, {"n": 14, "t": "Қысқы саяхат", "s": "10. Саяхат және демалыс", "o": [["5.1.6.1", "Коммуникативтік жағдаятқа сай эмоционалды сөздерді, дауыс ырғақтары арқылы қыстырма, қаратпа, одағай сөздерді еркін қолданып, диалогке даярлықсыз қатысу, өз пікірін білдіру"], ["5.4.4.5", "Төл сөз, төлеу сөз, автор сөзінің жасалу жолдарын, қызметін білу, төл сөзді төлеу сөзге айналдыру"]], "b": "sayahat", "p": "P9"}, {"n": 15, "t": "Елордаға саяхат", "s": "10. Саяхат және демалыс", "o": [["5.2.7.1", "Энциклопедиялар, балаларға арналған газет-журналдардан қажетті ақпаратты ала білу"], ["5.3.3.1", "Сюжетті суреттердің (фотосуреттер) желісі бойынша әңгіме құрастыру"]], "b": "sayahat_q", "p": "P9"}, {"n": 16, "t": "Алматыға саяхат", "s": "10. Саяхат және демалыс", "o": [["5.1.5.1", "Тыңдалған мәтін мазмұны негізінде сұрақтарға жауап беру, көтерілген мәселе бойынша өз ойын білдіру"], ["5.4.5.5", "Төл сөз, төлеу сөз, автор сөзінің тыныс белгілерін дұрыс қолдану"]], "b": "sayahat_q", "p": "P9"}, {"n": 17, "t": "Тауға саяхат", "s": "10. Саяхат және демалыс", "o": [["5.2.7.1", "Энциклопедиялар, балаларға арналған газет-журналдардан қажетті ақпаратты ала білу"], ["5.4.4.5", "Төл сөз, төлеу сөз, автор сөзінің тыныс белгілерін дұрыс қолдану"]], "b": "sayahat_q", "p": "P9"}, {"n": 18, "t": "Атақты саяхатшылар", "s": "10. Саяхат және демалыс", "o": [["5.1.6.1", "Коммуникативтік жағдаятқа сай эмоционалды сөздерді, дауыс ырғақтары арқылы қыстырма, қаратпа, одағай сөздерді еркін қолданып, диалогке даярлықсыз қатысу, өз пікірін білдіру"], ["5.4.5.5", "Төл сөз, төлеу сөз, автор сөзінің тыныс белгілерін дұрыс қолдану"]], "b": "sayahatshy", "p": "P9"}, {"n": 19, "t": "Қазақ саяхатшысы – Шоқан Уәлиханов", "s": "10. Саяхат және демалыс", "o": [["5.2.3.1", "Хаттың құрылымы мен ресімделуі арқылы жанрлық ерекшеліктерін ажырату"], ["5.3.2.1", "Жанрлық ерекшеліктеріне сай ресімделуі мен құрылымын сақтап, хат құрастырып жазу"]], "b": "sayahatshy", "p": "P9"}, {"n": 20, "t": "Қазақтың қазіргі саяхатшылары", "s": "10. Саяхат және демалыс", "o": [["5.1.5.1", "Тыңдалған мәтін мазмұны негізінде сұрақтарға жауап беру, көтерілген мәселе бойынша өз ойын білдіру"], ["5.3.3.1", "Сюжетті суреттердің (фотосуреттер) желісі бойынша әңгіме құрастыру"]], "b": "sayahatshy", "p": "P9"}, {"n": 21, "t": "Жаңа әлемдегі жаңа саяхаттар. . Бөлім бойынша жиынтық бағалау-8", "s": "10. Саяхат және демалыс", "o": [["5.2.7.1", "Энциклопедиялар, балаларға арналған газет-журналдардан қажетті ақпаратты ала білу"], ["5.4.5.5", "Төл сөз, төлеу сөз, автор сөзінің тыныс белгілерін дұрыс қолдану"]], "b": "sayahat", "p": "P9"}, {"n": 22, "t": "Саяхатқа шығу ережелері", "s": "10. Саяхат және демалыс", "o": [["5.1.6.1", "Коммуникативтік жағдаятқа сай эмоционалды сөздерді, дауыс ырғақтары арқылы қыстырма, қаратпа, одағай сөздерді еркін қолданып, диалогке даярлықсыз қатысу, өз пікірін білдіру"], ["5.4.4.5", "Төл сөз, төлеу сөз, автор сөзінің жасалу жолдарын, қызметін білу, төл сөзді төлеу сөзге айналдыру"]], "b": "sayahat", "p": "P9"}, {"n": 23, "t": "Тоқсандық жиынтық бағалау-4", "s": "10. Саяхат және демалыс", "o": [["", "Бөлім бойынша қарастырылған оқу мақсаттарына негізделген"]], "b": "sayahat", "p": "P9"}, {"n": 24, "t": "Нәтиже сабақ", "s": "10. Саяхат және демалыс", "o": [["5.2.4.1", "Ауызекі стильдегі мәтіндердің мазмұнын, тақырыбын және тілдік құралдарын салыстыру"], ["5.3.3.1", "Сюжетті суреттердің (фотосуреттер) желісі бойынша әңгіме құрастыру"]], "b": "sayahat", "p": "P9"}]}}, "L5": {"label": "5-сынып · Қазақ әдебиеті", "load": "КТЖ бойынша 68 сағат", "band": 0, "adv": 0, "q": {"1": [{"n": 1, "t": "«Таза, мінсіз асыл сөз». Халық ауыз әдебиеті Ертегі. Ертегі түрлері.", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"]], "b": "ertegi", "p": "poet"}, {"n": 2, "t": "«Керқұла атты Кендебай». Қазанғап кедей. Кендебайдың өмірге келуі.", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.1.1.1", "Әдеби шығарманың жанрына қарай фабуласы мен сюжеттік дамуын сипаттау"]], "b": "kendebay", "p": "poet"}, {"n": 3, "t": "Кендебай және қойшы бала. Керқұла ат пен Кендебай. Малшы Кендебай", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.2.1.1", "Әдеби шығармадағы екі нәрсені салыстыра суреттеулер мен қарама-қарсы суреттеулерді табу"]], "b": "kendebay", "p": "poet"}, {"n": 4, "t": "Хан мен балалары. Кендебайдың ерлігі.", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.1.3.1", "Көркем шығармадағы кейіпкерлер портреті мен іс-әрекеті арқылы образын ашу"]], "b": "kendebay", "p": "poet"}, {"n": 5, "t": "«Керқұла атты Кендебай» ертегісінің құрылымдық сипаты. Бөлім бойынша жиынтық бағалау-1", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.2.3.1", "Шығармадағы тілдік бейнелеу, суреттеу құралдарының (теңеу, эпитет, ауыспалы мағынадағы сөздер, қайталау, өлең құрылысы) мағынасын анықтау"]], "b": "kendebay", "p": "poet"}, {"n": 6, "t": "Батырлар жыры. Әдебиеттің тектері. «Қобыланды батыр» жыры. Қобыланды батырдың дүниеге келуі. Қобыланды мен Құртқа қыз.", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"]], "b": "qobylandy", "p": "poet"}, {"n": 7, "t": "Тайбурылдың тууы, өсуі. Қобыланды мен Қараман батырдың Қазанға қарсы жорығы", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.1.1.1", "Әдеби шығарманың жанрына қарай фабуласы мен сюжеттік дамуын сипаттау"]], "b": "qobylandy", "p": "poet"}, {"n": 8, "t": "Қобыланды батырдың жорыққа аттануы. Қобыландының Сырлы қала мен Қырлы қаланы алғандағы ерлігі. Екі батырдың Көбікті хан еліне жасаған шабуылы. Қарлыға қыз.", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.1.3.1", "Көркем шығармадағы кейіпкерлер портреті мен іс-әрекеті арқылы образын ашу"], ["5.2.2.1", "Эпикалық шығармадағы автор бейнесін анықтау"]], "b": "qobylandy", "p": "poet"}, {"n": 9, "t": "Қобыландының Көбіктіні жеңуі", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.1.4.1", "Көркем шығармалардан шағын көлемді үзінділерді мәнерлеп оқу, жатқа айту"]], "b": "qobylandy", "p": "poet"}, {"n": 10, "t": "«Қобыланды батыр» жыры. Тарих және жыр", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.3.1.1", "Шығармадағы эпизодтар арқылы тарихи құндылығын бағалау"]], "b": "qobylandy", "p": "poet"}, {"n": 11, "t": "Кейіпкер және шынайы өмір", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.2.1.1", "Әдеби шығармадағы екі нәрсені салыстыра суреттеулер мен қарама-қарсы суреттеулерді табу"], ["5.3.2.1", "Кейіпкерлерді шынайы өмірмен салыстырып бағалау"]], "b": "qobylandy", "p": "poet"}, {"n": 12, "t": "Елін жаудан азат еткен ерлер «Ерлігі еліне арналған....» эссе Бөлім бойынша жиынтық бағалау-2", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.3.3.1", "Шығармадағы кейіпкерді өзіндік құндылығы тұрғысынан талдап, әдеби эссе жазу"]], "b": "qobylandy", "p": "poet"}, {"n": 13, "t": "Аңыз. Асанқайғы (Хасан) Сәбитұлы. « Асанқайғының жерге айтқан сыны» аңызы.", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.1.1.1", "Әдеби шығарманың жанрына қарай фабуласы мен сюжеттік дамуын сипаттау"], ["5.2.2.1", "Эпикалық шығармадағы автор бейнесін анықтау"]], "b": "asan", "p": "poet"}, {"n": 14, "t": "Асанқайғының жерге айтқан сыны.", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.2.3.1", "Шығармадағы тілдік бейнелеу, суреттеу құралдарының (теңеу, эпитет, ауыспалы мағынадағы сөздер, қайталау, өлең құрылысы) мағынасын анықтау"]], "b": "asan", "p": "poet"}, {"n": 15, "t": "Тоқсандық жиынтық бағалау-1", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["", "Бөлім бойынша қарастырылған оқу мақсаттарына негізделген"]], "b": "asan", "p": "poet"}, {"n": 16, "t": "Асанқайғының жерге айтқан сыны Туған жерің-ұйығың.", "s": "1-бөлім: Таза, мінсіз асыл сөз", "o": [["5.2.4.1", "Көркем шығармадан алған әсерін сипаттап авторға хат, өлең жазу"]], "b": "asan", "p": "poet"}], "2": [{"n": 1, "t": "«Тәрбиенің қайнар бұлағы». Д. Бабатайұлы «О, Ақтан жас, Ақтан жас...» өлеңі.", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"]], "b": "aqtan", "p": "poet"}, {"n": 2, "t": "«О, Ақтан жас, Ақтан жас...» өлеңі. Жетімдік", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.1.3.1", "Көркем шығармадағы кейіпкерлер портреті мен іс-әрекеті арқылы образын ашу"]], "b": "aqtan", "p": "poet"}, {"n": 3, "t": "«О, Ақтан жас, Ақтан жас...» өлеңі. Көркемсөз", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.1.4.1", "Көркем шығармалардан шағын көлемді үзінділерді мәнерлеп оқу, жатқа айту"], ["5.2.3.1", "Шығармадағы тілдік бейнелеу, суреттеу құралдары ның (теңеу, эпитет, ауыспалы мағынадағы сөздер, қайталау, өлең құрылысы) мағынасын анықтау"]], "b": "aqtan", "p": "poet"}, {"n": 4, "t": "«О, Ақтан жас, Ақтан жас...» өлеңі...». Риторикалық сұраулы сөйлем", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.3.4.1", "Оқырманның рухани дүниесіне шығарма әсерін талдай отырып, сыни хабарлама жазу"]], "b": "aqtan", "p": "poet"}, {"n": 5, "t": "«О, Ақтан жас, Ақтан жас...» өлеңі. Авторға хат. Бөлім бойынша жиынтық бағалау-3", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.2.4.1", "Көркем шығармадан алған әсерін сипаттап авторға хат, өлең жазу"]], "b": "aqtan", "p": "poet"}, {"n": 6, "t": "Ыбырай Алтынсарин. «Қыпшақ Сейітқұл» әңгімесі", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.1.1.1", "Әдеби шығарманың жанрына қарай фабуласы мен сюжеттік дамуын сипаттау"]], "b": "seitqul", "p": "poet"}, {"n": 7, "t": "«Қыпшақ Сейітқұл» әңгімесі. Сейітқұл –еңбек адамы", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"]], "b": "seitqul", "p": "poet"}, {"n": 8, "t": "«Қыпшақ Сейітқұл» әңгімесі. Сейітқұл –ел қамқоршысы", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.2.3.1", "Шығармадағы тілдік бейнелеу, суреттеу құралдары ның (теңеу, эпитет, ауыспалы мағынадағы сөздер, қайталау, өлең құрылысы) мағынасын анықтау"]], "b": "seitqul", "p": "poet"}, {"n": 9, "t": "Сейітқұл-заманынан озып туған адам", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.3.3.1", "Шығармадағы кейіпкерді өзіндік құндылығы тұрғысынан талдап, әдеби эссе жазу"]], "b": "seitqul", "p": "poet"}, {"n": 10, "t": "«Атымтай Жомарт» әңгімесі", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.1.1.1", "Әдеби шығарманың жанрына қарай фабуласы мен сюжеттік дамуын сипаттау"]], "b": "atymtai", "p": "poet"}, {"n": 11, "t": "Жомарттық – қайырымдылық тамшысы", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"], ["5.2.2.1", "Эпикалық шығармадағы автор бейнесін анықтау"]], "b": "atymtai", "p": "poet"}, {"n": 12, "t": "Жомарттық пен сараңдық. Бөлім бойынша жиынтық бағалау-4", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.2.1.1", "Әдеби шығармадағы екі нәрсені салыстыра суреттеулер мен қарама-қарсы суреттеулерді табу"]], "b": "atymtai", "p": "poet"}, {"n": 13, "t": "«Дүние қалай етсең табылады?» әңгімесі.", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"]], "b": "dunie", "p": "poet"}, {"n": 14, "t": "Адал еңбекпен дүние табудың үлгісі", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.3.4.1", "Оқырманның рухани дүниесіне шығарма әсерін талдай отырып, сыни хабарлама жазу"]], "b": "dunie", "p": "poet"}, {"n": 15, "t": "Тоқсандық жиынтық бағалау-2", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["", "Бөлім бойынша қарастырылған оқу мақсаттарына негізделген"]], "b": "dunie", "p": "poet"}, {"n": 16, "t": "Кәсібінен нәсіп тапқан", "s": "2-бөлім: Тәрбиенің қайнар бұлағы", "o": [["5.3.3.1", "Шығармадағы кейіпкерді өзіндік құндылығы тұрғысынан талдап, әдеби эссе жазу"]], "b": "dunie", "p": "poet"}], "3": [{"n": 1, "t": "Мысал. А.Байтұрсынұлы «Адамдық диқаншысы» өлеңі", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"], ["5.2.3.1", "Шығармадағы тілдік бейнелеу, суреттеу құралдарының (теңеу, эпитет, ауыспалы мағынадағы сөздер, қайталау, өлең құрылысы) мағынасын анықтау"]], "b": "egin", "p": "poet"}, {"n": 2, "t": "А.Байтұрсынұлы «Адамдық диқаншысы» өлеңі.", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.1.4.1", "Көркем шығармалардан шағын көлемді үзінділерді мәнерлеп оқу, жатқа айту"], ["5.2.2.1", "Эпикалық шығармадағы автор бейнесін анықтау"]], "b": "egin", "p": "poet"}, {"n": 3, "t": "Ахмет Байтұрсынұлы «Егіннің бастары» өлеңі", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"], ["5.2.3.1", "Шығармадағы тілдік бейнелеу, суреттеу құралдарының (теңеу, эпитет, ауыспалы мағынадағы сөздер, қайталау, өлең құрылысы) мағынасын анықтау"]], "b": "egin", "p": "poet"}, {"n": 4, "t": "«Егіннің бастары». Әке өсиеті", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.1.4.1", "Көркем шығармалардан шағын көлемді үзінділерді мәнерлеп оқу, жатқа айту"], ["5.2.2.1", "Эпикалық шығармадағы автор бейнесін анықтау"]], "b": "egin", "p": "poet"}, {"n": 5, "t": "«Егіннің бастары». Ахмет атаға хат.Бөлім бойынша жиынтық бағалау-5", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.2.4.1", "Көркем шығармадан алған әсерін сипаттап авторға хат, өлең жазу"]], "b": "egin", "p": "poet"}, {"n": 6, "t": "Б. Соқпақбаев. «Менің атым Қожа» хикаяты", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"]], "b": "qozha", "p": "poet"}, {"n": 7, "t": "«Менің атым Қожа». Менің атым... Жолдама жайында", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.1.1.1", "Әдеби шығарманың жанрына қарай фабуласы мен сюжеттік дамуын сипаттау"]], "b": "qozha", "p": "poet"}, {"n": 8, "t": "«Менің атым Қожа» хикаяты. Алғашқы таныстық", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.2.1.1", "Әдеби шығармадағы екі нәрсені салыстыра суреттеулер мен қарама-қарсы суреттеулерді табу"]], "b": "qozha", "p": "poet"}, {"n": 9, "t": "«Менің атым Қожа» хикаяты . Дайындықсыз келген бір күн", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.1.3.1", "Көркем шығармадағы кейіпкерлер портреті мен іс-әрекеті арқылы образын ашу"]], "b": "qozha", "p": "poet"}, {"n": 10, "t": "«Менің атым Қожа» хикаяты Бақаның әлегі", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.2.2.1", "Эпикалық шығармадағы автор бейнесін анықтау"]], "b": "qozha", "p": "poet"}, {"n": 11, "t": "«Менің атым Қожа» хикаяты. Сәйбек қарттың әңгімесі. Түбінде адам болатын бала", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.3.4.1", "Оқырманның рухани дүниесіне шығарма әсерін талдай отырып, сыни хабарлама жазу"]], "b": "qozha", "p": "poet"}, {"n": 12, "t": "«Менің атым Қожа» хикаяты. Сенім арту.", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.3.2.1", "Кейіпкерлерді шынайы өмірмен салыстырып бағалау"]], "b": "qozha", "p": "poet"}, {"n": 13, "t": "«Менің атым Қожа» хикаяты. Құпия кеңес", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.3.3.1", "Шығармадағы кейіпкерді өзіндік құндылығы тұрғысынан талдап, әдеби эссе жазу"]], "b": "qozha", "p": "poet"}, {"n": 14, "t": "М.Қабанбай. «Бауыр» әңгімесі", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"]], "b": "bauyr", "p": "poet"}, {"n": 15, "t": "М.Қабанбай. «Бауыр» әңгімесі. Үміт", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.1.1.1", "Әдеби шығарманың жанрына қарай фабуласы мен сюжеттік дамуын сипаттау"]], "b": "bauyr", "p": "poet"}, {"n": 16, "t": "М.Қабанбай. «Бауыр» әңгімесі. Күрсініс", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.1.3.1", "Көркем шығармадағы кейіпкерлер портреті мен іс-әрекеті арқылы образын ашу"], ["5.2.1.1", "Әдеби шығармадағы екі нәрсені салыстыра суреттеулер мен қарама-қарсы суреттеулерді табу"]], "b": "bauyr", "p": "poet"}, {"n": 17, "t": "М.Қабанбай. «Бауыр» әңгімесі. Арман. Бөлім бойынша жиынтық бағалау-6", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.3.3.1", "Шығармадағы кейіпкерді өзіндік құндылығы тұрғысынан талдап, әдеби эссе жазу"]], "b": "bauyr", "p": "poet"}, {"n": 18, "t": "М.Қабанбай. «Бауыр» әңгімесі.", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.3.4.1", "Оқырманның рухани дүниесіне шығарма әсерін талдай отырып, сыни хабарлама жазу"]], "b": "bauyr", "p": "poet"}, {"n": 19, "t": "Тоқсандық жиынтық бағалау-3", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["", "Бөлім бойынша қарастырылған оқу мақсаттарына негізделген"]], "b": "bauyr", "p": "poet"}, {"n": 20, "t": "М.Қабанбай. «Бауыр» әңгімесі. Шынайы өмір және оқырман", "s": "3-бөлім: Адамгершілік – асыл қасиет", "o": [["5.3.2.1", "Кейіпкерлерді шынайы өмірмен салыстырып бағалау"]], "b": "bauyr", "p": "poet"}], "4": [{"n": 1, "t": "Т. Нұрмағамбетов «Анасын сағынған бала».", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.1.1.1", "Әдеби шығарманың жанрына қарай фабуласы мен сюжеттік дамуын сипаттау"]], "b": "anasyn", "p": "poet"}, {"n": 2, "t": "Т. Нұрмағамбетов «Анасын сағынған бала». Уәде", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"]], "b": "anasyn", "p": "poet"}, {"n": 3, "t": "Т. Нұрмағамбетов «Анасын сағынған бала». Бақытты сәт", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.1.3.1", "Көркем шығармадағы кейіпкерлер портреті мен іс-әрекеті арқылы образын ашу"], ["5.2.2.1", "Эпикалық шығармадағы автор бейнесін анықтау"]], "b": "anasyn", "p": "poet"}, {"n": 4, "t": "Т. Нұрмағамбетов «Анасын сағынған бала». Сағыныш", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.2.1.1", "Әдеби шығармадағы екі нәрсені салыстыра суреттеулер мен қарама-қарсы суреттеулерді табу"]], "b": "anasyn", "p": "poet"}, {"n": 5, "t": "Т. Нұрмағамбетов «Анасын сағынған бала». Алданған арман", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.2.4.1", "Көркем шығармадан алған әсерін сипаттап авторға хат, өлең жазу"]], "b": "anasyn", "p": "poet"}, {"n": 6, "t": "Н. Ақыш. «Нағыз әже қайда?» әңгімесі. Келіңдер, ертегі айтып берейін. Әжеге барайық", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.1.1.1", "Әдеби шығарманың жанрына қарай фабуласы мен сюжеттік дамуын сипаттау"]], "b": "azhe", "p": "poet"}, {"n": 7, "t": "Н. Ақыш. «Нағыз әже қайда?» әңгімесі. Қонақта", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"]], "b": "azhe", "p": "poet"}, {"n": 8, "t": "Н. Ақыш. «Нағыз әже қайда?» әңгімесі. Ажардың әжесі", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.1.3.1", "Көркем шығармадағы кейіпкерлер портреті мен іс-әрекеті арқылы образын ашу"], ["5.2.3.1", "Шығармадағы тілдік бейнелеу, суреттеу құралдары ның (теңеу, эпитет, ауыспалы мағынадағы сөздер, қайталау, өлең құрылысы) мағынасын анықтау"]], "b": "azhe", "p": "poet"}, {"n": 9, "t": "Н. Ақыш. «Нағыз әже қайда?» әңгімесі. Шіркін, менің әжем", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.1.4.1", "Көркем шығармалардан шағын көлемді үзінділерді мәнерлеп оқу, жатқа айту"], ["5.2.2.1", "Эпикалық шығармадағы автор бейнесін анықтау"]], "b": "azhe", "p": "poet"}, {"n": 10, "t": "Н. Ақыш. «Нағыз әже қайда?» әңгімесі. Әжені аңсау. Бөлім бойынша жиынтық бағалау-7", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.2.1.1", "Әдеби шығармадағы екі нәрсені салыстыра суреттеулер мен қарама-қарсы суреттеулерді табу"], ["5.3.1.1", "Шығармадағы кейіпкерді өзіндік құндылығы тұрғысынан талдап, әдеби эссе жазу"]], "b": "azhe", "p": "poet"}, {"n": 11, "t": "Д. Лондон. «Мексика ұлы» әңгімесі", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.1.1.1", "Әдеби шығарманың жанрына қарай фабуласы мен сюжеттік дамуын сипаттау"]], "b": "mexika", "p": "poet"}, {"n": 12, "t": "Д. Лондон. «Мексика ұлы» әңгімесі", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.1.2.1", "Әдеби шығарманың тақырыбы мен идеясын анықтау"], ["5.2.1.1", "Әдеби шығармадағы екі нәрсені салыстыра суреттеулер мен қарама-қарсы суреттеулерді табу"]], "b": "mexika", "p": "poet"}, {"n": 13, "t": "Д. Лондон. «Мексика ұлы» әңгімесі. Ривера мен Денни портреті. Бөлім бойынша жиынтық бағалау-8", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.1.3.1", "Көркем шығармадағы кейіпкерлер портреті мен іс-әрекеті арқылы образын ашу"]], "b": "mexika", "p": "poet"}, {"n": 14, "t": "Д. Лондон. «Мексика ұлы» әңгімесі. Шығарманың тілі.", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.2.1.1", "Әдеби шығармадағы екі нәрсені салыстыра суреттеулер мен қарама-қарсы суреттеулерді табу"], ["5.3.1.1", "Шығармадағы кейіпкерді өзіндік құндылығы тұрғысынан талдап, әдеби эссе жазу"]], "b": "mexika", "p": "poet"}, {"n": 15, "t": "Тоқсандық жиынтық бағалау-4", "s": "4-бөлім: Отбасы құндылықтары", "o": [["", "Бөлім бойынша қарастырылған оқу мақсаттарына негізделген"]], "b": "mexika", "p": "poet"}, {"n": 16, "t": "Д. Лондон. «Мексика ұлы» әңгімесі.", "s": "4-бөлім: Отбасы құндылықтары", "o": [["5.2.2.1", "Эпикалық шығармадағы автор бейнесін анықтау"]], "b": "mexika", "p": "poet"}]}}};
+if (typeof module !== "undefined") module.exports = CUR;
+
+// Грамматика пакеттері: КТЖ бөлімдерінің «Әдеби тіл нормасы» мақсаттарына сәйкес (қазақ тілі) және көркемдік құралдар (әдебиет)
+var KZPACKS = (function () {
+  var P = {};
+  P.P1 = {
+    focus: 'дыбыстар жүйесі, үндестік заңы және емле нормасы',
+    terms: 'дыбыс, дауысты, дауыссыз, жуан, жіңішке, үндестік заңы, емле',
+    rule: [
+      'Қазақ тілінде 9 төл дауысты дыбыс бар: жуан – а, о, ұ, ы; жіңішке – ә, ө, ү, і, е.',
+      'Үндестік заңы: сөздегі дыбыстар бір-біріне үндеседі. Жуан сөзге жуан, жіңішке сөзге жіңішке жалғау жалғанады: бала-лар, мектеп-тер.',
+      'Көптік жалғау: -лар/-лер (дауыстыдан, р, у, й-дан кейін), -дар/-дер (л, м, н, ң, ж, з-дан кейін), -тар/-тер (қатаң дыбыстардан кейін).',
+      'Емле – сөзді ережеге сай жазу: ұ мен ү, қ мен к, ғ мен г дыбыстарын шатастырмаймыз.'
+    ],
+    gaps: [
+      ['Жуан дауысты дыбыстар: а, о, ұ, ___.', 'ы', ['ы', 'і', 'ә']],
+      ['Жіңішке дауысты дыбыстар: ә, ө, ү, і, ___.', 'е', ['е', 'а', 'о']],
+      ['Бала + ___ = балалар', 'лар', ['лар', 'дар', 'тар']],
+      ['Мектеп + ___ = мектептер', 'тер', ['лер', 'дер', 'тер']],
+      ['Қыз + ___ = қыздар', 'дар', ['лар', 'дар', 'тар']],
+      ['Гүл + ___ = гүлдер', 'дер', ['лер', 'дер', 'тер']],
+      ['Сөздегі дауыстылар бір-біріне ___ (үндестік заңы).', 'үндеседі', ['үндеседі', 'қарсы келеді', 'ауыспайды']],
+      ['«Кітап» сөзінде ___ дауысты дыбыс бар.', 'екі', ['бір', 'екі', 'үш']]
+    ],
+    errs: [
+      ['Мектепдер ашық.', 'Мектептер ашық.'],
+      ['Балалер ойнап жүр.', 'Балалар ойнап жүр.'],
+      ['Көктемде гүлдар ашылады.', 'Көктемде гүлдер ашылады.'],
+      ['Мен ағашдар көрдім.', 'Мен ағаштар көрдім.'],
+      ['Оқушылер сабақта отыр.', 'Оқушылар сабақта отыр.']
+    ],
+    tf: [
+      ['«А» – жуан дауысты дыбыс.', true], ['«Ү» – жуан дауысты дыбыс.', false],
+      ['Көптік жалғау түбірге үндесіп жалғанады.', true], ['«Мектеп» сөзіне «-лер» жалғанады.', false],
+      ['«Ағаш» сөзінің көпше түрі – ағаштар.', true], ['Қазақ тілінде 9 төл дауысты дыбыс бар.', true]
+    ]
+  };
+  P.P2 = {
+    focus: 'дыбыстардың ықпалы: ілгерінді, кейінді және тоғыспалы ықпал',
+    terms: 'ықпал, ілгерінді ықпал, кейінді ықпал, тоғыспалы ықпал, қатаң, ұяң',
+    rule: [
+      'Сөз ішінде және сөз аралығында дыбыстар бір-біріне әсер етеді. Бұл – дыбыстардың ықпалы.',
+      'Ілгерінді ықпал: алдыңғы дыбыс кейінгі дыбысты өзіне ұқсатады: қыс+да → қыста, тас+дар → тастар.',
+      'Кейінді ықпал: кейінгі дыбыс алдыңғы дыбысты өзіне ұқсатады.',
+      'Тоғыспалы ықпал: екі дыбыс бір-біріне әсер етіп, екеуі де өзгереді.',
+      'Қатаң дыбыстан кейін қатаң, ұяң дыбыстан кейін ұяң жалғау жалғанады: ағаш-та, мектеп-те, үй-де, қала-да.'
+    ],
+    gaps: [
+      ['Қыс + да = қыс___', 'та', ['да', 'та', 'ға']],
+      ['Тас + дар = тас___', 'тар', ['дар', 'тар', 'лар']],
+      ['Үй + ___ = үйде', 'де', ['де', 'те', 'да']],
+      ['Ағаш + ___ = ағашта', 'та', ['да', 'та', 'де']],
+      ['Мектеп + ___ = мектепте', 'те', ['де', 'те', 'та']],
+      ['Қала + ___ = қалада', 'да', ['да', 'та', 'де']],
+      ['Қазақ + ___ = қазақта', 'та', ['да', 'та', 'де']],
+      ['Алма + ___ = алмада', 'да', ['да', 'та', 'де']]
+    ],
+    errs: [
+      ['Мен ағашде отырмын.', 'Мен ағашта отырмын.'],
+      ['Кітапда жазылған.', 'Кітапта жазылған.'],
+      ['Үйте отырмын.', 'Үйде отырмын.'],
+      ['Тасдар жатыр.', 'Тастар жатыр.'],
+      ['Қыста қар жауады, қысда суық.', 'Қыста қар жауады, қыста суық.']
+    ],
+    tf: [
+      ['Ілгерінді ықпалда алдыңғы дыбыс кейінгіге әсер етеді.', true], ['Кейінді ықпалда алдыңғы дыбыс кейінгіге әсер етеді.', false],
+      ['«Ағашта» сөзі дұрыс жазылған.', true], ['«Үйте» сөзі дұрыс жазылған.', false],
+      ['Тоғыспалы ықпалда екі дыбыс та өзгереді.', true], ['Қатаң дыбыстан кейін қатаң жалғау жалғанады.', true]
+    ]
+  };
+  P.P3 = {
+    focus: 'тура, ауыспалы және көп мағыналы сөздер',
+    terms: 'тура мағына, ауыспалы мағына, көп мағыналы сөз, мәнмәтін',
+    rule: [
+      'Тура мағына – сөздің өзіндік, негізгі мағынасы: алтын сақина, ащы шай, жылы су.',
+      'Ауыспалы мағына – ұқсастық негізінде басқа затқа көшкен мағына: алтын қол, ащы тіл, жылы сөз.',
+      'Көп мағыналы сөз – бірнеше мағынасы бар сөз: көз (адамның көзі, бұлақтың көзі, ине көзі), бас (адамның басы, таудың басы).',
+      'Сөздің мағынасын мәнмәтін, яғни сөйлемдегі қолданысы арқылы анықтаймыз.'
+    ],
+    gaps: [
+      ['«Алтын сақина» тіркесінде «алтын» сөзі ___ мағынада.', 'тура', ['тура', 'ауыспалы', 'омоним']],
+      ['«Алтын қол шебер» тіркесінде «алтын» сөзі ___ мағынада.', 'ауыспалы', ['тура', 'ауыспалы', 'омоним']],
+      ['«Ащы шай» тіркесінде «ащы» сөзі ___ мағынада.', 'тура', ['тура', 'ауыспалы', 'көп']],
+      ['«Ащы тіл» тіркесінде «ащы» сөзі ___ мағынада.', 'ауыспалы', ['тура', 'ауыспалы', 'көп']],
+      ['«Жылы су» тіркесінде «жылы» сөзі ___ мағынада.', 'тура', ['тура', 'ауыспалы', 'көп']],
+      ['«Жылы сөз» тіркесінде «жылы» сөзі ___ мағынада.', 'ауыспалы', ['тура', 'ауыспалы', 'көп']],
+      ['«Көз» сөзінің бірнеше мағынасы бар, сондықтан ол ___ сөз.', 'көп мағыналы', ['көп мағыналы', 'жалқы', 'күрделі']],
+      ['«Темір тәртіп» тіркесінде «темір» сөзі ___ мағынада.', 'ауыспалы', ['тура', 'ауыспалы', 'көп']]
+    ],
+    errs: [
+      ['«Алтын күз» тіркесінде «алтын» сөзі тура мағынада.', '«Алтын күз» тіркесінде «алтын» сөзі ауыспалы мағынада.'],
+      ['«Темір есік» тіркесінде «темір» сөзі ауыспалы мағынада.', '«Темір есік» тіркесінде «темір» сөзі тура мағынада.'],
+      ['«Темір тәртіп» тіркесінде «темір» сөзі тура мағынада.', '«Темір тәртіп» тіркесінде «темір» сөзі ауыспалы мағынада.'],
+      ['Көп мағыналы сөздің бір ғана мағынасы болады.', 'Көп мағыналы сөздің бірнеше мағынасы болады.'],
+      ['Ауыспалы мағына – сөздің өзіндік негізгі мағынасы.', 'Тура мағына – сөздің өзіндік негізгі мағынасы.']
+    ],
+    tf: [
+      ['«Жылы сөз» тіркесінде «жылы» ауыспалы мағынада тұр.', true], ['«Алтын сағат» тіркесінде «алтын» ауыспалы мағынада.', false],
+      ['«Көз» – көп мағыналы сөз.', true], ['Сөздің мағынасы мәнмәтінде анықталады.', true],
+      ['«Ащы тіл» – тура мағына.', false], ['«Бас» сөзінің бірнеше мағынасы бар.', true]
+    ]
+  };
+  P.P4 = {
+    focus: 'синоним, антоним, омоним және оларды көркем мәтінде қолдану',
+    terms: 'синоним, антоним, омоним, мағына',
+    rule: [
+      'Синоним – мағынасы жақын сөздер: әдемі – сұлу – көркем, жылдам – шапшаң.',
+      'Антоним – мағынасы қарама-қарсы сөздер: үлкен – кіші, ақ – қара, биік – аласа.',
+      'Омоним – дыбысталуы бірдей, мағынасы әртүрлі сөздер: жаз (жыл мезгілі) – жаз (жазу), түс (түр) – түс (ұйқыдағы көрініс).',
+      'Көркем мәтінде синонимдер ойды дәл әрі әсерлі жеткізеді, антонимдер қарама-қайшылықты көрсетеді.'
+    ],
+    gaps: [
+      ['«Әдемі» сөзінің синонимі – ___.', 'сұлу', ['сұлу', 'жаман', 'биік']],
+      ['«Үлкен» сөзінің антонимі – ___.', 'кіші', ['кіші', 'ірі', 'зор']],
+      ['«Биік» сөзінің антонимі – ___.', 'аласа', ['аласа', 'зор', 'таудай']],
+      ['«Жылдам» сөзінің синонимі – ___.', 'шапшаң', ['шапшаң', 'баяу', 'ақырын']],
+      ['«Жаз» (жыл мезгілі) және «жаз» (жазу) – ___.', 'омоним', ['омоним', 'антоним', 'синоним']],
+      ['«Ақ» сөзінің антонимі – ___.', 'қара', ['қара', 'appaқ', 'ақшыл']],
+      ['«Ақылды» сөзінің синонимі – ___.', 'зерек', ['зерек', 'ақымақ', 'ашушаң']],
+      ['«Бай» сөзінің антонимі – ___.', 'кедей', ['кедей', 'ауқатты', 'мол']]
+    ],
+    errs: [
+      ['«Үлкен» мен «ірі» – антонимдер.', '«Үлкен» мен «ірі» – синонимдер.'],
+      ['«Ақ» пен «қара» – синонимдер.', '«Ақ» пен «қара» – антонимдер.'],
+      ['Омонимдердің мағынасы бірдей болады.', 'Омонимдердің мағынасы әртүрлі болады.'],
+      ['«Жылдам» мен «баяу» – синонимдер.', '«Жылдам» мен «баяу» – антонимдер.'],
+      ['«Әдемі» мен «жаман» – синонимдер.', '«Әдемі» мен «жаман» – антонимдер.']
+    ],
+    tf: [
+      ['«Үлкен» мен «кіші» – антонимдер.', true], ['«Әдемі» мен «сұлу» – антонимдер.', false],
+      ['Синонимдердің мағынасы жақын болады.', true], ['Омонимдердің дыбысталуы бірдей.', true],
+      ['«Биік» пен «аласа» – қарама-қарсы мағыналы сөздер.', true], ['«Жылдам» мен «шапшаң» – антонимдер.', false]
+    ]
+  };
+  P.P4.gaps[5] = ['«Ақ» сөзінің антонимі – ___.', 'қара', ['қара', 'аппақ', 'ақшыл']];
+  P.P5 = {
+    focus: 'жұрнақ арқылы жасалған туынды сөздер және күрделі сөздер',
+    terms: 'түбір, жұрнақ, туынды сөз, қос сөз, біріккен сөз',
+    rule: [
+      'Жұрнақ – түбірге жалғанып, жаңа сөз тудыратын қосымша: оқу → оқушы, дос → достық, ақыл → ақылды.',
+      'Жұрнақ арқылы жасалған сөз – туынды сөз: -шы/-ші (істің иесі), -лық/-лік/-дық/-тық (дерексіз ұғым), -лы/-лі/-ды/-ді/-ты/-ті (бар болу), -сыз/-сіз (жоқ болу).',
+      'Қос сөздер сызықшамен жазылады: ата-ана, аға-іні, ойын-сауық.',
+      'Біріккен сөздер бірге жазылады: ақсақал, балабақша.'
+    ],
+    gaps: [
+      ['Оқу + ___ = оқушы', 'шы', ['шы', 'лық', 'сыз']],
+      ['Дос + ___ = достық', 'тық', ['тық', 'шы', 'лы']],
+      ['Ақыл + ___ = ақылды', 'ды', ['ды', 'сыз', 'шы']],
+      ['Көмек + ___ = көмексіз', 'сіз', ['сіз', 'ші', 'лі']],
+      ['Тіл + ___ = тілші', 'ші', ['ші', 'сіз', 'лік']],
+      ['«Ата-ана» – ___ сөз.', 'қос', ['қос', 'біріккен', 'туынды']],
+      ['«Ақсақал» – ___ сөз.', 'біріккен', ['қос', 'біріккен', 'түбір']],
+      ['«Балабақша» – ___ сөз.', 'біріккен', ['қос', 'біріккен', 'түбір']]
+    ],
+    errs: [
+      ['Ата ана', 'Ата-ана'],
+      ['Ақ сақал (бір сөз ретінде)', 'Ақсақал'],
+      ['Оқушы – түбір сөз.', 'Оқушы – туынды сөз.'],
+      ['Дос сөзіне -шы жұрнағы жалғанып, достық сөзі жасалды.', 'Дос сөзіне -тық жұрнағы жалғанып, достық сөзі жасалды.'],
+      ['Ойынсауық', 'Ойын-сауық']
+    ],
+    tf: [
+      ['Жұрнақ жаңа сөз тудырады.', true], ['«Оқушы» – туынды сөз.', true],
+      ['Қос сөздер бірге жазылады.', false], ['«Ақсақал» – біріккен сөз.', true],
+      ['«-сыз» жұрнағы жоқ болуды білдіреді.', true], ['«Ата-ана» сөзі сызықшасыз жазылады.', false]
+    ]
+  };
+  P.P6 = {
+    focus: 'зат есімнің мағыналық түрлері және түрленуі (көптік, тәуелдік, септік)',
+    terms: 'зат есім, жалпы есім, жалқы есім, нақты, дерексіз, септік',
+    rule: [
+      'Зат есім – «кім?», «не?» сұрақтарына жауап береді.',
+      'Мағынасына қарай: жалпы және жалқы (жалқы есім бас әріппен жазылады), нақты (кітап, тау) және дерексіз (достық, қуаныш).',
+      'Зат есім түрленеді: көптік (-лар), тәуелдік (менің кітабым), септік.',
+      'Жеті септік: атау (кім? не?), ілік (кімнің? ненің?), барыс (кімге? неге? қайда?), табыс (кімді? нені?), жатыс (кімде? неде? қайда?), шығыс (кімнен? неден? қайдан?), көмектес (кіммен? немен?).'
+    ],
+    gaps: [
+      ['«Достық» – ___ зат есім.', 'дерексіз', ['дерексіз', 'нақты', 'жалқы']],
+      ['«Кітап» – ___ зат есім.', 'нақты', ['дерексіз', 'нақты', 'жалқы']],
+      ['«Қобыланды» – ___ есім.', 'жалқы', ['жалпы', 'жалқы', 'сан']],
+      ['Мектеп + ___ (барыс септік) = мектепке', 'ке', ['ке', 'те', 'тен']],
+      ['Үй + ___ (шығыс септік) = үйден', 'ден', ['ден', 'де', 'ге']],
+      ['Қала + ___ (жатыс септік) = қалада', 'да', ['да', 'ға', 'дан']],
+      ['Дос + ___ (ілік септік) = достың', 'тың', ['тың', 'дың', 'ның']],
+      ['Ағаш + ___ (табыс септік) = ағашты', 'ты', ['ты', 'ды', 'ны']]
+    ],
+    errs: [
+      ['Мен мектепте барамын.', 'Мен мектепке барамын.'],
+      ['Біз үйге тұрамыз.', 'Біз үйде тұрамыз.'],
+      ['Мен досым кітап бердім.', 'Мен досыма кітап бердім.'],
+      ['Ол қаладан тұрады.', 'Ол қалада тұрады.'],
+      ['Айгүл ақын болғысы келеді (аты кіші әріппен): айгүл', 'Айгүл']
+    ],
+    tf: [
+      ['«Қуаныш» – дерексіз зат есім.', true], ['Жалқы есім кіші әріппен жазылады.', false],
+      ['«Қайда?» сұрағы барыс және жатыс септікке қойылады.', true], ['Қазақ тілінде 5 септік бар.', false],
+      ['«Мектептен» сөзі шығыс септікте тұр.', true], ['«Кімді? Нені?» – табыс септіктің сұрақтары.', true]
+    ]
+  };
+  P.P6.errs[4] = ['айгүл Астанада тұрады.', 'Айгүл Астанада тұрады.'];
+  P.P7 = {
+    focus: 'сан есімнің мағыналық түрлері',
+    terms: 'сан есім, есептік, реттік, жинақтау, топтау, болжалды, бөлшектік',
+    rule: [
+      'Сан есім – «қанша?», «нешеу?», «нешінші?» сұрақтарына жауап береді.',
+      'Есептік: бір, екі, жиырма. Реттік: бірінші, екінші, оныншы. Жинақтау: екеу, үшеу, бесеу.',
+      'Топтау: екі-екіден, үштен. Болжалды: он шақты, жүзге тарта. Бөлшектік: жарты, үштен бір.',
+      'Сан есімнен кейінгі зат есімге көптік жалғау жалғанбайды: бес кітап. Сан есім зат есім орнына жұмсалады: Екеуі келді.'
+    ],
+    gaps: [
+      ['Үш + үш = ___ (есептік сан)', 'алты', ['алты', 'үшінші', 'екеу']],
+      ['«Төртінші» – ___ сан есім.', 'реттік', ['есептік', 'реттік', 'жинақтау']],
+      ['«Үшеу» – ___ сан есім.', 'жинақтау', ['жинақтау', 'реттік', 'болжалды']],
+      ['«Он шақты» – ___ сан есім.', 'болжалды', ['болжалды', 'бөлшектік', 'есептік']],
+      ['«Жарты» – ___ сан есім.', 'бөлшектік', ['бөлшектік', 'реттік', 'жинақтау']],
+      ['Екі + ___ = екінші', 'нші', ['нші', 'інші', 'ыншы']],
+      ['Бес + ___ = бесінші', 'інші', ['інші', 'ыншы', 'нші']],
+      ['«Екі-екіден» – ___ сан есім.', 'топтау', ['топтау', 'реттік', 'есептік']]
+    ],
+    errs: [
+      ['Мен бес кітаптар оқыдым.', 'Мен бес кітап оқыдым.'],
+      ['Үшіншы қатар', 'Үшінші қатар'],
+      ['Төртыншы сынып', 'Төртінші сынып'],
+      ['«Бірінші» – есептік сан есім.', '«Бірінші» – реттік сан есім.'],
+      ['Он төрт оқушылар келді.', 'Он төрт оқушы келді.']
+    ],
+    tf: [
+      ['«Үш» – есептік сан есім.', true], ['«Төртінші» – есептік сан есім.', false],
+      ['«Қанша?» сұрағы есептік санға қойылады.', true], ['«Бірінші» – реттік сан есім.', true],
+      ['Санмен келген зат есімге көптік жалғау жалғанбайды.', true], ['«Он бес ағаштар» – дұрыс жазылған.', false]
+    ]
+  };
+  P.P8 = {
+    focus: 'сын есім және оның шырай түрлері',
+    terms: 'сын есім, сапалық, қатыстық, жай шырай, салыстырмалы шырай, күшейтпелі шырай',
+    rule: [
+      'Сын есім – «қандай?», «қай?» сұрақтарына жауап береді.',
+      'Түрлері: сапалық (әдемі, биік, қызыл) және қатыстық (темір, ағаш, күзгі).',
+      'Шырай түрлері: жай (ақ), салыстырмалы (ақшыл, әдемірек), күшейтпелі (аппақ, қып-қызыл, өте әдемі).',
+      'Сын есім зат есім орнына жұмсалады: Үлкені келді.'
+    ],
+    gaps: [
+      ['«Әдемі» – ___ сын есім.', 'сапалық', ['сапалық', 'қатыстық', 'жалқы']],
+      ['«Темір» (темір есік) – ___ сын есім.', 'қатыстық', ['сапалық', 'қатыстық', 'жалқы']],
+      ['«Аппақ» – ___ шырай.', 'күшейтпелі', ['жай', 'салыстырмалы', 'күшейтпелі']],
+      ['«Әдемірек» – ___ шырай.', 'салыстырмалы', ['жай', 'салыстырмалы', 'күшейтпелі']],
+      ['Ақ + ___ = ақшыл', 'шыл', ['шыл', 'сыз', 'шы']],
+      ['Қызыл → қып-___', 'қызыл', ['қызыл', 'қызғылт', 'қызыра']],
+      ['Жасыл → жап-___', 'жасыл', ['жасыл', 'жасыра', 'жасылдау']],
+      ['Үлкен + ___ = үлкенірек', 'ірек', ['ірек', 'ырақ', 'шыл']]
+    ],
+    errs: [
+      ['Сын есім «кім?» сұрағына жауап береді.', 'Сын есім «қандай?» сұрағына жауап береді.'],
+      ['«Ақшыл» – күшейтпелі шырай.', '«Ақшыл» – салыстырмалы шырай.'],
+      ['«Аппақ» – салыстырмалы шырай.', '«Аппақ» – күшейтпелі шырай.'],
+      ['Қыпқызыл гүл', 'Қып-қызыл гүл'],
+      ['Жапжасыл жапырақ', 'Жап-жасыл жапырақ']
+    ],
+    tf: [
+      ['«Әдемі» – сапалық сын есім.', true], ['«Жап-жасыл» – салыстырмалы шырай.', false],
+      ['Сын есім «қандай?» сұрағына жауап береді.', true], ['«Темір есік» тіркесінде «темір» – қатыстық сын есім.', true],
+      ['«Әдемірек» – салыстырмалы шырай.', true], ['«Жүгіреді» – сын есім.', false]
+    ]
+  };
+  P.P9 = {
+    focus: 'төл сөз, төлеу сөз, автор сөзі және тыныс белгілері',
+    terms: 'төл сөз, төлеу сөз, автор сөзі, тырнақша, тире, қос нүкте',
+    rule: [
+      'Төл сөз – басқа адамның сөзін дәл сол қалпында беру: Арман: «Мен ертең барамын», – деді.',
+      'Төлеу сөз – басқа адамның сөзін өз сөзімен жеткізу: Арман ертең баратынын айтты.',
+      'Автор сөзі – төл сөзді таныстыратын сөз: Арман былай деді; – деді Арман.',
+      'Автор сөзі алда тұрса: Автор сөзі: «Төл сөз». Автор сөзі кейін тұрса: «Төл сөз», – автор сөзі. Диалогта әр репликаның алдына тире (–) қойылады.'
+    ],
+    gaps: [
+      ['«Мен барамын», – деді Арман. Мұнда «Мен барамын» – ___ сөз.', 'төл', ['төл', 'төлеу', 'автор']],
+      ['Арман өзінің баратынын айтты. Бұл – ___ сөз.', 'төлеу', ['төл', 'төлеу', 'автор']],
+      ['«Деді Арман» тіркесі – ___ сөзі.', 'автор', ['төл', 'төлеу', 'автор']],
+      ['Төл сөз ___ алынып жазылады.', 'тырнақшаға', ['тырнақшаға', 'жақшаға', 'сызықшаға']],
+      ['Диалогта әр репликаның алдына ___ қойылады.', 'тире', ['тире', 'үтір', 'нүкте']],
+      ['Автор сөзі алда тұрса, одан кейін ___ қойылады.', 'қос нүкте', ['қос нүкте', 'нүкте', 'леп белгісі']],
+      ['«Сабаққа келемін», – деді Айгүл. Төл сөзден кейін ___ қойылады.', 'үтір мен тире', ['үтір мен тире', 'нүкте', 'үш нүкте']],
+      ['Төлеу сөзде тырнақша ___.', 'қойылмайды', ['қойылады', 'қойылмайды', 'екі рет қойылады']]
+    ],
+    errs: [
+      ['Айгүл: Мен кітап оқимын деді.', 'Айгүл: «Мен кітап оқимын», – деді.'],
+      ['Арман «Мен барамын» деді.', 'Арман: «Мен барамын», – деді.'],
+      ['Айгүл өзінің «ертең барамын» дегенін айтты.', 'Айгүл ертең баратынын айтты.'],
+      ['Мұғалім: «Дәптерлеріңді ашыңдар». – деді.', 'Мұғалім: «Дәптерлеріңді ашыңдар», – деді.'],
+      ['Арман, Айгүлге қарап «Сен қайда барасың?» – деді.', 'Арман Айгүлге қарап: «Сен қайда барасың?» – деді.']
+    ],
+    tf: [
+      ['Төл сөз – біреудің сөзін өзгертпей беру.', true], ['Төлеу сөзге тырнақша қойылады.', false],
+      ['Автор сөзі төл сөзді таныстырады.', true], ['Диалогта репликаның алдына тире қойылады.', true],
+      ['«Мен барамын», – деді Арман. Бұл сөйлемде төл сөз бар.', true], ['Төл сөз бен төлеу сөз бір нәрсе.', false]
+    ]
+  };
+  P.poet = {
+    focus: 'көркемдік құралдар: теңеу, эпитет, қайталау, ауыспалы мағына, өлең құрылысы',
+    terms: 'теңеу, эпитет, қайталау, ауыспалы мағына, шумақ, тармақ, ұйқас',
+    rule: [
+      'Теңеу – бір затты екінші затқа ұқсату: арыстандай батыр, айдай сұлу.',
+      'Эпитет – заттың белгісін, сынын көркем бейнелейтін сөз: алтын күз, ащы шындық.',
+      'Қайталау – ойды күшейту үшін сөздің немесе жолдың қайталануы.',
+      'Өлең құрылысы: тармақ – өлеңнің бір жолы; шумақ – бірнеше тармақтан тұратын бөлік; ұйқас – жол соңындағы дыбыстардың үйлесуі.',
+      'Риторикалық сұрау – жауап күтпей, ойды күшейту үшін қойылатын сұрақ.'
+    ],
+    gaps: [
+      ['«Айдай сұлу» – ___ мысалы.', 'теңеу', ['теңеу', 'эпитет', 'қайталау']],
+      ['«Алтын күз» – ___ мысалы.', 'эпитет', ['теңеу', 'эпитет', 'қайталау']],
+      ['Өлеңнің бір жолы – ___.', 'тармақ', ['тармақ', 'шумақ', 'ұйқас']],
+      ['Бірнеше тармақтан тұратын бөлік – ___.', 'шумақ', ['тармақ', 'шумақ', 'ұйқас']],
+      ['Жол соңындағы дыбыстардың үйлесуі – ___.', 'ұйқас', ['тармақ', 'шумақ', 'ұйқас']],
+      ['«Арыстандай батыр» – ___ мысалы.', 'теңеу', ['теңеу', 'эпитет', 'қайталау']],
+      ['Жауап күтпейтін сұрақ – ___ сұрау.', 'риторикалық', ['риторикалық', 'хабарлы', 'лепті']],
+      ['«Ащы шындық» – ___ мысалы.', 'эпитет', ['теңеу', 'эпитет', 'қайталау']]
+    ],
+    errs: [
+      ['«Айдай жарқын» – эпитет.', '«Айдай жарқын» – теңеу.'],
+      ['Шумақ – өлеңнің бір жолы.', 'Тармақ – өлеңнің бір жолы.'],
+      ['Ұйқас – өлеңнің атауы.', 'Ұйқас – жол соңындағы дыбыстардың үйлесуі.'],
+      ['«Алтын күз» – теңеу.', '«Алтын күз» – эпитет.'],
+      ['Теңеу – ұқсату емес, қарама-қарсы қою.', 'Теңеу – бір затты екінші затқа ұқсату.']
+    ],
+    tf: [
+      ['«Алтындай күз» – теңеу.', true], ['«Қара түн» – теңеу.', false],
+      ['Шумақ бірнеше тармақтан тұрады.', true], ['Эпитет – заттың белгісін бейнелейтін сөз.', true],
+      ['Ұйқас – өлеңнің мазмұны.', false], ['Қайталау ойды күшейтеді.', true]
+    ]
+  };
+  return P;
+})();
+if (typeof module !== 'undefined') module.exports = KZPACKS;
+
+// Қазақ тілі, 5-сынып: тақырыптық банктер (мәтін, сурет, сөздік, сұрақтар)
+var KZBANKS_TIL = (function () {
+  var B = {};
+  function add(id, o) { o.id = id; B[id] = o; }
+
+  add('ana_til', {
+    theme: 'Ана тілі, тілдің қызметі',
+    text: ['Ана тілі – ұлт байлығы', 'Ана тілі – адам ең алғаш естіп, ең алғаш сөйлеген тілі. Біз ана тілімізде ойымызды жеткіземіз, достарымызбен сөйлесеміз, кітап оқимыз. Тіл – қатынас құралы, сонымен қатар халықты біріктіретін күш. Қазақ тілі – Қазақстанның мемлекеттік тілі. Тілді таза сақтау – әрбір азаматтың міндеті.'],
+    vocab: [['тіл', '🗣️', 'адам сөйлейтін құрал'], ['сөздік', '📖', 'сөздер жиналған кітап'], ['қатынас', '🤝', 'адамдардың сөйлесуі'], ['жазу', '✍️', 'ойды қағазға түсіру'], ['халық', '👥', 'бір елде тұратын адамдар'], ['тазалық', '✨', 'қоспасыз, бүлінбеген күй']],
+    qs: [['A', 'Ана тілі дегеніміз не?', 'Адам ең алғаш естіп, сөйлеген тілі.'], ['A', 'Қазақ тілі қандай тіл?', 'Қазақстанның мемлекеттік тілі.'], ['B', 'Тіл қандай екі қызмет атқарады?', 'Қатынас құралы және халықты біріктіруші күш.'], ['C', 'Тілді таза сақтау үшін не істеу керек? Өз пікіріңді жаз.', 'Жауаптар әртүрлі: басқа тілдің сөздерін араластырмау, көп кітап оқу, сөздікпен жұмыс істеу.']],
+    sents: ['Ана тілі – ұлт байлығы.', 'Біз тілімізді таза сақтауымыз керек.', 'Қазақ тілі – мемлекеттік тіл.'],
+    frames: [['👶🗣️', 'Бала ана тілінде алғашқы сөзін айтады.'], ['🏫📖', 'Мектепте ана тілін оқып үйренеді.'], ['👭💬', 'Достарымен ана тілінде сөйлеседі.'], ['🇰🇿📚', 'Тілін құрметтеп, таза сақтайды.']],
+    tf: [['Ана тілі – адам алғаш сөйлеген тіл.', true], ['Тіл тек жазу үшін қажет.', false], ['Қазақ тілі – мемлекеттік тіл.', true], ['Тілді таза сақтау – әр азаматтың міндеті.', true]]
+  });
+  add('soylem', {
+    theme: 'Сөйлеу мәдениеті: амандасу, қоштасу, сыпайылық',
+    text: ['Әдепті бала', 'Сәлемдесу – сыйластықтың белгісі. Үлкен кісімен «Сәлеметсіз бе?», құрдасымызбен «Сәлем!» деп амандасамыз. Қоштасқанда «Сау болыңыз!» немесе «Көріскенше!» дейміз. Көмек көрсеткен адамға «Рақмет», қателескенде «Кешіріңіз» деп айту – әдептілік. Әдепті бала үнемі сыпайы сөйлейді.'],
+    vocab: [['сәлем', '👋', 'амандасу сөзі'], ['рақмет', '🙏', 'алғыс білдіру сөзі'], ['кешіріңіз', '😔', 'кешірім сұрау сөзі'], ['өтінемін', '🤲', 'сыпайы өтініш сөзі'], ['сау болыңыз', '🖐️', 'қоштасу сөзі'], ['құрмет', '🤝', 'үлкенді сыйлау']],
+    qs: [['A', 'Үлкен кісімен қалай амандасамыз?', '«Сәлеметсіз бе?» деп амандасамыз.'], ['A', 'Қоштасқанда не дейміз?', '«Сау болыңыз!» немесе «Көріскенше!» дейміз.'], ['B', 'Қай жағдайда «Кешіріңіз» дейміз?', 'Қателескенде немесе біреуге кедергі жасағанда.'], ['C', 'Сыпайы сөйлеудің мәнін өз сөзіңмен түсіндір.', 'Жауаптар әртүрлі: сыпайы сөз адамдарды жақындатады, сыйластықты көрсетеді.']],
+    sents: ['Үлкен кісіге «Сәлеметсіз бе?» дейміз.', 'Көмек көрсеткен адамға рақмет айтамыз.', 'Әдепті бала сыпайы сөйлейді.'],
+    frames: [['🧒👴', 'Бала үлкен кісіні көрді.'], ['👋😊', 'Ол сәлем берді.'], ['🎁🙏', 'Көмек көрсеткен адамға рақмет айтты.'], ['🖐️🏠', 'Қоштасып, үйіне қайтты.']],
+    tf: [['«Сәлеметсіз бе?» – үлкенге айтылатын сәлем.', true], ['«Рақмет» – қоштасу сөзі.', false], ['Қателескенде «Кешіріңіз» дейміз.', true], ['Сыпайы сөйлеу әдептіліктің белгісі.', true]]
+  });
+  add('kiim', {
+    theme: 'Киім, сән, талғам',
+    text: ['Киім және талғам', 'Киім – адамның әдемілігін ғана емес, мәдениетін де көрсетеді. Мектепке қарапайым, ыңғайлы киім киеміз. Мерекеде сәнді киім киіп, әдемі көрінуге тырысамыз. Қазақстандық дизайнерлер қазіргі заман киіміне ұлттық оюларды қосып, жаңа үлгілер жасайды. Талғамы бар адам киімін орынды таңдай біледі.'],
+    vocab: [['көйлек', '👗', 'қыздардың киімі'], ['шалбар', '👖', 'аяққа киетін киім'], ['күртеше', '🧥', 'қыста киетін жылы киім'], ['бөрік', '🧢', 'басқа киетін бұйым'], ['аяқ киім', '👟', 'аяққа киетін зат'], ['дизайнер', '🎨', 'киім үлгісін ойлап табушы']],
+    qs: [['A', 'Киім адамның нені көрсетеді?', 'Әдемілігін және мәдениетін көрсетеді.'], ['A', 'Мектепке қандай киім киеміз?', 'Қарапайым, ыңғайлы киім киеміз.'], ['B', 'Қазақстандық дизайнерлер не істейді?', 'Қазіргі киімге ұлттық оюларды қосып, жаңа үлгілер жасайды.'], ['C', 'Талғамы бар адамды қалай сипаттар едің?', 'Жауаптар әртүрлі: киімін орынды таңдайды, жинақы, сәнді әрі қарапайым.']],
+    sents: ['Мектепке ыңғайлы киім киеміз.', 'Дизайнер жаңа киім үлгісін жасады.', 'Талғамы бар адам киімін орынды таңдайды.'],
+    frames: [['🧵✂️', 'Дизайнер киімнің үлгісін сызады.'], ['👗🪡', 'Тігінші киімді тігеді.'], ['🛍️👚', 'Киім дүкенде сатылады.'], ['🎉😊', 'Біз оны мерекеде киеміз.']],
+    tf: [['Киім адамның мәдениетін көрсетеді.', true], ['Мектепке мереке киімін киеміз.', false], ['Дизайнер киім үлгісін жасайды.', true], ['Талғам – киімді орынды таңдай білу.', true]]
+  });
+  add('ult_kiim', {
+    theme: 'Қазақтың ұлттық киімдері',
+    text: ['Ұлттық киім', 'Қазақтың ұлттық киімі – өнердің үлгісі. Қыздар мен келіншектер саукеле, камзол киеді. Ер адамдар шапан киіп, бастарына тақия немесе бөрік киеді. Қыста жылы тон мен былғары етік киеді. Киімдегі ою-өрнек халықтың талғамы мен өнерін көрсетеді. Біз ұлттық киімді мерекелерде киеміз.'],
+    vocab: [['шапан', '🥻', 'ер адамдар киетін сыртқы киім'], ['тақия', '🎩', 'басқа киетін ұлттық бас киім'], ['камзол', '🦺', 'белі қиылған жеңсіз киім'], ['саукеле', '👑', 'қалыңдық киетін биік бас киім'], ['етік', '👢', 'былғарыдан тігілген аяқ киім'], ['ою-өрнек', '🔶', 'киімге салынатын өрнек']],
+    qs: [['A', 'Ер адамдар қандай ұлттық киім киеді?', 'Шапан киіп, басына тақия немесе бөрік киеді.'], ['A', 'Қыздар мен келіншектер не киеді?', 'Саукеле, камзол киеді.'], ['B', 'Ою-өрнек нені көрсетеді?', 'Халықтың талғамы мен өнерін көрсетеді.'], ['C', 'Ұлттық киімді қай кезде киеміз және неге? Пікіріңді жаз.', 'Жауаптар әртүрлі: мерекелерде, тойларда; салт-дәстүрді құрметтеу үшін.']],
+    sents: ['Қазақтың ұлттық киімі өте әдемі.', 'Ер адамдар шапан киеді.', 'Біз ұлттық киімді мерекеде киеміз.'],
+    frames: [['🐑🧶', 'Қойдың жүнінен жіп иіреді.'], ['🧵🪡', 'Шебер киімді тігеді, оюлайды.'], ['🥻🎩', 'Шапан мен тақияны киеді.'], ['🎉🥁', 'Мерекеде ұлттық киім киеді.']],
+    tf: [['Шапан – ұлттық киім.', true], ['Тақияны аяққа киеді.', false], ['Саукеле – қалыңдықтың бас киімі.', true], ['Киімдегі ою-өрнек халықтың өнерін көрсетеді.', true]]
+  });
+  add('dastur', {
+    theme: 'Салт-дәстүр және отбасылық мерекелер',
+    text: ['Қазақтың салт-дәстүрі', 'Қазақ халқында бала өмірге келгеннен бастап көптеген салт-дәстүр бар. Нәрестені бесікке салады, бала алғаш қадам басқанда тұсауын кеседі. Сөйлей бастағанда тілашар жасайды, балаға ат қояды. Қонақ күту – ең басты дәстүрдің бірі. Қонаққа дастарқан жайып, шай құяды, дәмді тағам ұсынады.'],
+    vocab: [['бесік', '🛏️', 'нәрестені жатқызатын төсек'], ['тұсау кесу', '✂️', 'баланың алғашқы қадамына арналған той'], ['тілашар', '🗣️', 'баланың тілі шыққанда жасалатын салт'], ['дастарқан', '🍽️', 'тамақ жайылатын жайма'], ['қонақ', '🤝', 'үйге келген адам'], ['мереке', '🎉', 'көңілді той-думан']],
+    qs: [['A', 'Бала алғаш қадам басқанда қандай дәстүр жасалады?', 'Тұсау кесу дәстүрі жасалады.'], ['A', 'Қонаққа не ұсынады?', 'Дастарқан жайып, шай құйып, дәмді тағам ұсынады.'], ['B', 'Тілашар қашан жасалады?', 'Бала сөйлей бастағанда.'], ['C', 'Салт-дәстүрді сақтаудың қандай маңызы бар? Өз ойыңды дәлелде.', 'Жауаптар әртүрлі: ұлттың тарихы мен мәдениетін сақтайды, ұрпақтарды байланыстырады.']],
+    sents: ['Нәрестені бесікке салады.', 'Қонаққа дастарқан жаяды.', 'Бала алғаш қадам басқанда тұсауын кеседі.'],
+    frames: [['👶🛏️', 'Нәрестені бесікке салады.'], ['👣✂️', 'Алғашқы қадамына тұсау кеседі.'], ['🍽️🍵', 'Қонаққа дастарқан жаяды.'], ['🎂🎈', 'Туған күнді бірге тойлайды.']],
+    tf: [['Тұсау кесу – бала алғаш қадам басқанда жасалады.', true], ['Бесікке үлкен адамды жатқызады.', false], ['Қонақ күту – қазақ дәстүрі.', true], ['Тілашар – бала сөйлей бастағанда жасалады.', true]]
+  });
+  add('tabigat', {
+    theme: 'Адам және табиғат',
+    text: ['Қызыл кітап', 'Табиғат – адамның асыраушысы. Бірақ кейбір жануарлар мен өсімдіктер жойылып бара жатыр. Оларды сақтау үшін «Қазақстанның Қызыл кітабы» құрастырылған. Оған қар барысы, ақбөкен сияқты сирек кездесетін аңдар мен өсімдіктер енген. Әрбір адам табиғатты аялауға, ағашты қырқпауға, жануарға зиян келтірмеуге тиіс.'],
+    vocab: [['табиғат', '🌿', 'адамды қоршаған орта'], ['Қызыл кітап', '📕', 'сирек түрлер тізімі'], ['қар барысы', '🐆', 'тауда мекендейтін сирек аң'], ['қорық', '🏞️', 'табиғат қорғалатын аумақ'], ['ауа', '💨', 'біз жұтатын газ'], ['су', '💧', 'өмір көзі']],
+    qs: [['A', '«Қазақстанның Қызыл кітабы» не үшін құрастырылған?', 'Жойылып бара жатқан жануарлар мен өсімдіктерді сақтау үшін.'], ['A', 'Қызыл кітапқа қандай аң енген?', 'Қар барысы, ақбөкен.'], ['B', 'Табиғатты аялау үшін не істеу керек?', 'Ағашты қырқпау, жануарға зиян келтірмеу, қоқысты тастамау.'], ['C', 'Табиғатты қорғау үшін өзің қандай іс істей аласың?', 'Жауаптар әртүрлі: ағаш отырғызу, қоқысты сұрыптау, суды үнемдеу.']],
+    sents: ['Табиғат – адамның асыраушысы.', 'Қызыл кітапқа сирек аңдар енген.', 'Біз табиғатты аялауымыз керек.'],
+    frames: [['🌳🦌', 'Орманда жануарлар мекендейді.'], ['🪓⚠️', 'Адам ағашты көп кесіп жатыр.'], ['📕🐆', 'Сирек аңдар Қызыл кітапқа енгізілді.'], ['🌱🧒', 'Балалар ағаш отырғызып жатыр.']],
+    tf: [['Қызыл кітапқа сирек түрлер енеді.', true], ['Табиғатқа зиян келтіру керек.', false], ['Қар барысы – сирек аң.', true], ['Ағаш отырғызу табиғатқа пайда.', true]]
+  });
+  add('ertegi_an', {
+    theme: 'Жан-жануарлар туралы ертегілер, аңдар әлемі',
+    text: ['Ертегідегі жануарлар', 'Қазақ ертегілерінде жануарлар адамша сөйлейді. Түлкі – қу, қасқыр – ашкөз, қоян – қорқақ, арыстан – күшті ретінде суреттеледі. Әр ертегінің соңында қорытынды ой болады: жақсылық жасаған адам жақсылық көреді, алдамшы өзі алданады. Адам мен жыртқыш аң туралы ертегілер батылдықты, тапқырлықты дәріптейді.'],
+    vocab: [['түлкі', '🦊', 'қу аң'], ['қасқыр', '🐺', 'жыртқыш аң'], ['қоян', '🐰', 'қорқақ аң'], ['бақа', '🐸', 'көлде тұратын жануар'], ['үйрек', '🦆', 'суда жүзетін құс'], ['арыстан', '🦁', 'аңдардың патшасы']],
+    qs: [['A', 'Ертегіде түлкі қандай кейіпкер болып келеді?', 'Қу, айлакер кейіпкер.'], ['A', 'Ертегінің соңында не болады?', 'Қорытынды ой, тәрбиелік мән айтылады.'], ['B', 'Қоян мен арыстанды қандай қасиеттері арқылы ажыратамыз?', 'Қоян – қорқақ, арыстан – күшті, батыл.'], ['C', 'Өзің білетін жануарлар туралы ертегіден қандай өнеге алдың?', 'Жауаптар әртүрлі: достыққа адал болу, алдамау, тапқыр болу.']],
+    sents: ['Түлкі – қу, қоян – қорқақ.', 'Ертегінің соңында қорытынды ой болады.', 'Жақсылық жасаған жақсылық көреді.'],
+    frames: [['🐸🌧️', 'Бақа құрғаған көлден шықты.'], ['🦆🪶', 'Үйрекпен жолықты.'], ['🛫🦆', 'Үйректер бақаны алып ұшты.'], ['🤐⚠️', 'Бақа сөйлегенде құлап түсті.']],
+    tf: [['Ертегіде жануарлар сөйлейді.', true], ['Түлкі – қорқақ кейіпкер.', false], ['Ертегінің қорытынды ойы болады.', true], ['Қасқыр – жыртқыш аң.', true]]
+  });
+  add('osimdik', {
+    theme: 'Өсімдіктер дүниесі, ағаштар, жеміс-жидек',
+    text: ['Миуалы ағаш', 'Бақта алма, алмұрт, өрік ағаштары өседі. Көктемде олар гүлдейді, жазда жеміс байлайды, күзде піседі. Жеміс-жидектің құрамында дәрумен көп, ол денсаулыққа өте пайдалы. Ағаштар ауаны тазартады, көлеңке береді, құстарға мекен болады. Ғалымдардың айтуынша, өсімдіктерге әсем музыка тыңдатса, олар жақсы өседі.'],
+    vocab: [['алма', '🍎', 'бақта өсетін жеміс'], ['алмұрт', '🍐', 'тәтті жеміс'], ['жүзім', '🍇', 'шоқтанып өсетін жидек'], ['қарбыз', '🍉', 'жазда піседі, ішінде суы көп'], ['гүл', '🌸', 'өсімдіктің әдемі бөлігі'], ['ағаш', '🌳', 'діңі мен бұтағы бар өсімдік']],
+    qs: [['A', 'Бақта қандай ағаштар өседі?', 'Алма, алмұрт, өрік ағаштары.'], ['A', 'Жеміс-жидек не үшін пайдалы?', 'Құрамында дәрумен көп, денсаулыққа пайдалы.'], ['B', 'Ағаштар адамға қандай пайда береді?', 'Ауаны тазартады, көлеңке береді, құстарға мекен болады.'], ['C', 'Өсімдіктерді күту үшін не істеу керек? Жоспар құр.', 'Жауаптар әртүрлі: суару, жерді қопсыту, зиянкестерден қорғау.']],
+    sents: ['Бақта алма ағаштары өседі.', 'Жеміс-жидек денсаулыққа пайдалы.', 'Ағаштар ауаны тазартады.'],
+    frames: [['🌱⛏️', 'Көктемде көшет отырғызады.'], ['🌸🐝', 'Ағаш гүлдеп, аралар қонады.'], ['🍎🌳', 'Жазда жемісі байланады.'], ['🧺🍏', 'Күзде жемісті жинайды.']],
+    tf: [['Ағаштар ауаны тазартады.', true], ['Алма – жидек.', false], ['Жеміс-жидекте дәрумен көп.', true], ['Көктемде ағаштар гүлдейді.', true]]
+  });
+  add('uaqyt', {
+    theme: 'Бос уақыт, уақыттың қадірі',
+    text: ['Уақыттың қадірі', 'Уақыт – алтыннан қымбат. Өткен күнді қайтара алмаймыз. Сондықтан күн тәртібін дұрыс жасап, бос уақытты тиімді пайдалану керек. Сабақтан кейін кітап оқуға, спортпен шұғылдануға, достармен серуендеуге, ата-анаға көмектесуге болады. Уақытты бекер өткізбейтін адам көп нәрсеге үлгереді.'],
+    vocab: [['уақыт', '⏰', 'сағатпен өлшенетін шама'], ['күн тәртібі', '📅', 'күнделікті істің реті'], ['серуен', '🚶', 'таза ауада жүру'], ['кітап', '📚', 'оқитын жазба шығарма'], ['спорт', '⚽', 'денені шынықтыратын іс'], ['демалыс', '🛋️', 'тынығу уақыты']],
+    qs: [['A', 'Уақыт неден қымбат?', 'Алтыннан қымбат.'], ['A', 'Бос уақытта не істеуге болады?', 'Кітап оқуға, спортпен шұғылдануға, серуендеуге, ата-анаға көмектесуге болады.'], ['B', 'Күн тәртібі не үшін қажет?', 'Уақытты дұрыс бөліп, барлық істі үлгеру үшін.'], ['C', 'Өз күн тәртібіңді 5 жолмен жаз.', 'Жауаптар әртүрлі: оянуы, мектеп, үй тапсырмасы, демалыс, ұйқы.']],
+    sents: ['Уақыт – алтыннан қымбат.', 'Бос уақытты тиімді пайдалану керек.', 'Күн тәртібін дұрыс жасаймыз.'],
+    frames: [['⏰🛏️', 'Таңертең ерте тұрады.'], ['🏫📓', 'Мектепте сабақ оқиды.'], ['📚✏️', 'Үйде тапсырмасын орындайды.'], ['🚶‍♂️🌇', 'Кешке серуенге шығады.']],
+    tf: [['Уақытты бекер өткізу керек.', false], ['Күн тәртібі уақытты тиімді бөледі.', true], ['Бос уақытта кітап оқуға болады.', true], ['Өткен күнді қайтаруға болады.', false]]
+  });
+  add('hobby', {
+    theme: 'Хобби, үйірме, ұлы адамдардың өмірінен',
+    text: ['Менің хоббиім', 'Хобби – адамның бос уақытта өз қалауымен айналысатын сүйікті ісі. Біреулер сурет салады, біреулер футбол ойнайды, енді біреулер ән айтады немесе кітап жинайды. Мектептегі үйірмелерде бала жаңа нәрсені көп үйренеді. Көптеген ұлы адамдар бала кезінен өзіне ұнайтын іспен айналысып, соның арқасында үлкен жетістікке жеткен.'],
+    vocab: [['хобби', '🎯', 'сүйікті бос уақыт ісі'], ['сурет', '🎨', 'бояумен салынған бейне'], ['футбол', '⚽', 'доп ойыны'], ['ән', '🎤', 'әуенмен айтылатын сөз'], ['үйірме', '👥', 'қызығушылық бірлестігі'], ['жетістік', '🏆', 'жеткен табыс']],
+    qs: [['A', 'Хобби дегеніміз не?', 'Бос уақытта сүйіп істейтін іс.'], ['A', 'Үйірмеде бала не істейді?', 'Жаңа нәрсені көп үйренеді.'], ['B', 'Ұлы адамдардың жетістігінің себебі неде?', 'Бала кезінен сүйікті іспен айналысқан.'], ['C', 'Өзіңнің хоббиің туралы 4–5 сөйлем жаз.', 'Жауаптар әртүрлі: хоббидің аты, неге ұнайтыны, қашан айналысатыны.']],
+    sents: ['Менің хоббиім – сурет салу.', 'Үйірмеде көп нәрсе үйренеміз.', 'Сүйікті іс жетістікке жеткізеді.'],
+    frames: [['🎨🖌️', 'Бала сурет салады.'], ['⚽🥅', 'Ол футбол ойнайды.'], ['🎤🎶', 'Достарымен ән айтады.'], ['🏆😊', 'Жарыста жеңіске жетеді.']],
+    tf: [['Хобби – міндетті жұмыс.', false], ['Үйірмеде жаңа нәрсе үйренеміз.', true], ['Суретті хобби ретінде таңдауға болады.', true], ['Ұлы адамдар хоббиге мән бермеген.', false]]
+  });
+  add('qiyal', {
+    theme: 'Қиял, фантазия, аңыз',
+    text: ['Қиял мен ғылым', 'Қиял – адамның ойында жаңа бейне жасау қабілеті. Қиялы бай адам жаңа нәрсені ойлап табады. Ертеде адамдар құстай ұшуды армандаған, кейін ұшақ жасады. Қазақтың аңыздары мен ертегілерінде ұшатын кілем, ғажайып ат кездеседі. Қожа Насыр сияқты кейіпкерлердің қиялы – тапқырлықтың белгісі.'],
+    vocab: [['қиял', '💭', 'ойдағы бейне'], ['арман', '🌠', 'жетуді қалайтын мақсат'], ['аңыз', '📜', 'ел аузындағы ескі әңгіме'], ['кілем', '🧞', 'ертегідегі ұшатын кілем'], ['өнертапқыш', '💡', 'жаңа зат ойлап табушы'], ['ұшақ', '✈️', 'әуе көлігі']],
+    qs: [['A', 'Қиял дегеніміз не?', 'Ойда жаңа бейне жасау қабілеті.'], ['A', 'Ертеде адамдар нені армандаған?', 'Құстай ұшуды.'], ['B', 'Қиял ғылымға қалай көмектеседі?', 'Қиялы бай адам жаңа нәрсені ойлап табады.'], ['C', 'Өзің ойлап тапқың келетін ғажайып зат туралы жаз.', 'Жауаптар әртүрлі: зат атауы, не үшін қажет, қалай жұмыс істейді.']],
+    sents: ['Қиялы бай адам жаңалық ашады.', 'Адамдар құстай ұшуды армандаған.', 'Ертегіде ұшатын кілем кездеседі.'],
+    frames: [['🧒☁️', 'Бала аспанға қарап қиялдайды.'], ['🕊️💭', 'Құстай ұшуды армандайды.'], ['✏️📐', 'Ұшақтың суретін сызады.'], ['✈️🌍', 'Арманы орындалады.']],
+    tf: [['Қиял жаңа ойларға жол ашады.', true], ['Ертегіде барлығы шындық.', false], ['Адамдар ұшуды армандаған.', true], ['Қиял тек балаларға тән.', false]]
+  });
+  add('ertegi_q', {
+    theme: 'Қиял-ғажайып ертегілер',
+    text: ['Ертегінің ғажайып әлемі', 'Қиял-ғажайып ертегілерде батыр қиындықтарды жеңіп, жамандықты жояды. Ол жолда ғажайып атқа, көмекші кейіпкерлерге кездеседі. Ертегі әдетте «Ерте, ерте, ертеде» деп басталады. Басты кейіпкер адал, батыл және тапқыр болады. Ертегі соңында жақсылық жеңіп, әділдік орнайды.'],
+    vocab: [['батыр', '🦸', 'ержүрек адам'], ['ат', '🐎', 'ғажайып көмекші'], ['хан', '👑', 'елдің билеушісі'], ['дию', '👹', 'ертегідегі зұлым кейіпкер'], ['семсер', '🗡️', 'батырдың қаруы'], ['жолаушы', '🧭', 'жолға шыққан адам']],
+    qs: [['A', 'Ертегі әдетте қалай басталады?', '«Ерте, ерте, ертеде» деп басталады.'], ['A', 'Ертегіде басты кейіпкер қандай болады?', 'Адал, батыл, тапқыр.'], ['B', 'Ертегінің соңында не болады?', 'Жақсылық жеңіп, әділдік орнайды.'], ['C', 'Ертегіге ұқсас шағын оқиға ойлап тап (3–4 сөйлем).', 'Жауаптар әртүрлі: басы, оқиға, шешімі болуы тиіс.']],
+    sents: ['Ерте, ерте, ертеде бір батыр өмір сүріпті.', 'Батыр зұлым диюді жеңді.', 'Ертегіде жақсылық жеңеді.'],
+    frames: [['🏰👑', 'Бір елде хан өмір сүріпті.'], ['🐎🗡️', 'Батыр атына мініп жолға шықты.'], ['👹⚔️', 'Ол зұлым диюмен шайқасты.'], ['🎉🏰', 'Жамандық жеңілді, ел қуанды.']],
+    tf: [['Ертегіде жақсылық жеңеді.', true], ['Ертегіде зұлым кейіпкер әрдайым жеңеді.', false], ['Ертегі «Ерте, ерте, ертеде» деп басталады.', true], ['Батыр қорқақ болады.', false]]
+  });
+  add('galam', {
+    theme: 'Ғарыш, ғажайып планета, ою-өрнек',
+    text: ['Ғажайып планета', 'Ғаламда сансыз планета бар. Біздің планетамыз – Жер. Ғалымдар басқа планеталарға ғарыш аппараттарын жібереді. Плутон – Күн жүйесіндегі ең алыс шағын планеталардың бірі. Қазақтың ою-өрнегінде күн, ай, жұлдыз бейнелері жиі кездеседі. Бұл – халықтың аспан әлеміне қызыға қараған қиялының белгісі.'],
+    vocab: [['планета', '🪐', 'Күнді айналатын аспан денесі'], ['Жер', '🌍', 'біз тұратын планета'], ['ғарыш', '🌌', 'аспан кеңістігі'], ['ракета', '🚀', 'ғарышқа ұшатын аппарат'], ['жұлдыз', '⭐', 'аспандағы жарық нүкте'], ['ою', '🔶', 'халықтық өрнек']],
+    qs: [['A', 'Біз қай планетада тұрамыз?', 'Жер планетасында.'], ['A', 'Ғалымдар ғарышқа не жібереді?', 'Ғарыш аппараттарын.'], ['B', 'Ою-өрнекте қандай бейнелер кездеседі?', 'Күн, ай, жұлдыз бейнелері.'], ['C', 'Қиялыңмен ойлап тапқан планета туралы жаз.', 'Жауаптар әртүрлі: аты, түсі, тұрғындары, ерекшелігі.']],
+    sents: ['Біздің планетамыз – Жер.', 'Ғалымдар ғарышқа аппарат жібереді.', 'Ою-өрнекте күн мен ай бейнеленеді.'],
+    frames: [['🚀🔥', 'Ракета ғарышқа ұшады.'], ['🌍🌙', 'Ол Жерді және Айды көреді.'], ['🪐✨', 'Алыс планетаға жақындайды.'], ['📸🛰️', 'Суретке түсіріп, Жерге жібереді.']],
+    tf: [['Жер – планета.', true], ['Плутон – жұлдыз.', false], ['Ою-өрнекте жұлдыз бейнесі болады.', true], ['Ракета теңізде жүзеді.', false]]
+  });
+  add('jol', {
+    theme: 'Жол белгілері, бағдаршам, жол ережесі',
+    text: ['Бағдаршам және жол ережесі', 'Бағдаршамның үш түсі бар. Қызыл жарық – «тоқта!», сары жарық – «дайын бол», жасыл жарық – «жүр» дегенді білдіреді. Жолды тек жаяу жүргіншілер өтетін жерден өтеміз. Жол қозғалысына жүргізушілер, жаяу жүргіншілер, жолаушылар қатысады. Жол ережесін сақтау – өз өмірімізді сақтау.'],
+    vocab: [['бағдаршам', '🚦', 'жолда көлікті реттейтін шам'], ['жаяу жүргінші', '🚶', 'жолмен жаяу жүретін адам'], ['жол', '🛣️', 'көлік жүретін жер'], ['көлік', '🚗', 'жүк, адам тасушы құрал'], ['белгі', '⚠️', 'ескерту таңбасы'], ['қауіпсіздік', '🦺', 'зиянсыз болу']],
+    qs: [['A', 'Қызыл жарық нені білдіреді?', 'Тоқта дегенді білдіреді.'], ['A', 'Жолды қай жерден өтеміз?', 'Жаяу жүргіншілер өтетін жерден.'], ['B', 'Жол қозғалысына кімдер қатысады?', 'Жүргізушілер, жаяу жүргіншілер, жолаушылар.'], ['C', 'Жол ережесін бұзудың қандай қауіпі бар? Пікіріңді жаз.', 'Жауаптар әртүрлі: апат, жарақат, өмірге қауіп.']],
+    sents: ['Қызыл жарықта тоқтаймыз.', 'Жолды жаяу өткелден өтеміз.', 'Жол ережесін міндетті түрде сақтаймыз.'],
+    frames: [['🚦🔴', 'Қызыл жанды – тоқта.'], ['🚦🟡', 'Сары жанды – дайын бол.'], ['🚦🟢', 'Жасыл жанды – жүр.'], ['🚶‍♀️🦓', 'Жаяу жүргінші өткелден өтеді.']],
+    tf: [['Жасыл жарықта өтеміз.', true], ['Қызыл жарықта жүре беруге болады.', false], ['Жол ережесі қауіпсіздікті қамтамасыз етеді.', true], ['Жолды кез келген жерден өтуге болады.', false]]
+  });
+  add('kolik', {
+    theme: 'Көлік түрлері және олардың тарихы',
+    text: ['Көліктің тарихы', 'Ертеде адамдар жаяу, атпен және түйемен жүрген. Доңғалақ ойлап табылған соң арба жасалды. Кейін теміржол, автокөлік пайда болды. Теңізде кемелер, аспанда ұшақтар жүреді. Қалада автобус, трамвай, метро – қоғамдық көлік. Қазір электр қуатымен жүретін көліктер көбейіп келеді.'],
+    vocab: [['автобус', '🚌', 'қоғамдық көлік'], ['пойыз', '🚆', 'теміржолмен жүреді'], ['кеме', '🚢', 'суда жүзетін көлік'], ['ұшақ', '✈️', 'әуеде ұшады'], ['велосипед', '🚲', 'екі доңғалақты көлік'], ['метро', '🚇', 'жер астымен жүретін пойыз']],
+    qs: [['A', 'Ертеде адамдар немен жүрген?', 'Жаяу, атпен және түйемен.'], ['A', 'Суда жүретін көлік қалай аталады?', 'Кеме.'], ['B', 'Қоғамдық көлікке қандай көліктер жатады?', 'Автобус, трамвай, метро.'], ['C', 'Болашақ көлік қандай болады деп ойлайсың?', 'Жауаптар әртүрлі: электр қуатымен жүретін, ұшатын, жылдам және таза.']],
+    sents: ['Теңізде кемелер жүзеді.', 'Аспанда ұшақтар ұшады.', 'Қалада қоғамдық көлік көп.'],
+    frames: [['🐎🛷', 'Ертеде атпен жүрген.'], ['🛞🛒', 'Доңғалақ ойлап табылды.'], ['🚗🚆', 'Автокөлік пен пойыз пайда болды.'], ['✈️🚀', 'Қазір ұшақпен ұшады.']],
+    tf: [['Кеме суда жүзеді.', true], ['Метро аспанда жүреді.', false], ['Автобус – қоғамдық көлік.', true], ['Доңғалақ көлікке қажет емес.', false]]
+  });
+  add('minez', {
+    theme: 'Адамның мінезі, асыл қасиеттер',
+    text: ['Асыл қасиет', 'Адамды көркейтетін – оның мінезі. Адал адам өтірік айтпайды, уәдесіне берік болады. Еңбекқор адам жалқаулық жасамайды, барлық істі ұқыппен атқарады. Жақсы адамнан үйреніп, жаман әдеттен аулақ жүрген дұрыс. Қазақ «Жақсыдан үйрен, жаманнан жирен» деп бекер айтпаған.'],
+    vocab: [['адалдық', '🤍', 'өтірік айтпау'], ['еңбекқор', '💪', 'жұмысты сүйетін'], ['батыл', '🦁', 'қорықпайтын'], ['мейірім', '💗', 'жақсы көру, аяу'], ['уәде', '🤝', 'сөз беру'], ['жалқау', '😴', 'еңбектен қашатын']],
+    qs: [['A', 'Адал адам қандай болады?', 'Өтірік айтпайды, уәдесіне берік.'], ['A', 'Еңбекқор адам не істейді?', 'Барлық істі ұқыппен атқарады.'], ['B', '«Жақсыдан үйрен, жаманнан жирен» мақалының мағынасы қандай?', 'Жақсы үлгіні алу, жаман әдеттен аулақ болу.'], ['C', 'Өзіңнің бойыңдағы ең жақсы қасиетті дәлелмен жаз.', 'Жауаптар әртүрлі: қасиет, мысал, пайда.']],
+    sents: ['Адал адам өтірік айтпайды.', 'Уәдеге адал болу керек.', 'Жақсыдан үйрен, жаманнан жирен.'],
+    frames: [['🧒🤝', 'Бала досына уәде берді.'], ['⏰📝', 'Ол уәдесін уақытында орындады.'], ['🙌😊', 'Достары оған сенім артты.'], ['🏅🌟', 'Адал адамды бәрі құрметтейді.']],
+    tf: [['Адал адам уәдесін орындайды.', true], ['Жалқау адам еңбекқор.', false], ['Жақсы қасиет адамды көркейтеді.', true], ['Жаман әдетті үйрену керек.', false]]
+  });
+  add('abai', {
+    theme: 'Бала Абай, ұлы тұлға балалық шағы',
+    text: ['Бала Абай', 'Абай Құнанбайұлы – қазақтың ұлы ақыны, ойшылы. Ол кішкентай кезінен әжесі Зерені мен әйгілі күйші-жыршылардан ертегі, жыр тыңдап өскен. Бала Абай оқуға құштар болып, медреседе білім алды. Кейін орыс әдебиетімен танысып, өзі де өлең жаза бастады. Бүгін Абай жолы – ізгілік пен білім жолы.'],
+    vocab: [['ақын', '✒️', 'өлең жазушы'], ['кітап', '📖', 'білім көзі'], ['жыр', '🎼', 'әуенмен айтылатын өлең'], ['медресе', '🕌', 'ескі діни мектеп'], ['әже', '👵', 'ата-ананың анасы'], ['ойшыл', '🤔', 'терең ойлы адам']],
+    qs: [['A', 'Абай кім?', 'Қазақтың ұлы ақыны, ойшылы.'], ['A', 'Бала Абай кімнен ертегі, жыр тыңдап өскен?', 'Әжесі Зерені мен күйші-жыршылардан.'], ['B', 'Абайдың ақын болуына не әсер етті?', 'Жыр-ертегі тыңдау, білімге құштарлық, орыс әдебиетімен танысу.'], ['C', 'Абайдың қай қасиеті сені тәнті етті? Не себепті?', 'Жауаптар әртүрлі: білімге құштарлығы, ойының тереңдігі.']],
+    sents: ['Абай – қазақтың ұлы ақыны.', 'Бала Абай кітап оқуды жақсы көрген.', 'Абайдың өлеңдері – даналық кені.'],
+    frames: [['👵🧒', 'Бала Абай әжесінен ертегі тыңдайды.'], ['🕌📚', 'Медреседе білім алады.'], ['📖✒️', 'Көп кітап оқып, өлең жазады.'], ['🏛️🌟', 'Халық оны ұлы ақын деп таниды.']],
+    tf: [['Абай – қазақтың ұлы ақыны.', true], ['Абай ешқашан оқымаған.', false], ['Бала Абай жыр тыңдаған.', true], ['Абай өлең жазбаған.', false]]
+  });
+  add('aspan', {
+    theme: 'Аспан әлемі: Күн, Ай, Жер, жұлдыздар',
+    text: ['Аспан әлемі', 'Күн – біздің жұлдызымыз. Жер – Күнді айналатын ғаламшар, ал Ай – Жердің серігі. Түнде аспанда мыңдаған жұлдыздар жымыңдайды. Ертеде қазақ халқы жұлдызға қарап жолды таныған, мезгілді білген. Темірқазық жұлдызы солтүстікті көрсетеді. Аспан өрнектері мен шамдары адамға қызық сыр ашады.'],
+    vocab: [['Күн', '☀️', 'біздің жұлдызымыз'], ['Ай', '🌙', 'Жердің серігі'], ['Жер', '🌍', 'біздің ғаламшар'], ['жұлдыз', '⭐', 'аспандағы жарық нүкте'], ['бұлт', '☁️', 'аспандағы су буы'], ['Темірқазық', '🧭', 'солтүстікті көрсететін жұлдыз']],
+    qs: [['A', 'Жердің серігі қайсы?', 'Ай.'], ['A', 'Күн деген не?', 'Біздің жұлдызымыз.'], ['B', 'Ертеде халық жұлдызға қарап не білген?', 'Жолды таныған, мезгілді білген.'], ['C', 'Түнгі аспан сені қалай әсерлендіреді? Өз әсеріңді жаз.', 'Жауаптар әртүрлі: жұлдыздардың көптігі, тыныштық, қызығушылық.']],
+    sents: ['Күн – біздің жұлдызымыз.', 'Ай – Жердің серігі.', 'Түнде аспанда жұлдыздар жымыңдайды.'],
+    frames: [['🌅☀️', 'Таңертең Күн шығады.'], ['🌇🌤️', 'Кешке Күн батады.'], ['🌙⭐', 'Түнде Ай мен жұлдыздар көрінеді.'], ['🔭👧', 'Бала телескоппен аспанды бақылайды.']],
+    tf: [['Күн – жұлдыз.', true], ['Ай – планета.', false], ['Темірқазық – солтүстікті көрсетеді.', true], ['Жер Күнді айналады.', true]]
+  });
+  add('garysh', {
+    theme: 'Ғарыш, ғарышкерлер, Айға сапар',
+    text: ['Мен ғарышкер боламын', 'Адамзат Айға ұшуды көптен армандаған. Алғашқы ғарышкер Юрий Гагарин 1961 жылы Жерді айналып ұшты. Қазақстанда Байқоңыр ғарыш айлағы бар, бұл жерден ғарышқа ракеталар ұшырылады. Тоқтар Әубәкіров – алғашқы қазақ ғарышкері. Ғарышкер болу үшін мықты денсаулық, терең білім және батылдық керек.'],
+    vocab: [['ғарышкер', '👨‍🚀', 'ғарышқа ұшқан адам'], ['ракета', '🚀', 'ғарышқа ұшатын аппарат'], ['Ай', '🌕', 'Жердің серігі'], ['скафандр', '🥽', 'ғарышкердің арнайы киімі'], ['Байқоңыр', '🛰️', 'ғарыш айлағы'], ['телескоп', '🔭', 'алыс затты көретін құрал']],
+    qs: [['A', 'Қазақстандағы ғарыш айлағы қалай аталады?', 'Байқоңыр.'], ['A', 'Алғашқы қазақ ғарышкері кім?', 'Тоқтар Әубәкіров.'], ['B', 'Ғарышкер болу үшін не қажет?', 'Мықты денсаулық, терең білім, батылдық.'], ['C', '«Марста тұрғым келеді/келмейді» тақырыбында өз ойыңды дәлелдеп жаз.', 'Жауаптар әртүрлі: пікір, екі дәлел, қорытынды.']],
+    sents: ['Байқоңырдан ракеталар ұшырылады.', 'Ғарышкер скафандр киеді.', 'Мен ғарышкер болғым келеді.'],
+    frames: [['🧑‍🚀📚', 'Болашақ ғарышкер көп оқиды.'], ['🏋️‍♂️🏃', 'Денесін шынықтырады.'], ['🚀🔥', 'Ракетамен ұшады.'], ['🌍🌕', 'Ғарыштан Жерді көреді.']],
+    tf: [['Гагарин – алғашқы ғарышкер.', true], ['Байқоңыр – Қазақстанда.', true], ['Ғарышкер скафандрсыз ұшады.', false], ['Ракета ғарышқа ұшады.', true]]
+  });
+  add('sayahat', {
+    theme: 'Саяхат және оның түрлері',
+    text: ['Саяхат', 'Саяхат – жаңа жерлерді көру үшін жасалатын сапар. Жазда теңізге, көлге, тауға барамыз, ал қыста шаңғы тебуге шығамыз. Саяхатқа шықпас бұрын жолды жоспарлап, қажетті заттарды жинау керек: киім, құжат, су, тамақ. Саяхат адамның көкжиегін кеңейтеді, жаңа достар табуға көмектеседі.'],
+    vocab: [['саяхат', '🧳', 'сапар, жол жүру'], ['шатыр', '⛺', 'түнейтін уақытша үй'], ['рюкзак', '🎒', 'жолға алатын сөмке'], ['карта', '🗺️', 'жер бетінің суреті'], ['шаңғы', '⛷️', 'қыста тебілетін құрал'], ['теңіз', '🏖️', 'жазғы демалыс орны']],
+    qs: [['A', 'Саяхат дегеніміз не?', 'Жаңа жерлерді көру үшін жасалатын сапар.'], ['A', 'Қыста қандай саяхат жасауға болады?', 'Шаңғы тебуге шығуға болады.'], ['B', 'Саяхатқа шықпас бұрын не істеу керек?', 'Жолды жоспарлау, қажетті заттарды жинау.'], ['C', 'Саяхат адамға не береді? Дәлелде.', 'Жауаптар әртүрлі: көкжиекті кеңейтеді, жаңа достар береді, денсаулыққа пайдалы.']],
+    sents: ['Жазда теңізге саяхатқа шығамыз.', 'Рюкзакқа қажетті заттарды саламыз.', 'Саяхат көкжиекті кеңейтеді.'],
+    frames: [['🗺️📝', 'Жолды жоспарлайды.'], ['🎒🧥', 'Қажетті заттарды жинайды.'], ['🚗🏞️', 'Көлікпен сапарға шығады.'], ['⛺🔥', 'Шатыр тігіп, демалады.']],
+    tf: [['Саяхат – жаңа жерлерді көру.', true], ['Саяхатқа дайындық қажет емес.', false], ['Қыста шаңғы тебуге болады.', true], ['Карта жолды табуға көмектеседі.', true]]
+  });
+  add('sayahat_q', {
+    theme: 'Қазақстан қалаларына саяхат',
+    text: ['Елорда және Алматы', 'Астана – Қазақстанның елордасы. Мұнда Байтерек мұнарасы, Хан Шатыр, Ақорда сияқты көрікті жерлер бар. Алматы – Қазақстанның ең үлкен қаласы, оның іргесінде биік таулар орналасқан. Алматыда Көктөбе, Медеу, Шымбұлақ секілді тамаша орындар бар. Тауға шыққанда жылы киім, су және жол ережелері міндетті.'],
+    vocab: [['Астана', '🏙️', 'елорда'], ['Байтерек', '🗼', 'Астананың белгісі'], ['Хан Шатыр', '🎪', 'Астанадағы үлкен сауда орталығы'], ['тау', '🏔️', 'биік жер'], ['Алматы', '🌆', 'ірі қала'], ['аққу', '🦢', 'көлде жүзетін сұлу құс']],
+    qs: [['A', 'Қазақстанның елордасы қай қала?', 'Астана.'], ['A', 'Астанадағы көрікті жерлерді ата.', 'Байтерек, Хан Шатыр, Ақорда.'], ['B', 'Алматының ерекшелігі неде?', 'Ең үлкен қала, іргесінде биік таулар бар.'], ['C', 'Қай қалаға барғың келеді және неге?', 'Жауаптар әртүрлі: қала атауы, барудың себебі, көргісі келетін жерлер.']],
+    sents: ['Астана – Қазақстанның елордасы.', 'Алматының іргесінде таулар бар.', 'Тауға шыққанда жылы киім киеміз.'],
+    frames: [['🚆🌆', 'Пойызбен қалаға барады.'], ['🗼📸', 'Байтеректің жанында суретке түседі.'], ['🚠🏔️', 'Аспан арқанмен тауға көтеріледі.'], ['🏠😊', 'Үйге қуанышпен оралады.']],
+    tf: [['Астана – елорда.', true], ['Байтерек Алматыда.', false], ['Алматының жанында таулар бар.', true], ['Тауға жеңіл киіммен шығу керек.', false]]
+  });
+  add('sayahatshy', {
+    theme: 'Атақты саяхатшылар',
+    text: ['Шоқан Уәлиханов', 'Шоқан Уәлиханов – қазақтың ұлы ғалымы, саяхатшысы. Ол 19 ғасырда Қашғарияға, Ыстықкөл өңіріне экспедиция жасап, халықтың тарихы мен тұрмысын зерттеді. Шоқан көргенін суретке салып, жазып отырған. Қазіргі қазақ саяхатшылары да әлемнің түрлі елін аралап, көргендерін блог және кітап арқылы бөліседі.'],
+    vocab: [['ғалым', '🔬', 'ғылыммен айналысушы'], ['экспедиция', '🧭', 'зерттеу сапары'], ['күнделік', '📔', 'күн сайын жазылатын дәптер'], ['жолсапар', '🛤️', 'алыс жолға шығу'], ['карта', '🗺️', 'жер сызбасы'], ['суретші', '🖌️', 'сурет салушы']],
+    qs: [['A', 'Шоқан Уәлиханов кім?', 'Қазақтың ұлы ғалымы, саяхатшысы.'], ['A', 'Шоқан қайда экспедиция жасады?', 'Қашғарияға, Ыстықкөл өңіріне.'], ['B', 'Шоқан сапар кезінде не істеген?', 'Көргенін жазып, суретке салып отырған.'], ['C', 'Қазіргі саяхатшылар көргендерін қалай бөліседі? Өз ойыңды жаз.', 'Жауаптар әртүрлі: блог, кітап, бейне арқылы.']],
+    sents: ['Шоқан Уәлиханов – ұлы саяхатшы.', 'Ол халықтың тарихын зерттеді.', 'Саяхатшылар көргенін жазады.'],
+    frames: [['🐎🏔️', 'Шоқан алыс жолға шықты.'], ['🏕️🧑‍🤝‍🧑', 'Жергілікті халықпен кездесті.'], ['🖌️📔', 'Көргенін суретке салып, жазды.'], ['📚🌟', 'Еңбектері кейінгі ұрпаққа қалды.']],
+    tf: [['Шоқан Уәлиханов – ғалым.', true], ['Шоқан саяхат жасамаған.', false], ['Шоқан көргенін жазып отырған.', true], ['Қазір саяхатшылар блог жүргізеді.', true]]
+  });
+  return B;
+})();
+if (typeof module !== 'undefined') module.exports = KZBANKS_TIL;
+
+// Қазақ әдебиеті, 5-сынып: шығармалар бойынша банктер
+var KZBANKS_LIT = (function () {
+  var B = {};
+  function add(id, o) { o.id = id; B[id] = o; }
+  var PROC = [['📖👀', 'Оқушы шығарманы мұқият оқиды.'], ['🖍️📝', 'Кейіпкерлер мен басты оқиғаны белгілейді.'], ['💬👥', 'Достарымен талқылап, ойын айтады.'], ['✍️💡', 'Негізгі ой туралы қорытынды жазады.']];
+
+  add('ertegi', {
+    theme: 'Халық ауыз әдебиеті, ертегі түрлері',
+    text: ['Ертегі дегеніміз не?', 'Ертегі – халық ауыз әдебиетінің ежелгі жанры. Оны ата-әжелеріміз ұрпақтан-ұрпаққа ауызша айтып жеткізген. Ертегінің төрт түрі бар: хайуанаттар туралы ертегі, қиял-ғажайып ертегі, батырлық ертегі және тұрмыс-салт ертегісі. Ертегілерде жақсылық пен жамандық күресіп, соңында жақсылық жеңеді.'],
+    vocab: [['ертегі', '📖', 'халықтың ауызша шығармасы'], ['батыр', '🦸', 'ержүрек кейіпкер'], ['хайуанат', '🦊', 'аңдар мен құстар'], ['ғажайып', '✨', 'қиялдағы, ерекше нәрсе'], ['жамандық', '👹', 'зұлым күш'], ['жақсылық', '🌟', 'ізгі күш']],
+    qs: [['A', 'Ертегі қай әдебиеттің жанры?', 'Халық ауыз әдебиетінің жанры.'], ['A', 'Ертегінің неше түрі бар және олар қандай?', 'Төрт түрі: хайуанаттар туралы, қиял-ғажайып, батырлық, тұрмыс-салт ертегісі.'], ['B', 'Ертегіде жақсылық пен жамандық қалай бейнеленеді?', 'Олар күреседі, соңында жақсылық жеңеді.'], ['C', 'Өзің білетін бір ертегіні жанры бойынша сипатта.', 'Жауаптар әртүрлі: атауы, түрі, кейіпкерлер, негізгі ой.']],
+    sents: ['Ертегі – халық ауыз әдебиетінің жанры.', 'Ертегіде жақсылық жамандықты жеңеді.', 'Ертегіні ата-әжеміз айтып берген.'],
+    frames: [['👵👦', 'Әже немересіне ертегі айтады.'], ['📖✨', 'Ертегіде ғажайып оқиғалар болады.'], ['🦸👹', 'Батыр жамандықпен күреседі.'], ['🌟🎉', 'Соңында жақсылық жеңеді.']],
+    tf: [['Ертегі – халық ауыз әдебиетінің жанры.', true], ['Ертегінің түрлері жоқ.', false], ['Ертегіде әдетте жақсылық жеңеді.', true], ['Ертегіні тек қағазға жазған.', false]]
+  });
+  add('kendebay', {
+    theme: '«Керқұла атты Кендебай» ертегісі',
+    text: ['«Керқұла атты Кендебай»', '«Керқұла атты Кендебай» – халық ертегісі. Оқиға кедей Қазанғаптың баласы Кендебайдың өмірге келуінен басталады. Кендебай малшы болып жүреді, оның адал серігі – Керқұла ат. Ертегіде хан мен оның балалары да бейнеленеді, ал Кендебай ерлік көрсетіп, халық сүйіспеншілігіне бөленеді.'],
+    vocab: [['Кендебай', '🦸', 'ертегінің басты кейіпкері'], ['Қазанғап', '👨‍🌾', 'кедей, Кендебайдың әкесі'], ['Керқұла', '🐎', 'Кендебайдың атты серігі'], ['қойшы', '🐑', 'мал баққан бала'], ['хан', '👑', 'елдің билеушісі'], ['ерлік', '🛡️', 'батыл іс']],
+    qs: [['A', 'Кендебайдың әкесі кім болған?', 'Кедей Қазанғап.'], ['A', 'Кендебайдың серігі кім?', 'Керқұла ат.'], ['B', 'Ертегіде Кендебай қандай кейіпкер ретінде көрінеді?', 'Батыл, адал, еңбекқор батыр ретінде.'], ['C', 'Ертегінің негізгі идеясы қандай? Дәлелде.', 'Жауаптар әртүрлі: ерлік пен адалдық, кедейдің баласы да батыр болады.']],
+    sents: ['Кендебай кедей Қазанғаптың баласы.', 'Керқұла ат – Кендебайдың сенімді серігі.', 'Кендебай ерлік көрсетті.'],
+    frames: [['👨‍🌾🏚️', 'Кедей Қазанғаптан Кендебай дүниеге келеді.'], ['🐎👦', 'Кендебай Керқұла атпен танысады.'], ['🐑🌄', 'Ол малшы болып жүреді.'], ['👑⚔️', 'Хан мен балаларының алдында ерлік көрсетеді.']],
+    tf: [['Кендебай – ертегінің басты кейіпкері.', true], ['Керқұла – Кендебайдың атының аты.', true], ['Қазанғап – бай хан.', false], ['Ертегіде Кендебай ерлік көрсетеді.', true]]
+  });
+  add('qobylandy', {
+    theme: '«Қобыланды батыр» жыры, батырлар жыры',
+    text: ['«Қобыланды батыр» жыры', '«Қобыланды батыр» – қазақтың батырлар жырының көрнекті үлгісі. Жырда Қобыланды батырдың дүниеге келуі, оның сенімді тұлпары Тайбурыл, жары Құртқа қыз, досы Қараман бейнеленеді. Қобыланды ел шетіне жау келгенде жорыққа аттанып, Көбікті ханды жеңеді. Жыр ерлік пен елді қорғауды дәріптейді.'],
+    vocab: [['Қобыланды', '🦸', 'жырдың басты батыры'], ['Тайбурыл', '🐎', 'батырдың тұлпары'], ['Құртқа', '👩', 'Қобыландының жары'], ['Қараман', '🤝', 'батырдың досы'], ['Көбікті хан', '👑', 'жау ханы'], ['жорық', '⚔️', 'жауға қарсы жорық']],
+    qs: [['A', 'Қобыланды батырдың аты кім?', 'Тайбурыл.'], ['A', 'Қобыланды батырдың жары кім?', 'Құртқа қыз.'], ['B', 'Қобыланды қай ханды жеңеді?', 'Көбікті ханды.'], ['C', 'Жырдың басты идеясы қандай? Өз ойыңды дәлелде.', 'Жауаптар әртүрлі: елді қорғау, ерлік, достыққа адалдық.']],
+    sents: ['Қобыланды – елін қорғаған батыр.', 'Тайбурыл – батырдың тұлпары.', 'Жыр ерлікті дәріптейді.'],
+    frames: [['👶🏹', 'Қобыланды батыр дүниеге келеді.'], ['🐎✨', 'Тайбурыл тулап өседі.'], ['⚔️🏰', 'Қобыланды жорыққа аттанады.'], ['🏆🛡️', 'Көбікті ханды жеңеді.']],
+    tf: [['«Қобыланды батыр» – батырлар жыры.', true], ['Тайбурыл – батырдың досы.', false], ['Қобыланды елін қорғайды.', true], ['Жырда ерлік дәріптелмейді.', false]]
+  });
+  add('asan', {
+    theme: 'Асанқайғы және «Жерге айтқан сыны» аңызы',
+    text: ['Асанқайғы', 'Асанқайғы (Хасан) Сәбитұлы – 15 ғасырда өмір сүрген қазақтың атақты шешені, ойшылы. Ел аузындағы аңыз бойынша ол халқына қоныс іздеп, Жерұйықты аралаған. Әр жердің табиғатына баға беріп, сын айтқан. «Жерге айтқан сыны» аңызы туған жердің қадірін ұқтырады.'],
+    vocab: [['аңыз', '📜', 'ел аузындағы ескі әңгіме'], ['Жерұйық', '🏞️', 'ертегідегі бейбіт жер'], ['қоныс', '🏕️', 'халық тұратын жер'], ['шешен', '🗣️', 'сөзге шебер адам'], ['сын', '⚖️', 'баға беру'], ['Отан', '🇰🇿', 'туған ел']],
+    qs: [['A', 'Асанқайғы кім болған?', 'Қазақтың атақты шешені, ойшылы.'], ['A', 'Аңыз дегеніміз не?', 'Ел аузындағы ескі әңгіме.'], ['B', 'Асанқайғы жерлерді не үшін аралаған?', 'Халқына қолайлы қоныс іздеген.'], ['C', 'Туған жердің қадірі туралы өз ойыңды жаз.', 'Жауаптар әртүрлі: туған жер – өмір бастауы, оны сақтау керек.']],
+    sents: ['Асанқайғы халқына қоныс іздеген.', 'Аңыз – ел аузындағы әңгіме.', 'Туған жер – ең қымбат жер.'],
+    frames: [['🚶‍♂️🐪', 'Асанқайғы ел үшін жер іздеп жолға шығады.'], ['🏞️🔍', 'Әр жердің табиғатын байқайды.'], ['💬🗣️', 'Әр жерге сын айтады.'], ['🏡❤️', 'Туған жердің қадірін ұқтырады.']],
+    tf: [['Асанқайғы – аңыздағы тұлға.', true], ['Аңыз – жазушының ойдан шығарған романы.', false], ['Асанқайғы жерге сын айтқан.', true], ['Аңыз туған жердің қадірін ұқтырады.', true]]
+  });
+  add('aqtan', {
+    theme: 'Дулат Бабатайұлы, «О, Ақтан жас, Ақтан жас...» өлеңі',
+    text: ['Дулат Бабатайұлы', 'Дулат Бабатайұлы – 19 ғасырда өмір сүрген қазақтың ақыны. «О, Ақтан жас, Ақтан жас...» өлеңінде ақын жетімдік, өмірдің қиындығы, тәрбие туралы толғанады. Өлеңде көркемдік құралдар, қайталау және риторикалық сұраулы сөйлемдер ойды күшейтіп тұр.'],
+    vocab: [['ақын', '✒️', 'өлең жазушы'], ['өлең', '📝', 'ұйқасты шығарма'], ['жетімдік', '🕯️', 'ата-анасыз қалу'], ['тәрбие', '🌱', 'адамды баулу'], ['қайталау', '🔁', 'көркемдік тәсіл'], ['шумақ', '📄', 'өлеңнің бөлігі']],
+    qs: [['A', 'Дулат Бабатайұлы кім?', 'Қазақтың 19 ғасырдағы ақыны.'], ['A', 'Өлеңде қандай тақырып көтерілген?', 'Жетімдік, өмір қиындығы, тәрбие.'], ['B', 'Риторикалық сұраулы сөйлем ойды қалай күшейтеді?', 'Жауап күтпей, ақынның сезімін, толғанысын әсерлі жеткізеді.'], ['C', 'Автордың орнына өзіңді қойып, авторға хат жаз (3–4 сөйлем).', 'Жауаптар әртүрлі: әсер, ой, сұрақ.']],
+    sents: ['Дулат – қазақтың ақыны.', 'Өлеңде жетімдік жайлы айтылған.', 'Ақын тәрбиеге үлкен мән берген.'],
+    frames: PROC,
+    tf: [['Дулат Бабатайұлы – ақын.', true], ['Өлеңде жетімдік туралы айтылады.', true], ['Риторикалық сұрау жауап күтеді.', false], ['Өлең шумақтардан тұрады.', true]]
+  });
+  add('seitqul', {
+    theme: 'Ы. Алтынсарин, «Қыпшақ Сейітқұл» әңгімесі',
+    text: ['Ыбырай Алтынсарин', 'Ыбырай Алтынсарин – қазақтың ұлы ағартушысы, педагогы, жазушысы. Ол қазақ балалары үшін мектептер ашып, оқулықтар жазды. «Қыпшақ Сейітқұл» әңгімесінде Сейітқұл – еңбек адамы, ел қамқоршысы ретінде бейнеленген. Әңгіме еңбекке, адалдыққа және елге қамқорлыққа тәрбиелейді.'],
+    vocab: [['ағартушы', '🕯️', 'халыққа білім беруші'], ['педагог', '👨‍🏫', 'ұстаз'], ['мектеп', '🏫', 'білім ордасы'], ['Сейітқұл', '🧔', 'әңгіменің кейіпкері'], ['еңбек', '⚒️', 'адал жұмыс'], ['қамқор', '🤲', 'қамқорлық көрсетуші']],
+    qs: [['A', 'Ыбырай Алтынсарин кім?', 'Қазақтың ұлы ағартушысы, педагогы, жазушысы.'], ['A', 'Сейітқұл қандай адам?', 'Еңбек адамы, ел қамқоршысы.'], ['B', 'Алтынсарин қазақ балалары үшін не істеді?', 'Мектептер ашты, оқулықтар жазды.'], ['C', 'Сейітқұл бейнесі арқылы автор қандай ой айтады? Дәлелде.', 'Жауаптар әртүрлі: еңбек адамы құрметке лайық, ел қамын ойлау керек.']],
+    sents: ['Алтынсарин – ұлы ағартушы.', 'Сейітқұл – еңбек адамы.', 'Ел қамын ойлау – азаматтық борыш.'],
+    frames: PROC,
+    tf: [['Алтынсарин – ағартушы.', true], ['Сейітқұл – жалқау кейіпкер.', false], ['Әңгіме еңбекке тәрбиелейді.', true], ['Алтынсарин мектеп ашпаған.', false]]
+  });
+  add('atymtai', {
+    theme: '«Атымтай Жомарт» әңгімесі, жомарттық пен сараңдық',
+    text: ['Жомарттық дегеніміз не?', 'Жомарттық – өзіңде бар нәрсені басқамен бөлісе білу, ешнәрсені аямау. Сараңдық – керісінше, өз байлығын ешкімге бермеу, бөліспеу. Ыбырай Алтынсариннің «Атымтай Жомарт» әңгімесі жомарттықтың қайырымдылық екенін көрсетеді. Қазақ «Жомарттық – адамның көркі» деп бағалаған.'],
+    vocab: [['жомарт', '🎁', 'қолы ашық адам'], ['сараң', '🔒', 'ешкімге бермейтін адам'], ['қайырым', '💛', 'жақсылық жасау'], ['бөлісу', '🤝', 'өзіңдегіні бөлу'], ['достық', '👭', 'сенімді қарым-қатынас'], ['байлық', '💰', 'мал-мүлік']],
+    qs: [['A', 'Жомарттық дегеніміз не?', 'Өзіңдегіні басқамен бөлісе білу.'], ['A', 'Сараң адам қандай болады?', 'Өз байлығын ешкімге бермейді.'], ['B', 'Жомарттық пен сараңдықтың айырмашылығы неде?', 'Жомарт адам бөліседі, сараң адам бөліспейді.'], ['C', 'Өміріңнен жомарттыққа мысал келтір.', 'Жауаптар әртүрлі: көмек көрсету, бөлісу.']],
+    sents: ['Жомарт адам бөлісе біледі.', 'Сараң адам ешкімге бермейді.', 'Жомарттық – қайырымдылық белгісі.'],
+    frames: PROC,
+    tf: [['Жомарт адам бөлісуден қашады.', false], ['Сараңдық – жақсы қасиет.', false], ['Жомарттық қайырымдылықпен байланысты.', true], ['Достыққа жомарттық керек.', true]]
+  });
+  add('dunie', {
+    theme: '«Дүние қалай етсең табылады?» әңгімесі, адал еңбек',
+    text: ['Адал еңбек', 'Ыбырай Алтынсариннің «Дүние қалай етсең табылады?» әңгімесі адал еңбекпен табылған дүниенің құнды екенін ұқтырады. Адам өз кәсібінің арқасында нәпақа табады. Кәсіп үйрену, жалқаулыққа жол бермеу – бақытқа жетудің жолы. Қазақ «Еңбек етсең емерсің» деп бекер айтпаған.'],
+    vocab: [['кәсіп', '🛠️', 'тұрақты жұмыс түрі'], ['еңбек', '⚒️', 'адал жұмыс'], ['нәпақа', '🍞', 'тіршілікке қажет табыс'], ['шебер', '🧑‍🔧', 'ісіне ұста адам'], ['жалқау', '😴', 'еңбектен қашатын'], ['табыс', '💵', 'еңбектің жемісі']],
+    qs: [['A', 'Кәсіп дегеніміз не?', 'Тұрақты жұмыс түрі.'], ['A', 'Дүние қалай табылады?', 'Адал еңбекпен.'], ['B', 'Кәсіп үйрену не үшін керек?', 'Нәпақа табу және бақытқа жету үшін.'], ['C', 'Қай кәсіпті таңдағың келеді және неге?', 'Жауаптар әртүрлі: кәсіп аты, себебі, пайдасы.']],
+    sents: ['Дүние адал еңбекпен табылады.', 'Кәсіп – нәпақа көзі.', 'Жалқаулық адамды кедейлікке жеткізеді.'],
+    frames: PROC,
+    tf: [['Адал еңбек – байлыққа жол.', true], ['Кәсіп үйрену қажет емес.', false], ['Жалқау адам табысқа жетеді.', false], ['Еңбек етсең емерсің.', true]]
+  });
+  add('egin', {
+    theme: 'А. Байтұрсынұлы, «Егіннің бастары» мысалы, «Адамдық диқаншысы»',
+    text: ['Ахмет Байтұрсынұлы', 'Ахмет Байтұрсынұлы – қазақтың ұлы ақыны, ағартушысы, ғалымы. «Егіннің бастары» – мысал жанрындағы шығарма. Мысалда егіннің бастары арқылы адамдардың мінезі бейнеленеді. Мысал – астарлы ойы бар, өсімдік не жануар кейіпкерлері арқылы адамның кемшілігін көрсететін шағын шығарма. «Адамдық диқаншысы» өлеңінде адамгершілік егінін егу туралы айтылады.'],
+    vocab: [['мысал', '🌾', 'астарлы ойы бар шығарма'], ['егін', '🌿', 'дән беретін өсімдік'], ['диқан', '🧑‍🌾', 'егін егуші'], ['астар', '🎭', 'жасырын мағына'], ['өсиет', '📜', 'қалдырған ақыл'], ['адамгершілік', '💞', 'адамдық қасиет']],
+    qs: [['A', 'Мысал дегеніміз не?', 'Астарлы ойы бар шағын шығарма.'], ['A', 'Ахмет Байтұрсынұлы кім?', 'Қазақтың ұлы ақыны, ағартушысы, ғалымы.'], ['B', '«Егіннің бастары» мысалындағы астарлы ойды түсіндір.', 'Егін бастары арқылы адамның мінезі, кішіпейілділік пен менмендік көрсетіледі.'], ['C', 'Ахмет атаға хат жаз (3–4 сөйлем).', 'Жауаптар әртүрлі: әсер, түсінгені, алғыс.']],
+    sents: ['Мысалда астарлы ой болады.', 'Диқан егін егеді.', 'Байтұрсынұлы – ұлы ағартушы.'],
+    frames: [['🌱⛏️', 'Диқан жерді жыртып, дән септі.'], ['🌾☀️', 'Егін өсіп, піседі.'], ['🌾🙇', 'Піскен бас иіледі.'], ['💡📜', 'Мысал бізге ой салады.']],
+    tf: [['Мысал – астарлы жанр.', true], ['Диқан – егін егуші.', true], ['Мысалда ой тікелей айтылады.', false], ['Байтұрсынұлы – ағартушы.', true]]
+  });
+  add('qozha', {
+    theme: 'Б. Соқпақбаев, «Менің атым Қожа» хикаяты',
+    text: ['«Менің атым Қожа»', 'Бердібек Соқпақбаев – қазақтың көрнекті жазушысы. «Менің атым Қожа» – балалар өмірі туралы хикаят. Басты кейіпкер – Қожа есімді бала, оның бастан кешкен оқиғалары, достары, мектептегі күндері суреттеледі. Хикаят – көлемі әңгімеден үлкен, романнан кіші прозалық жанр. Шығарма адалдыққа, достыққа және сенімге тәрбиелейді.'],
+    vocab: [['хикаят', '📕', 'орташа көлемді проза'], ['Қожа', '🧒', 'басты кейіпкер'], ['дос', '👬', 'сенімді жолдас'], ['мектеп', '🏫', 'білім ордасы'], ['Сәйбек қарт', '👴', 'кейіпкер'], ['сенім', '💞', 'адамға иланым']],
+    qs: [['A', 'Хикаят қандай жанр?', 'Көлемі әңгімеден үлкен, романнан кіші проза жанры.'], ['A', 'Басты кейіпкердің есімі кім?', 'Қожа.'], ['B', 'Қожа бейнесі қалай сипатталады?', 'Мінезі, іс-әрекеті мәтіннен дәлелденеді (оқулықтағы эпизодтарға сүйену).'], ['C', 'Шығармадағы қай эпизод саған ұнады? Пікіріңді дәлелде.', 'Жауаптар әртүрлі: эпизод, кейіпкер әрекеті, дәлел.']],
+    sents: ['Қожа – хикаяттың басты кейіпкері.', 'Хикаят достыққа тәрбиелейді.', 'Соқпақбаев – белгілі жазушы.'],
+    frames: PROC,
+    tf: [['«Менің атым Қожа» – хикаят.', true], ['Қожа – ересек адам.', false], ['Шығарма достық пен адалдыққа тәрбиелейді.', true], ['Хикаят – өлең жанры.', false]]
+  });
+  add('bauyr', {
+    theme: 'М. Қабанбай, «Бауыр» әңгімесі',
+    text: ['«Бауыр» әңгімесі', 'М. Қабанбайдың «Бауыр» әңгімесі – адам мен адамның арасындағы жақындықты, сағынышты, үмітті суреттейтін шығарма. Әңгімеде үміт, күрсініс, арман сияқты сезімдер кейіпкердің ішкі әлемін ашады. Әңгіме – көлемі шағын, бір оқиғаға құрылған прозалық шығарма. Оқушы әңгіме арқылы адами қарым-қатынастың қадірін ұғады.'],
+    vocab: [['әңгіме', '📗', 'шағын прозалық жанр'], ['кейіпкер', '🧑', 'шығарма қаһарманы'], ['үміт', '🌅', 'жақсылыққа сену'], ['күрсініс', '😮‍💨', 'терең күрсіну'], ['арман', '🌠', 'жету тілеген мақсат'], ['бауыр', '🤗', 'жақын туыс']],
+    qs: [['A', 'Әңгіме дегеніміз не?', 'Шағын, бір оқиғаға құрылған прозалық шығарма.'], ['A', 'Әңгімеде қандай сезімдер суреттеледі?', 'Үміт, күрсініс, арман.'], ['B', 'Кейіпкердің ішкі әлемін қалай білдік?', 'Сезімдері, ойы мен іс-әрекеті арқылы.'], ['C', 'Шығармадан алған әсеріңді жаз.', 'Жауаптар әртүрлі: әсер, ой, байланыс өмірмен.']],
+    sents: ['Әңгіме – шағын проза жанры.', 'Кейіпкер үмітін үзбейді.', 'Бауыр – жақын адам.'],
+    frames: PROC,
+    tf: [['Әңгіме – шағын проза жанры.', true], ['Әңгіме өлеңмен жазылады.', false], ['Кейіпкердің сезімі оның ішкі әлемін ашады.', true], ['Шығармада арман туралы айтылады.', true]]
+  });
+  add('anasyn', {
+    theme: 'Т. Нұрмағамбетов, «Анасын сағынған бала»',
+    text: ['«Анасын сағынған бала»', 'Т. Нұрмағамбетовтың «Анасын сағынған бала» әңгімесі – ана мен бала арасындағы сүйіспеншілік туралы. Шығармада уәде, бақытты сәт, сағыныш, алданған арман сияқты желілер бала кейіпкердің сезімін ашады. Ана – адамның ең қымбат жаны. Шығарма оқырманға ананы қадірлеуді үйретеді.'],
+    vocab: [['ана', '👩', 'ең қымбат жан'], ['бала', '🧒', 'кейіпкер'], ['сағыныш', '💭', 'көргісі келу сезімі'], ['уәде', '🤞', 'сөз беру'], ['арман', '🌠', 'жету тілеген мақсат'], ['бақыт', '☀️', 'қуаныш сезімі']],
+    qs: [['A', 'Әңгіме не туралы?', 'Ана мен бала арасындағы сүйіспеншілік, сағыныш туралы.'], ['A', 'Кейіпкер нені сағынады?', 'Анасын.'], ['B', 'Кейіпкердің сезімі қалай өзгереді?', 'Мәтіндегі оқиғаларға сүйеніп жауап береді.'], ['C', 'Ананың маңызы туралы өз ойыңды жаз.', 'Жауаптар әртүрлі: ананың қамқорлығы, қадірлеу.']],
+    sents: ['Бала анасын сағынды.', 'Ана – адамның ең қымбат жаны.', 'Сағыныш – терең сезім.'],
+    frames: PROC,
+    tf: [['Әңгіме ана мен бала туралы.', true], ['Кейіпкер анасын сағынады.', true], ['Шығармада достық ғана айтылады.', false], ['Ананы қадірлеу керек.', true]]
+  });
+  add('azhe', {
+    theme: 'Н. Ақыш, «Нағыз әже қайда?» әңгімесі',
+    text: ['«Нағыз әже қайда?»', 'Нұрдәулет Ақыштың «Нағыз әже қайда?» әңгімесінде Ажар есімді қыздың әжесіне деген сағынышы, оның әжемен кездесу, ертегі тыңдау сәттері суреттеледі. Әже – отбасының тірегі, ақыл-кеңес беруші. Әңгіме немереге әжесін қадірлеуді, үлкенді құрметтеуді үйретеді.'],
+    vocab: [['әже', '👵', 'ата-ананың анасы'], ['Ажар', '👧', 'кейіпкер қыз'], ['ертегі', '📖', 'әже айтқан әңгіме'], ['қонақ', '🏡', 'барған адам'], ['сағыну', '💭', 'көргісі келу'], ['құрмет', '🤝', 'сыйлау']],
+    qs: [['A', 'Әңгімедегі қыздың аты кім?', 'Ажар.'], ['A', 'Әже қандай адам?', 'Отбасының тірегі, ақыл-кеңес беруші.'], ['B', 'Әңгіме не үйретеді?', 'Әжені қадірлеуді, үлкенді құрметтеуді.'], ['C', 'Өз әжең туралы 4–5 сөйлем жаз.', 'Жауаптар әртүрлі: аты, мінезі, не істейді, ұнайтын қасиеті.']],
+    sents: ['Ажар әжесін сағынды.', 'Әже ертегі айтып береді.', 'Үлкенді құрметтеу керек.'],
+    frames: PROC,
+    tf: [['Әже отбасының тірегі.', true], ['Әңгіме әже туралы емес.', false], ['Ажар – әңгіменің кейіпкері.', true], ['Үлкенді құрметтеу керек емес.', false]]
+  });
+  add('mexika', {
+    theme: 'Д. Лондон, «Мексика ұлы» әңгімесі',
+    text: ['Джек Лондон және «Мексика ұлы»', 'Джек Лондон – американ жазушысы. «Мексика ұлы» әңгімесінде жас жігіт Ривера мен Денни бейнелері арқылы батылдық, мақсатқа адалдық, күрес тақырыбы көтеріледі. Шығарманың тілі шынайы, оқиғалары күшті. Әңгіме кейіпкердің портреті мен іс-әрекеті арқылы оның тұлғасын ашады.'],
+    vocab: [['жазушы', '✍️', 'шығарма жазушы'], ['Ривера', '🥊', 'әңгіменің басты кейіпкері'], ['Денни', '🧢', 'кейіпкер'], ['батылдық', '💪', 'қорықпау'], ['мақсат', '🎯', 'ұмтылған ой'], ['портрет', '🖼️', 'кейіпкердің сырт келбеті']],
+    qs: [['A', 'Д. Лондон кім?', 'Американ жазушысы.'], ['A', 'Әңгімедегі басты кейіпкер кім?', 'Ривера.'], ['B', 'Кейіпкер портреті оның тұлғасын қалай ашады?', 'Сырт келбеті мен іс-әрекеті арқылы мінезі байқалады.'], ['C', 'Ривера мен Денни бейнелерін салыстыр.', 'Жауаптар әртүрлі: ұқсастық пен айырмашылық мәтіннен дәлелденеді.']],
+    sents: ['Джек Лондон – американ жазушысы.', 'Ривера мақсатына адал.', 'Батылдық – адамды көркейтеді.'],
+    frames: PROC,
+    tf: [['Д. Лондон – американ жазушысы.', true], ['Ривера – әңгіменің басты кейіпкері.', true], ['Әңгіме қорқақтық туралы.', false], ['Кейіпкер портреті оның тұлғасын ашады.', true]]
+  });
+  return B;
+})();
+if (typeof module !== 'undefined') module.exports = KZBANKS_LIT;
+
+// ҚМЖ құрастырушы: қазақ тілі мен әдебиеті (5-сынып). КТЖ → жоспар → Word
+var LESSON = (function () {
+  var isNode = typeof module !== 'undefined' && typeof window === 'undefined';
+  var _CUR = isNode ? require('./kz_cur.js') : CUR;
+  var _PK = isNode ? require('./kz_packs.js') : KZPACKS;
+  var _BT = isNode ? require('./kz_banks_til.js') : KZBANKS_TIL;
+  var _BL = isNode ? require('./kz_banks_lit.js') : KZBANKS_LIT;
+  var _D = isNode ? require('./docx.js') : DOCX;
+
+  var CFG = (typeof QMJ_CFG !== 'undefined') ? QMJ_CFG : {};
+  var TEACHER = CFG.teacher || 'Самалова Айгерим Мырзагажиевна';
+  var SCHOOL = CFG.school || '«120 мектеп-лицейі» КММ';
+
+  function rng(seedStr) {
+    var h = 2166136261;
+    for (var i = 0; i < seedStr.length; i++) { h ^= seedStr.charCodeAt(i); h = Math.imul(h, 16777619); }
+    var s = h >>> 0;
+    function next() { s += 0x6D2B79F5; var t = s; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }
+    return { f: next, i: function (a, b) { return a + Math.floor(next() * (b - a + 1)); }, shuffle: function (arr) { var a = arr.slice(); for (var k = a.length - 1; k > 0; k--) { var j = Math.floor(next() * (k + 1)); var x = a[k]; a[k] = a[j]; a[j] = x; } return a; } };
+  }
+  function fmtDate(iso) { var p = iso.split('-'); return p[2] + '.' + p[1] + '.' + p[0]; }
+  function quarterOf(iso) {
+    var d = new Date(iso + 'T12:00:00'), m = d.getMonth() + 1, day = d.getDate();
+    if (m >= 9 && (m < 10 || (m === 10 && day <= 31))) return 1;
+    if (m === 11 || m === 12) return 2;
+    if (m === 1 || m === 2 || (m === 3 && day <= 20)) return 3;
+    if (m >= 3 && m <= 6) return 4;
+    return 1;
+  }
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+  function wrap(text, max) {
+    var w = String(text).split(' '), lines = [], cur = '';
+    w.forEach(function (x) { if ((cur + ' ' + x).trim().length > max && cur) { lines.push(cur); cur = x; } else cur = (cur + ' ' + x).trim(); });
+    if (cur) lines.push(cur);
+    return lines;
+  }
+  var EMO = "'Noto Color Emoji','Apple Color Emoji','Segoe UI Emoji','Twemoji Mozilla',sans-serif";
+  var TXT = "Arial,Helvetica,'DejaVu Sans',sans-serif";
+  var PAL = ['#CDE8FF', '#D8F3DC', '#FFD6E0', '#E6D9FF', '#FFE5CC', '#D5F5F0'];
+  var PAL2 = ['#7FB8E8', '#8CCB9B', '#F29BB3', '#B79BE8', '#F2B27A', '#7ED3C6'];
+  var LETTERS = ['А', 'Ә', 'Б', 'В', 'Г', 'Ғ', 'Д'];
+
+  // ---------- СУРЕТТЕР (SVG) ----------
+  function mindmapSvg(title, vocab) {
+    var W = 680, H = 420, cx = 340, cy = 210, pos = [[110, 72], [340, 44], [570, 72], [110, 348], [340, 376], [570, 348]];
+    var s = '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '"><rect width="' + W + '" height="' + H + '" rx="18" fill="#FFFBEF"/>';
+    vocab.slice(0, 6).forEach(function (v, i) { s += '<line x1="' + cx + '" y1="' + cy + '" x2="' + pos[i][0] + '" y2="' + pos[i][1] + '" stroke="' + PAL2[i] + '" stroke-width="5" stroke-linecap="round"/>'; });
+    s += '<ellipse cx="' + cx + '" cy="' + cy + '" rx="128" ry="62" fill="#FFE08A" stroke="#E0A800" stroke-width="4"/>';
+    var ls = wrap(title, 17).slice(0, 3), fs = ls.length > 2 ? 17 : 20;
+    ls.forEach(function (l, i) { s += '<text x="' + cx + '" y="' + (cy + 6 + (i - (ls.length - 1) / 2) * (fs + 6)) + '" text-anchor="middle" font-family="' + TXT + '" font-size="' + fs + '" font-weight="700" fill="#4A3500">' + esc(l) + '</text>'; });
+    vocab.slice(0, 6).forEach(function (v, i) {
+      var x = pos[i][0], y = pos[i][1];
+      s += '<rect x="' + (x - 98) + '" y="' + (y - 38) + '" width="196" height="76" rx="22" fill="' + PAL[i] + '" stroke="' + PAL2[i] + '" stroke-width="3"/>';
+      s += '<text x="' + (x - 62) + '" y="' + (y + 13) + '" text-anchor="middle" font-family="' + EMO + '" font-size="38">' + esc(v[1]) + '</text>';
+      s += '<text x="' + (x + 24) + '" y="' + (y + 8) + '" text-anchor="middle" font-family="' + TXT + '" font-size="' + (v[0].length > 11 ? 17 : 21) + '" font-weight="700" fill="#243044">' + esc(v[0]) + '</text>';
+    });
+    return s + '</svg>';
+  }
+  function cardsSvg(vocab) {
+    var W = 680, H = 360, s = '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '"><rect width="' + W + '" height="' + H + '" rx="18" fill="#F6F9FF"/>';
+    vocab.slice(0, 6).forEach(function (v, i) {
+      var col = i % 3, row = Math.floor(i / 3), x = 24 + col * 216, y = 24 + row * 166;
+      s += '<rect x="' + x + '" y="' + y + '" width="200" height="150" rx="22" fill="' + PAL[i] + '" stroke="' + PAL2[i] + '" stroke-width="4"/>';
+      s += '<circle cx="' + (x + 30) + '" cy="' + (y + 30) + '" r="20" fill="' + PAL2[i] + '"/><text x="' + (x + 30) + '" y="' + (y + 38) + '" text-anchor="middle" font-family="' + TXT + '" font-size="24" font-weight="700" fill="#fff">' + (i + 1) + '</text>';
+      s += '<text x="' + (x + 100) + '" y="' + (y + 108) + '" text-anchor="middle" font-family="' + EMO + '" font-size="72">' + esc(v[1]) + '</text>';
+    });
+    return s + '</svg>';
+  }
+  function framesSvg(fr, labels) {
+    var W = 680, H = 440, s = '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '"><rect width="' + W + '" height="' + H + '" rx="18" fill="#FFFBEF"/>';
+    fr.slice(0, 4).forEach(function (f, i) {
+      var col = i % 2, row = Math.floor(i / 2), x = 20 + col * 330, y = 20 + row * 210;
+      s += '<rect x="' + x + '" y="' + y + '" width="310" height="190" rx="22" fill="' + PAL[i + 1] + '" stroke="' + PAL2[i + 1] + '" stroke-width="4"/>';
+      s += '<circle cx="' + (x + 32) + '" cy="' + (y + 32) + '" r="22" fill="' + PAL2[i + 1] + '"/><text x="' + (x + 32) + '" y="' + (y + 41) + '" text-anchor="middle" font-family="' + TXT + '" font-size="26" font-weight="700" fill="#fff">' + labels[i] + '</text>';
+      s += '<text x="' + (x + 155) + '" y="' + (y + 112) + '" text-anchor="middle" font-family="' + EMO + '" font-size="' + (Array.from(f[0]).length > 5 ? 60 : 76) + '">' + esc(f[0]) + '</text>';
+      s += '<line x1="' + (x + 24) + '" y1="' + (y + 160) + '" x2="' + (x + 286) + '" y2="' + (y + 160) + '" stroke="' + PAL2[i + 1] + '" stroke-width="3" stroke-dasharray="6 6"/>';
+    });
+    return s + '</svg>';
+  }
+
+  var GENRES = [
+    ['жарнама', 'Тақырыпқа сай қысқа жарнама жаз: атауы, ұран (слоган), 2–3 сөйлем сипаттама, байланыс (телефон, мекен-жай).'],
+    ['хабарландыру', 'Тақырыпқа сай хабарландыру жаз: оқиғаның атауы, уақыты, орны, қатысушыларға арналған ескерту.'],
+    ['авторға хат', 'Автор не кейіпкерге хат жаз: сәлемдесу, әсерің, сұрағың, тілегің, қоштасу, күні, қолың.'],
+    ['хат', 'Тақырыпқа сай хат жаз: сәлемдесу, негізгі ой, тілек, қоштасу, күні, қолың.'],
+    ['эссе', 'Эссе жаз (6–8 сөйлем): кіріспе, негізгі бөлім, қорытынды. Өз пікіріңді дәлелде.'],
+    ['жоспар', 'Мәтіннің қарапайым жоспарын құр: кіріспе, негізгі бөлім, қорытынды. Жоспар бойынша қысқаша мазмұндама жаз.'],
+    ['мәнерлеп оқу', 'Шығарманың таңдаған үзіндісін мәнерлеп оқуға дайындал, тыныс белгілеріне назар аудар. Оқыған үзіндінің ойын 3–4 сөйлеммен жаз.'],
+    ['диктант', 'Диктант мәтінін тыңдап жаз, жазған мәтіндегі емле қателерін сөздікке сүйеніп түзет.'],
+    ['орфографиялық', 'Мәтіндегі емле қателерін тауып, сөздікке сүйеніп түзет, мәтінді қайта жаз.']
+  ];
+  function pickGenre(objs, title) {
+    var all = (objs.map(function (o) { return o[1]; }).join(' ') + ' ' + title).toLowerCase();
+    for (var i = 0; i < GENRES.length; i++) if (all.indexOf(GENRES[i][0]) >= 0) return GENRES[i];
+    return ['сурет бойынша әңгіме', 'Тақырыпқа сай суреттер бойынша 5–6 сөйлемнен тұратын шағын әңгіме жаз. Тірек сөздерді қолдан.'];
+  }
+
+  function buildPlan(gk, q, idx, opts) {
+    opts = opts || {};
+    var G = _CUR[gk], topic = G.q[q][idx], lit = gk === 'L5';
+    var bank = (lit ? _BL : _BT)[topic.b], pack = _PK[topic.p];
+    if (!bank || !pack) throw new Error('Дерек табылмады: ' + topic.b + '/' + topic.p);
+    var date = opts.date || new Date().toISOString().slice(0, 10);
+    var r = rng(gk + '|' + q + '|' + idx + '|' + date);
+    var title = opts.title || topic.t, objectives = opts.objectives || topic.o;
+    var vocab = bank.vocab;
+
+    // №1 мәтін сұрақтары (деңгейлер)
+    var pts = { A: 1, B: 2, C: 3 };
+    var t1 = bank.qs.map(function (x) { return { lvl: x[0], q: x[1], a: x[2], p: x[0] === 'C' ? 2 : pts[x[0]] }; });
+    // №2 А деңгей: сурет + сөз, сөз + мағына
+    var shW = r.shuffle(vocab.map(function (v) { return v[0]; }));
+    var pickM = r.shuffle([0, 1, 2, 3, 4, 5]).slice(0, 4);
+    var shM = r.shuffle(pickM);
+    var t2 = {
+      words: shW,
+      pic: vocab.map(function (v, i) { return (i + 1) + ' – ' + LETTERS[shW.indexOf(v[0])] + ' (' + v[0] + ')'; }).join('; '),
+      mean: pickM.map(function (vi) { return vocab[vi]; }),
+      meanShuf: shM.map(function (vi) { return vocab[vi][2]; }),
+      meanAns: pickM.map(function (vi, i) { return (i + 1) + ' – ' + LETTERS[shM.indexOf(vi)] + ' (' + vocab[vi][0] + ')'; }).join('; ')
+    };
+    // №3 В деңгей
+    var gaps = r.shuffle(pack.gaps).slice(0, 4).map(function (g) { return { s: g[0], a: g[1], o: r.shuffle(g[2]) }; });
+    // №4 С деңгей
+    var errs = r.shuffle(pack.errs).slice(0, 3);
+    var sents = bank.sents.slice(0, 3).map(function (st) {
+      var w = st.replace(/[.!?]$/, '').split(' '), end = st.slice(-1), sh = w.slice(), tries = 0;
+      do { sh = r.shuffle(w); tries++; } while (sh.join(' ') === w.join(' ') && tries < 10);
+      return { shuf: sh.join(' / '), a: st };
+    });
+    // №5 сурет бойынша
+    var order = r.shuffle([0, 1, 2, 3]);
+    var shown = order.map(function (i) { return bank.frames[i]; });
+    var seq = bank.frames.map(function (f, i) { return LETTERS[order.indexOf(i)]; });
+    var genre = pickGenre(objectives, title);
+    // бекіту
+    var tf = r.shuffle(pack.tf).slice(0, 3).concat(r.shuffle(bank.tf).slice(0, 3));
+    tf = r.shuffle(tf);
+
+    return {
+      gk: gk, lit: lit, grade: G.label, q: q, date: date, title: title, section: topic.s, num: topic.n,
+      teacher: TEACHER, school: SCHOOL, objectives: objectives, bank: bank, pack: pack,
+      t1: t1, t2: t2, t3: gaps, t4: { errs: errs, sents: sents }, t5: { shown: shown, seq: seq, genre: genre },
+      tf: tf, summative: /жиынтық бағалау|Нәтиже сабақ|Тест сынағы|диктант/i.test(title),
+      mapSvg: mindmapSvg(bank.text[0], vocab), cardsSvg: cardsSvg(vocab), framesSvg: framesSvg(shown, LETTERS)
+    };
+  }
+
+  async function toDocx(plan, svg2png) {
+    var d = new _D.Doc(), b = plan.bank, pk = plan.pack, lit = plan.lit;
+    var objText = plan.objectives.map(function (x) { return (x[0] ? x[0] + ' – ' : '') + x[1]; });
+    var w4 = b.vocab.slice(0, 4).map(function (v) { return v[0]; }).join(', ');
+    var goalAll = lit ? 'шығарманың жанрын, авторын, басты кейіпкерлерін атайды; тірек сөздерді (' + w4 + ') біледі;' : 'тақырыпқа қатысты тірек сөздерді (' + w4 + ') біледі, мәтін мазмұны бойынша сұрақтарға жауап береді;';
+    var goalMost = pk.focus.charAt(0).toUpperCase() + pk.focus.slice(1) + ' бойынша тапсырмаларды орындайды, сөйлем құрайды;';
+    var goalSome = lit ? 'кейіпкер бейнесін, шығарманың идеясын дәлелдеп түсіндіреді, өз ойын жазбаша не ауызша білдіреді.' : 'тақырып бойынша мәтін жазады немесе ауызша айтады, өз ойын дәлелдейді, тілдік құралдарды орынды қолданады.';
+
+    d.p(plan.school, { align: 'center', b: true, after: 0 });
+    d.h('Қысқа мерзімді жоспар', 1);
+    var W = [3000, 7200];
+    var head = [
+      [{ c: 'Бөлім:', o: { b: true } }, plan.section],
+      [{ c: 'Педагогтің аты-жөні:', o: { b: true } }, plan.teacher],
+      [{ c: 'Күні:', o: { b: true } }, fmtDate(plan.date) + ' (' + plan.q + '-тоқсан)'],
+      [{ c: 'Сынып:', o: { b: true } }, plan.grade + '    Қатысушылар саны: ____    Қатыспағандар саны: ____'],
+      [{ c: 'Сабақтың тақырыбы:', o: { b: true } }, { c: plan.title, o: { b: true } }],
+      [{ c: 'Оқу бағдарламасына сәйкес оқыту мақсаттары:', o: { b: true } }, objText],
+      [{ c: 'Сабақтың мақсаты:', o: { b: true } }, ['**Барлық оқушылар:** ' + goalAll, '**Көпшілігі:** ' + goalMost, '**Кейбіреулері:** ' + goalSome]]
+    ];
+    if (plan.summative) head.splice(5, 0, [{ c: 'Ескерту:', o: { b: true } }, 'Бұл – КТЖ-да берілген қорытынды/жиынтық сабақ. Төмендегі тапсырмалар бөлімді қайталауға және бағалауға дайындыққа арналған.']);
+    d.table(head, W, {});
+
+    var tot = plan.t1.reduce(function (s, x) { return s + x.p; }, 0);
+    var p2 = 4, p3 = plan.t3.length, p4 = plan.t4.errs.length + plan.t4.sents.length, p5 = 8, pb = plan.tf.length;
+    d.h('Сабақтың барысы', 2);
+    var C = [1500, 3500, 2300, 1500, 1400];
+    var rows = [['Сабақтың кезеңі / уақыт', 'Педагогтің әрекеті', 'Оқушының әрекеті', 'Бағалау', 'Ресурстар']];
+    rows.push([{ c: ['**Сабақтың басы**', 'Ұйымдастыру. Қызығушылықты ояту', '4 мин'] }, ['Оқушылармен сәлемдеседі, сабаққа қатысын түгендейді.', 'Тірек сөздер мен суреттерді (Қосымша 1) көрсетіп: «Суретке қарап, сабақтың тақырыбын болжаңдар» деген сұрақ қояды.', 'Сабақтың тақырыбымен және мақсатымен таныстырады.'], ['Сәлемдеседі. Тірек сөздер мен суреттер арқылы тақырыпты болжайды, өз ойын айтады.'], 'Ауызша кері байланыс', 'Слайд, Қосымша 1 (сурет)']);
+    rows.push([{ c: ['**Сабақтың ортасы**', 'Тапсырма №1. Тыңдалым және оқылым', '8 мин'] }, ['Мәтінді дауыстап оқиды (тыңдалым). Оқушыларға мәтінді өздері оқып, сұрақтарға жауап беруді ұсынады (Қосымша 1). Жеке қолдау көрсетеді.'], ['Мәтінді тыңдайды, оқиды. Сұрақтарға жазбаша жауап береді, негізгі ақпаратты анықтайды.'], 'Дескриптор бойынша, ' + tot + ' балл', 'Қосымша 1']);
+    rows.push([{ c: ['Жаңа тақырыпты меңгеру', '6 мин'] }, ['Тақырыпты тірек-конспект арқылы түсіндіреді (Қосымша 2):'].concat((lit ? pk.rule.slice(0, 3) : pk.rule).map(function (x) { return '• ' + x; })), ['Тыңдайды, тірек-конспектіні оқиды, мысал келтіреді, сұрақтар қояды.'], '«Бас бармақ» әдісі', 'Қосымша 2']);
+    rows.push([{ c: ['Тапсырма №2', 'Білу (А деңгей)', '4 мин'] }, ['Суреттер мен сөздерді, сөздер мен мағыналарын сәйкестендіруді ұсынады (Қосымша 3).'], ['Жеке жұмыс: суреттерді сөздермен, сөздерді мағынасымен сәйкестендіреді. Жұбымен тексереді.'], 'Дескриптор бойынша, ' + p2 + ' балл', 'Қосымша 3']);
+    rows.push([{ c: ['Тапсырма №3', 'Қолдану (В деңгей)', '5 мин'] }, [(lit ? 'Көркемдік құралдар' : pk.focus.charAt(0).toUpperCase() + pk.focus.slice(1)) + ' бойынша бос орындарды толтыруды ұсынады (Қосымша 4).'], ['Жеке жұмыс: дұрыс нұсқаны таңдап, бос орынды толтырады.'], 'Дескриптор бойынша, ' + p3 + ' балл', 'Қосымша 4']);
+    rows.push([{ c: ['Тапсырма №4', 'Талдау (С деңгей)', '5 мин'] }, ['Қателерді табуды және сөйлем құрастыруды ұсынады (Қосымша 5). Топтарды өзара талқылауға бағыттайды.'], ['Жұппен жұмыс: қатені тауып түзетеді, берілген сөздерден сөйлем құрайды.'], 'Дескриптор бойынша, ' + p4 + ' балл', 'Қосымша 5']);
+    rows.push([{ c: ['Тапсырма №5', 'Айтылым және жазылым', '8 мин'] }, ['Суреттерді оқиға желісі бойынша ретке қоюды, ауызша әңгімелеуді және жазбаша тапсырманы ұсынады (Қосымша 6).'], ['Суреттерді нөмірлейді, әңгімелейді (айтылым). Жазбаша жұмысты (' + plan.t5.genre[0] + ') орындайды.'], 'Рубрика бойынша, ' + p5 + ' балл', 'Қосымша 6']);
+    rows.push([{ c: ['**Жаңа тақырыпты бекіту**', '«Иә – Жоқ» ойыны', '3 мин'] }, ['Тұжырымдарды ұсынады (Қосымша 7). Қате тұжырымдарды бірге түзетеді.'], ['Тұжырымның дұрыс-қатесін анықтайды, қате тұжырымды түзетеді.'], 'Өзін-өзі бағалау, ' + pb + ' балл', 'Қосымша 7']);
+    rows.push([{ c: ['**Сабақтың соңы**', 'Кері байланыс', '2 мин'] }, ['«Аяқталмаған сөйлем» рефлексиясын ұйымдастырады:', '– Бүгін мен … білдім.', '– Маған … қиын болды.', '– Бұл білімді … қолданамын.', '**Үй тапсырмасы:** тақырып бойынша мәтінді қайта оқу, тірек сөздерден 5 сөйлем құрастыру.'], ['Сөйлемдерді аяқтайды, бағалау парағына (Қосымша 8) балдарын қосады.'], 'Жалпы балл', 'Бағалау парағы']);
+    d.table(rows, C, { head: true });
+
+    // ---------- ҚОСЫМШАЛАР ----------
+    async function addImg(svg, cm) { var im = await svg2png(svg); d.image(im.png, im.w, im.h, cm); }
+    function band(txt, fill) { d.p('**' + txt + '**', { shade: fill, after: 80 }); }
+    function answersP(a, ds) {
+      d.p('**Жауабы:** ' + a, { shade: 'EEF6EE' });
+      var rowsD = [['№', 'Дескриптор: білім алушы', 'Балл']], sum = 0;
+      ds.forEach(function (x, i) { rowsD.push([String(i + 1), x[0], String(x[1])]); sum += x[1]; });
+      rowsD.push(['', { c: 'Барлығы', o: { b: true } }, { c: String(sum), o: { b: true } }]);
+      d.table(rowsD, [700, 8300, 1200], { head: true, headFill: 'FFF2CC' });
+    }
+    var LV = { A: ['Білу', 'E2F0D9'], B: ['Түсіну / қолдану', 'FFF2CC'], C: ['Талдау / бағалау', 'FCE4D6'] };
+
+    d.br(); d.h('Қосымша 1. Тапсырма №1. Тыңдалым және оқылым', 2);
+    band('Мәтінмен жұмыс · ' + b.theme, 'DDEBF7');
+    d.p('Мұғалім мәтінді дауыстап оқиды, оқушылар тыңдайды. Содан кейін оқушылар мәтінді өздері оқып, сұрақтарға жауап береді.', { i: true });
+    await addImg(plan.mapSvg, 14);
+    d.p('1-сурет. Тірек сөздер', { align: 'center', i: true });
+    d.p('**' + b.text[0] + '**', { after: 40 });
+    d.p(b.text[1]);
+    var qrows = [['№', 'Сұрақ / тапсырма', 'Деңгей', 'Балл']];
+    plan.t1.forEach(function (x, i) { qrows.push([String(i + 1), x.q, { c: LV[x.lvl][0], o: { fill: LV[x.lvl][1] } }, String(x.p)]); });
+    d.table(qrows, [600, 6300, 2300, 1000], { head: true });
+    answersP(plan.t1.map(function (x, i) { return (i + 1) + ') ' + x.a; }).join(' '), plan.t1.map(function (x, i) { return [(i + 1) + '-сұраққа дұрыс жауап береді (' + LV[x.lvl][0].toLowerCase() + ')', x.p]; }));
+
+    d.br(); d.h('Қосымша 2. Тірек-конспект: «' + plan.title + '»', 2);
+    band('Негізгі ережелер', 'DDEBF7');
+    pk.rule.forEach(function (x) { d.p('• ' + x, { ind: 200 }); });
+    d.p('**Терминдер:** ' + pk.terms + '.', { shade: 'E8EEF8' });
+    band('Тақырыптық сөздік', 'DDEBF7');
+    d.table([['Сөз', 'Сурет', 'Мағынасы']].concat(b.vocab.map(function (v) { return [{ c: v[0], o: { b: true } }, { c: v[1], o: { sz: 18 } }, v[2]]; })), [3000, 1400, 5800], { head: true });
+    d.p('Оқушы тірек-конспектіні сабақ барысында дәптеріне көшіріп, өз мысалдарымен толықтырады.', { i: true });
+
+    d.br(); d.h('Қосымша 3. Тапсырма №2. Білу (А деңгей)', 2);
+    band('А деңгей · Сурет пен сөзді, сөз бен мағынаны сәйкестендір', 'E2F0D9');
+    d.p('**1-тапсырма.** Суреттің нөмірін сәйкес сөздің әрпімен сәйкестендір. Жауабын «1 – А» түрінде жаз.');
+    await addImg(plan.cardsSvg, 14);
+    d.table([plan.t2.words.slice(0, 3).map(function (w, i) { return LETTERS[i] + ') ' + w; }), plan.t2.words.slice(3).map(function (w, i) { return LETTERS[i + 3] + ') ' + w; })], [3400, 3400, 3400], {});
+    d.p('**2-тапсырма.** Сөзді оның мағынасымен сәйкестендір.');
+    d.table([['№', 'Сөз', 'Мағынасы']].concat(plan.t2.mean.map(function (v, i) { return [String(i + 1), v[0], LETTERS[i] + ') ' + plan.t2.meanShuf[i]]; })), [700, 3300, 6200], { head: true });
+    answersP('1) ' + plan.t2.pic + '. 2) ' + plan.t2.meanAns + '.', [['1–3 суретті дұрыс сәйкестендіреді', 1], ['4–6 суретті дұрыс сәйкестендіреді', 1], ['1–2 сөздің мағынасын дұрыс табады', 1], ['3–4 сөздің мағынасын дұрыс табады', 1]]);
+
+    d.br(); d.h('Қосымша 4. Тапсырма №3. Қолдану (В деңгей)', 2);
+    band('В деңгей · ' + (lit ? 'Көркемдік құралдар' : pk.focus.charAt(0).toUpperCase() + pk.focus.slice(1)), 'FFF2CC');
+    d.p('Дұрыс нұсқаны таңдап, бос орынды толтыр.');
+    plan.t3.forEach(function (g, i) { d.p((i + 1) + '. ' + g.s, { after: 20 }); d.p(g.o.map(function (x, k) { return LETTERS[k] + ') ' + x; }).join('      '), { ind: 300 }); });
+    answersP(plan.t3.map(function (g, i) { return (i + 1) + ' – ' + LETTERS[g.o.indexOf(g.a)] + ' (' + g.a + ')'; }).join('; ') + '.', plan.t3.map(function (g, i) { return [(i + 1) + '-бос орынды дұрыс толтырады', 1]; }));
+
+    d.br(); d.h('Қосымша 5. Тапсырма №4. Талдау (С деңгей)', 2);
+    band('С деңгей · Қатені тап, сөйлем құрастыр', 'FCE4D6');
+    d.p('**1-тапсырма. Қатені тап.** Әр жолдағы қатені тауып, дұрыс нұсқасын жаз.');
+    plan.t4.errs.forEach(function (e, i) { d.p((i + 1) + '. ' + e[0], { after: 20 }); d.p('Дұрысы: ______________________________________________', { ind: 300 }); });
+    d.p('**2-тапсырма. Сөйлем құрастыр.** Сөздерді дұрыс ретке қойып, сөйлемді жаз.');
+    plan.t4.sents.forEach(function (s, i) { d.p((i + 1) + '. ' + s.shuf, { after: 20 }); d.p('Сөйлем: _______________________________________________', { ind: 300 }); });
+    answersP('1) ' + plan.t4.errs.map(function (e, i) { return (i + 1) + ' – ' + e[1]; }).join('; ') + '. 2) ' + plan.t4.sents.map(function (s, i) { return (i + 1) + ' – ' + s.a; }).join(' '), plan.t4.errs.map(function (e, i) { return ['қатені табады және түзетеді (' + (i + 1) + ')', 1]; }).concat(plan.t4.sents.map(function (s, i) { return ['сөздерді реттеп сөйлем құрайды (' + (i + 1) + ')', 1]; })));
+
+    d.br(); d.h('Қосымша 6. Тапсырма №5. Айтылым және жазылым', 2);
+    band('Суреттер бойынша жұмыс · ' + plan.title, 'DDEBF7');
+    d.p('**1-тапсырма.** Суреттерді оқиға желісі бойынша ретке қой (1, 2, 3, 4 деп нөмірле). Содан кейін тірек сөздерді қолданып, әр суретке 1 сөйлемнен әңгімеле (айтылым).');
+    await addImg(plan.framesSvg, 14);
+    d.p('**Тірек сөздер:** ' + b.vocab.map(function (v) { return v[0]; }).join(', ') + '.', { shade: 'E8EEF8' });
+    d.p('**2-тапсырма (жазылым).** ' + plan.t5.genre[1]);
+    d.p('Жазба жұмыс: ________________________________________________________', { after: 20 });
+    d.p('_____________________________________________________________________');
+    d.p('**Жауабы:** суреттердің дұрыс реті (А–Ә–Б–В бойынша): ' + plan.t5.seq.map(function (l, i) { return (i + 1) + '-кадр – ' + l; }).join(', ') + '. Үлгі әңгіме: ' + b.frames.map(function (f) { return f[1]; }).join(' '), { shade: 'EEF6EE' });
+    var rub = [['№', 'Дескриптор: білім алушы', 'Балл'], ['1', 'суреттерді оқиға желісі бойынша дұрыс ретке қояды', '1'], ['2', 'әр суретке кемінде бір сөйлем құрап, ауызша әңгімелейді', '2'], ['3', 'жазба жұмыста тақырыпқа сай мазмұнды, жанрлық құрылымды сақтайды', '2'], ['4', 'тірек сөздерді қолданады', '1'], ['5', 'емле мен тыныс белгілерін сақтайды', '2'], ['', { c: 'Барлығы', o: { b: true } }, { c: '8', o: { b: true } }]];
+    d.table(rub, [700, 8300, 1200], { head: true, headFill: 'FFF2CC' });
+
+    d.br(); d.h('Қосымша 7. Жаңа тақырыпты бекіту', 2);
+    band('«Иә – Жоқ» ойыны', 'E4DFEC');
+    d.p('Әр тұжырымның дұрыс (Иә) немесе қате (Жоқ) екенін белгіле. Қате тұжырымды түзет.');
+    d.table([['№', 'Тұжырым', 'Иә / Жоқ']].concat(plan.tf.map(function (x, i) { return [String(i + 1), x[0], '']; })), [700, 7700, 1800], { head: true });
+    answersP(plan.tf.map(function (x, i) { return (i + 1) + ' – ' + (x[1] ? 'Иә' : 'Жоқ'); }).join('; ') + '.', [['кемінде 4 тұжырымды дұрыс бағалайды', 1], ['қате тұжырымдарды түзетеді', 1], ['бекітуге қатысып, өз ойын білдіреді', 1], ['Иә – Жоқ жауабын негіздейді', 1], ['өзін-өзі бағалайды', 1], ['қорытынды жасайды', 1]].slice(0, plan.tf.length));
+
+    d.br(); d.h('Қосымша 8. Бағалау парағы', 2);
+    var sheet = [['Тапсырма', 'Ең жоғары балл', 'Менің балым']];
+    sheet.push(['№1 Тыңдалым және оқылым', String(tot), '']);
+    sheet.push(['№2 Білу (А)', String(p2), '']);
+    sheet.push(['№3 Қолдану (В)', String(p3), '']);
+    sheet.push(['№4 Талдау (С)', String(p4), '']);
+    sheet.push(['№5 Айтылым және жазылым', String(p5), '']);
+    sheet.push(['Бекіту', String(pb), '']);
+    sheet.push([{ c: 'Барлығы', o: { b: true } }, { c: String(tot + p2 + p3 + p4 + p5 + pb), o: { b: true } }, '']);
+    d.table(sheet, [5200, 2500, 2500], { head: true });
+
+    var bytes = d.build();
+    bytes.html = d.toHtml();
+    return bytes;
+  }
+
+  function fileName(plan) {
+    var t = plan.title.replace(/[\\\/:*?"<>|«»]/g, '').replace(/\s+/g, ' ').trim().slice(0, 60).replace(/[.\s]+$/, '');
+    return 'ҚМЖ_5сынып_' + (plan.lit ? 'әдебиет' : 'қазақтілі') + '_' + fmtDate(plan.date) + '_' + t + '.docx';
+  }
+
+  return { buildPlan: buildPlan, toDocx: toDocx, quarterOf: quarterOf, fmtDate: fmtDate, fileName: fileName, TEACHER: TEACHER, SCHOOL: SCHOOL };
+})();
+if (typeof module !== 'undefined') module.exports = LESSON;
+</script>
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  var S={g:null,d:null,q:1,date:null,i:null};
+  var PFX='qmj:'+((window.QMJ_CFG&&QMJ_CFG.id)||'')+':';
+  var store={get:function(k){try{return JSON.parse(localStorage.getItem(PFX+k))}catch(e){return null}},set:function(k,v){try{localStorage.setItem(PFX+k,JSON.stringify(v))}catch(e){}}};
+  $('tname').textContent=LESSON.TEACHER; if(window.QMJ_CFG&&QMJ_CFG.brand) $('bname').textContent=QMJ_CFG.brand; if(window.QMJ_CFG&&QMJ_CFG.glabel) $('glabel').textContent=QMJ_CFG.glabel; $('sname').textContent=LESSON.SCHOOL;
+  if(window.QMJ_CFG&&QMJ_CFG.kicker) $('kicker').textContent=QMJ_CFG.kicker; if(window.QMJ_CFG&&QMJ_CFG.appname) $('appn').textContent=QMJ_CFG.appname; if(window.QMJ_CFG&&QMJ_CFG.h1) $('h1t').textContent=QMJ_CFG.h1;
+  if(!store.get('seen')){ $('install').open=true; store.set('seen',1); }
+  var today=new Date(); today=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
+  $('date').value=today; S.date=today; S.q=LESSON.quarterOf(today);
+  var last=store.get('last')||{};
+  if(last.g){S.g=last.g;S.d=last.d||null;}
+  function key(){ if(!S.g) return null; var n=parseInt(S.g,10); if(n>=10){ return S.d? n+S.d : null;} return S.g; }
+  function grades(){var h='';(window.QMJ_CFG&&QMJ_CFG.grades||['7','8','9','10','11']).forEach(function(g){h+='<button class="chip" type="button" data-g="'+g+'" aria-pressed="'+(S.g===g)+'">'+(((window.QMJ_CFG&&QMJ_CFG.gradeLabels)||{})[g]||g)+'</button>'});$('grades').innerHTML=h;}
+  function quarters(){var h='';[1,2,3,4].forEach(function(q){h+='<button class="chip" type="button" data-q="'+q+'" aria-pressed="'+(S.q===q)+'">'+q+'</button>'});$('quarters').innerHTML=h;}
+  function ovKey(){return 'ov:'+key()+':'+S.q+':'+S.i;}
+  function current(){var k=key(); if(!k||S.i==null) return null; var t=CUR[k].q[S.q][S.i]; var ov=store.get(ovKey()); return {t:t,title:(ov&&ov.title)||t.t,o:(ov&&ov.o)||t.o};}
+  function render(){
+    grades(); quarters();
+    var n=parseInt(S.g,10), hi=n>=10, fd=window.QMJ_CFG&&QMJ_CFG.fixedDir;
+    if(hi&&fd) S.d=fd;
+    $('dirStep').hidden=!hi||!!fd;
+    var base=(hi&&!fd)?3:2; $('nq').textContent=base; $('nd').textContent=base+1; $('nt').textContent=base+2; $('ns').textContent=base+3;
+    document.querySelectorAll('#dirs .chip').forEach(function(b){b.setAttribute('aria-pressed',String(S.d===b.dataset.d))});
+    var k=key(), box=$('topics');
+    if(!k){ box.innerHTML='<p class="hint">'+(hi?'Алдымен бағытты таңдаңыз.':'Алдымен сыныпты таңдаңыз.')+'</p>'; $('load').textContent=''; S.i=null; }
+    else{
+      var G=CUR[k], list=G.q[S.q], h='', sec='';
+      $('load').textContent=G.label+' · '+G.load+' · '+S.q+'-тоқсан';
+      list.forEach(function(t,i){
+        if(t.s!==sec){sec=t.s;h+='<div class="sec">'+esc(sec)+'</div>';}
+        var ov=store.get('ov:'+k+':'+S.q+':'+i);
+        var title=(ov&&ov.title)||t.t, codes=((ov&&ov.o)||t.o).map(function(o){return o[0]}).join(', ');
+        h+='<button class="topic" type="button" data-i="'+i+'" aria-pressed="'+(S.i===i)+'"><b>'+(t.n?t.n+'. ':'')+esc(title)+'</b><span class="codes">'+esc(codes)+'</span></button>';
+      });
+      box.innerHTML=h;
+      if(S.i!=null && S.i>=list.length) S.i=null;
+    }
+    var c=current();
+    $('selStep').hidden=!c; $('go').disabled=!c;
+    if(c){
+      $('selTitle').textContent=c.title;
+      $('selObj').innerHTML='<p class="hint" style="margin:0 0 4px">Оқу мақсаттары:</p>'+c.o.map(function(o){return '<div><b>'+esc(o[0])+'</b> – '+esc(o[1])+'</div>'}).join('');
+      $('eTitle').value=c.title; $('eObj').value=c.o.map(function(o){return o[0]+' – '+o[1]}).join('\n');
+      setStatus('Дайын: «Word жүктеу» батырмасын басыңыз','');
+    } else setStatus(k?'Тақырыпты таңдаңыз':'Сыныпты және тақырыпты таңдаңыз','');
+    store.set('last',{g:S.g,d:S.d});
+  }
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function setStatus(t,cls){var s=$('status');s.textContent=t;s.className='status '+(cls||'');}
+  $('grades').addEventListener('click',function(e){var b=e.target.closest('[data-g]');if(!b)return;if(S.g!==b.dataset.g){S.g=b.dataset.g;S.i=null;if(parseInt(S.g,10)<10)S.d=null;}render();});
+  $('dirs').addEventListener('click',function(e){var b=e.target.closest('[data-d]');if(!b)return;S.d=b.dataset.d;S.i=null;render();});
+  $('quarters').addEventListener('click',function(e){var b=e.target.closest('[data-q]');if(!b)return;S.q=parseInt(b.dataset.q,10);S.i=null;render();});
+  $('date').addEventListener('change',function(){if(!this.value)return;S.date=this.value;var q=LESSON.quarterOf(S.date);if(q!==S.q){S.q=q;S.i=null;}render();});
+  $('topics').addEventListener('click',function(e){var b=e.target.closest('[data-i]');if(!b)return;S.i=parseInt(b.dataset.i,10);$('editBox').hidden=true;render();$('selStep').scrollIntoView({behavior:'smooth',block:'start'});});
+  $('editBtn').addEventListener('click',function(){$('editBox').hidden=!$('editBox').hidden;});
+  function saveEdit(){var c=current();if(!c)return;var o=$('eObj').value.split('\n').map(function(l){return l.trim()}).filter(Boolean).map(function(l){var m=l.match(/^([\d.]+)\s*[–\-—:]\s*(.+)$/);return m?[m[1],m[2]]:['',l];});
+    store.set(ovKey(),{title:$('eTitle').value.trim()||c.t.t,o:o.length?o:c.t.o});
+    var cc=current();$('selTitle').textContent=cc.title;$('selObj').innerHTML='<p class="hint" style="margin:0 0 4px">Оқу мақсаттары:</p>'+cc.o.map(function(x){return '<div><b>'+esc(x[0])+'</b> – '+esc(x[1])+'</div>'}).join('');}
+  $('eTitle').addEventListener('change',saveEdit); $('eObj').addEventListener('change',saveEdit);
+  $('resetBtn').addEventListener('click',function(){try{localStorage.removeItem(PFX+ovKey())}catch(e){}render();$('editBox').hidden=false;});
+
+  function svg2png(svg){return new Promise(function(res,rej){
+    var img=new Image();img.onload=function(){var sc=2,w=img.naturalWidth||640,h=img.naturalHeight||360;var cv=document.createElement('canvas');cv.width=w*sc;cv.height=h*sc;var ctx=cv.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,cv.width,cv.height);ctx.drawImage(img,0,0,cv.width,cv.height);
+      cv.toBlob(function(b){if(!b)return rej(new Error('png'));b.arrayBuffer().then(function(ab){res({png:new Uint8Array(ab),w:cv.width,h:cv.height})})},'image/png');};
+    img.onerror=function(){rej(new Error('Суретті салу мүмкін болмады'))};
+    img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);});}
+
+  var dl=null, IN_ART=false;
+  function plainSave(bytes,name){var blob=new Blob([bytes],{type:'application/vnd.openxmlformats-officedocument.wordprocessingml.document'});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},4000);}
+  var lastFile=null, DOCX_MIME='application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+  function prepareShare(bytes,name){
+    lastFile=null; var ok=false;
+    try{ var f=new File([bytes],name,{type:DOCX_MIME}); if(navigator.canShare&&navigator.canShare({files:[f]})){ lastFile=f; ok=true; } }catch(e){}
+    $('share').hidden=!ok; $('tip').hidden=ok;
+  }
+  $('share').addEventListener('click',async function(){
+    if(!lastFile) return;
+    try{ await navigator.share({files:[lastFile],title:lastFile.name}); setStatus('Жіберілді: '+lastFile.name,'ok'); }
+    catch(e){ if(e&&e.name==='AbortError') setStatus('Бөлісу тоқтатылды',''); else { $('share').hidden=true; $('tip').hidden=false; setStatus('Бөлісу терезесі ашылмады. Файлды «Жүктелгендер» бумасынан жіберіңіз.','err'); } }
+  });
+  $('go').addEventListener('click',async function(){
+    var c=current();if(!c)return;var btn=this;btn.disabled=true;$('share').hidden=true;$('tip').hidden=true;setStatus('ҚМЖ дайындалып жатыр…','');
+    try{
+      var plan=LESSON.buildPlan(key(),S.q,S.i,{date:S.date,title:c.title,objectives:c.o});
+      var bytes=await LESSON.toDocx(plan,svg2png), name=LESSON.fileName(plan);
+      prepareShare(bytes,name);
+      if(lastFile && !IN_ART){
+        try{ await navigator.share({files:[lastFile],title:lastFile.name}); setStatus('Жіберілді: '+name,'ok'); btn.disabled=false; return; }
+        catch(e){ if(e&&e.name==='AbortError'){ setStatus('Таңдау жабылды. Қайта жіберу үшін «Бөлісу» басыңыз.',''); btn.disabled=false; return; } }
+      }
+      if(dl){ try{ await dl.save({filename:name,data:new Blob([bytes])}); setStatus('Сақталды: '+name,'ok'); }
+        catch(e){ setStatus(e&&e.code==='declined'?'Жүктеу тоқтатылды':'Жүктеу мүмкін болмады: '+((e&&e.message)||''),'err'); } }
+      else if(IN_ART){ setStatus('Бұл сілтеме арқылы Word жүктеу жабық. Мұғалімге «Фамилия_ҚМЖ.html» файлын жіберіңіз – ол арқылы жүктеледі.','err'); }
+      else { plainSave(bytes,name); setStatus('Жүктелді: '+name,'ok'); }
+    }catch(e){ setStatus('Қате: '+e.message,'err'); }
+    btn.disabled=false;
+  });
+  render();
+})();
+</script>
+<script>
+(function(){
+  var ua=navigator.userAgent||'', isAnd=/Android/i.test(ua), isIOS=/iPhone|iPad|iPod/i.test(ua);
+  var inApp=/WhatsApp|FBAN|FBAV|FB_IAB|Instagram|Telegram|wv\)|Line\//i.test(ua);
+  var standalone=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone;
+  var el=function(id){return document.getElementById(id)};
+  if(inApp&&!standalone){
+    el('inapp').hidden=false;
+    if(isAnd){var b=el('toChrome');b.hidden=false;b.onclick=function(){
+      location.href='intent://'+location.host+location.pathname+location.search+'#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url='+encodeURIComponent(location.href)+';end';};}
+    else if(isIOS){el('inappTxt').innerHTML='Төменгі оң жақтағы <b>⋯</b> немесе <b>⤴</b> белгісін басып, <b>«Safari-де ашу»</b> таңдаңыз.';}
+  }
+  var dp=null;
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;var b=el('instBtn');b.hidden=false;var d=el('install');if(d&&!standalone)d.open=true;});
+  el('instBtn').addEventListener('click',function(){if(!dp)return;dp.prompt();dp.userChoice.then(function(){dp=null;el('instBtn').hidden=true;});});
+  window.addEventListener('appinstalled',function(){el('instBtn').hidden=true;var d=el('install');if(d)d.open=false;});
+  if(standalone){var d=el('install');if(d)d.hidden=true;}
+  if('serviceWorker' in navigator && location.protocol==='https:'){
+    navigator.serviceWorker.register('sw.js').then(function(r){
+      r.addEventListener('updatefound',function(){var w=r.installing;if(!w)return;w.addEventListener('statechange',function(){
+        if(w.state==='installed'&&navigator.serviceWorker.controller){
+          var u=document.createElement('div');u.className='upd';u.innerHTML='<span>Жаңа нұсқа дайын</span><button type="button">Жаңарту</button>';
+          u.querySelector('button').onclick=function(){location.reload()};document.body.appendChild(u);}
+      });});
+      r.update();
+    }).catch(function(){});
+  }
+})();
+</script>
+</body></html>

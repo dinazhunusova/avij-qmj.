@@ -43,6 +43,16 @@
   },
   {
    "source": "/(.*)",
+   "has": [
+    {
+     "type": "host",
+     "value": "samalova-qmj.vercel.app"
+    }
+   ],
+   "destination": "/samalova/$1"
+  },
+  {
+   "source": "/(.*)",
    "destination": "/sharapatova/$1"
   }
  ]
