@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ҚМЖ және презентациялар мұғалімдерге · КСП и презентации для учителей</title>
+<meta name="description" content="Мұғалімге арналған ҚМЖ, презентация, тапсырмалар жинағы. КСП, презентации и сборники заданий для учителей Казахстана.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ҚМЖ мен презентация – бір минутта · КСП и презентации за минуту">
+<meta property="og:description" content="Тақырыпты таңдаңыз – дайын Word. Выберите тему – готовый Word.">
+<meta name="theme-color" content="#2f4f86">
+<style>
+:root{
+  --bg:#f4f7fb; --card:#ffffff; --ink:#1c2740; --muted:#5a6882; --line:#d8e0ec;
+  --accent:#2f4f86; --accent-ink:#ffffff; --accent2:#e9a23b; --soft:#e6edf8;
+  --ok:#2c7a54;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141b29; --card:#1c2538; --ink:#e8edf6; --muted:#a6b2c8; --line:#2f3b54;
+  --accent:#8fb0e6; --accent-ink:#101a2c; --accent2:#f0b35a; --soft:#25314a; --ok:#7fd1a4; color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.5 "PT Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-left)) 0 max(16px,env(safe-area-inset-right))}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
+.logo{font-weight:700;letter-spacing:.3px}
+.logo b{color:var(--accent)}
+.lang{display:flex;gap:6px}
+.lang button{border:1.5px solid var(--line);background:transparent;color:var(--ink);border-radius:10px;min-height:44px;min-width:52px;font:700 16px inherit;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.hero{padding:28px 0 36px;display:grid;gap:22px}
+@media(min-width:820px){.hero{grid-template-columns:1.1fr .9fr;align-items:center;padding:56px 0}}
+h1{font-size:clamp(28px,5.4vw,46px);line-height:1.12;margin:0 0 14px}
+h1 em{font-style:normal;color:var(--accent)}
+.lead{color:var(--muted);font-size:20px;margin:0 0 20px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 22px;border-radius:14px;font:700 18px inherit;text-decoration:none;border:2px solid var(--accent);cursor:pointer}
+.btn.pri{background:var(--accent);color:var(--accent-ink)}
+.btn.sec{background:transparent;color:var(--accent)}
+.note{font-size:15px;color:var(--muted);margin-top:12px}
+.mock{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 10px 30px rgba(20,40,80,.10)}
+.mock .bar{display:flex;gap:6px;margin-bottom:12px}
+.mock .bar i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.mock .chip{display:inline-block;background:var(--soft);border-radius:999px;padding:4px 12px;font-size:14px;margin:0 6px 8px 0}
+.mock .row{display:grid;grid-template-columns:90px 1fr;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:15px}
+.mock .row b{color:var(--accent)}
+section{padding:34px 0}
+h2{font-size:clamp(24px,4vw,32px);margin:0 0 18px}
+.grid{display:grid;gap:14px}
+@media(min-width:700px){.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card h3{margin:0 0 6px;font-size:20px}
+.card p{margin:0;color:var(--muted)}
+.ico{font-size:30px;margin-bottom:6px}
+.steps{counter-reset:s;display:grid;gap:12px;padding:0;list-style:none}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 16px 16px 64px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:700}
+.price{display:flex;flex-direction:column;gap:8px}
+.price .p{font-size:26px;font-weight:700;color:var(--accent)}
+ul.tick{margin:0;padding:0;list-style:none}
+ul.tick li{padding-left:26px;position:relative;margin:6px 0}
+ul.tick li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:700}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{color:var(--muted);margin:8px 0 0}
+.cta{background:var(--accent);color:var(--accent-ink);border-radius:22px;padding:30px 22px;text-align:center;margin:10px 0 40px}
+.cta h2{margin:0 0 8px}
+.cta .btn{background:var(--accent2);border-color:var(--accent2);color:#1c2740}
+footer{padding:20px 0 90px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:10px max(16px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom));background:var(--card);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:5}
+.sticky .btn{width:100%;max-width:520px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo"><b>ҚМЖ</b> · КСП · Презентация</div>
+    <div class="lang" role="group" aria-label="Тіл / Язык">
+      <button type="button" data-l="kk" aria-pressed="true">ҚАЗ</button>
+      <button type="button" data-l="ru" aria-pressed="false">РУС</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1 data-kk="Мұғалімге арналған <em>ҚМЖ мен презентация</em> – бір минутта" data-ru="<em>КСП и презентации</em> для учителя – за одну минуту"></h1>
+        <p class="lead" data-kk="Тақырыпты таңдаңыз – дайын Word файлы телефоныңызда. Сабақ 45 минутқа бөлінген, тапсырмалар мен жауаптары қосымшада." data-ru="Выберите тему – готовый Word уже в телефоне. Урок расписан на 45 минут, задания и ответы – в приложениях."></p>
+        <div class="btns">
+          <a class="btn pri" href="#contact" data-kk="Сынап көру" data-ru="Попробовать"></a>
+          <a class="btn sec" href="#how" data-kk="Қалай жұмыс істейді" data-ru="Как это работает"></a>
+        </div>
+        <p class="note" data-kk="Нысан: ҚР БҒМ 2020 жылғы 6 сәуірдегі № 130 бұйрығының 4-қосымшасы (№ 68 редакциясында)." data-ru="Форма: приложение 4 к приказу МОН РК от 6 апреля 2020 г. № 130 (в ред. № 68)."></p>
+      </div>
+      <div class="mock" aria-hidden="true">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <span class="chip">Физика · 8</span><span class="chip">Информатика · 7</span><span class="chip">Қазақ тілі · 5</span>
+        <div class="row"><b>2 мин</b><span>Ұйымдастыру кезеңі</span></div>
+        <div class="row"><b>5 мин</b><span>«Ойлан!» · Білімді өзектендіру</span></div>
+        <div class="row"><b>10 мин</b><span>Жаңа білім · презентация</span></div>
+        <div class="row"><b>10 мин</b><span>«Зертте!», «Талда!»</span></div>
+        <div class="row"><b>8 мин</b><span>Үлгі бойынша орында</span></div>
+        <div class="row"><b>5 мин</b><span>Функционалдық сауаттылық</span></div>
+        <div class="row"><b>5 мин</b><span>Рефлексия · үй тапсырмасы</span></div>
+      </div>
+    </div>
+
+    <section aria-labelledby="h-what">
+      <h2 id="h-what" data-kk="Не аласыз" data-ru="Что вы получаете"></h2>
+      <div class="grid g3">
+        <div class="card"><div class="ico">📄</div><h3 data-kk="Дайын ҚМЖ (Word)" data-ru="Готовый КСП (Word)"></h3><p data-kk="Оқу мақсаттары, сабақ барысы, бағалау, ресурстар – бәрі кестеде." data-ru="Цели обучения, ход урока, оценивание, ресурсы – всё в таблице."></p></div>
+        <div class="card"><div class="ico">🧩</div><h3 data-kk="Тапсырмалар мен жауаптар" data-ru="Задания и ответы"></h3><p data-kk="Әр тапсырманың мәтіні, жауабы және дескрипторлары қосымшада." data-ru="Текст каждого задания, ответ и дескрипторы – в приложениях."></p></div>
+        <div class="card"><div class="ico">🎞️</div><h3 data-kk="Презентация" data-ru="Презентации"></h3><p data-kk="Тақырып бойынша слайдтар: теория, мысал, тапсырма. Тапсырыс бойынша." data-ru="Слайды по теме: теория, примеры, задания. Под заказ."></p></div>
+        <div class="card"><div class="ico">📱</div><h3 data-kk="Телефонда жұмыс істейді" data-ru="Работает в телефоне"></h3><p data-kk="Қосымша ретінде орнатылады, интернетсіз де ашылады." data-ru="Устанавливается как приложение, открывается и без интернета."></p></div>
+        <div class="card"><div class="ico">🎓</div><h3 data-kk="Пәндер" data-ru="Предметы"></h3><p data-kk="Физика, информатика, қазақ тілі мен әдебиеті. Басқа пәндер – тапсырыс бойынша." data-ru="Физика, информатика, казахский язык и литература. Другие предметы – под заказ."></p></div>
+        <div class="card"><div class="ico">👩‍🏫</div><h3 data-kk="Жеке қосымша" data-ru="Личное приложение"></h3><p data-kk="Мектебіңіздің, аты-жөніңіздің атымен жеке сілтеме." data-ru="Личная ссылка на ваше имя и школу."></p></div>
+      </div>
+    </section>
+
+    <section id="how" aria-labelledby="h-how">
+      <h2 id="h-how" data-kk="Қалай жұмыс істейді" data-ru="Как это работает"></h2>
+      <ol class="steps">
+        <li data-kk="Сыныпты және тоқсанды таңдаңыз." data-ru="Выберите класс и четверть."></li>
+        <li data-kk="Тізімнен сабақтың тақырыбын таңдаңыз – оқу мақсаттары автоматты түрде қойылады." data-ru="Выберите тему из списка – цели обучения подставятся сами."></li>
+        <li data-kk="«Word жүктеу» батырмасын басыңыз және файлды WhatsApp-пен жіберіңіз немесе басып шығарыңыз." data-ru="Нажмите «Скачать Word» и отправьте файл в WhatsApp или распечатайте."></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="h-price">
+      <h2 id="h-price" data-kk="Бағасы" data-ru="Стоимость"></h2>
+      <div class="grid g3">
+        <div class="card price"><h3 data-kk="Жеке қосымша" data-ru="Личное приложение"></h3><div class="p" data-price="app"></div><ul class="tick"><li data-kk="Сіздің атыңызбен сілтеме" data-ru="Ссылка на ваше имя"></li><li data-kk="Таңдаған пәніңіз бен сыныптарыңыз" data-ru="Ваш предмет и классы"></li><li data-kk="Жаңарту және қолдау" data-ru="Обновления и поддержка"></li></ul></div>
+        <div class="card price"><h3 data-kk="Презентация" data-ru="Презентация"></h3><div class="p" data-price="ppt"></div><ul class="tick"><li data-kk=".pptx форматында" data-ru="В формате .pptx"></li><li data-kk="Тақырып, сынып, тіл бойынша" data-ru="По теме, классу и языку"></li><li data-kk="1–2 күнде дайын" data-ru="Готово за 1–2 дня"></li></ul></div>
+        <div class="card price"><h3 data-kk="Тапсырмалар жинағы" data-ru="Сборник заданий"></h3><div class="p" data-price="book"></div><ul class="tick"><li data-kk="Жауаптары мен дескрипторлары" data-ru="С ответами и дескрипторами"></li><li data-kk="Word / PDF" data-ru="Word / PDF"></li><li data-kk="Пән мен сыныпқа арнап" data-ru="Под ваш предмет и класс"></li></ul></div>
+      </div>
+      <p class="note" data-kk="Төлем: Kaspi." data-ru="Оплата: Kaspi."></p>
+    </section>
+
+    <section aria-labelledby="h-faq">
+      <h2 id="h-faq" data-kk="Жиі қойылатын сұрақтар" data-ru="Частые вопросы"></h2>
+      <details><summary data-kk="Бұл ресми құжат па?" data-ru="Это официальный документ?"></summary><p data-kk="Жоқ. Бұл мұғалімге көмекші құрал: нысан № 130 бұйрықтың 4-қосымшасына сай жасалған. Соңғы тексеруді және мектептің талабын мұғалімнің өзі жасайды." data-ru="Нет. Это инструмент-помощник: форма сделана по приложению 4 к приказу № 130. Итоговую проверку и требования своей школы учитель оценивает сам."></p></details>
+      <details><summary data-kk="Файлды өзгертуге бола ма?" data-ru="Можно ли редактировать файл?"></summary><p data-kk="Иә, бұл кәдімгі Word файлы – өз сабағыңызға сай өзгертесіз." data-ru="Да, это обычный Word-файл – подправьте под свой урок."></p></details>
+      <details><summary data-kk="Қай сыныптар мен пәндер бар?" data-ru="Какие классы и предметы есть?"></summary><p data-kk="Физика 7–11, информатика 7, қазақ тілі мен әдебиеті 5. Басқа пән мен сыныпты тапсырыс бойынша қосамыз." data-ru="Физика 7–11, информатика 7, казахский язык и литература 5. Другие предметы и классы добавим под заказ."></p></details>
+      <details><summary data-kk="Қалай төлеймін?" data-ru="Как оплатить?"></summary><p data-kk="Kaspi арқылы. Төлем туралы нақты мәліметті WhatsApp-та жазамыз." data-ru="Через Kaspi. Точные реквизиты пришлём в WhatsApp."></p></details>
+    </section>
+
+    <div class="cta" id="contact">
+      <h2 data-kk="Қазір сынап көріңіз" data-ru="Попробуйте сейчас"></h2>
+      <p data-kk="WhatsApp-қа жазыңыз: пәніңіз бен сыныбыңызды айтыңыз – үлгіні жібереміз." data-ru="Напишите в WhatsApp: укажите предмет и класс – пришлём образец."></p>
+      <a class="btn" id="waBtn" href="#contact" data-kk="WhatsApp-қа жазу" data-ru="Написать в WhatsApp"></a>
+      <p class="note" id="waNote" style="color:inherit;opacity:.85" hidden data-kk="Байланыс нөмірі жақында қосылады." data-ru="Номер для связи скоро появится."></p>
+    </div>
+  </main>
+
+  <footer>
+    <span data-kk="Бұл жеке жоба; Қазақстан Республикасы Оқу-ағарту министрлігінің ресми сайты емес." data-ru="Это частный проект, не официальный сайт Министерства просвещения РК."></span>
+  </footer>
+</div>
+
+<div class="sticky"><a class="btn pri" id="waSticky" href="#contact" data-kk="Сынап көру" data-ru="Попробовать"></a></div>
+
+<script>
+// ===== Баптаулар / Настройки (владелец редактирует здесь) =====
+var CONFIG = {
+  waNumber: '',                 // например '77001234567' (без + и пробелов). Пока пусто – кнопка ведёт к блоку контактов
+  waText: { kk: 'Сәлем! ҚМЖ / презентация туралы білгім келеді.', ru: 'Здравствуйте! Хочу узнать про КСП / презентации.' },
+  prices: {                     // пока цены не заданы – показывается «Бағасын сұраңыз»
+    app:  { kk: '', ru: '' },
+    ppt:  { kk: '', ru: '' },
+    book: { kk: '', ru: '' }
+  }
+};
+(function(){
+  var lang='kk';
+  try{ var s=localStorage.getItem('promo-lang'); if(s==='ru'||s==='kk') lang=s; }catch(e){}
+  function apply(){
+    document.documentElement.lang=lang;
+    document.querySelectorAll('[data-kk]').forEach(function(el){ el.innerHTML=el.getAttribute('data-'+lang); });
+    document.querySelectorAll('[data-price]').forEach(function(el){
+      var p=CONFIG.prices[el.getAttribute('data-price')][lang];
+      el.textContent=p||(lang==='kk'?'Бағасын сұраңыз':'Уточняйте цену');
+    });
+    document.querySelectorAll('.lang button').forEach(function(b){ b.setAttribute('aria-pressed',String(b.dataset.l===lang)); });
+    var href='#contact', has=!!CONFIG.waNumber;
+    if(has) href='https://wa.me/'+CONFIG.waNumber+'?text='+encodeURIComponent(CONFIG.waText[lang]);
+    ['waBtn','waSticky'].forEach(function(id){ var a=document.getElementById(id); a.href=href; if(has){a.target='_blank';a.rel='noopener';} });
+    document.getElementById('waNote').hidden=has;
+  }
+  document.querySelector('.lang').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return; lang=b.dataset.l; try{localStorage.setItem('promo-lang',lang);}catch(err){} apply();
+  });
+  apply();
+})();
+</script>
+</body>
+</html>
