@@ -53,6 +53,16 @@
   },
   {
    "source": "/(.*)",
+   "has": [
+    {
+     "type": "host",
+     "value": "sagatbekov-qmj.vercel.app"
+    }
+   ],
+   "destination": "/sagatbekov/$1"
+  },
+  {
+   "source": "/(.*)",
    "destination": "/sharapatova/$1"
   }
  ]
