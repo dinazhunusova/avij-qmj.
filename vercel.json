@@ -83,6 +83,16 @@
   },
   {
    "source": "/(.*)",
+   "has": [
+    {
+     "type": "host",
+     "value": "bereke-qmj.vercel.app"
+    }
+   ],
+   "destination": "/bereke/$1"
+  },
+  {
+   "source": "/(.*)",
    "destination": "/sharapatova/$1"
   }
  ]
