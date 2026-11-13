@@ -63,6 +63,26 @@
   },
   {
    "source": "/(.*)",
+   "has": [
+    {
+     "type": "host",
+     "value": "abdanbekova-qmj.vercel.app"
+    }
+   ],
+   "destination": "/abdanbekova/$1"
+  },
+  {
+   "source": "/(.*)",
+   "has": [
+    {
+     "type": "host",
+     "value": "rakhisheva-qmj.vercel.app"
+    }
+   ],
+   "destination": "/rakhisheva/$1"
+  },
+  {
+   "source": "/(.*)",
    "destination": "/sharapatova/$1"
   }
  ]
