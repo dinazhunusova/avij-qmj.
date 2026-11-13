@@ -93,6 +93,16 @@
   },
   {
    "source": "/(.*)",
+   "has": [
+    {
+     "type": "host",
+     "value": "alimkhan-qmj.vercel.app"
+    }
+   ],
+   "destination": "/alimkhan/$1"
+  },
+  {
+   "source": "/(.*)",
    "destination": "/sharapatova/$1"
   }
  ]
